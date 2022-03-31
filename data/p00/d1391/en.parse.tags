@@ -1,0 +1,28 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:wq,
+  fa(s:wq/(s:dcl\np),
+   t((s:wq/(s:dcl\np))/n, 'How', [from:0, to:3, pos:'WRB', lemma:'how', sem:'QUE', wordnet:'O', verbnet:['Quantity']]),
+   ba(n,
+    fa(n,
+     t(n/n, 'many', [from:4, to:8, pos:'JJ', lemma:'?', sem:'QUV', wordnet:'O', verbnet:['Quantity']]),
+     t(n, 'people', [from:9, to:15, pos:'NNS', lemma:'person', sem:'CON', wordnet:'person.n.01'])),
+    fa(n\n,
+     t((n\n)/np, 'in', [from:16, to:18, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Location']]),
+     lx(np, n,
+      t(n, 'U.S.', [from:19, to:23, pos:'NNP', lemma:'us', sem:'GPE', wordnet:'country.n.02']))))),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/(s:b\np),
+    t((s:dcl\np)/(s:b\np), 'do', [from:24, to:26, pos:'VBP', lemma:'do', sem:'NOW', wordnet:'O']),
+    t((s\np)\(s\np), 'not', [from:27, to:30, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+   rp(s:b\np,
+    fa(s:b\np,
+     t((s:b\np)/np, 'have', [from:31, to:35, pos:'VB', lemma:'have', sem:'EXS', wordnet:'have.v.02', verbnet:['Theme','Pivot']]),
+     lx(np, n,
+      t(n, 'health~insurance', [from:36, to:52, pos:'NN', lemma:'health~insurance', sem:'CON', wordnet:'health_insurance.n.01']))),
+    t(., '?', [from:52, to:53, pos:'.', lemma:'?', sem:'QUE', wordnet:'O']))))).
+

@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:q,
+  fa(s:q,
+   fa(s:q/(s:adj\np),
+    t((s:q/(s:adj\np))/np, 'Is', [from:0, to:2, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+    lx(np, n,
+     t(n, 'Haruki~Murakami', [from:3, to:18, pos:'NNP', lemma:'haruki~murakami', sem:'PER', wordnet:'male.n.02']))),
+   ba(s:adj\np,
+    t(s:adj\np, 'popular', [from:19, to:26, pos:'JJ', lemma:'popular', sem:'IST', wordnet:'popular.a.01', verbnet:['Stimulus']]),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/np, 'in', [from:27, to:29, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Location']]),
+     lx(np, n,
+      t(n, 'Vietnam', [from:30, to:37, pos:'NNP', lemma:'vietnam', sem:'GPE', wordnet:'country.n.02']))))),
+  rp(s:q\s:q,
+   t(s:q\s:q, 'as~well', [from:38, to:45, pos:'NN', lemma:'as~well', sem:'ALT', wordnet:'O']),
+   t(., '?', [from:45, to:46, pos:'.', lemma:'?', sem:'QUE', wordnet:'O'])))).
+

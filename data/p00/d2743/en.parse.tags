@@ -1,0 +1,26 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'A', [from:0, to:1, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+   fa(n,
+    t(n/n, 'decapitated', [from:2, to:13, pos:'JJ', lemma:'decapitated', sem:'IST', wordnet:'decapitated.a.01', verbnet:['Attribute']]),
+    t(n, 'body', [from:14, to:18, pos:'NN', lemma:'person', sem:'CON', wordnet:'person.n.02']))),
+  fa(s:dcl\np,
+   t((s:dcl\np)/pp, 'was', [from:19, to:22, pos:'VBD', lemma:'be', sem:'EPS', wordnet:'be.v.03', verbnet:['Theme']]),
+   fa(pp,
+    t(pp/np, 'on', [from:23, to:25, pos:'IN', lemma:'on', sem:'REL', wordnet:'O', verbnet:['Location']]),
+    fa(np,
+     ba(np/(n/pp),
+      fa(np,
+       t(np/n, 'the', [from:26, to:29, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+       t(n, 'coroner', [from:30, to:37, pos:'NN', lemma:'coroner', sem:'ROL', wordnet:'coroner.n.01'])),
+      t((np/(n/pp))\np, '\'s', [from:37, to:39, pos:'POS', lemma:'\'s', sem:'HAS', wordnet:'O', verbnet:['User']])),
+     rp(n/pp,
+      t(n/pp, 'table', [from:40, to:45, pos:'NN', lemma:'table', sem:'CON', wordnet:'table.n.02']),
+      t(., '.', [from:45, to:46, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

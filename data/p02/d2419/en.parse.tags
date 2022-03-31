@@ -1,0 +1,26 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:ng\np), 'is', [from:4, to:6, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+   fa(s:ng\np,
+    t((s:ng\np)/np, 'reading', [from:7, to:14, pos:'VBG', lemma:'read', sem:'EXG', wordnet:'read.v.01', verbnet:['Stimulus','Experiencer']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'a', [from:15, to:16, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+      ba(n,
+       t(n, 'novel', [from:17, to:22, pos:'NN', lemma:'novel', sem:'CON', wordnet:'novel.n.01']),
+       fa(n\n,
+        t((n\n)/np, 'by', [from:23, to:25, pos:'IN', lemma:'by', sem:'REL', wordnet:'O', verbnet:['Creator']]),
+        lx(np, n,
+         ba(n,
+          t(n, 'Sidney~Sheldon', [from:26, to:40, pos:'NNP', lemma:'sidney~sheldon', sem:'PER', wordnet:'male.n.02']),
+          t(n\n, 'now', [from:41, to:44, pos:'RB', lemma:'now', sem:'NOW', wordnet:'O'])))))),
+     t(., '.', [from:44, to:45, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

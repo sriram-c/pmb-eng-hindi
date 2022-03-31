@@ -1,0 +1,23 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/(s:b\np),
+    t((s:dcl\np)/(s:b\np), 'did', [from:4, to:7, pos:'VBD', lemma:'do', sem:'PST', wordnet:'O']),
+    t((s\np)\(s\np), 'n\'t', [from:7, to:10, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+   fa(s:b\np,
+    t((s:b\np)/np, 'answer', [from:11, to:17, pos:'VB', lemma:'answer', sem:'EXS', wordnet:'answer.v.03', verbnet:['Theme','Agent']]),
+    fa(np,
+     t(np/np, 'all', [from:18, to:21, pos:'PDT', lemma:'all', sem:'AND', wordnet:'O', verbnet:['PartOf']]),
+     rp(np,
+      fa(np,
+       t(np/n, 'the', [from:22, to:25, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+       t(n, 'questions', [from:26, to:35, pos:'NNS', lemma:'question', sem:'CON', wordnet:'question.n.03'])),
+      t(., '.', [from:35, to:36, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

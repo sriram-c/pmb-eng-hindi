@@ -1,0 +1,14 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'storm', [from:4, to:9, pos:'NN', lemma:'storm', sem:'CON', wordnet:'storm.n.01'])),
+  rp(s:dcl\np,
+   t(s:dcl\np, 'abated', [from:10, to:16, pos:'VBD', lemma:'abate', sem:'EPS', wordnet:'abate.v.02', verbnet:['Patient']]),
+   t(., '.', [from:16, to:17, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+

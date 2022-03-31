@@ -1,0 +1,19 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/(n/pp), 'My', [from:0, to:2, pos:'PRP$', lemma:'speaker', sem:'HAS', wordnet:'O', verbnet:['Of']]),
+   t(n/pp, 'father', [from:3, to:9, pos:'NN', lemma:'father', sem:'ROL', wordnet:'father.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'likes', [from:10, to:15, pos:'VBZ', lemma:'like', sem:'ENS', wordnet:'like.v.02', verbnet:['Stimulus','Experiencer']]),
+   rp(np,
+    lx(np, n,
+     fa(n,
+      t(n/n, 'strong', [from:16, to:22, pos:'JJ', lemma:'strong', sem:'IST', wordnet:'strong.a.04', verbnet:['Attribute']]),
+      t(n, 'coffee', [from:23, to:29, pos:'NN', lemma:'coffee', sem:'CON', wordnet:'coffee.n.01']))),
+    t(., '.', [from:29, to:30, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'woman', [from:4, to:9, pos:'NN', lemma:'woman', sem:'CON', wordnet:'woman.n.01'])),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/(s:ng\np),
+    t((s:dcl\np)/(s:ng\np), 'is', [from:10, to:12, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+    t((s\np)\(s\np), 'not', [from:13, to:16, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+   fa(s:ng\np,
+    fa((s:ng\np)/np,
+     t(((s:ng\np)/np)/pr, 'picking', [from:17, to:24, pos:'VBG', lemma:'pick~up', sem:'EXG', wordnet:'pick_up.v.01', verbnet:['Theme','Agent']]),
+     t(pr, 'up', [from:25, to:27, pos:'RP', lemma:'up', sem:'REL', wordnet:'O'])),
+    fa(np,
+     t(np/n, 'a', [from:28, to:29, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+     fa(n,
+      t(n/n, 'baby', [from:30, to:34, pos:'NN', lemma:'baby', sem:'CON', wordnet:'baby.n.06', verbnet:['Theme']]),
+      t(n, 'kangaroo', [from:35, to:43, pos:'NN', lemma:'kangaroo', sem:'CON', wordnet:'kangaroo.n.01']))))))).
+

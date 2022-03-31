@@ -1,0 +1,19 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Ted', [from:0, to:3, pos:'NNP', lemma:'ted', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'loves', [from:4, to:9, pos:'VBZ', lemma:'love', sem:'ENS', wordnet:'love.v.03', verbnet:['Stimulus','Experiencer']]),
+   fa(np,
+    t(np/(n/pp), 'his', [antecedent:'0,3', from:10, to:13, pos:'PRP$', lemma:'male', sem:'HAS', wordnet:'male.n.02', verbnet:['Of']]),
+    bxc(n/pp,
+     t(n/pp, 'wife', [from:14, to:18, pos:'NN', lemma:'wife', sem:'ROL', wordnet:'wife.n.01']),
+     rp(n\n,
+      t(n\n, 'Elizabeth', [from:19, to:28, pos:'NNP', lemma:'elizabeth', sem:'PER', wordnet:'female.n.02', verbnet:['Equal']]),
+      t(., '.', [from:28, to:29, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

@@ -1,0 +1,30 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/(s:b\np),
+    t((s:dcl\np)/(s:b\np), 'ca', [from:2, to:4, pos:'MD', lemma:'can', sem:'POS', wordnet:'O']),
+    t((s\np)\(s\np), 'n\'t', [from:4, to:7, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+   ba(s:b\np,
+    fa(s:b\np,
+     t((s:b\np)/(s:to\np), 'afford', [from:8, to:14, pos:'VB', lemma:'afford', sem:'EXS', wordnet:'afford.v.03', verbnet:['Theme','Agent']]),
+     fa(s:to\np,
+      t((s:to\np)/(s:b\np), 'to', [from:15, to:17, pos:'TO', lemma:'to', sem:'NIL', wordnet:'O']),
+      fa(s:b\np,
+       t((s:b\np)/np, 'buy', [from:18, to:21, pos:'VB', lemma:'buy', sem:'EXS', wordnet:'buy.v.01', verbnet:['Theme','Agent']]),
+       fa(np,
+        t(np/n, 'a', [from:22, to:23, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+        t(n, 'laptop', [from:24, to:30, pos:'NN', lemma:'laptop', sem:'CON', wordnet:'laptop.n.01']))))),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/np, 'for', [from:31, to:34, pos:'IN', lemma:'for', sem:'REL', wordnet:'O', verbnet:['Beneficiary']]),
+     rp(np,
+      fa(np,
+       t(np/(n/pp), 'my', [from:35, to:37, pos:'PRP$', lemma:'speaker', sem:'HAS', wordnet:'O', verbnet:['Of']]),
+       t(n/pp, 'son', [from:38, to:41, pos:'NN', lemma:'son', sem:'ROL', wordnet:'son.n.01'])),
+      t(., '.', [from:41, to:42, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

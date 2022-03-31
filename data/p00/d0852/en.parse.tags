@@ -1,0 +1,23 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:dcl,
+  ba(s:dcl,
+   lx(np, n,
+    t(n, 'Oil', [from:0, to:3, pos:'NN', lemma:'oil', sem:'CON', wordnet:'oil.n.03'])),
+   ba(s:dcl\np,
+    fa(s:dcl\np,
+     t((s:dcl\np)/(s:pt\np), 'has', [from:4, to:7, pos:'VBZ', lemma:'have', sem:'NOW', wordnet:'O']),
+     fa(s:pt\np,
+      t((s:pt\np)/(s:pss\np), 'been', [from:8, to:12, pos:'VBN', lemma:'be', sem:'PFT', wordnet:'O']),
+      t(s:pss\np, 'discovered', [from:13, to:23, pos:'VBN', lemma:'discover', sem:'EXS', wordnet:'discover.v.03', verbnet:['Theme']]))),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/np, 'under', [from:24, to:29, pos:'IN', lemma:'under', sem:'REL', wordnet:'O', verbnet:['Location']]),
+     fa(np,
+      t(np/n, 'the', [from:30, to:33, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'North~Sea', [antecedent:0, from:34, to:43, pos:'NNP', lemma:'north~sea', sem:'GEO', wordnet:'sea.n.01']))))),
+  t(., '.', [from:43, to:44, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+

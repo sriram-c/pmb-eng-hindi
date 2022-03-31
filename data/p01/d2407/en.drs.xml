@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- He comes from ø France . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">He</tag>
+     <tag type="cat">np</tag>
+     <tag type="sym">male</tag>
+     <tag type="lemma">male</tag>
+     <tag type="from">0</tag>
+     <tag type="to">2</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="sem">PRO</tag>
+     <tag type="wordnet">male.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="tok">comes</tag>
+     <tag type="cat">(s:dcl\np)/pp</tag>
+     <tag type="sym">come</tag>
+     <tag type="lemma">come</tag>
+     <tag type="from">3</tag>
+     <tag type="to">8</tag>
+     <tag type="pos">VBZ</tag>
+     <tag type="sem">ENS</tag>
+     <tag type="wordnet">come.v.08</tag>
+     <tag type="verbnet" n="1">[Theme]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="tok">from</tag>
+     <tag type="cat">pp/np</tag>
+     <tag type="sym">from</tag>
+     <tag type="lemma">from</tag>
+     <tag type="from">9</tag>
+     <tag type="to">13</tag>
+     <tag type="pos">IN</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Source]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="from">14</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">France</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">france</tag>
+     <tag type="lemma">france</tag>
+     <tag type="from">14</tag>
+     <tag type="to">20</tag>
+     <tag type="pos">NNP</tag>
+     <tag type="sem">GPE</tag>
+     <tag type="wordnet">country.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">20</tag>
+     <tag type="to">21</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b2">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="2"></dr>
+   <dr label="b2" name="e1" from="3" to="8"></dr>
+   <dr label="b3" name="x2" from="14" to="-1"></dr>
+   <dr label="b2" name="t1" from="3" to="8"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="male" synset="male.n.02" from="0" to="2"></pred>
+   </cond>
+   <cond label="b2">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="3" to="8"></pred>
+   </cond>
+   <cond label="b2">
+    <comp symbol="EQU" arg1="t1" arg2="now" from="3" to="8"></comp>
+   </cond>
+   <cond label="b2">
+    <pred arg="e1" symbol="come" synset="come.v.08" from="3" to="8"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="3" to="8"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x2" symbol="Source" framenet="Cure@Patient" from="9" to="13"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x1" symbol="Theme" framenet="Coming_to_be@Entity" from="3" to="8"></rel>
+   </cond>
+   <cond label="b3">
+    <pred arg="x2" symbol="country" synset="country.n.02" from="14" to="20"></pred>
+   </cond>
+   <cond label="b3">
+    <named arg="x2" symbol="france" from="14" to="20"></named>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

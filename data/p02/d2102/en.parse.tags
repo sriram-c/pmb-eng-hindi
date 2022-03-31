@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'It', [from:0, to:2, pos:'PRP', lemma:'entity', sem:'PRO', wordnet:'entity.n.01']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:pss\np), '\'s', [from:2, to:4, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+   ba(s:pss\np,
+    t(s:pss\np, 'hidden', [from:5, to:11, pos:'VBN', lemma:'hide', sem:'EXS', wordnet:'hide.v.01', verbnet:['Patient']]),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/np, 'under', [from:12, to:17, pos:'IN', lemma:'under', sem:'REL', wordnet:'O', verbnet:['Location']]),
+     rp(np,
+      fa(np,
+       t(np/n, 'the', [from:18, to:21, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+       t(n, 'bed', [from:22, to:25, pos:'NN', lemma:'bed', sem:'CON', wordnet:'bed.n.01'])),
+      t(., '.', [from:25, to:26, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

@@ -1,0 +1,26 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Man', [from:0, to:3, pos:'NN', lemma:'man', sem:'CON', wordnet:'man.n.11'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:pt\np), 'has', [from:4, to:7, pos:'VBZ', lemma:'have', sem:'NOW', wordnet:'O']),
+   fa(s:pt\np,
+    t((s:pt\np)/(s:ng\np), 'been', [from:8, to:12, pos:'VBN', lemma:'be', sem:'PFT', wordnet:'O']),
+    fa(s:ng\np,
+     t((s:ng\np)/pp, 'writing', [from:13, to:20, pos:'VBG', lemma:'write', sem:'EXG', wordnet:'write.v.02', verbnet:['Agent']]),
+     fa(pp,
+      t(pp/np, 'for', [from:21, to:24, pos:'IN', lemma:'for', sem:'REL', wordnet:'O', verbnet:['Duration']]),
+      rp(np,
+       lx(np, n,
+        fa(n,
+         fa(n/n,
+          t((n/n)/(n/n), 'about', [from:25, to:30, pos:'IN', lemma:'about', sem:'APX', wordnet:'O']),
+          t(n/n, '6000', [from:31, to:35, pos:'CD', lemma:'6000', sem:'QUC', wordnet:'O', verbnet:['Equal']])),
+         t(n, 'years', [from:36, to:41, pos:'NNS', lemma:'year', sem:'UOM', wordnet:'O']))),
+       t(., '.', [from:41, to:42, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))))).
+

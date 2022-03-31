@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- which singer do you like ? --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="tok">which</tag>
+     <tag type="cat">(s:wq/(s:q/np))/n</tag>
+     <tag type="sym">entity</tag>
+     <tag type="lemma">entity</tag>
+     <tag type="from">0</tag>
+     <tag type="to">5</tag>
+     <tag type="pos">WDT</tag>
+     <tag type="sem">QUE</tag>
+     <tag type="wordnet">entity.n.01</tag>
+     <tag type="verbnet" n="1">[Name]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">singer</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">singer</tag>
+     <tag type="lemma">singer</tag>
+     <tag type="from">6</tag>
+     <tag type="to">12</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">ROL</tag>
+     <tag type="wordnet">singer.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">do</tag>
+     <tag type="cat">(s:q/(s:b\np))/np</tag>
+     <tag type="sym">do</tag>
+     <tag type="lemma">do</tag>
+     <tag type="from">13</tag>
+     <tag type="to">15</tag>
+     <tag type="pos">VBP</tag>
+     <tag type="sem">NOW</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">you</tag>
+     <tag type="cat">np</tag>
+     <tag type="sym">hearer</tag>
+     <tag type="lemma">hearer</tag>
+     <tag type="from">16</tag>
+     <tag type="to">19</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="sem">PRO</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="tok">like</tag>
+     <tag type="cat">(s:b\np)/np</tag>
+     <tag type="sym">like</tag>
+     <tag type="lemma">like</tag>
+     <tag type="from">20</tag>
+     <tag type="to">24</tag>
+     <tag type="pos">VB</tag>
+     <tag type="sem">EXS</tag>
+     <tag type="wordnet">like.v.03</tag>
+     <tag type="verbnet" n="2">[Stimulus,Experiencer]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">?</tag>
+     <tag type="cat">s:wq\s:wq</tag>
+     <tag type="sym">?</tag>
+     <tag type="lemma">?</tag>
+     <tag type="from">24</tag>
+     <tag type="to">25</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">QUE</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b1">
+  <domain>
+   <dr label="b1" name="x1" from="16" to="19"></dr>
+   <dr label="b1" name="x2" from="0" to="5"></dr>
+   <dr label="b1" name="x3" from="6" to="12"></dr>
+   <dr label="b1" name="e1" from="20" to="24"></dr>
+   <dr label="b1" name="t1" from="13" to="15"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x2" symbol="person" synset="person.n.01" from="6" to="12"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x2" arg2="x3" symbol="Role" framenet="Role" from="6" to="12"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x2" arg2="?" symbol="Name" framenet="Name" from="0" to="5"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="x3" symbol="singer" synset="singer.n.01" from="6" to="12"></pred>
+   </cond>
+   <cond label="b1">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="13" to="15"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="EQU" arg1="t1" arg2="now" from="13" to="15"></comp>
+   </cond>
+   <cond label="b1">
+    <pred arg="e1" symbol="like" synset="like.v.03" from="20" to="24"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="13" to="15"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x2" symbol="Stimulus" framenet="Feeling@Emotion" from="20" to="24"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x1" symbol="Experiencer" framenet="Feeling@Experiencer" from="20" to="24"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="x1" symbol="person" synset="person.n.01" from="16" to="19"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="EQU" arg1="x1" arg2="hearer" from="16" to="19"></comp>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

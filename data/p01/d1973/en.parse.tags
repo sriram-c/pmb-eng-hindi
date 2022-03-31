@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:wq,
+  t(s:wq/(s:q/np), 'Who', [from:0, to:3, pos:'WP', lemma:'person', sem:'QUE', wordnet:'person.n.01', verbnet:['Name']]),
+  fc(s:q/np,
+   fa(s:q/(s:b\np),
+    t((s:q/(s:b\np))/np, 'did', [from:4, to:7, pos:'VBD', lemma:'do', sem:'PST', wordnet:'O']),
+    t(np, 'you', [from:8, to:11, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O'])),
+   fc((s:b\np)/np,
+    t((s:b\np)/pp, 'vote', [from:12, to:16, pos:'VB', lemma:'vote', sem:'EXS', wordnet:'vote.v.01', verbnet:['Agent']]),
+    rp(pp/np,
+     t(pp/np, 'for', [from:17, to:20, pos:'IN', lemma:'for', sem:'REL', wordnet:'O', verbnet:['Theme']]),
+     t(., '?', [from:20, to:21, pos:'.', lemma:'?', sem:'QUE', wordnet:'O'])))))).
+

@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/np, 'saw', [from:2, to:5, pos:'VBD', lemma:'see', sem:'EPS', wordnet:'see.v.08', verbnet:['Co-Agent','Agent']]),
+    t(np, 'him', [from:6, to:9, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02'])),
+   ba((s\np)\(s\np),
+    lx(np, n,
+     fa(n,
+      t(n/n, 'three', [from:10, to:15, pos:'CD', lemma:'3', sem:'QUC', wordnet:'O', verbnet:['Quantity']]),
+      t(n, 'years', [from:16, to:21, pos:'NNS', lemma:'year', sem:'UOM', wordnet:'year.n.01']))),
+    rp(((s\np)\(s\np))\np,
+     t(((s\np)\(s\np))\np, 'ago', [from:22, to:25, pos:'RB', lemma:'ago', sem:'PST', wordnet:'O']),
+     t(., '.', [from:25, to:26, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

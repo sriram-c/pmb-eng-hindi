@@ -1,0 +1,19 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Daisuke', [from:0, to:7, pos:'NNP', lemma:'daisuke', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/pp, 'climbed', [from:8, to:15, pos:'VBD', lemma:'climb', sem:'EPS', wordnet:'climb.v.01', verbnet:['Theme']]),
+   fa(pp,
+    t(pp/np, 'to', [from:16, to:18, pos:'TO', lemma:'to', sem:'REL', wordnet:'O', verbnet:['Destination']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:19, to:22, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'summit', [from:23, to:29, pos:'NN', lemma:'summit', sem:'CON', wordnet:'summit.n.02'])),
+     t(., '.', [from:29, to:30, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- I am spreading ø mustard on a slice of ø bread . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">I</tag>
+     <tag type="cat">np</tag>
+     <tag type="sym">speaker</tag>
+     <tag type="lemma">speaker</tag>
+     <tag type="from">0</tag>
+     <tag type="to">1</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="sem">PRO</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">am</tag>
+     <tag type="cat">(s:dcl\np)/(s:ng\np)</tag>
+     <tag type="sym">be</tag>
+     <tag type="lemma">be</tag>
+     <tag type="from">2</tag>
+     <tag type="to">4</tag>
+     <tag type="pos">VBP</tag>
+     <tag type="sem">NOW</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="tok">spreading</tag>
+     <tag type="cat">(s:ng\np)/np</tag>
+     <tag type="sym">spread</tag>
+     <tag type="lemma">spread</tag>
+     <tag type="from">5</tag>
+     <tag type="to">14</tag>
+     <tag type="pos">VBG</tag>
+     <tag type="sem">EXG</tag>
+     <tag type="wordnet">spread.v.10</tag>
+     <tag type="verbnet" n="2">[Theme,Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="from">15</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">mustard</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">mustard</tag>
+     <tag type="lemma">mustard</tag>
+     <tag type="from">15</tag>
+     <tag type="to">22</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">mustard.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="tok">on</tag>
+     <tag type="cat">((s:dcl\np)\(s:dcl\np))/np</tag>
+     <tag type="sym">on</tag>
+     <tag type="lemma">on</tag>
+     <tag type="from">23</tag>
+     <tag type="to">25</tag>
+     <tag type="pos">IN</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Destination]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">a</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">a</tag>
+     <tag type="lemma">a</tag>
+     <tag type="from">26</tag>
+     <tag type="to">27</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">slice</tag>
+     <tag type="cat">n/pp</tag>
+     <tag type="sym">slice</tag>
+     <tag type="lemma">slice</tag>
+     <tag type="from">28</tag>
+     <tag type="to">33</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">slice.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1009">
+   <tags>
+     <tag type="tok">of</tag>
+     <tag type="cat">pp/np</tag>
+     <tag type="sym">of</tag>
+     <tag type="lemma">of</tag>
+     <tag type="from">34</tag>
+     <tag type="to">36</tag>
+     <tag type="pos">IN</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[PartOf]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1010">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="from">37</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1011">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">bread</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">bread</tag>
+     <tag type="lemma">bread</tag>
+     <tag type="from">37</tag>
+     <tag type="to">42</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">bread.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1012">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">42</tag>
+     <tag type="to">43</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b1">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="1"></dr>
+   <dr label="b1" name="x2" from="15" to="-1"></dr>
+   <dr label="b1" name="e1" from="5" to="14"></dr>
+   <dr label="b1" name="t1" from="2" to="4"></dr>
+   <dr label="b1" name="x3" from="26" to="27"></dr>
+   <dr label="b1" name="x4" from="37" to="-1"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="person" synset="person.n.01" from="0" to="1"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="EQU" arg1="x1" arg2="speaker" from="0" to="1"></comp>
+   </cond>
+   <cond label="b1">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="2" to="4"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="EQU" arg1="t1" arg2="now" from="2" to="4"></comp>
+   </cond>
+   <cond label="b1">
+    <pred arg="e1" symbol="spread" synset="spread.v.10" from="5" to="14"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x3" symbol="Destination" framenet="Fluidic_motion@Goal" from="23" to="25"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="2" to="4"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x2" symbol="Theme" framenet="Coming_to_be@Entity" from="5" to="14"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x1" symbol="Agent" framenet="Statement@Speaker" from="5" to="14"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="x2" symbol="mustard" synset="mustard.n.02" from="15" to="22"></pred>
+   </cond>
+   <cond label="b1">
+    <pred arg="x3" symbol="slice" synset="slice.n.02" from="28" to="33"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x3" arg2="x4" symbol="PartOf" framenet="PartOf" from="34" to="36"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="x4" symbol="bread" synset="bread.n.01" from="37" to="42"></pred>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

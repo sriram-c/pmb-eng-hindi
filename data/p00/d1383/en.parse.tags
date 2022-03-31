@@ -1,0 +1,25 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:wq,
+  fa(s:wq/(s:dcl/np),
+   t((s:wq/(s:dcl/np))/n, 'What', [from:0, to:4, pos:'WP', lemma:'entity', sem:'QUE', wordnet:'entity.n.01', verbnet:['Name']]),
+   t(n, 'roller~coaster', [from:5, to:19, pos:'NN', lemma:'roller~coaster', sem:'CON', wordnet:'roller_coaster.n.02'])),
+  bxc(s:X/np,
+   t((s:dcl\np)/np, 'is', [from:20, to:22, pos:'VBZ', lemma:'be', sem:'ENS', wordnet:'be.v.02', verbnet:['Co-Theme','Theme']]),
+   fxc(s:X\(s\np),
+    lx(s:X/(s:X\np), np,
+     fa(np,
+      t(np/n, 'the', [from:23, to:26, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'fastest', [from:27, to:34, pos:'JJS', lemma:'fast', sem:'TOP', wordnet:'fast.a.01']))),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/np, 'in', [from:35, to:37, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Location']]),
+     rp(np,
+      fa(np,
+       t(np/n, 'the', [from:38, to:41, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+       t(n, 'world', [from:42, to:47, pos:'NN', lemma:'world', sem:'CON', wordnet:'world.n.04'])),
+      t(., '?', [from:47, to:48, pos:'.', lemma:'?', sem:'QUE', wordnet:'O']))))))).
+

@@ -1,0 +1,17 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'She', [from:0, to:3, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'has', [from:4, to:7, pos:'VBZ', lemma:'have', sem:'ENS', wordnet:'have.v.02', verbnet:['Theme','Pivot']]),
+   rp(np,
+    lx(np, n,
+     fa(n,
+      t(n/n, 'fake', [from:8, to:12, pos:'JJ', lemma:'fake', sem:'IST', wordnet:'fake.a.02', verbnet:['Similar']]),
+      t(n, 'eyelashes', [from:13, to:22, pos:'NNS', lemma:'eyelash', sem:'CON', wordnet:'eyelash.n.01']))),
+    t(., '.', [from:22, to:23, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

@@ -1,0 +1,19 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Terrorists', [from:0, to:10, pos:'NNS', lemma:'terrorist', sem:'ROL', wordnet:'terrorist.n.01'])),
+  fa(s:dcl\np,
+   fa((s:dcl\np)/np,
+    t(((s:dcl\np)/np)/pr, 'blew', [from:11, to:15, pos:'VBD', lemma:'blow~up', sem:'EPS', wordnet:'blow_up.v.01', verbnet:['Patient','Agent']]),
+    t(pr, 'up', [from:16, to:18, pos:'RP', lemma:'up', sem:'REL', wordnet:'O'])),
+   rp(np,
+    fa(np,
+     t(np/n, 'a', [from:19, to:20, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+     t(n, 'bus', [from:21, to:24, pos:'NN', lemma:'bus', sem:'CON', wordnet:'bus.n.01'])),
+    t(., '.', [from:24, to:25, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

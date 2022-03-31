@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Heather', [from:0, to:7, pos:'NNP', lemma:'heather', sem:'PER', wordnet:'female.n.02'])),
+  rp(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/np, 'is', [from:8, to:10, pos:'VBZ', lemma:'be', sem:'ENS', wordnet:'be.v.01', verbnet:['Co-Theme','Theme']]),
+    fa(np,
+     t(np/n, 'a', [from:11, to:12, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+     fa(n,
+      fa(n/n,
+       t((n/n)/(s:adj\np), 'very', [from:13, to:17, pos:'RB', lemma:'very', sem:'INT', wordnet:'very.r.01']),
+       t(s:adj\np, 'beautiful', [from:18, to:27, pos:'JJ', lemma:'beautiful', sem:'IST', wordnet:'beautiful.a.01', verbnet:['Attribute']])),
+      t(n, 'girl', [from:28, to:32, pos:'NN', lemma:'girl', sem:'CON', wordnet:'girl.n.01'])))),
+   t(., '.', [from:32, to:33, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+

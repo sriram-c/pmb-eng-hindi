@@ -1,0 +1,28 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   fa(n,
+    t(n/n, 'Mr', [from:0, to:2, pos:'NNP', lemma:'mr', sem:'ROL', wordnet:'mr.n.01', verbnet:['Title']]),
+    t(n, 'Jenninger', [from:3, to:12, pos:'NNP', lemma:'jenninger', sem:'PER', wordnet:'male.n.02']))),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:b\np), 'will', [from:13, to:17, pos:'MD', lemma:'will', sem:'FUT', wordnet:'O']),
+    fa(s:b\np,
+     t((s:b\np)/np, 'take', [from:18, to:22, pos:'VB', lemma:'take', sem:'EXS', wordnet:'take.v.22', verbnet:['Location','Theme']]),
+     fa(np,
+      t(np/n, 'the', [from:23, to:26, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'witness~stand', [from:27, to:40, pos:'NN', lemma:'witness~stand', sem:'CON', wordnet:'witness_stand.n.01'])))),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'on', [from:41, to:43, pos:'IN', lemma:'on', sem:'REL', wordnet:'O', verbnet:['Time']]),
+    rp(np,
+     lx(np, n,
+      fa(n,
+       t(n/n, '13', [from:44, to:46, pos:'CD', lemma:'13', sem:'DOM', wordnet:'O', verbnet:['Equal']]),
+       t(n, 'May', [from:47, to:50, pos:'NNP', lemma:'may', sem:'MOY', wordnet:'O']))),
+     t(., '.', [from:50, to:51, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

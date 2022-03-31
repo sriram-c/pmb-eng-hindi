@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- ø Beethoven wrote ø nine symphonies . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="from">0</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">Beethoven</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">beethoven</tag>
+     <tag type="lemma">beethoven</tag>
+     <tag type="from">0</tag>
+     <tag type="to">9</tag>
+     <tag type="pos">NNP</tag>
+     <tag type="sem">PER</tag>
+     <tag type="wordnet">male.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="tok">wrote</tag>
+     <tag type="cat">(s:dcl\np)/np</tag>
+     <tag type="sym">write</tag>
+     <tag type="lemma">write</tag>
+     <tag type="from">10</tag>
+     <tag type="to">15</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="sem">EPS</tag>
+     <tag type="wordnet">write.v.06</tag>
+     <tag type="verbnet" n="2">[Result,Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="from">16</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="tok">nine</tag>
+     <tag type="cat">n/n</tag>
+     <tag type="sym">9</tag>
+     <tag type="lemma">9</tag>
+     <tag type="from">16</tag>
+     <tag type="to">20</tag>
+     <tag type="pos">CD</tag>
+     <tag type="sem">QUC</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Quantity]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">symphonies</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">symphony</tag>
+     <tag type="lemma">symphony</tag>
+     <tag type="from">21</tag>
+     <tag type="to">31</tag>
+     <tag type="pos">NNS</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">symphony.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">31</tag>
+     <tag type="to">32</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b2">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="-1"></dr>
+   <dr label="b2" name="x2" from="16" to="-1"></dr>
+   <dr label="b2" name="e1" from="10" to="15"></dr>
+   <dr label="b2" name="t1" from="10" to="15"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="male" synset="male.n.02" from="0" to="9"></pred>
+   </cond>
+   <cond label="b1">
+    <named arg="x1" symbol="beethoven" from="0" to="9"></named>
+   </cond>
+   <cond label="b2">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="10" to="15"></pred>
+   </cond>
+   <cond label="b2">
+    <comp symbol="TPR" arg1="t1" arg2="now" from="10" to="15"></comp>
+   </cond>
+   <cond label="b2">
+    <pred arg="e1" symbol="write" synset="write.v.06" from="10" to="15"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="10" to="15"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x2" symbol="Result" framenet="Achieving_first@New_idea" from="10" to="15"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x1" symbol="Agent" framenet="Achieving_first@Cognizer" from="10" to="15"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="x2" symbol="symphony" synset="symphony.n.01" from="21" to="31"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="x2" arg2="9" symbol="Quantity" framenet="Quantity" from="16" to="20"></rel>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

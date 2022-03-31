@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/(n/pp), 'My', [from:0, to:2, pos:'PRP$', lemma:'speaker', sem:'HAS', wordnet:'O', verbnet:['Of']]),
+   t(n/pp, 'mother', [from:3, to:9, pos:'NN', lemma:'mother', sem:'ROL', wordnet:'mother.n.01'])),
+  fa(s:dcl\np,
+   fa((s:dcl\np)/np,
+    t(((s:dcl\np)/np)/np, 'made', [from:10, to:14, pos:'VBD', lemma:'make', sem:'EPS', wordnet:'make.v.06', verbnet:['Beneficiary','Product','Agent']]),
+    t(np, 'me', [from:15, to:17, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O'])),
+   rp(np,
+    fa(np,
+     t(np/n, 'a', [from:18, to:19, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+     t(n, 'sweater', [from:20, to:27, pos:'NN', lemma:'sweater', sem:'CON', wordnet:'sweater.n.01'])),
+    t(., '.', [from:27, to:28, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

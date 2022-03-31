@@ -1,0 +1,17 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(s:dcl,
+   fa(s:dcl/(s:dcl/(s:adj\np)),
+    t((s:dcl/(s:dcl/(s:adj\np)))/(s:adj\np), 'How', [from:0, to:3, pos:'WRB', lemma:'how', sem:'EMP', wordnet:'O']),
+    t(s:adj\np, 'slow', [from:4, to:8, pos:'JJ', lemma:'slow', sem:'IST', wordnet:'slow.a.03', verbnet:['Attribute']])),
+   fc(s:dcl/(s:adj\np),
+    lx(s:X/(s:X\np), np,
+     t(np, 'you', [from:9, to:12, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O'])),
+    t((s:dcl\np)/(s:adj\np), 'are', [from:13, to:16, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']))),
+  t(s:dcl\s:dcl, '!', [from:16, to:17, pos:'.', lemma:'!', sem:'EMP', wordnet:'O']))).
+

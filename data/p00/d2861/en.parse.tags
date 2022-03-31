@@ -1,0 +1,26 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'This', [from:0, to:4, pos:'DT', lemma:'entity', sem:'PRX', wordnet:'entity.n.01']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'is', [from:5, to:7, pos:'VBZ', lemma:'be', sem:'ENS', wordnet:'be.v.02', verbnet:['Co-Theme','Theme']]),
+   fa(np,
+    t(np/n, 'a', [from:8, to:9, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+    fa(n,
+     t(n/pp, 'map', [from:10, to:13, pos:'NN', lemma:'map', sem:'CON', wordnet:'map.n.01']),
+     fa(pp,
+      t(pp/np, 'of', [from:14, to:16, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['Content']]),
+      fa(np,
+       t(np/n, 'the', [from:17, to:20, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+       fa(n,
+        t(n/pp, 'city', [from:21, to:25, pos:'NN', lemma:'city', sem:'CON', wordnet:'city.n.01']),
+        rp(pp,
+         fa(pp,
+          t(pp/n, 'of', [from:26, to:28, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['Equal']]),
+          t(n, 'Sendai', [from:29, to:35, pos:'NNP', lemma:'sendai', sem:'GPE', wordnet:'city.n.01'])),
+         t(., '.', [from:35, to:36, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))))))).
+

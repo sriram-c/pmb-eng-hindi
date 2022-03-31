@@ -1,0 +1,32 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:dcl,
+  fa(s/s,
+   t((s/s)/s:dcl, 'If', [from:0, to:2, pos:'IN', lemma:'if', sem:'SUB', wordnet:'O']),
+   ba(s:dcl,
+    ba(s:dcl,
+     fa(np,
+      t(np/n, 'the', [from:3, to:6, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'text', [from:7, to:11, pos:'NN', lemma:'text', sem:'CON', wordnet:'text.n.01'])),
+     fa(s:dcl\np,
+      bxc((s:dcl\np)/(s:b\np),
+       t((s:dcl\np)/(s:b\np), 'does', [from:12, to:16, pos:'VBZ', lemma:'do', sem:'NOW', wordnet:'O']),
+       t((s\np)\(s\np), 'n\'t', [from:16, to:19, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+      fa(s:b\np,
+       t((s:b\np)/pr, 'make', [from:20, to:24, pos:'VB', lemma:'make~sense', sem:'EXS', wordnet:'make_sense.v.01', verbnet:['Theme']]),
+       t(pr, 'sense', [from:25, to:30, pos:'NN', lemma:'sense', sem:'NIL', wordnet:'O'])))),
+    t(s\s, ',', [from:30, to:31, pos:',', lemma:',', sem:'NIL', wordnet:'O']))),
+  ba(s:dcl,
+   t(np, 'it', [antecedent:'7,11', from:32, to:34, pos:'PRP', lemma:'entity', sem:'PRO', wordnet:'entity.n.01']),
+   fa(s:dcl\np,
+    bxc((s:dcl\np)/(s:adj\np),
+     t((s:dcl\np)/(s:adj\np), 'is', [from:35, to:37, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+     t((s\np)\(s\np), 'n\'t', [from:37, to:40, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+    rp(s:adj\np,
+     t(s:adj\np, 'coherent', [from:41, to:49, pos:'JJ', lemma:'coherent', sem:'IST', wordnet:'coherent.a.01', verbnet:['Attribute']]),
+     t(., '.', [from:49, to:50, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

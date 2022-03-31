@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'She', [from:0, to:3, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02']),
+  fa(s:dcl\np,
+   fa((s:dcl\np)/pp,
+    t(((s:dcl\np)/pp)/np, 'dropped', [from:4, to:11, pos:'VBD', lemma:'drop', sem:'EPS', wordnet:'drop.v.02', verbnet:['Theme','Agent']]),
+    lx(np, n,
+     t(n, 'lemon~juice', [from:12, to:23, pos:'NN', lemma:'lemon~juice', sem:'CON', wordnet:'lemon_juice.n.01']))),
+   fa(pp,
+    t(pp/np, 'into', [from:24, to:28, pos:'IN', lemma:'into', sem:'REL', wordnet:'O', verbnet:['Destination']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'her', [from:29, to:32, pos:'PRP$', lemma:'female', sem:'HAS', wordnet:'female.n.02', verbnet:['User']]),
+      t(n, 'tea', [from:33, to:36, pos:'NN', lemma:'tea', sem:'CON', wordnet:'tea.n.01'])),
+     t(., '.', [from:36, to:37, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

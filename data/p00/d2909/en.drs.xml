@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- She acknowledged her mistake . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">She</tag>
+     <tag type="cat">np</tag>
+     <tag type="sym">female</tag>
+     <tag type="lemma">female</tag>
+     <tag type="from">0</tag>
+     <tag type="to">3</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="sem">PRO</tag>
+     <tag type="wordnet">female.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="tok">acknowledged</tag>
+     <tag type="cat">(s:dcl\np)/np</tag>
+     <tag type="sym">acknowledge</tag>
+     <tag type="lemma">acknowledge</tag>
+     <tag type="from">4</tag>
+     <tag type="to">16</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="sem">EPS</tag>
+     <tag type="wordnet">acknowledge.v.01</tag>
+     <tag type="verbnet" n="2">[Topic,Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="tok">her</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">female</tag>
+     <tag type="lemma">female</tag>
+     <tag type="from">17</tag>
+     <tag type="to">20</tag>
+     <tag type="pos">PRP$</tag>
+     <tag type="sem">HAS</tag>
+     <tag type="wordnet">female.n.02</tag>
+     <tag type="verbnet" n="1">[Creator]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">mistake</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">mistake</tag>
+     <tag type="lemma">mistake</tag>
+     <tag type="from">21</tag>
+     <tag type="to">28</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">mistake.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">28</tag>
+     <tag type="to">29</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b3">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="0"></dr>
+   <dr label="b2" name="x2" from="17" to="20"></dr>
+   <dr label="b3" name="e1" from="4" to="16"></dr>
+   <dr label="b3" name="t1" from="4" to="16"></dr>
+  </domain>
+  <conds>
+   <cond label="b3">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="4" to="16"></pred>
+   </cond>
+   <cond label="b3">
+    <comp symbol="TPR" arg1="t1" arg2="now" from="4" to="16"></comp>
+   </cond>
+   <cond label="b3">
+    <pred arg="e1" symbol="acknowledge" synset="acknowledge.v.01" from="4" to="16"></pred>
+   </cond>
+   <cond label="b3">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="4" to="16"></rel>
+   </cond>
+   <cond label="b3">
+    <rel arg1="e1" arg2="x2" symbol="Topic" framenet="Reasoning@Content" from="4" to="16"></rel>
+   </cond>
+   <cond label="b3">
+    <rel arg1="e1" arg2="x1" symbol="Agent" framenet="Categorization@Cognizer" from="4" to="16"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="x2" symbol="mistake" synset="mistake.n.01" from="21" to="28"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="x2" arg2="x1" symbol="Creator" framenet="Creator" from="17" to="20"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="x1" symbol="female" synset="female.n.02" from="0" to="0"></pred>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

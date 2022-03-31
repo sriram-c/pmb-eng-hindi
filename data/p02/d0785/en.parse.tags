@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Bill', [from:0, to:4, pos:'NNP', lemma:'bill', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), 'is', [from:5, to:7, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+   ba(s:adj\np,
+    lx(np, n,
+     fa(n,
+      t(n/n, 'two', [from:8, to:11, pos:'CD', lemma:'2', sem:'QUC', wordnet:'O', verbnet:['Quantity']]),
+      t(n, 'years', [from:12, to:17, pos:'NNS', lemma:'year', sem:'UOM', wordnet:'year.n.01']))),
+    fa((s:adj\np)\np,
+     t(((s:adj\np)\np)/pp, 'older', [from:18, to:23, pos:'JJR', lemma:'old', sem:'MOR', wordnet:'old.a.01', verbnet:['Value','Attribute']]),
+     rp(pp,
+      fa(pp,
+       t(pp/np, 'than', [from:24, to:28, pos:'IN', lemma:'than', sem:'REL', wordnet:'O', verbnet:['Co-Theme']]),
+       t(np, 'I', [from:29, to:30, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O'])),
+      t(., '.', [from:30, to:31, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

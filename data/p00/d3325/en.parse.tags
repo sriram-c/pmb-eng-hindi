@@ -1,0 +1,27 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   t((s\np)/(s\np), 'always', [from:2, to:8, pos:'RB', lemma:'time', sem:'AND', wordnet:'time.n.01']),
+   fa(s:dcl\np,
+    fa((s:dcl\np)/pp,
+     t(((s:dcl\np)/pp)/pr, 'get', [from:9, to:12, pos:'VB', lemma:'get~up', sem:'ENS', wordnet:'get_up.v.02', verbnet:['Agent']]),
+     t(pr, 'up', [from:13, to:15, pos:'RP', lemma:'up', sem:'REL', wordnet:'O'])),
+    fa(pp,
+     t(pp/np, 'at', [from:16, to:18, pos:'IN', lemma:'at', sem:'REL', wordnet:'O', verbnet:['Time']]),
+     lx(np, n,
+      fa(n,
+       t(n/pp, '6~o\'clock', [from:19, to:28, pos:'CD', lemma:'06:00', sem:'CLO', wordnet:'O']),
+       fa(pp,
+        t(pp/np, 'in', [from:29, to:31, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['PartOf']]),
+        rp(np,
+         fa(np,
+          t(np/n, 'the', [from:32, to:35, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+          t(n, 'morning', [from:36, to:43, pos:'NN', lemma:'morning', sem:'CON', wordnet:'morning.n.01'])),
+         t(., '.', [from:43, to:44, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))))))).
+

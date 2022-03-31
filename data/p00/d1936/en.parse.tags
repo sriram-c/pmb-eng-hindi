@@ -1,0 +1,27 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/(n/pp), 'My', [from:0, to:2, pos:'PRP$', lemma:'speaker', sem:'HAS', wordnet:'O', verbnet:['User']]),
+   t(n/pp, 'watch', [from:3, to:8, pos:'NN', lemma:'watch', sem:'CON', wordnet:'watch.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:b\np), 'may', [from:9, to:12, pos:'MD', lemma:'may', sem:'POS', wordnet:'O']),
+   fa(s:b\np,
+    t((s:b\np)/(s:adj\np), 'be', [from:13, to:15, pos:'VB', lemma:'be', sem:'NIL', wordnet:'O']),
+    ba(s:adj\np,
+     lx(np, n,
+      fa(n,
+       ba(n/n,
+        t(n/n, 'one', [from:16, to:19, pos:'CD', lemma:'1', sem:'QUC', wordnet:'O', verbnet:['Quantity']]),
+        conj((n/n)\(n/n),
+         t(conj, 'or', [from:20, to:22, pos:'CC', lemma:'or', sem:'DIS', wordnet:'O']),
+         t(n/n, 'two', [from:23, to:26, pos:'CD', lemma:'2', sem:'QUC', wordnet:'O', verbnet:['Quantity']]))),
+       t(n, 'minutes', [from:27, to:34, pos:'NNS', lemma:'minute', sem:'UOM', wordnet:'minute.n.01']))),
+     rp((s:adj\np)\np,
+      t((s:adj\np)\np, 'fast', [from:35, to:39, pos:'RB', lemma:'fast', sem:'IST', wordnet:'fast.a.02', verbnet:['Value','Theme']]),
+      t(., '.', [from:39, to:40, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

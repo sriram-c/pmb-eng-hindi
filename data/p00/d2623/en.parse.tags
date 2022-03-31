@@ -1,0 +1,23 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   fa((s:dcl\np)/pp,
+    t(((s:dcl\np)/pp)/np, 'lowered', [from:4, to:11, pos:'VBD', lemma:'lower', sem:'EPS', wordnet:'lower.v.01', verbnet:['Theme','Agent']]),
+    fa(np,
+     t(np/n, 'the', [from:12, to:15, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'bucket', [from:16, to:22, pos:'NN', lemma:'bucket', sem:'CON', wordnet:'bucket.n.01']))),
+   fa(pp,
+    t(pp/np, 'into', [from:23, to:27, pos:'IN', lemma:'into', sem:'REL', wordnet:'O', verbnet:['Destination']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:28, to:31, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'well', [from:32, to:36, pos:'RB', lemma:'well', sem:'CON', wordnet:'well.n.01'])),
+     t(., '.', [from:36, to:37, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

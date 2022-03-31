@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'wedding', [from:4, to:11, pos:'NN', lemma:'wedding', sem:'CON', wordnet:'wedding.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:b\np), 'will', [from:12, to:16, pos:'MD', lemma:'will', sem:'FUT', wordnet:'O']),
+   ba(s:b\np,
+    fa(s:b\np,
+     t((s:b\np)/np, 'take', [from:17, to:21, pos:'VB', lemma:'take~place', sem:'EXS', wordnet:'take_place.v.01', verbnet:['Equal','Theme']]),
+     lx(np, n,
+      t(n, 'place', [from:22, to:27, pos:'NN', lemma:'place', sem:'NIL', wordnet:'O']))),
+    rp((s\np)\(s\np),
+     fa((s\np)\(s\np),
+      t(((s\np)\(s\np))/np, 'on', [from:28, to:30, pos:'IN', lemma:'on', sem:'REL', wordnet:'O', verbnet:['Time']]),
+      lx(np, n,
+       t(n, 'Saturday', [from:31, to:39, pos:'NNP', lemma:'saturday', sem:'DOW', wordnet:'O']))),
+     t(., '.', [from:39, to:40, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

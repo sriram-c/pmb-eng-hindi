@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'She', [from:0, to:3, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02']),
+  ba(s:dcl\np,
+   t(s:dcl\np, 'showers', [from:4, to:11, pos:'VBZ', lemma:'shower', sem:'EXS', wordnet:'shower.v.03', verbnet:['Agent']]),
+   rp((s\np)\(s\np),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/n, 'every', [from:12, to:17, pos:'DT', lemma:'every', sem:'AND', wordnet:'O', verbnet:['Time']]),
+     t(n, 'morning', [from:18, to:25, pos:'NN', lemma:'morning', sem:'CON', wordnet:'morning.n.01'])),
+    t(., '.', [from:25, to:26, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

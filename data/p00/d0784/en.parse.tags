@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:dcl,
+  ba(s:dcl,
+   lx(np, n,
+    t(n, 'Bob', [from:0, to:3, pos:'NNP', lemma:'bob', sem:'PER', wordnet:'male.n.02'])),
+   ba(s:dcl\np,
+    fa(s:dcl\np,
+     t((s:dcl\np)/(s:adj\np), 'is', [from:4, to:6, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'be.v.01']),
+     t(s:adj\np, 'popular', [from:7, to:14, pos:'JJ', lemma:'popular', sem:'IST', wordnet:'popular.a.01', verbnet:['Stimulus']])),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/np, 'at', [from:15, to:17, pos:'IN', lemma:'at', sem:'REL', wordnet:'O', verbnet:['Context']]),
+     lx(np, n,
+      t(n, 'school', [from:18, to:24, pos:'NN', lemma:'school', sem:'CON', wordnet:'school.n.06']))))),
+  t(., '.', [from:24, to:25, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+

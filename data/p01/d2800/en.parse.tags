@@ -1,0 +1,29 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/np, 'diced', [from:4, to:9, pos:'VBD', lemma:'dice', sem:'EPS', wordnet:'dice.v.01', verbnet:['Patient','Agent']]),
+    fa(np,
+     t(np/n, 'the', [from:10, to:13, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'carrots', [from:14, to:21, pos:'NNS', lemma:'carrot', sem:'CON', wordnet:'carrot.n.01']))),
+   conj((s:dcl\np)\(s:dcl\np),
+    t(conj, 'and', [from:22, to:25, pos:'CC', lemma:'and', sem:'COO', wordnet:'O']),
+    fa(s:dcl\np,
+     fa((s:dcl\np)/pp,
+      t(((s:dcl\np)/pp)/np, 'added', [from:26, to:31, pos:'VBD', lemma:'add', sem:'EPS', wordnet:'add.v.01', verbnet:['Patient','Agent']]),
+      t(np, 'them', [antecedent:'14,21', from:32, to:36, pos:'PRP', lemma:'entity', sem:'PRO', wordnet:'entity.n.01'])),
+     fa(pp,
+      t(pp/np, 'to', [from:37, to:39, pos:'TO', lemma:'to', sem:'REL', wordnet:'O', verbnet:['Co-Patient']]),
+      rp(np,
+       fa(np,
+        t(np/n, 'the', [from:40, to:43, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+        t(n, 'stew', [from:44, to:48, pos:'NN', lemma:'stew', sem:'CON', wordnet:'stew.n.02'])),
+       t(., '.', [from:48, to:49, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))))).
+

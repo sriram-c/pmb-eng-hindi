@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/(n/pp), 'My', [from:0, to:2, pos:'PRP$', lemma:'speaker', sem:'HAS', wordnet:'O', verbnet:['User']]),
+   t(n/pp, 'bedroom', [from:3, to:10, pos:'NN', lemma:'bedroom', sem:'CON', wordnet:'bedroom.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:ng\np), 'is', [from:11, to:13, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+   fa(s:ng\np,
+    t((s:ng\np)/pp, 'crawling', [from:14, to:22, pos:'VBG', lemma:'crawl', sem:'EXG', wordnet:'crawl.v.03', verbnet:['Location']]),
+    fa(pp,
+     t(pp/np, 'with', [from:23, to:27, pos:'IN', lemma:'with', sem:'REL', wordnet:'O', verbnet:['Theme']]),
+     rp(np,
+      lx(np, n,
+       t(n, 'spiders', [from:28, to:35, pos:'NNS', lemma:'spider', sem:'CON', wordnet:'spider.n.01'])),
+      t(., '.', [from:35, to:36, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

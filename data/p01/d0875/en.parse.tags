@@ -1,0 +1,30 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:dcl,
+  fa(s:dcl,
+   fa(s/s,
+    t((s/s)/s:dcl, 'When', [from:0, to:4, pos:'WRB', lemma:'when', sem:'REL', wordnet:'O']),
+    ba(s:dcl,
+     t(np, 'I', [from:5, to:6, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+     fa(s:dcl\np,
+      t((s:dcl\np)/np, 'entered', [from:7, to:14, pos:'VBD', lemma:'enter', sem:'EPS', wordnet:'enter.v.01', verbnet:['Destination','Theme']]),
+      rp(np,
+       fa(np,
+        t(np/n, 'the', [from:15, to:18, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+        t(n, 'room', [from:19, to:23, pos:'NN', lemma:'room', sem:'CON', wordnet:'room.n.01'])),
+       t(,, ',', [from:23, to:24, pos:',', lemma:',', sem:'NIL', wordnet:'O']))))),
+   ba(s:dcl,
+    t(np, 'she', [from:25, to:28, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02']),
+    fa(s:dcl\np,
+     t((s:dcl\np)/(s:ng\np), 'was', [from:29, to:32, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+     fa(s:ng\np,
+      t((s:ng\np)/np, 'playing', [from:33, to:40, pos:'VBG', lemma:'play', sem:'EXG', wordnet:'play.v.03', verbnet:['Theme','Agent']]),
+      fa(np,
+       t(np/n, 'the', [from:41, to:44, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+       t(n, 'piano', [from:45, to:50, pos:'NN', lemma:'piano', sem:'CON', wordnet:'piano.n.01'])))))),
+  t(., '.', [from:50, to:51, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+

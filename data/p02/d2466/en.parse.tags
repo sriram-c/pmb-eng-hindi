@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'She', [from:0, to:3, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'divorced', [from:4, to:12, pos:'VBD', lemma:'divorce', sem:'EPS', wordnet:'divorce.v.02', verbnet:['Co-Agent','Agent']]),
+   rp(np,
+    fa(np,
+     t(np/(n/pp), 'her', [from:13, to:16, pos:'PRP$', lemma:'female', sem:'HAS', wordnet:'female.n.02', verbnet:['Of']]),
+     t(n/pp, 'husband', [from:17, to:24, pos:'NN', lemma:'husband', sem:'ROL', wordnet:'husband.n.01'])),
+    t(., '.', [from:24, to:25, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

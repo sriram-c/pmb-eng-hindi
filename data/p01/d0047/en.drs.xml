@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- The men are not climbing a mountain --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">The</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">the</tag>
+     <tag type="lemma">the</tag>
+     <tag type="from">0</tag>
+     <tag type="to">3</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">men</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">man</tag>
+     <tag type="lemma">man</tag>
+     <tag type="from">4</tag>
+     <tag type="to">7</tag>
+     <tag type="pos">NNS</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">man.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">are</tag>
+     <tag type="cat">(s:dcl\np)/(s:ng\np)</tag>
+     <tag type="sym">be</tag>
+     <tag type="lemma">be</tag>
+     <tag type="from">8</tag>
+     <tag type="to">11</tag>
+     <tag type="pos">VBP</tag>
+     <tag type="sem">NOW</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">not</tag>
+     <tag type="cat">(s:dcl\np)\(s:dcl\np)</tag>
+     <tag type="sym">not</tag>
+     <tag type="lemma">not</tag>
+     <tag type="from">12</tag>
+     <tag type="to">15</tag>
+     <tag type="pos">RB</tag>
+     <tag type="sem">NOT</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="tok">climbing</tag>
+     <tag type="cat">(s:ng\np)/np</tag>
+     <tag type="sym">climb</tag>
+     <tag type="lemma">climb</tag>
+     <tag type="from">16</tag>
+     <tag type="to">24</tag>
+     <tag type="pos">VBG</tag>
+     <tag type="sem">EXG</tag>
+     <tag type="wordnet">climb.v.01</tag>
+     <tag type="verbnet" n="2">[Location,Theme]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">a</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">a</tag>
+     <tag type="lemma">a</tag>
+     <tag type="from">25</tag>
+     <tag type="to">26</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">mountain</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">mountain</tag>
+     <tag type="lemma">mountain</tag>
+     <tag type="from">27</tag>
+     <tag type="to">35</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">mountain.n.01</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b2">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="3"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="man" synset="man.n.01" from="4" to="7"></pred>
+   </cond>
+   <cond label="b2">
+    <not from="12" to="15">
+     <drs label="b3">
+      <domain>
+       <dr label="b3" name="x2" from="25" to="26"></dr>
+       <dr label="b3" name="e1" from="16" to="24"></dr>
+       <dr label="b2" name="t1" from="8" to="11"></dr>
+      </domain>
+      <conds>
+       <cond label="b2">
+        <pred arg="t1" symbol="time" synset="time.n.08" from="8" to="11"></pred>
+       </cond>
+       <cond label="b2">
+        <comp symbol="EQU" arg1="t1" arg2="now" from="8" to="11"></comp>
+       </cond>
+       <cond label="b3">
+        <pred arg="e1" symbol="climb" synset="climb.v.01" from="16" to="24"></pred>
+       </cond>
+       <cond label="b3">
+        <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="8" to="11"></rel>
+       </cond>
+       <cond label="b3">
+        <rel arg1="e1" arg2="x2" symbol="Location" framenet="Fluidic_motion@Goal" from="16" to="24"></rel>
+       </cond>
+       <cond label="b3">
+        <rel arg1="e1" arg2="x1" symbol="Theme" framenet="Self_motion@Self_mover" from="16" to="24"></rel>
+       </cond>
+       <cond label="b3">
+        <pred arg="x2" symbol="mountain" synset="mountain.n.01" from="27" to="35"></pred>
+       </cond>
+      </conds>
+     </drs>
+    </not>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

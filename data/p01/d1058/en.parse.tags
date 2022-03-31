@@ -1,0 +1,29 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  ba(np,
+   fa(np,
+    t(np/np, 'Both', [from:0, to:4, pos:'DT', lemma:'both', sem:'AND', wordnet:'O', verbnet:['SubOf']]),
+    lx(np, n,
+     t(n, 'Cristina', [from:5, to:13, pos:'NNP', lemma:'cristina', sem:'PER', wordnet:'female.n.02']))),
+   conj(np\np,
+    t(conj, 'and', [from:14, to:17, pos:'CC', lemma:'and', sem:'GRP', wordnet:'O']),
+    lx(np, n,
+     t(n, 'Luis', [from:18, to:22, pos:'NNP', lemma:'luis', sem:'PER', wordnet:'male.n.02'])))),
+  fa(s:dcl\np,
+   t((s\np)/(s\np), 'always', [from:23, to:29, pos:'RB', lemma:'time', sem:'AND', wordnet:'time.n.08']),
+   fa(s:dcl\np,
+    t((s:dcl\np)/pp, 'dreamt', [from:30, to:36, pos:'NN', lemma:'dream', sem:'EPS', wordnet:'dream.v.01', verbnet:['Experiencer']]),
+    fa(pp,
+     t(pp/(s:ng\np), 'of', [from:37, to:39, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['Stimulus']]),
+     fa(s:ng\np,
+      t((s:ng\np)/np, 'studying', [from:40, to:48, pos:'VBG', lemma:'study', sem:'EXG', wordnet:'study.v.04', verbnet:['Theme','Agent']]),
+      rp(np,
+       lx(np, n,
+        t(n, 'medicine', [from:49, to:57, pos:'NN', lemma:'medicine', sem:'CON', wordnet:'medicine.n.03'])),
+       t(., '.', [from:57, to:58, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))))).
+

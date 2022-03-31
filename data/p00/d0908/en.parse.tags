@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'won', [from:2, to:5, pos:'VBD', lemma:'win', sem:'EPS', wordnet:'win.v.01', verbnet:['Theme','Agent']]),
+   rp(np,
+    fa(np,
+     t(np/n, 'the', [from:6, to:9, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'gold~medal', [from:10, to:20, pos:'NN', lemma:'gold~medal', sem:'CON', wordnet:'gold_medal.n.01'])),
+    t(., '.', [from:20, to:21, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

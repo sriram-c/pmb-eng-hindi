@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'prisoner', [from:4, to:12, pos:'NN', lemma:'prisoner', sem:'ROL', wordnet:'prisoner.n.01'])),
+  rp(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:pss\np), 'was', [from:13, to:16, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+    t(s:pss\np, 'released', [from:17, to:25, pos:'VBN', lemma:'release', sem:'EXS', wordnet:'release.v.02', verbnet:['Theme']])),
+   t(., '.', [from:25, to:26, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+

@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:wq,
+  t(s:wq/s:q, 'Why', [from:0, to:3, pos:'WRB', lemma:'reason', sem:'QUE', wordnet:'reason.n.01', verbnet:['Causer','Equal']]),
+  fa(s:q,
+   fa(s:q/(s:ng\np),
+    t((s:q/(s:ng\np))/np, 'are', [from:4, to:7, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+    t(np, 'you', [from:8, to:11, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O'])),
+   rp(s:ng\np,
+    t(s:ng\np, 'shouting', [from:12, to:20, pos:'VBG', lemma:'shout', sem:'EXG', wordnet:'shout.v.01', verbnet:['Agent']]),
+    t(., '?', [from:20, to:21, pos:'.', lemma:'?', sem:'QUE', wordnet:'O']))))).
+

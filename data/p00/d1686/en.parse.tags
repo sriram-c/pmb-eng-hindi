@@ -1,0 +1,27 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'That', [from:0, to:4, pos:'DT', lemma:'entity', sem:'DST', wordnet:'entity.n.01']),
+   t(n, 'story', [from:5, to:10, pos:'NN', lemma:'story', sem:'CON', wordnet:'story.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'is', [from:11, to:13, pos:'VBZ', lemma:'be', sem:'ENS', wordnet:'be.v.01', verbnet:['Co-Theme','Theme']]),
+   fa(np,
+    t(np/n, 'a', [from:14, to:15, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+    ba(n,
+     fa(n,
+      t(n/n, 'famous', [from:16, to:22, pos:'JJ', lemma:'famous', sem:'IST', wordnet:'famous.a.01', verbnet:['Attribute']]),
+      t(n, 'one', [from:23, to:26, pos:'NN', lemma:'story', sem:'CON', wordnet:'story.n.02'])),
+     fa(n\n,
+      t((n\n)/(s:dcl/np), 'that', [from:27, to:31, pos:'WDT', lemma:'that', sem:'AND', wordnet:'O']),
+      fc(s:dcl/np,
+       lx(s:X/(s:X\np), np,
+        t(np, 'everyone', [from:32, to:40, pos:'DT', lemma:'person', sem:'AND', wordnet:'person.n.01'])),
+       rp((s:dcl\np)/np,
+        t((s:dcl\np)/np, 'knows', [from:41, to:46, pos:'VBZ', lemma:'know', sem:'ENS', wordnet:'know.v.01', verbnet:['Stimulus','Experiencer']]),
+        t(., '.', [from:46, to:47, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))))).
+

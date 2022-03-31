@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:pt\np), '\'ve', [from:1, to:4, pos:'VBP', lemma:'have', sem:'NOW', wordnet:'O']),
+   ba(s:pt\np,
+    fa(s:pt\np,
+     t((s:pt\np)/(s:ng\np), 'been', [from:5, to:9, pos:'VBN', lemma:'be', sem:'PFT', wordnet:'O']),
+     t(s:ng\np, 'stung', [from:10, to:15, pos:'VBN', lemma:'sting', sem:'EXS', wordnet:'sting.v.02', verbnet:['Patient']])),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/np, 'by', [from:16, to:18, pos:'IN', lemma:'by', sem:'REL', wordnet:'O', verbnet:['Agent']]),
+     rp(np,
+      fa(np,
+       t(np/n, 'a', [from:19, to:20, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+       t(n, 'hornet', [from:21, to:27, pos:'NN', lemma:'hornet', sem:'CON', wordnet:'hornet.n.01'])),
+      t(., '.', [from:27, to:28, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

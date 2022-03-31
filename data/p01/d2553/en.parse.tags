@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/(n/pp), 'My', [from:0, to:2, pos:'PRP$', lemma:'speaker', sem:'HAS', wordnet:'O', verbnet:['Of']]),
+   t(n/pp, 'boss', [from:3, to:7, pos:'NN', lemma:'boss', sem:'ROL', wordnet:'boss.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:ng\np), 'is', [from:8, to:10, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+   fa(s:ng\np,
+    t((s:ng\np)/pp, 'suffering', [from:11, to:20, pos:'VBG', lemma:'suffer', sem:'EXG', wordnet:'suffer.v.02', verbnet:['Experiencer']]),
+    fa(pp,
+     t(pp/np, 'from', [from:21, to:25, pos:'IN', lemma:'from', sem:'REL', wordnet:'O', verbnet:['Stimulus']]),
+     rp(np,
+      fa(np,
+       t(np/n, 'a', [from:26, to:27, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+       fa(n,
+        t(n/n, 'bad', [from:28, to:31, pos:'JJ', lemma:'bad', sem:'IST', wordnet:'bad.a.02', verbnet:['Attribute']]),
+        t(n, 'cold', [from:32, to:36, pos:'NN', lemma:'cold', sem:'CON', wordnet:'cold.n.01']))),
+      t(., '.', [from:36, to:37, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

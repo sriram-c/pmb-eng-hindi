@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np:thr, 'There', [from:0, to:5, pos:'EX', lemma:'there', sem:'NIL', wordnet:'O']),
+  fa(s:dcl\np,
+   fa((s:dcl\np)/pp,
+    t(((s:dcl\np)/pp)/np, 'are', [from:6, to:9, pos:'VBP', lemma:'be', sem:'ENS', wordnet:'be.v.03', verbnet:['Theme','Equal']]),
+    lx(np, n,
+     fa(n,
+      t(n/n, 'many', [from:10, to:14, pos:'JJ', lemma:'+', sem:'QUV', wordnet:'O', verbnet:['Quantity']]),
+      t(n, 'islands', [from:15, to:22, pos:'NNS', lemma:'island', sem:'CON', wordnet:'island.n.01'])))),
+   rp(pp,
+    fa(pp,
+     t(pp/np, 'in', [from:23, to:25, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Location']]),
+     lx(np, n,
+      t(n, 'Greece', [from:26, to:32, pos:'NNP', lemma:'greece', sem:'GPE', wordnet:'country.n.02']))),
+    t(., '.', [from:32, to:33, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

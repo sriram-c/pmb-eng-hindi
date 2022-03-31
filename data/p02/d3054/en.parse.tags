@@ -1,0 +1,19 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/np, 'caught', [from:2, to:8, pos:'VBD', lemma:'catch', sem:'EPS', wordnet:'catch.v.08', verbnet:['Theme','Agent']]),
+    lx(np, n,
+     fa(n,
+      t(n/n, 'three', [from:9, to:14, pos:'CD', lemma:'3', sem:'QUC', wordnet:'O', verbnet:['Quantity']]),
+      t(n, 'fish', [from:15, to:19, pos:'NN', lemma:'fish', sem:'CON', wordnet:'fish.n.01'])))),
+   rp((s\np)\(s\np),
+    t((s\np)\(s\np), 'yesterday', [from:20, to:29, pos:'NN', lemma:'day', sem:'PST', wordnet:'O']),
+    t(., '.', [from:29, to:30, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

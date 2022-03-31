@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- What roller~coaster is the fastest in the world ? --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="tok">What</tag>
+     <tag type="cat">(s:wq/(s:dcl/np))/n</tag>
+     <tag type="sym">entity</tag>
+     <tag type="lemma">entity</tag>
+     <tag type="from">0</tag>
+     <tag type="to">4</tag>
+     <tag type="pos">WP</tag>
+     <tag type="sem">QUE</tag>
+     <tag type="wordnet">entity.n.01</tag>
+     <tag type="verbnet" n="1">[Name]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">roller~coaster</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">roller~coaster</tag>
+     <tag type="lemma">roller~coaster</tag>
+     <tag type="from">5</tag>
+     <tag type="to">19</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">roller_coaster.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="tok">is</tag>
+     <tag type="cat">(s:dcl\np)/np</tag>
+     <tag type="sym">be</tag>
+     <tag type="lemma">be</tag>
+     <tag type="from">20</tag>
+     <tag type="to">22</tag>
+     <tag type="pos">VBZ</tag>
+     <tag type="sem">ENS</tag>
+     <tag type="wordnet">be.v.02</tag>
+     <tag type="verbnet" n="2">[Co-Theme,Theme]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">the</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">the</tag>
+     <tag type="lemma">the</tag>
+     <tag type="from">23</tag>
+     <tag type="to">26</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">fastest</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">fast</tag>
+     <tag type="lemma">fast</tag>
+     <tag type="from">27</tag>
+     <tag type="to">34</tag>
+     <tag type="pos">JJS</tag>
+     <tag type="sem">TOP</tag>
+     <tag type="wordnet">fast.a.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="tok">in</tag>
+     <tag type="cat">((s:dcl\np)\(s:dcl\np))/np</tag>
+     <tag type="sym">in</tag>
+     <tag type="lemma">in</tag>
+     <tag type="from">35</tag>
+     <tag type="to">37</tag>
+     <tag type="pos">IN</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Location]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">the</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">the</tag>
+     <tag type="lemma">the</tag>
+     <tag type="from">38</tag>
+     <tag type="to">41</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">world</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">world</tag>
+     <tag type="lemma">world</tag>
+     <tag type="from">42</tag>
+     <tag type="to">47</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">world.n.04</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1009">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">?</tag>
+     <tag type="cat">s:wq\s:wq</tag>
+     <tag type="sym">?</tag>
+     <tag type="lemma">?</tag>
+     <tag type="from">47</tag>
+     <tag type="to">48</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">QUE</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b2">
+  <domain>
+   <dr label="b1" name="x1" from="23" to="26"></dr>
+   <dr label="b1" name="s1" from="27" to="34"></dr>
+   <dr label="b1" name="s2" from="27" to="34"></dr>
+   <dr label="b2" name="x2" from="0" to="4"></dr>
+   <dr label="b2" name="e1" from="20" to="22"></dr>
+   <dr label="b2" name="t1" from="20" to="22"></dr>
+   <dr label="b3" name="x3" from="38" to="41"></dr>
+  </domain>
+  <conds>
+   <cond label="b2">
+    <pred arg="x2" symbol="roller_coaster" synset="roller_coaster.n.02" from="5" to="19"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="x2" arg2="?" symbol="Name" framenet="Name" from="0" to="4"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="20" to="22"></pred>
+   </cond>
+   <cond label="b2">
+    <comp symbol="EQU" arg1="t1" arg2="now" from="20" to="22"></comp>
+   </cond>
+   <cond label="b2">
+    <pred arg="e1" symbol="be" synset="be.v.02" from="20" to="22"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x3" symbol="Location" framenet="Containing@Container" from="35" to="37"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="20" to="22"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x2" symbol="Co-Theme" framenet="Replacing@New" from="20" to="22"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x1" symbol="Theme" framenet="Placing@Theme" from="20" to="22"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="s2" symbol="most" synset="most.r.01" from="27" to="34"></pred>
+   </cond>
+   <cond label="b1">
+    <pred arg="s1" symbol="fast" synset="fast.a.01" from="27" to="34"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="s1" arg2="s2" symbol="Degree" framenet="Degree" from="27" to="34"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="x1" symbol="entity" synset="entity.n.01" from="27" to="34"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x1" arg2="s1" symbol="Attribute" framenet="Attribute" from="27" to="34"></rel>
+   </cond>
+   <cond label="b3">
+    <pred arg="x3" symbol="world" synset="world.n.04" from="42" to="47"></pred>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

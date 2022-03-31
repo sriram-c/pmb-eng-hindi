@@ -1,0 +1,31 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:dcl,
+  ba(s:dcl,
+   ba(s:dcl,
+    fa(np,
+     ba(np/(n/pp),
+      lx(np, n,
+       t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+      t((np/(n/pp))\np, '\'s', [from:3, to:5, pos:'POS', lemma:'\'s', sem:'HAS', wordnet:'O', verbnet:['PartOf']])),
+     t(n/pp, 'eyes', [from:6, to:10, pos:'NNS', lemma:'eye', sem:'CON', wordnet:'eye.n.01'])),
+    rp(s:dcl\np,
+     fa(s:dcl\np,
+      t((s:dcl\np)/(s:adj\np), 'are', [from:11, to:14, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+      t(s:adj\np, 'red', [from:15, to:18, pos:'JJ', lemma:'red', sem:'COL', wordnet:'red.a.01', verbnet:['Colour']])),
+     t(,, ',', [from:18, to:19, pos:',', lemma:',', sem:'NIL', wordnet:'O']))),
+   conj(s:dcl\s:dcl,
+    t(conj, 'and', [from:20, to:23, pos:'CC', lemma:'and', sem:'COO', wordnet:'O']),
+    ba(s:dcl,
+     t(np, 'he', [antecedent:'0,3', from:24, to:26, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+     fa(s:dcl\np,
+      t((s:dcl\np)/(s:adj\np), 'looks', [from:27, to:32, pos:'VBZ', lemma:'look', sem:'ENS', wordnet:'look.v.02', verbnet:['Attribute','Theme']]),
+      fa(s:adj\np,
+       t((s:adj\np)/(s:adj\np), 'very', [from:33, to:37, pos:'RB', lemma:'very', sem:'INT', wordnet:'very.r.01']),
+       t(s:adj\np, 'tired', [from:38, to:43, pos:'JJ', lemma:'tired', sem:'IST', wordnet:'tired.a.01', verbnet:['Experiencer']])))))),
+  t(., '.', [from:43, to:44, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+

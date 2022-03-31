@@ -1,0 +1,17 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'express', [from:4, to:11, pos:'JJ', lemma:'express', sem:'CON', wordnet:'express.n.02'])),
+  ba(s:dcl\np,
+   t(s:dcl\np, 'arrives', [from:12, to:19, pos:'VBZ', lemma:'arrive', sem:'EFS', wordnet:'arrive.v.01', verbnet:['Theme']]),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'at', [from:20, to:22, pos:'IN', lemma:'at', sem:'REL', wordnet:'O', verbnet:['Time']]),
+    lx(np, n,
+     t(n, '6:30~p.m.', [from:23, to:32, pos:'CD', lemma:'18:30', sem:'CLO', wordnet:'O'])))))).
+

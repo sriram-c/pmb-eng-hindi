@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- The boy fanned himself with his hat . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">The</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">the</tag>
+     <tag type="lemma">the</tag>
+     <tag type="from">0</tag>
+     <tag type="to">3</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">boy</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">boy</tag>
+     <tag type="lemma">boy</tag>
+     <tag type="from">4</tag>
+     <tag type="to">7</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">boy.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="tok">fanned</tag>
+     <tag type="cat">(s:dcl\np)/np</tag>
+     <tag type="sym">fan</tag>
+     <tag type="lemma">fan</tag>
+     <tag type="from">8</tag>
+     <tag type="to">14</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="sem">EPS</tag>
+     <tag type="wordnet">fan.v.03</tag>
+     <tag type="verbnet" n="2">[Experiencer,Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">himself</tag>
+     <tag type="cat">(s:dcl\np)\((s:dcl\np)/np)</tag>
+     <tag type="sym">male</tag>
+     <tag type="lemma">male</tag>
+     <tag type="from">15</tag>
+     <tag type="to">22</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="sem">REF</tag>
+     <tag type="wordnet">male.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="tok">with</tag>
+     <tag type="cat">((s:dcl\np)\(s:dcl\np))/np</tag>
+     <tag type="sym">with</tag>
+     <tag type="lemma">with</tag>
+     <tag type="from">23</tag>
+     <tag type="to">27</tag>
+     <tag type="pos">IN</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Instrument]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="tok">his</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">male</tag>
+     <tag type="lemma">male</tag>
+     <tag type="antecedent">4,7</tag>
+     <tag type="from">28</tag>
+     <tag type="to">31</tag>
+     <tag type="pos">PRP$</tag>
+     <tag type="sem">HAS</tag>
+     <tag type="wordnet">male.n.02</tag>
+     <tag type="verbnet" n="1">[User]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">hat</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">hat</tag>
+     <tag type="lemma">hat</tag>
+     <tag type="from">32</tag>
+     <tag type="to">35</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">hat.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">35</tag>
+     <tag type="to">36</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b3">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="0"></dr>
+   <dr label="b2" name="x2" from="15" to="22"></dr>
+   <dr label="b3" name="e1" from="8" to="14"></dr>
+   <dr label="b3" name="t1" from="8" to="14"></dr>
+   <dr label="b4" name="x3" from="28" to="31"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="boy" synset="boy.n.01" from="4" to="7"></pred>
+   </cond>
+   <cond label="b3">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="8" to="14"></pred>
+   </cond>
+   <cond label="b3">
+    <comp symbol="TPR" arg1="t1" arg2="now" from="8" to="14"></comp>
+   </cond>
+   <cond label="b3">
+    <pred arg="e1" symbol="fan" synset="fan.v.03" from="8" to="14"></pred>
+   </cond>
+   <cond label="b3">
+    <rel arg1="e1" arg2="x3" symbol="Instrument" framenet="Reshaping@Instrument" from="23" to="27"></rel>
+   </cond>
+   <cond label="b3">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="8" to="14"></rel>
+   </cond>
+   <cond label="b3">
+    <rel arg1="e1" arg2="x1" symbol="Experiencer" framenet="Cause_impact@Impactee" from="8" to="14"></rel>
+   </cond>
+   <cond label="b3">
+    <rel arg1="e1" arg2="x1" symbol="Agent" framenet="Placing@Agent" from="8" to="14"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="x2" symbol="male" synset="male.n.02" from="15" to="22"></pred>
+   </cond>
+   <cond label="b3">
+    <comp symbol="EQU" arg1="x2" arg2="x1" from="15" to="22"></comp>
+   </cond>
+   <cond label="b1">
+    <pred arg="x1" symbol="male" synset="male.n.02" from="28" to="31"></pred>
+   </cond>
+   <cond label="b4">
+    <pred arg="x3" symbol="hat" synset="hat.n.01" from="32" to="35"></pred>
+   </cond>
+   <cond label="b4">
+    <rel arg1="x3" arg2="x1" symbol="User" framenet="User" from="28" to="31"></rel>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

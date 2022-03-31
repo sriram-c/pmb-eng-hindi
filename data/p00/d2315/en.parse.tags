@@ -1,0 +1,14 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:q,
+  fa(s:q,
+   fa(s:q/(s:adj\np),
+    t((s:q/(s:adj\np))/np, 'Are', [from:0, to:3, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+    t(np, 'they', [from:4, to:8, pos:'PRP', lemma:'person', sem:'PRO', wordnet:'person.n.01'])),
+   t(s:adj\np, 'live', [from:9, to:13, pos:'VBP', lemma:'live', sem:'IST', wordnet:'live.a.01', verbnet:['Attribute']])),
+  t(s:q\s:q, '?', [from:13, to:14, pos:'.', lemma:'?', sem:'QUE', wordnet:'O']))).
+

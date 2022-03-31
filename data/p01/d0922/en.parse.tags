@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'That', [from:0, to:4, pos:'DT', lemma:'entity', sem:'DST', wordnet:'entity.n.01']),
+   t(n, 'boy', [from:5, to:8, pos:'NN', lemma:'boy', sem:'CON', wordnet:'boy.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'showed', [from:9, to:15, pos:'VBD', lemma:'show', sem:'EPS', wordnet:'show.v.06', verbnet:['Theme','Agent']]),
+   rp(np,
+    fa(np,
+     t(np/n, 'no', [from:16, to:18, pos:'DT', lemma:'no', sem:'NOT', wordnet:'O']),
+     t(n, 'fear', [from:19, to:23, pos:'NN', lemma:'fear', sem:'CON', wordnet:'fear.n.01'])),
+    t(., '.', [from:23, to:24, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- He was ashamed of his ignorance . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">He</tag>
+     <tag type="cat">np</tag>
+     <tag type="sym">male</tag>
+     <tag type="lemma">male</tag>
+     <tag type="from">0</tag>
+     <tag type="to">2</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="sem">PRO</tag>
+     <tag type="wordnet">male.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">was</tag>
+     <tag type="cat">(s:dcl\np)/(s:adj\np)</tag>
+     <tag type="sym">be</tag>
+     <tag type="lemma">be</tag>
+     <tag type="from">3</tag>
+     <tag type="to">6</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="sem">PST</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="tok">ashamed</tag>
+     <tag type="cat">(s:adj\np)/pp</tag>
+     <tag type="sym">ashamed</tag>
+     <tag type="lemma">ashamed</tag>
+     <tag type="from">7</tag>
+     <tag type="to">14</tag>
+     <tag type="pos">VBN</tag>
+     <tag type="sem">IST</tag>
+     <tag type="wordnet">ashamed.a.01</tag>
+     <tag type="verbnet" n="1">[Experiencer]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="tok">of</tag>
+     <tag type="cat">pp/np</tag>
+     <tag type="sym">of</tag>
+     <tag type="lemma">of</tag>
+     <tag type="from">15</tag>
+     <tag type="to">17</tag>
+     <tag type="pos">IN</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Stimulus]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="tok">his</tag>
+     <tag type="cat">np/(n/pp)</tag>
+     <tag type="sym">male</tag>
+     <tag type="lemma">male</tag>
+     <tag type="from">18</tag>
+     <tag type="to">21</tag>
+     <tag type="pos">PRP$</tag>
+     <tag type="sem">HAS</tag>
+     <tag type="wordnet">male.n.02</tag>
+     <tag type="verbnet" n="1">[Creator]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ignorance</tag>
+     <tag type="cat">n/pp</tag>
+     <tag type="sym">ignorance</tag>
+     <tag type="lemma">ignorance</tag>
+     <tag type="from">22</tag>
+     <tag type="to">31</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">ignorance.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">31</tag>
+     <tag type="to">32</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b2">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="0"></dr>
+   <dr label="b2" name="s1" from="7" to="14"></dr>
+   <dr label="b3" name="x2" from="18" to="21"></dr>
+   <dr label="b2" name="t1" from="3" to="6"></dr>
+  </domain>
+  <conds>
+   <cond label="b2">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="3" to="6"></pred>
+   </cond>
+   <cond label="b2">
+    <comp symbol="TPR" arg1="t1" arg2="now" from="3" to="6"></comp>
+   </cond>
+   <cond label="b2">
+    <pred arg="s1" symbol="ashamed" synset="ashamed.a.01" from="7" to="14"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="s1" arg2="t1" symbol="Time" framenet="Time" from="3" to="6"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="s1" arg2="x2" symbol="Stimulus" framenet="Perception_experience@Phenomenon" from="15" to="17"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="s1" arg2="x1" symbol="Experiencer" framenet="Experiencer" from="7" to="14"></rel>
+   </cond>
+   <cond label="b3">
+    <pred arg="x2" symbol="ignorance" synset="ignorance.n.01" from="22" to="31"></pred>
+   </cond>
+   <cond label="b3">
+    <rel arg1="x2" arg2="x1" symbol="Creator" framenet="Creator" from="18" to="21"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="x1" symbol="male" synset="male.n.02" from="0" to="0"></pred>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

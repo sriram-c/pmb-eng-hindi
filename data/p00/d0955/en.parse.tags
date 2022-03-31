@@ -1,0 +1,28 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:dcl,
+  fa(s/s,
+   t((s/s)/s:dcl, 'If', [from:0, to:2, pos:'IN', lemma:'if', sem:'SUB', wordnet:'O']),
+   ba(s:dcl,
+    t(np, 'you', [from:3, to:6, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O']),
+    fa(s:dcl\np,
+     bxc((s:dcl\np)/(s:b\np),
+      t((s:dcl\np)/(s:b\np), 'do', [from:7, to:9, pos:'VBP', lemma:'do', sem:'NOW', wordnet:'O']),
+      t((s\np)\(s\np), 'n\'t', [from:9, to:12, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+     fa(s:b\np,
+      t((s:b\np)/np, 'like', [from:13, to:17, pos:'VB', lemma:'like', sem:'EXS', wordnet:'like.v.02', verbnet:['Stimulus','Experiencer']]),
+      t(np, 'it', [from:18, to:20, pos:'PRP', lemma:'entity', sem:'PRO', wordnet:'entity.n.01']))))),
+  fa(s:dcl,
+   t(s/s, 'then', [from:21, to:25, pos:'RB', lemma:'then', sem:'SUB', wordnet:'O']),
+   ba(s:dcl,
+    t(np, 'you', [from:26, to:29, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O']),
+    rp(s:dcl\np,
+     fa(s:dcl\np,
+      t((s:dcl\np)/(s:b\np), 'can', [from:30, to:33, pos:'MD', lemma:'can', sem:'POS', wordnet:'O']),
+      t(s:b\np, 'quit', [from:34, to:38, pos:'VB', lemma:'quit', sem:'EXS', wordnet:'quit.v.01', verbnet:['Agent']])),
+     t(., '.', [from:38, to:39, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

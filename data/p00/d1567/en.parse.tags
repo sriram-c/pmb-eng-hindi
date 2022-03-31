@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:dcl,
+  t(s/s, 'Yesterday', [from:0, to:9, pos:'NN', lemma:'day', sem:'PST', wordnet:'O']),
+  ba(s:dcl,
+   t(np, 'I', [from:10, to:11, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+   fa(s:dcl\np,
+    t((s:dcl\np)/pp, 'went', [from:12, to:16, pos:'VBD', lemma:'go', sem:'EPS', wordnet:'go.v.01', verbnet:['Theme']]),
+    fa(pp,
+     t(pp/np, 'to', [from:17, to:19, pos:'TO', lemma:'to', sem:'REL', wordnet:'O', verbnet:['Destination']]),
+     rp(np,
+      fa(np,
+       t(np/n, 'the', [from:20, to:23, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+       t(n, 'opera', [from:24, to:29, pos:'NN', lemma:'opera', sem:'CON', wordnet:'opera.n.03'])),
+      t(., '.', [from:29, to:30, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  ba(np,
+   lx(np, n,
+    t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+   conj(np\np,
+    t(conj, 'and', [from:4, to:7, pos:'CC', lemma:'and', sem:'GRP', wordnet:'O']),
+    lx(np, n,
+     t(n, 'Mary', [from:8, to:12, pos:'NNP', lemma:'mary', sem:'PER', wordnet:'female.n.02'])))),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'played', [from:13, to:19, pos:'VBD', lemma:'play', sem:'EPS', wordnet:'play.v.01', verbnet:['Theme','Agent']]),
+   rp(np,
+    lx(np, n,
+     t(n, 'chess', [from:20, to:25, pos:'NN', lemma:'chess', sem:'CON', wordnet:'chess.n.02'])),
+    t(., '.', [from:25, to:26, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

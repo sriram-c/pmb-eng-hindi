@@ -1,0 +1,25 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Sally', [from:0, to:5, pos:'RB', lemma:'sally', sem:'PER', wordnet:'female.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), 'is', [from:6, to:8, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+   rp(s:adj\np,
+    ba(s:adj\np,
+     lx(np, n,
+      fa(n,
+       t(n/n, 'two', [from:9, to:12, pos:'CD', lemma:'2', sem:'QUC', wordnet:'O', verbnet:['Quantity']]),
+       t(n, 'years', [from:13, to:18, pos:'NNS', lemma:'year', sem:'UOM', wordnet:'year.n.01']))),
+     fa((s:adj\np)\np,
+      t(((s:adj\np)\np)/pp, 'older', [from:19, to:24, pos:'JJR', lemma:'old', sem:'MOR', wordnet:'old.a.01', verbnet:['Value','Attribute']]),
+      fa(pp,
+       t(pp/np, 'than', [from:25, to:29, pos:'IN', lemma:'than', sem:'REL', wordnet:'O', verbnet:['Co-Theme']]),
+       lx(np, n,
+        t(n, 'Ken', [from:30, to:33, pos:'NNP', lemma:'ken', sem:'PER', wordnet:'male.n.02']))))),
+    t(., '.', [from:33, to:34, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

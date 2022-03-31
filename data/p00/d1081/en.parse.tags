@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   fa(n,
+    t(n/n, 'data', [from:4, to:8, pos:'NN', lemma:'data', sem:'CON', wordnet:'data.n.01', verbnet:['Theme']]),
+    t(n, 'network', [from:9, to:16, pos:'NN', lemma:'network', sem:'CON', wordnet:'network.n.01']))),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/(s:adj\np),
+    t((s:dcl\np)/(s:adj\np), 'is', [from:17, to:19, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+    t((s\np)\(s\np), 'now', [from:20, to:23, pos:'RB', lemma:'now', sem:'NOW', wordnet:'O'])),
+   rp(s:adj\np,
+    t(s:adj\np, 'complete', [from:24, to:32, pos:'JJ', lemma:'complete', sem:'IST', wordnet:'complete.a.01', verbnet:['Attribute']]),
+    t(., '.', [from:32, to:33, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

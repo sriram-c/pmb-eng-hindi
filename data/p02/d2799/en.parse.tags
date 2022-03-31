@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'She', [from:0, to:3, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'has', [from:4, to:7, pos:'VBZ', lemma:'have', sem:'ENS', wordnet:'have.v.01', verbnet:['Theme','Pivot']]),
+   rp(np,
+    fa(np,
+     t(np/n, 'no', [from:8, to:10, pos:'DT', lemma:'no', sem:'NOT', wordnet:'O']),
+     t(n, 'brothers', [from:11, to:19, pos:'NNS', lemma:'brother', sem:'ROL', wordnet:'brother.n.01'])),
+    t(., '.', [from:19, to:20, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

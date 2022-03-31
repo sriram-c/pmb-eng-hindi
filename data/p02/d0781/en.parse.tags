@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:dcl,
+  ba(s:dcl,
+   fa(np,
+    t(np/n, 'Our', [from:0, to:3, pos:'PRP$', lemma:'speaker', sem:'HAS', wordnet:'O', verbnet:['User']]),
+    t(n, 'plane', [from:4, to:9, pos:'NN', lemma:'plane', sem:'CON', wordnet:'plane.n.01'])),
+   ba(s:dcl\np,
+    fa(s:dcl\np,
+     t((s:dcl\np)/(s:ng\np), 'was', [from:10, to:13, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+     t(s:ng\np, 'flying', [from:14, to:20, pos:'VBG', lemma:'fly', sem:'EXG', wordnet:'fly.v.01', verbnet:['Theme']])),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/np, 'above', [from:21, to:26, pos:'IN', lemma:'above', sem:'REL', wordnet:'O', verbnet:['Location']]),
+     fa(np,
+      t(np/n, 'the', [from:27, to:30, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'clouds', [from:31, to:37, pos:'NNS', lemma:'cloud', sem:'CON', wordnet:'cloud.n.02']))))),
+  t(., '.', [from:37, to:38, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+

@@ -1,0 +1,14 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'price', [from:4, to:9, pos:'NN', lemma:'price', sem:'CON', wordnet:'price.n.02'])),
+  rp(s:dcl\np,
+   t(s:dcl\np, 'rose', [from:10, to:14, pos:'VBD', lemma:'rise', sem:'EPS', wordnet:'rise.v.02', verbnet:['Attribute']]),
+   t(., '.', [from:14, to:15, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+

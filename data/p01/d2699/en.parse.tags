@@ -1,0 +1,17 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'He', [from:0, to:2, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+  fa(s:dcl\np,
+   fa((s:dcl\np)/np,
+    t(((s:dcl\np)/np)/np, 'cooked', [from:3, to:9, pos:'VBD', lemma:'cook', sem:'EPS', wordnet:'cook.v.01', verbnet:['Beneficiary','Product','Agent']]),
+    t(np, 'me', [from:10, to:12, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O'])),
+   rp(np,
+    lx(np, n,
+     t(n, 'dinner', [from:13, to:19, pos:'NN', lemma:'dinner', sem:'CON', wordnet:'dinner.n.01'])),
+    t(., '.', [from:19, to:20, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

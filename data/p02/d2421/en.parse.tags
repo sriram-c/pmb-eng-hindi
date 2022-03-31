@@ -1,0 +1,25 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:pt\np), 'have', [from:2, to:6, pos:'VBP', lemma:'have', sem:'NOW', wordnet:'O']),
+   ba(s:pt\np,
+    fa(s:pt\np,
+     t((s:pt\np)/np, 'been', [from:7, to:11, pos:'VBN', lemma:'be', sem:'EXT', wordnet:'be.v.08', verbnet:['Co-Theme','Theme']]),
+     fa(np,
+      t(np/n, 'a', [from:12, to:13, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+      t(n, 'teacher', [from:14, to:21, pos:'NN', lemma:'teacher', sem:'ROL', wordnet:'teacher.n.01']))),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/np, 'for', [from:22, to:25, pos:'IN', lemma:'for', sem:'REL', wordnet:'O', verbnet:['Duration']]),
+     rp(np,
+      lx(np, n,
+       fa(n,
+        t(n/n, '15', [from:26, to:28, pos:'CD', lemma:'15', sem:'QUC', wordnet:'O', verbnet:['Quantity']]),
+        t(n, 'years', [from:29, to:34, pos:'NNS', lemma:'year', sem:'UOM', wordnet:'year.n.01']))),
+      t(., '.', [from:34, to:35, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'boy', [from:4, to:7, pos:'NN', lemma:'boy', sem:'CON', wordnet:'boy.n.01'])),
+  ba(s:dcl\np,
+   ba(s:dcl\np,
+    t((s:dcl\np)/np, 'fanned', [from:8, to:14, pos:'VBD', lemma:'fan', sem:'EPS', wordnet:'fan.v.03', verbnet:['Experiencer','Agent']]),
+    t((s:X\np)\((s:X\np)/np), 'himself', [from:15, to:22, pos:'PRP', lemma:'male', sem:'REF', wordnet:'male.n.02'])),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'with', [from:23, to:27, pos:'IN', lemma:'with', sem:'REL', wordnet:'O', verbnet:['Instrument']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'his', [antecedent:'4,7', from:28, to:31, pos:'PRP$', lemma:'male', sem:'HAS', wordnet:'male.n.02', verbnet:['User']]),
+      t(n, 'hat', [from:32, to:35, pos:'NN', lemma:'hat', sem:'CON', wordnet:'hat.n.01'])),
+     t(., '.', [from:35, to:36, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

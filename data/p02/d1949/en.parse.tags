@@ -1,0 +1,14 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/(n/pp), 'My', [from:0, to:2, pos:'PRP$', lemma:'speaker', sem:'HAS', wordnet:'O', verbnet:['PartOf']]),
+   t(n/pp, 'throat', [from:3, to:9, pos:'NN', lemma:'throat', sem:'CON', wordnet:'throat.n.01'])),
+  rp(s:dcl\np,
+   t(s:dcl\np, 'hurts', [from:10, to:15, pos:'NNS', lemma:'hurt', sem:'ENS', wordnet:'hurt.v.01', verbnet:['Patient']]),
+   t(., '.', [from:15, to:16, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+

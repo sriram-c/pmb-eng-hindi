@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'game', [from:4, to:8, pos:'NN', lemma:'game', sem:'CON', wordnet:'game.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'excited', [from:9, to:16, pos:'JJ', lemma:'excite', sem:'EPS', wordnet:'excite.v.01', verbnet:['Experiencer','Stimulus']]),
+   lx(np, n,
+    fa(n,
+     t(n/pp, 'lots', [from:17, to:21, pos:'NNS', lemma:'+', sem:'QUV', wordnet:'O']),
+     fa(pp,
+      t(pp/np, 'of', [from:22, to:24, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['Equal']]),
+      rp(np,
+       lx(np, n,
+        t(n, 'people', [from:25, to:31, pos:'NNS', lemma:'person', sem:'CON', wordnet:'person.n.01'])),
+       t(., '.', [from:31, to:32, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))))).
+

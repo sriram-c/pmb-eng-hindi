@@ -1,0 +1,28 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tycho~Brahe', [from:0, to:11, pos:'NNP', lemma:'tycho~brahe', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/pp,
+    t((s:dcl\np)/pp, 'benefited', [from:12, to:21, pos:'VBD', lemma:'benefit', sem:'EPS', wordnet:'benefit.v.01', verbnet:['Beneficiary']]),
+    t((s\np)\(s\np), 'greatly', [from:22, to:29, pos:'RB', lemma:'greatly', sem:'IST', wordnet:'greatly.r.01', verbnet:['Manner']])),
+   fa(pp,
+    t(pp/np, 'from', [from:30, to:34, pos:'IN', lemma:'from', sem:'REL', wordnet:'O', verbnet:['Causer']]),
+    rp(np,
+     fa(np,
+      ba(np/(n/pp),
+       lx(np, n,
+        fa(n,
+         t(n/n, 'King', [from:35, to:39, pos:'NNP', lemma:'king', sem:'ROL', wordnet:'king.n.01', verbnet:['Title']]),
+         t(n, 'Fredrik', [from:40, to:47, pos:'NNP', lemma:'fredrik', sem:'PER', wordnet:'male.n.02']))),
+       t((np/(n/pp))\np, '\'s', [from:47, to:49, pos:'POS', lemma:'\'s', sem:'HAS', wordnet:'O', verbnet:['Creator']])),
+      fc(n/pp,
+       t(n/n, 'generous', [from:50, to:58, pos:'JJ', lemma:'generous', sem:'IST', wordnet:'generous.a.01', verbnet:['Attribute']]),
+       t(n/pp, 'support', [from:59, to:66, pos:'NN', lemma:'support', sem:'CON', wordnet:'support.n.01']))),
+     t(., '.', [from:66, to:67, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

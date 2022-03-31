@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'A', [from:0, to:1, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+   t(n, 'man', [from:2, to:5, pos:'NN', lemma:'man', sem:'CON', wordnet:'man.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:ng\np), 'is', [from:6, to:8, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+   fa(s:ng\np,
+    t((s:ng\np)/np, 'playing', [from:9, to:16, pos:'VBG', lemma:'play', sem:'EXG', wordnet:'play.v.07', verbnet:['Theme','Agent']]),
+    fa(np,
+     t(np/n, 'a', [from:17, to:18, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+     t(n, 'trumpet', [from:19, to:26, pos:'NN', lemma:'trumpet', sem:'CON', wordnet:'trumpet.n.01'])))))).
+

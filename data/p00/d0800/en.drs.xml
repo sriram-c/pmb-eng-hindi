@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 10 September 2021, 09:36:38)'">
+<!-- Whose is this camera ? --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="tok">Whose</tag>
+     <tag type="cat">s:wq/(s:q/np)</tag>
+     <tag type="sym">person</tag>
+     <tag type="lemma">person</tag>
+     <tag type="from">0</tag>
+     <tag type="to">5</tag>
+     <tag type="pos">NNP</tag>
+     <tag type="sem">HAS</tag>
+     <tag type="wordnet">person.n.01</tag>
+     <tag type="verbnet" n="2">[User,Name]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="tok">is</tag>
+     <tag type="cat">(s:q/np)/np</tag>
+     <tag type="sym">be</tag>
+     <tag type="lemma">be</tag>
+     <tag type="from">6</tag>
+     <tag type="to">8</tag>
+     <tag type="pos">VBZ</tag>
+     <tag type="sem">ENS</tag>
+     <tag type="wordnet">be.v.02</tag>
+     <tag type="verbnet" n="2">[Theme,Co-Theme]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">this</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">this</tag>
+     <tag type="lemma">this</tag>
+     <tag type="from">9</tag>
+     <tag type="to">13</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">PRX</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">camera</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">camera</tag>
+     <tag type="lemma">camera</tag>
+     <tag type="from">14</tag>
+     <tag type="to">20</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">camera.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">?</tag>
+     <tag type="cat">s:wq\s:wq</tag>
+     <tag type="sym">?</tag>
+     <tag type="lemma">?</tag>
+     <tag type="from">20</tag>
+     <tag type="to">21</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">QUE</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b1">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="5"></dr>
+   <dr label="b2" name="x2" from="9" to="13"></dr>
+   <dr label="b1" name="e1" from="6" to="8"></dr>
+   <dr label="b1" name="t1" from="0" to="0"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="person" synset="person.n.01" from="0" to="5"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="EQU" arg1="x1" arg2="speaker" from="0" to="5"></comp>
+   </cond>
+   <cond label="b1">
+    <pred arg="e1" symbol="be" synset="be.v.02" from="6" to="8"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="0" to="0"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x2" symbol="Theme" framenet="Placing@Theme" from="6" to="8"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x1" symbol="Co-Theme" framenet="Replacing@New" from="6" to="8"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="x2" symbol="camera" synset="camera.n.01" from="14" to="20"></pred>
+   </cond>
+   <cond label="b1">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="0" to="0"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="EQU" arg1="t1" arg2="now" from="0" to="0"></comp>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

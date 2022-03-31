@@ -1,0 +1,25 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:wq,
+  fa(s:wq/(s:q/pp),
+   t((s:wq/(s:q/pp))/n, 'What', [from:0, to:4, pos:'WP', lemma:'entity', sem:'QUE', wordnet:'entity.n.01', verbnet:['Time','ClockTime']]),
+   t(n, 'time', [from:5, to:9, pos:'NN', lemma:'time', sem:'CON', wordnet:'time.n.08'])),
+  fc(s:q/pp,
+   fa(s:q/(s:b\np),
+    t((s:q/(s:b\np))/np, 'will', [from:10, to:14, pos:'MD', lemma:'will', sem:'FUT', wordnet:'O']),
+    fa(np,
+     t(np/n, 'the', [from:15, to:18, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'flight', [from:19, to:25, pos:'NN', lemma:'flight', sem:'CON', wordnet:'flight.n.09']))),
+   bxc((s:b\np)/pp,
+    t((s:b\np)/pp, 'arrive', [from:26, to:32, pos:'VB', lemma:'arrive', sem:'EXS', wordnet:'arrive.v.01', verbnet:['Theme']]),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/np, 'in', [from:33, to:35, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Destination']]),
+     rp(np,
+      lx(np, n,
+       t(n, 'Tokyo', [from:36, to:41, pos:'NNP', lemma:'tokyo', sem:'GPE', wordnet:'city.n.01'])),
+      t(., '?', [from:41, to:42, pos:'.', lemma:'?', sem:'QUE', wordnet:'O']))))))).
+

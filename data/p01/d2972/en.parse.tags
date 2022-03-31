@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'Someone', [from:0, to:7, pos:'DT', lemma:'person', sem:'DIS', wordnet:'person.n.01']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'stole', [from:8, to:13, pos:'NN', lemma:'steal', sem:'EPS', wordnet:'steal.v.01', verbnet:['Theme','Agent']]),
+   rp(np,
+    fa(np,
+     t(np/(n/pp), 'my', [from:14, to:16, pos:'PRP$', lemma:'speaker', sem:'HAS', wordnet:'O', verbnet:['Owner']]),
+     t(n/pp, 'driving~licence', [from:17, to:32, pos:'NN', lemma:'driving~licence', sem:'CON', wordnet:'driving_licence.n.01'])),
+    t(., '.', [from:32, to:33, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

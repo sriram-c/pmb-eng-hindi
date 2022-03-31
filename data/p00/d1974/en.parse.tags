@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  ba(s:dcl,
+   fa(np,
+    t(np/np, 'All', [from:0, to:3, pos:'PDT', lemma:'entity', sem:'AND', wordnet:'entity.n.01', verbnet:['PartOf']]),
+    fa(np,
+     t(np/n, 'the', [from:4, to:7, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'passengers', [from:8, to:18, pos:'NNS', lemma:'passenger', sem:'ROL', wordnet:'passenger.n.01']))),
+   rp(s:dcl\np,
+    t(s:dcl\np, 'died', [from:19, to:23, pos:'VBD', lemma:'die', sem:'EPS', wordnet:'die.v.01', verbnet:['Patient']]),
+    t(,, ',', [from:23, to:24, pos:',', lemma:',', sem:'NIL', wordnet:'O']))),
+  conj(s:dcl\s:dcl,
+   t(conj, 'but', [from:25, to:28, pos:'CC', lemma:'but', sem:'BUT', wordnet:'O']),
+   rp(s:dcl,
+    ba(s:dcl,
+     t(np, 'he', [from:29, to:31, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+     t(s:dcl\np, 'survived', [from:32, to:40, pos:'VBD', lemma:'survive', sem:'EPS', wordnet:'survive.v.01', verbnet:['Theme']])),
+    t(., '.', [from:40, to:41, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

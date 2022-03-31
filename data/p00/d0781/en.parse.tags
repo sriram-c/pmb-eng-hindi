@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'We', [from:0, to:2, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/pp, 'stood', [from:3, to:8, pos:'VBD', lemma:'stand', sem:'EPS', wordnet:'stand.v.03', verbnet:['Theme']]),
+    fa(pp,
+     t(pp/np, 'at', [from:9, to:11, pos:'IN', lemma:'at', sem:'REL', wordnet:'O', verbnet:['Location']]),
+     fa(np,
+      t(np/n, 'the', [from:12, to:15, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'door', [from:16, to:20, pos:'NN', lemma:'door', sem:'CON', wordnet:'door.n.01'])))),
+   conj((s:dcl\np)\(s:dcl\np),
+    t(conj, 'and', [from:21, to:24, pos:'CC', lemma:'and', sem:'AND', wordnet:'O']),
+    rp(s:dcl\np,
+     t(s:dcl\np, 'waited', [from:25, to:31, pos:'VBD', lemma:'wait', sem:'EPS', wordnet:'wait.v.01', verbnet:['Theme']]),
+     t(., '.', [from:31, to:32, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

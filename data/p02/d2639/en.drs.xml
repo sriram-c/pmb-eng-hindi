@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- ø Tom and ø Mary played ø chess . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="from">0</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">Tom</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">tom</tag>
+     <tag type="lemma">tom</tag>
+     <tag type="from">0</tag>
+     <tag type="to">3</tag>
+     <tag type="pos">NNP</tag>
+     <tag type="sem">PER</tag>
+     <tag type="wordnet">male.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">and</tag>
+     <tag type="cat">conj:np</tag>
+     <tag type="sym">and</tag>
+     <tag type="lemma">and</tag>
+     <tag type="from">4</tag>
+     <tag type="to">7</tag>
+     <tag type="pos">CC</tag>
+     <tag type="sem">GRP</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="from">8</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">Mary</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">mary</tag>
+     <tag type="lemma">mary</tag>
+     <tag type="from">8</tag>
+     <tag type="to">12</tag>
+     <tag type="pos">NNP</tag>
+     <tag type="sem">PER</tag>
+     <tag type="wordnet">female.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="tok">played</tag>
+     <tag type="cat">(s:dcl\np)/np</tag>
+     <tag type="sym">play</tag>
+     <tag type="lemma">play</tag>
+     <tag type="from">13</tag>
+     <tag type="to">19</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="sem">EPS</tag>
+     <tag type="wordnet">play.v.01</tag>
+     <tag type="verbnet" n="2">[Theme,Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="from">20</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">chess</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">chess</tag>
+     <tag type="lemma">chess</tag>
+     <tag type="from">20</tag>
+     <tag type="to">25</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">chess.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1009">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">25</tag>
+     <tag type="to">26</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b1">
+  <domain>
+   <dr label="b1" name="x1" from="4" to="7"></dr>
+   <dr label="b2" name="x2" from="0" to="-1"></dr>
+   <dr label="b3" name="x3" from="8" to="-1"></dr>
+   <dr label="b1" name="x4" from="20" to="-1"></dr>
+   <dr label="b1" name="e1" from="13" to="19"></dr>
+   <dr label="b1" name="t1" from="13" to="19"></dr>
+  </domain>
+  <conds>
+   <cond label="b2">
+    <pred arg="x2" symbol="male" synset="male.n.02" from="0" to="3"></pred>
+   </cond>
+   <cond label="b2">
+    <named arg="x2" symbol="tom" from="0" to="3"></named>
+   </cond>
+   <cond label="b1">
+    <pred arg="x1" symbol="entity" synset="entity.n.01" from="4" to="7"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x1" arg2="x3" symbol="Sub" framenet="Sub" from="4" to="7"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x1" arg2="x2" symbol="Sub" framenet="Sub" from="4" to="7"></rel>
+   </cond>
+   <cond label="b3">
+    <pred arg="x3" symbol="female" synset="female.n.02" from="8" to="12"></pred>
+   </cond>
+   <cond label="b3">
+    <named arg="x3" symbol="mary" from="8" to="12"></named>
+   </cond>
+   <cond label="b1">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="13" to="19"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="TPR" arg1="t1" arg2="now" from="13" to="19"></comp>
+   </cond>
+   <cond label="b1">
+    <pred arg="e1" symbol="play" synset="play.v.01" from="13" to="19"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="13" to="19"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x4" symbol="Theme" framenet="Behind_the_scenes@Production" from="13" to="19"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x1" symbol="Agent" framenet="Quarreling@Arguer1" from="13" to="19"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="x4" symbol="chess" synset="chess.n.02" from="20" to="25"></pred>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

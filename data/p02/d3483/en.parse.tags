@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:b\np), 'can', [from:2, to:5, pos:'MD', lemma:'can', sem:'POS', wordnet:'O']),
+   fa(s:b\np,
+    t((s:b\np)/np, 'ride', [from:6, to:10, pos:'VB', lemma:'ride', sem:'EXS', wordnet:'ride.v.01', verbnet:['Theme','Agent']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'a', [from:11, to:12, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+      t(n, 'horse', [from:13, to:18, pos:'NN', lemma:'horse', sem:'CON', wordnet:'horse.n.01'])),
+     t(., '.', [from:18, to:19, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

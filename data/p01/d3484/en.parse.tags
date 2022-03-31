@@ -1,0 +1,26 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'pocketed', [from:4, to:12, pos:'VBD', lemma:'pocket', sem:'EPS', wordnet:'pocket.v.01', verbnet:['Theme','Agent']]),
+   fa(np,
+    t(np/n, 'the', [from:13, to:16, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+    ba(n,
+     t(n, 'money', [from:17, to:22, pos:'NN', lemma:'money', sem:'CON', wordnet:'money.n.01']),
+     lx(n\n, s:dcl/np,
+      fc(s:dcl/np,
+       lx(s:X/(s:X\np), np,
+        lx(np, n,
+         t(n, 'Mary', [from:23, to:27, pos:'NNP', lemma:'mary', sem:'PER', wordnet:'female.n.02']))),
+       rp((s:dcl\np)/np,
+        fa((s:dcl\np)/np,
+         t(((s:dcl\np)/np)/np, 'gave', [from:28, to:32, pos:'VBD', lemma:'give', sem:'EPS', wordnet:'give.v.03', verbnet:['Beneficiary','Theme','Agent']]),
+         t(np, 'him', [antecedent:'0,3', from:33, to:36, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02'])),
+        t(., '.', [from:36, to:37, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))))).
+

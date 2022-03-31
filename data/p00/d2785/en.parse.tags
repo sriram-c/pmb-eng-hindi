@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'Both', [from:0, to:4, pos:'DT', lemma:'both', sem:'AND', wordnet:'O']),
+   t(n, 'roads', [from:5, to:10, pos:'NNS', lemma:'road', sem:'CON', wordnet:'road.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/pp, 'lead', [from:11, to:15, pos:'VBP', lemma:'lead', sem:'ENS', wordnet:'lead.v.11', verbnet:['Theme']]),
+   fa(pp,
+    t(pp/np, 'to', [from:16, to:18, pos:'TO', lemma:'to', sem:'REL', wordnet:'O', verbnet:['Destination']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:19, to:22, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'station', [from:23, to:30, pos:'NN', lemma:'station', sem:'CON', wordnet:'station.n.01'])),
+     t(., '.', [from:30, to:31, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

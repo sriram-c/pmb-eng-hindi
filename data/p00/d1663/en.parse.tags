@@ -1,0 +1,26 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   fa(n,
+    t(n/n, 'Mr', [from:0, to:2, pos:'NNP', lemma:'mr', sem:'ROL', wordnet:'mr.n.01', verbnet:['Title']]),
+    t(n, 'Wood', [from:3, to:7, pos:'NNP', lemma:'wood', sem:'PER', wordnet:'male.n.02']))),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), 'was', [from:8, to:11, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+   fa(s:adj\np,
+    t((s:adj\np)/np, 'like', [from:12, to:16, pos:'IN', lemma:'like', sem:'IST', wordnet:'like.a.01', verbnet:['Co-Theme','Theme']]),
+    fa(np,
+     t(np/n, 'a', [from:17, to:18, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+     fa(n,
+      t(n/pp, 'father', [from:19, to:25, pos:'NN', lemma:'father', sem:'ROL', wordnet:'father.n.01']),
+      fa(pp,
+       t(pp/np, 'to', [from:26, to:28, pos:'TO', lemma:'to', sem:'REL', wordnet:'O', verbnet:['Of']]),
+       rp(np,
+        lx(np, n,
+         t(n, 'Tony', [from:29, to:33, pos:'NNP', lemma:'tony', sem:'PER', wordnet:'male.n.02'])),
+        t(., '.', [from:33, to:34, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))))).
+

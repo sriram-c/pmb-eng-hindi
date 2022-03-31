@@ -1,0 +1,25 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   t((s\np)/(s\np), 'carefully', [from:4, to:13, pos:'RB', lemma:'carefully', sem:'IST', wordnet:'carefully.r.01', verbnet:['Theme','Agent']]),
+   ba(s:dcl\np,
+    fa(s:dcl\np,
+     t((s:dcl\np)/np, 'wiped', [from:14, to:19, pos:'VBD', lemma:'wipe', sem:'EPS', wordnet:'wipe.v.01', verbnet:['Theme','Agent']]),
+     fa(np,
+      t(np/(n/pp), 'his', [from:20, to:23, pos:'PRP$', lemma:'male', sem:'HAS', wordnet:'male.n.02', verbnet:['Creator']]),
+      t(n/pp, 'fingerprints', [from:24, to:36, pos:'NNS', lemma:'fingerprint', sem:'CON', wordnet:'fingerprint.n.01']))),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/np, 'off', [from:37, to:40, pos:'IN', lemma:'off', sem:'REL', wordnet:'O', verbnet:['Source']]),
+     rp(np,
+      fa(np,
+       t(np/n, 'the', [from:41, to:44, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+       t(n, 'knife', [from:45, to:50, pos:'NN', lemma:'knife', sem:'CON', wordnet:'knife.n.01'])),
+      t(., '.', [from:50, to:51, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

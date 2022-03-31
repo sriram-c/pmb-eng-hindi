@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:b\np,
+  fa(s:b\np,
+   t((s:b\np)/(s:ng\np), 'Stop', [from:0, to:4, pos:'NNP', lemma:'stop', sem:'EXS', wordnet:'stop.v.02', verbnet:['PartOf','Causer']]),
+   t(s:ng\np, 'yelling', [from:5, to:12, pos:'NN', lemma:'yell', sem:'EXG', wordnet:'yell.v.01', verbnet:['Agent']])),
+  t(., '.', [from:12, to:13, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+
+ccg(2,
+ ba(s:dcl,
+  fa(np,
+   t(np/(n/pp), 'My', [from:14, to:16, pos:'PRP$', lemma:'speaker', sem:'HAS', wordnet:'O', verbnet:['PartOf']]),
+   t(n/pp, 'head', [from:17, to:21, pos:'NN', lemma:'head', sem:'CON', wordnet:'head.n.01'])),
+  rp(s:dcl\np,
+   t(s:dcl\np, 'hurts', [from:22, to:27, pos:'NNS', lemma:'hurt', sem:'ENS', wordnet:'hurt.v.01', verbnet:['Patient']]),
+   t(., '.', [from:27, to:28, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+

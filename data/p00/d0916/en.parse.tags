@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/(n/pp), 'My', [from:0, to:2, pos:'PRP$', lemma:'speaker', sem:'HAS', wordnet:'O', verbnet:['Of']]),
+   t(n/pp, 'mother', [from:3, to:9, pos:'NN', lemma:'mother', sem:'ROL', wordnet:'mother.n.01'])),
+  fa(s:dcl\np,
+   fa((s:dcl\np)/(s:to\np),
+    t(((s:dcl\np)/(s:to\np))/np, 'told', [from:10, to:14, pos:'VBD', lemma:'tell', sem:'EPS', wordnet:'tell.v.04', verbnet:['Recipient','Topic','Agent']]),
+    t(np, 'me', [from:15, to:17, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O'])),
+   fa(s:to\np,
+    t((s:to\np)/(s:b\np), 'to', [from:18, to:20, pos:'TO', lemma:'to', sem:'NIL', wordnet:'O']),
+    fa(s:b\np,
+     t((s:b\np)/np, 'mow', [from:21, to:24, pos:'VB', lemma:'mow', sem:'EXS', wordnet:'mow.v.01', verbnet:['Patient','Agent']]),
+     rp(np,
+      fa(np,
+       t(np/n, 'the', [from:25, to:28, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+       t(n, 'lawn', [from:29, to:33, pos:'NN', lemma:'lawn', sem:'CON', wordnet:'lawn.n.01'])),
+      t(., '.', [from:33, to:34, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

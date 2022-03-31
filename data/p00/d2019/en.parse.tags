@@ -1,0 +1,23 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/np, 'laid', [from:4, to:8, pos:'VBD', lemma:'lay', sem:'EPS', wordnet:'lay.v.01', verbnet:['Theme','Agent']]),
+    fa(np,
+     t(np/(n/pp), 'his', [antecedent:'0,3', from:9, to:12, pos:'PRP$', lemma:'male', sem:'HAS', wordnet:'male.n.02', verbnet:['User']]),
+     t(n/pp, 'racket', [from:13, to:19, pos:'NN', lemma:'racket', sem:'CON', wordnet:'racket.n.04']))),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'on', [from:20, to:22, pos:'IN', lemma:'on', sem:'REL', wordnet:'O', verbnet:['Destination']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:23, to:26, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'ground', [from:27, to:33, pos:'NN', lemma:'ground', sem:'CON', wordnet:'ground.n.01'])),
+     t(., '.', [from:33, to:34, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:wq,
+  t(s:wq/(s:q/np), 'Who', [from:0, to:3, pos:'WP', lemma:'organization', sem:'QUE', wordnet:'organization.n.01', verbnet:['Name']]),
+  fc(s:q/np,
+   fa(s:q/(s:pss\np),
+    t((s:q/(s:pss\np))/np, 'are', [from:4, to:7, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+    t(np, 'you', [from:8, to:11, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O'])),
+   fc((s:pss\np)/np,
+    t((s:pss\np)/pp, 'insured', [from:12, to:19, pos:'VBN', lemma:'insure', sem:'EXS', wordnet:'insure.v.03', verbnet:['Beneficiary']]),
+    rp(pp/np,
+     t(pp/np, 'with', [from:20, to:24, pos:'IN', lemma:'with', sem:'REL', wordnet:'O', verbnet:['Agent']]),
+     t(., '?', [from:24, to:25, pos:'.', lemma:'?', sem:'QUE', wordnet:'O'])))))).
+

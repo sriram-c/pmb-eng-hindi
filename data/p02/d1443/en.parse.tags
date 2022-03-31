@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'stadium', [from:4, to:11, pos:'NN', lemma:'stadium', sem:'CON', wordnet:'stadium.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), 'is', [from:12, to:14, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+   fa(s:adj\np,
+    t((s:adj\np)/pp, 'adjacent', [from:15, to:23, pos:'JJ', lemma:'adjacent', sem:'IST', wordnet:'adjacent.a.01', verbnet:['Theme']]),
+    fa(pp,
+     t(pp/np, 'to', [from:24, to:26, pos:'TO', lemma:'to', sem:'REL', wordnet:'O', verbnet:['Co-Theme']]),
+     rp(np,
+      fa(np,
+       t(np/n, 'the', [from:27, to:30, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+       t(n, 'school', [from:31, to:37, pos:'NN', lemma:'school', sem:'CON', wordnet:'school.n.02'])),
+      t(., '.', [from:37, to:38, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

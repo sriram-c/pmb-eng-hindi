@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  ba(np,
+   t(np, 'One', [from:0, to:3, pos:'CD', lemma:'1', sem:'QUC', wordnet:'O']),
+   fa(np\np,
+    t((np\np)/np, 'plus', [from:4, to:8, pos:'CC', lemma:'plus', sem:'CON', wordnet:'plus.n.02', verbnet:['Theme']]),
+    t(np, 'two', [from:9, to:12, pos:'CD', lemma:'2', sem:'QUC', wordnet:'O']))),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), 'is', [from:13, to:15, pos:'VBZ', lemma:'be', sem:'NIL', wordnet:'O']),
+   fa(s:adj\np,
+    t((s:adj\np)/pp, 'equal', [from:16, to:21, pos:'JJ', lemma:'equal', sem:'IST', wordnet:'equal.a.01', verbnet:['Theme']]),
+    rp(pp,
+     fa(pp,
+      t(pp/np, 'to', [from:22, to:24, pos:'TO', lemma:'to', sem:'REL', wordnet:'O', verbnet:['Co-Theme']]),
+      t(np, 'three', [from:25, to:30, pos:'CD', lemma:'3', sem:'QUC', wordnet:'O'])),
+     t(., '.', [from:30, to:31, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

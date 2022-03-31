@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/np, 'struck', [from:2, to:8, pos:'VBD', lemma:'strike', sem:'EPS', wordnet:'strike.v.01', verbnet:['Theme','Agent']]),
+    fa(np,
+     t(np/n, 'the', [from:9, to:12, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'wall', [from:13, to:17, pos:'NN', lemma:'wall', sem:'CON', wordnet:'wall.n.01']))),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'with', [from:18, to:22, pos:'IN', lemma:'with', sem:'REL', wordnet:'O', verbnet:['Instrument']]),
+    fa(np,
+     t(np/(n/pp), 'my', [from:23, to:25, pos:'PRP$', lemma:'speaker', sem:'HAS', wordnet:'O', verbnet:['PartOf']]),
+     rp(n/pp,
+      t(n/pp, 'fist', [from:26, to:30, pos:'NN', lemma:'fist', sem:'CON', wordnet:'fist.n.01']),
+      t(., '.', [from:30, to:31, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

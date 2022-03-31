@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'tree', [from:4, to:8, pos:'NN', lemma:'tree', sem:'CON', wordnet:'tree.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:ng\np), 'stopped', [from:9, to:16, pos:'VBD', lemma:'stop', sem:'EPS', wordnet:'stop.v.02', verbnet:['PartOf','Causer']]),
+   rp(s:ng\np,
+    t(s:ng\np, 'growing', [from:17, to:24, pos:'VBG', lemma:'grow', sem:'EXG', wordnet:'grow.v.03', verbnet:['Product']]),
+    t(., '.', [from:24, to:25, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

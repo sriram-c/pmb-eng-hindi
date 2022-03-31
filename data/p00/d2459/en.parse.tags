@@ -1,0 +1,23 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   ba(np/(n/pp),
+    lx(np, n,
+     t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+    t((np/(n/pp))\np, '\'s', [from:3, to:5, pos:'POS', lemma:'\'s', sem:'HAS', wordnet:'O', verbnet:['User']])),
+   t(n/pp, 'house', [from:6, to:11, pos:'NN', lemma:'house', sem:'CON', wordnet:'house.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), 'is', [from:12, to:14, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+   fa(s:adj\np,
+    t((s:adj\np)/((s:to\np)/np), 'easy', [from:15, to:19, pos:'JJ', lemma:'easy', sem:'IST', wordnet:'easy.a.01']),
+    fc((s:to\np)/np,
+     t((s:to\np)/(s:b\np), 'to', [from:20, to:22, pos:'TO', lemma:'to', sem:'NIL', wordnet:'O']),
+     rp((s:b\np)/np,
+      t((s:b\np)/np, 'find', [from:23, to:27, pos:'VB', lemma:'find', sem:'EXS', wordnet:'find.v.03', verbnet:['Theme','Agent']]),
+      t(., '.', [from:27, to:28, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

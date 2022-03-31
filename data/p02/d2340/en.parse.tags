@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:q,
+  ba(s:dcl,
+   t(np, 'You', [from:0, to:3, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O']),
+   fa(s:dcl\np,
+    fa((s:dcl\np)/np,
+     t(((s:dcl\np)/np)/pr, 'slept', [from:4, to:9, pos:'VBD', lemma:'sleep~with', sem:'EPS', wordnet:'sleep_with.v.01', verbnet:['Co-Agent','Agent']]),
+     t(pr, 'with', [from:10, to:14, pos:'IN', lemma:'with', sem:'REL', wordnet:'O'])),
+    t(np, 'her', [from:15, to:18, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02']))),
+  t(s:q\s:dcl, '?', [from:18, to:19, pos:'.', lemma:'?', sem:'QUE', wordnet:'O']))).
+

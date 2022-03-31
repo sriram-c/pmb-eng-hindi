@@ -1,0 +1,19 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:b\np), '\'d~better', [from:1, to:10, pos:'VBP', lemma:'had~better', sem:'NEC', wordnet:'O']),
+   fa(s:b\np,
+    fa((s:b\np)/np,
+     t(((s:b\np)/np)/np, 'drive', [from:11, to:16, pos:'NN', lemma:'drive', sem:'EXS', wordnet:'drive.v.03', verbnet:['Theme','Destination','Agent']]),
+     t(np, 'you', [from:17, to:20, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O'])),
+    rp(np,
+     lx(np, n,
+      t(n, 'home', [from:21, to:25, pos:'NN', lemma:'home', sem:'CON', wordnet:'home.n.01'])),
+     t(., '.', [from:25, to:26, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

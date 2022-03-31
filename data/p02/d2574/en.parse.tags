@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'She', [from:0, to:3, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02']),
+  fa(s:dcl\np,
+   fa((s:dcl\np)/pp,
+    t(((s:dcl\np)/pp)/np, 'mistook', [from:4, to:11, pos:'VBD', lemma:'mistake', sem:'EPS', wordnet:'mistake.v.01', verbnet:['Theme','Agent']]),
+    t(np, 'me', [from:12, to:14, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O'])),
+   fa(pp,
+    t(pp/np, 'for', [from:15, to:18, pos:'IN', lemma:'for', sem:'REL', wordnet:'O', verbnet:['Co-Theme']]),
+    rp(np,
+     fa(np,
+      t(np/(n/pp), 'my', [from:19, to:21, pos:'PRP$', lemma:'speaker', sem:'HAS', wordnet:'O', verbnet:['Of']]),
+      t(n/pp, 'brother', [from:22, to:29, pos:'NN', lemma:'brother', sem:'ROL', wordnet:'brother.n.01'])),
+     t(., '.', [from:29, to:30, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

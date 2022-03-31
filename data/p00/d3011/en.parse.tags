@@ -1,0 +1,15 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'You', [from:0, to:3, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'hugged', [from:4, to:10, pos:'VBD', lemma:'hug', sem:'EPS', wordnet:'hug.v.01', verbnet:['Co-Agent','Agent']]),
+   rp(np,
+    lx(np, n,
+     t(n, 'Mary', [from:11, to:15, pos:'NNP', lemma:'mary', sem:'PER', wordnet:'female.n.02'])),
+    t(., '.', [from:15, to:16, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

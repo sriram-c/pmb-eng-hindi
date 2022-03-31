@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'She', [from:0, to:3, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/s:em, 'knew', [from:4, to:8, pos:'VBD', lemma:'know', sem:'EPS', wordnet:'know.v.01', verbnet:['Stimulus','Experiencer']]),
+   fa(s:em,
+    t(s:em/s:dcl, 'that', [from:9, to:13, pos:'IN', lemma:'that', sem:'SUB', wordnet:'O']),
+    ba(s:dcl,
+     lx(np, n,
+      t(n, 'John', [from:14, to:18, pos:'NNP', lemma:'john', sem:'PER', wordnet:'male.n.02'])),
+     fa(s:dcl\np,
+      t((s:dcl\np)/np, 'loved', [from:19, to:24, pos:'VBD', lemma:'love', sem:'EPS', wordnet:'love.v.03', verbnet:['Stimulus','Experiencer']]),
+      rp(np,
+       t(np, 'her', [from:25, to:28, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02']),
+       t(., '.', [from:28, to:29, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))))).
+

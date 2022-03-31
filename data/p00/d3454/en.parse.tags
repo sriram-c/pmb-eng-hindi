@@ -1,0 +1,12 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  rp(s:dcl\np,
+   t(s:dcl\np, 'agree', [from:2, to:7, pos:'VBP', lemma:'agree', sem:'ENS', wordnet:'agree.v.01', verbnet:['Agent']]),
+   t(., '.', [from:7, to:8, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- You are wearing your shirt inside~out . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">You</tag>
+     <tag type="cat">np</tag>
+     <tag type="sym">hearer</tag>
+     <tag type="lemma">hearer</tag>
+     <tag type="from">0</tag>
+     <tag type="to">3</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="sem">PRO</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">are</tag>
+     <tag type="cat">(s:dcl\np)/(s:ng\np)</tag>
+     <tag type="sym">be</tag>
+     <tag type="lemma">be</tag>
+     <tag type="from">4</tag>
+     <tag type="to">7</tag>
+     <tag type="pos">VBP</tag>
+     <tag type="sem">NOW</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="tok">wearing</tag>
+     <tag type="cat">(s:ng\np)/np</tag>
+     <tag type="sym">wear</tag>
+     <tag type="lemma">wear</tag>
+     <tag type="from">8</tag>
+     <tag type="to">15</tag>
+     <tag type="pos">VBG</tag>
+     <tag type="sem">EXG</tag>
+     <tag type="wordnet">wear.v.01</tag>
+     <tag type="verbnet" n="2">[Theme,Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="tok">your</tag>
+     <tag type="cat">np/(n/pp)</tag>
+     <tag type="sym">hearer</tag>
+     <tag type="lemma">hearer</tag>
+     <tag type="from">16</tag>
+     <tag type="to">20</tag>
+     <tag type="pos">PRP$</tag>
+     <tag type="sem">HAS</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Owner]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">shirt</tag>
+     <tag type="cat">n/pp</tag>
+     <tag type="sym">shirt</tag>
+     <tag type="lemma">shirt</tag>
+     <tag type="from">21</tag>
+     <tag type="to">26</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">shirt.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="tok">inside~out</tag>
+     <tag type="cat">(s:ng\np)\(s:ng\np)</tag>
+     <tag type="sym">inside~out</tag>
+     <tag type="lemma">inside~out</tag>
+     <tag type="from">27</tag>
+     <tag type="to">37</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">IST</tag>
+     <tag type="wordnet">inside_out.r.01</tag>
+     <tag type="verbnet" n="1">[Manner]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">37</tag>
+     <tag type="to">38</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b1">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="3"></dr>
+   <dr label="b2" name="x2" from="16" to="20"></dr>
+   <dr label="b1" name="e1" from="8" to="15"></dr>
+   <dr label="b1" name="s1" from="27" to="37"></dr>
+   <dr label="b1" name="t1" from="4" to="7"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="person" synset="person.n.01" from="0" to="3"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="EQU" arg1="x1" arg2="hearer" from="0" to="3"></comp>
+   </cond>
+   <cond label="b1">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="4" to="7"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="EQU" arg1="t1" arg2="now" from="4" to="7"></comp>
+   </cond>
+   <cond label="b1">
+    <pred arg="e1" symbol="wear" synset="wear.v.01" from="8" to="15"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="4" to="7"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="s1" symbol="Manner" framenet="Manner" from="27" to="37"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x2" symbol="Theme" framenet="Wearing@Clothing" from="8" to="15"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x1" symbol="Agent" framenet="Wearing@Wearer" from="8" to="15"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="x2" symbol="shirt" synset="shirt.n.01" from="21" to="26"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="x2" arg2="hearer" symbol="Owner" framenet="Owner" from="16" to="20"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="s1" symbol="inside_out" synset="inside_out.r.01" from="27" to="37"></pred>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'You', [from:0, to:3, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O']),
+  rp(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:ng\np), 'are', [from:4, to:7, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+    ba(s:ng\np,
+     fa(s:ng\np,
+      t((s:ng\np)/np, 'wearing', [from:8, to:15, pos:'VBG', lemma:'wear', sem:'EXG', wordnet:'wear.v.01', verbnet:['Theme','Agent']]),
+      fa(np,
+       t(np/(n/pp), 'your', [from:16, to:20, pos:'PRP$', lemma:'hearer', sem:'HAS', wordnet:'O', verbnet:['Owner']]),
+       t(n/pp, 'shirt', [from:21, to:26, pos:'NN', lemma:'shirt', sem:'CON', wordnet:'shirt.n.01']))),
+     t((s:ng\np)\(s:ng\np), 'inside~out', [from:27, to:37, pos:'NN', lemma:'inside~out', sem:'IST', wordnet:'inside_out.r.01', verbnet:['Manner']]))),
+   t(., '.', [from:37, to:38, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+

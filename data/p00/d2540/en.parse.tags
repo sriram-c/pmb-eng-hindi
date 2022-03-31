@@ -1,0 +1,15 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Klava', [from:0, to:5, pos:'NNP', lemma:'klava', sem:'PER', wordnet:'female.n.02'])),
+  rp(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/np, 'oversimplifies', [from:6, to:20, pos:'VBZ', lemma:'oversimplify', sem:'ENS', wordnet:'oversimplify.v.01', verbnet:['Theme','Agent']]),
+    t(np, 'everything', [from:21, to:31, pos:'DT', lemma:'entity', sem:'AND', wordnet:'entity.n.01'])),
+   t(., '.', [from:31, to:32, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+

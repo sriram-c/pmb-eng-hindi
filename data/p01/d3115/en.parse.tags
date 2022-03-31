@@ -1,0 +1,23 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:wq,
+  fa(s:wq/(s:q/np),
+   t((s:wq/(s:q/np))/n, 'What', [from:0, to:4, pos:'WP', lemma:'entity', sem:'QUE', wordnet:'entity.n.01', verbnet:['Equal']]),
+   fa(n,
+    t(n/pp, 'kind', [from:5, to:9, pos:'NN', lemma:'entity', sem:'CON', wordnet:'entity.n.01']),
+    fa(pp,
+     t(pp/np, 'of', [from:10, to:12, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['InstanceOf']]),
+     lx(np, n,
+      t(n, 'souvenirs', [from:13, to:22, pos:'NNS', lemma:'souvenir', sem:'CON', wordnet:'souvenir.n.01']))))),
+  fc(s:q/np,
+   fa(s:q/(s:b\np),
+    t((s:q/(s:b\np))/np, 'did', [from:23, to:26, pos:'VBD', lemma:'do', sem:'PST', wordnet:'O']),
+    t(np, 'you', [from:27, to:30, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O'])),
+   rp((s:b\np)/np,
+    t((s:b\np)/np, 'buy', [from:31, to:34, pos:'VB', lemma:'buy', sem:'EXS', wordnet:'buy.v.01', verbnet:['Theme','Agent']]),
+    t(., '?', [from:34, to:35, pos:'.', lemma:'?', sem:'QUE', wordnet:'O']))))).
+

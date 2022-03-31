@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- There is no person cutting some ginger --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">There</tag>
+     <tag type="cat">np</tag>
+     <tag type="sym">there</tag>
+     <tag type="lemma">there</tag>
+     <tag type="from">0</tag>
+     <tag type="to">5</tag>
+     <tag type="pos">EX</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">is</tag>
+     <tag type="cat">((s:dcl\np)/(s:ng\np))/np</tag>
+     <tag type="sym">be</tag>
+     <tag type="lemma">be</tag>
+     <tag type="from">6</tag>
+     <tag type="to">8</tag>
+     <tag type="pos">VBZ</tag>
+     <tag type="sem">NOW</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">no</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">no</tag>
+     <tag type="lemma">no</tag>
+     <tag type="from">9</tag>
+     <tag type="to">11</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">NOT</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">person</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">person</tag>
+     <tag type="lemma">person</tag>
+     <tag type="from">12</tag>
+     <tag type="to">18</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">person.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="tok">cutting</tag>
+     <tag type="cat">(s:ng\np)/np</tag>
+     <tag type="sym">cut</tag>
+     <tag type="lemma">cut</tag>
+     <tag type="from">19</tag>
+     <tag type="to">26</tag>
+     <tag type="pos">VBG</tag>
+     <tag type="sem">EXG</tag>
+     <tag type="wordnet">cut.v.01</tag>
+     <tag type="verbnet" n="2">[Patient,Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">some</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">some</tag>
+     <tag type="lemma">some</tag>
+     <tag type="from">27</tag>
+     <tag type="to">31</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ginger</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">ginger</tag>
+     <tag type="lemma">ginger</tag>
+     <tag type="from">32</tag>
+     <tag type="to">38</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">ginger.n.02</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b1">
+  <domain>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <not from="9" to="11">
+     <drs label="b2">
+      <domain>
+       <dr label="b2" name="e1" from="0" to="0"></dr>
+       <dr label="b2" name="x1" from="9" to="11"></dr>
+       <dr label="b2" name="x2" from="27" to="31"></dr>
+       <dr label="b1" name="t1" from="6" to="8"></dr>
+      </domain>
+      <conds>
+       <cond label="b1">
+        <pred arg="t1" symbol="time" synset="time.n.08" from="6" to="8"></pred>
+       </cond>
+       <cond label="b1">
+        <comp symbol="EQU" arg1="t1" arg2="now" from="6" to="8"></comp>
+       </cond>
+       <cond label="b2">
+        <pred arg="e1" symbol="cut" synset="cut.v.01" from="0" to="0"></pred>
+       </cond>
+       <cond label="b2">
+        <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="6" to="8"></rel>
+       </cond>
+       <cond label="b2">
+        <rel arg1="e1" arg2="x2" symbol="Patient" framenet="Grooming@Body_part" from="19" to="26"></rel>
+       </cond>
+       <cond label="b2">
+        <rel arg1="e1" arg2="x1" symbol="Agent" framenet="Grooming@Agent" from="19" to="26"></rel>
+       </cond>
+       <cond label="b2">
+        <pred arg="x1" symbol="person" synset="person.n.01" from="12" to="18"></pred>
+       </cond>
+       <cond label="b2">
+        <pred arg="x2" symbol="ginger" synset="ginger.n.02" from="32" to="38"></pred>
+       </cond>
+      </conds>
+     </drs>
+    </not>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

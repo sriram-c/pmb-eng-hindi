@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:dcl,
+  ba(s:dcl,
+   t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+   ba(s:dcl\np,
+    fa(s:dcl\np,
+     t((s:dcl\np)/(s:adj\np), '\'m', [from:1, to:3, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+     t(s:adj\np, 'nervous', [from:4, to:11, pos:'JJ', lemma:'nervous', sem:'IST', wordnet:'nervous.a.04', verbnet:['Attribute']])),
+    t((s\np)\(s\np), 'now', [from:12, to:15, pos:'RB', lemma:'now', sem:'NOW', wordnet:'O']))),
+  t(., '.', [from:15, to:16, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+

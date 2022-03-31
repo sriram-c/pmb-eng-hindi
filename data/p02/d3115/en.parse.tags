@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Hans', [from:0, to:4, pos:'NNP', lemma:'hans', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), 'was', [from:5, to:8, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+   fa(s:adj\np,
+    fa((s:adj\np)/pp,
+     t(((s:adj\np)/pp)/(s:adj\np), 'as', [from:9, to:11, pos:'RB', lemma:'as', sem:'EQU', wordnet:'O', verbnet:['Theme']]),
+     t(s:adj\np, 'pleased', [from:12, to:19, pos:'JJ', lemma:'pleased', sem:'IST', wordnet:'pleased.a.01', verbnet:['Experiencer']])),
+    fa(pp,
+     t(pp/np, 'as', [from:20, to:22, pos:'IN', lemma:'as', sem:'REL', wordnet:'O', verbnet:['Co-Theme']]),
+     rp(np,
+      lx(np, n,
+       t(n, 'Punch', [from:23, to:28, pos:'NNP', lemma:'punch', sem:'PER', wordnet:'male.n.02'])),
+      t(., '.', [from:28, to:29, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

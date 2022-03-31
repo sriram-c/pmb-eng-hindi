@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'He', [from:0, to:2, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+  fa(s:dcl\np,
+   fa((s:dcl\np)/np,
+    t(((s:dcl\np)/np)/pr, 'set', [from:3, to:6, pos:'VBD', lemma:'set~down', sem:'EPS', wordnet:'set_down.v.01', verbnet:['Theme','Agent']]),
+    t(pr, 'down', [from:7, to:11, pos:'RP', lemma:'down', sem:'REL', wordnet:'O'])),
+   rp(np,
+    fa(np,
+     t(np/n, 'the', [from:12, to:15, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'telephone~number', [from:16, to:32, pos:'NN', lemma:'telephone~number', sem:'CON', wordnet:'telephone_number.n.01'])),
+    t(., '.', [from:32, to:33, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

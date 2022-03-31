@@ -1,0 +1,17 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'shrugged', [from:4, to:12, pos:'VBD', lemma:'shrug', sem:'EPS', wordnet:'shrug.v.01', verbnet:['Patient','Agent']]),
+   fa(np,
+    t(np/(n/pp), 'his', [antecedent:'0,3', from:13, to:16, pos:'PRP$', lemma:'male', sem:'HAS', wordnet:'male.n.02', verbnet:['PartOf']]),
+    rp(n/pp,
+     t(n/pp, 'shoulders', [from:17, to:26, pos:'NNS', lemma:'shoulder', sem:'CON', wordnet:'shoulder.n.01']),
+     t(., '.', [from:26, to:27, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

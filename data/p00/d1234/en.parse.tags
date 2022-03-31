@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'Both', [from:0, to:4, pos:'DT', lemma:'both', sem:'AND', wordnet:'O']),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:pt\np), 'have', [from:5, to:9, pos:'VBP', lemma:'have', sem:'NOW', wordnet:'O']),
+    fa(s:pt\np,
+     t((s:pt\np)/(s:pss\np), 'been', [from:10, to:14, pos:'VBN', lemma:'be', sem:'PFT', wordnet:'O']),
+     t(s:pss\np, 'arrested', [from:15, to:23, pos:'VBN', lemma:'arrest', sem:'EXS', wordnet:'arrest.v.01', verbnet:['Patient']]))),
+   rp((s\np)\(s\np),
+    t((s\np)\(s\np), 'already', [from:24, to:31, pos:'RB', lemma:'already', sem:'ALT', wordnet:'O']),
+    t(., '.', [from:31, to:32, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- The alarm did n't wake ø Tom . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">The</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">the</tag>
+     <tag type="lemma">the</tag>
+     <tag type="from">0</tag>
+     <tag type="to">3</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">alarm</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">alarm</tag>
+     <tag type="lemma">alarm</tag>
+     <tag type="from">4</tag>
+     <tag type="to">9</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">alarm.n.04</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">did</tag>
+     <tag type="cat">(s:dcl\np)/(s:b\np)</tag>
+     <tag type="sym">do</tag>
+     <tag type="lemma">do</tag>
+     <tag type="from">10</tag>
+     <tag type="to">13</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="sem">PST</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">n't</tag>
+     <tag type="cat">(s:dcl\np)\(s:dcl\np)</tag>
+     <tag type="sym">not</tag>
+     <tag type="lemma">not</tag>
+     <tag type="from">13</tag>
+     <tag type="to">16</tag>
+     <tag type="pos">RB</tag>
+     <tag type="sem">NOT</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="tok">wake</tag>
+     <tag type="cat">(s:b\np)/np</tag>
+     <tag type="sym">wake</tag>
+     <tag type="lemma">wake</tag>
+     <tag type="from">17</tag>
+     <tag type="to">21</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">EXS</tag>
+     <tag type="wordnet">wake.v.05</tag>
+     <tag type="verbnet" n="2">[Patient,Causer]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="from">22</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">Tom</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">tom</tag>
+     <tag type="lemma">tom</tag>
+     <tag type="from">22</tag>
+     <tag type="to">25</tag>
+     <tag type="pos">NNP</tag>
+     <tag type="sem">PER</tag>
+     <tag type="wordnet">male.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">25</tag>
+     <tag type="to">26</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b2">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="3"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="alarm" synset="alarm.n.04" from="4" to="9"></pred>
+   </cond>
+   <cond label="b2">
+    <not from="13" to="16">
+     <drs label="b4">
+      <domain>
+       <dr label="b3" name="x2" from="22" to="-1"></dr>
+       <dr label="b4" name="e1" from="17" to="21"></dr>
+       <dr label="b2" name="t1" from="10" to="13"></dr>
+      </domain>
+      <conds>
+       <cond label="b2">
+        <pred arg="t1" symbol="time" synset="time.n.08" from="10" to="13"></pred>
+       </cond>
+       <cond label="b2">
+        <comp symbol="TPR" arg1="t1" arg2="now" from="10" to="13"></comp>
+       </cond>
+       <cond label="b4">
+        <pred arg="e1" symbol="wake" synset="wake.v.05" from="17" to="21"></pred>
+       </cond>
+       <cond label="b4">
+        <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="10" to="13"></rel>
+       </cond>
+       <cond label="b4">
+        <rel arg1="e1" arg2="x2" symbol="Patient" framenet="Cure@Affliction" from="17" to="21"></rel>
+       </cond>
+       <cond label="b4">
+        <rel arg1="e1" arg2="x1" symbol="Causer" framenet="Causer" from="17" to="21"></rel>
+       </cond>
+       <cond label="b3">
+        <pred arg="x2" symbol="male" synset="male.n.02" from="22" to="25"></pred>
+       </cond>
+       <cond label="b3">
+        <named arg="x2" symbol="tom" from="22" to="25"></named>
+       </cond>
+      </conds>
+     </drs>
+    </not>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

@@ -1,0 +1,19 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/pp, 'works', [from:4, to:9, pos:'VBZ', lemma:'work', sem:'ENS', wordnet:'work.v.02', verbnet:['Agent']]),
+   fa(pp,
+    t(pp/np, 'for', [from:10, to:13, pos:'IN', lemma:'for', sem:'REL', wordnet:'O', verbnet:['Co-Agent']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'an', [from:14, to:16, pos:'DT', lemma:'an', sem:'DIS', wordnet:'O']),
+      t(n, 'oil~company', [from:17, to:28, pos:'NN', lemma:'oil~company', sem:'CON', wordnet:'oil_company.n.01'])),
+     t(., '.', [from:28, to:29, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

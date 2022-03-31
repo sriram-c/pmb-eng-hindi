@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:dcl,
+  ba(s:dcl,
+   fa(np,
+    t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+    t(n, 'festival', [from:4, to:12, pos:'NN', lemma:'festival', sem:'CON', wordnet:'festival.n.02'])),
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:adj\np), 'is', [from:13, to:15, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+    t(s:adj\np, 'free', [from:16, to:20, pos:'JJ', lemma:'free', sem:'IST', wordnet:'free.a.03', verbnet:['Attribute']]))),
+  t(., '.', [from:20, to:21, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+

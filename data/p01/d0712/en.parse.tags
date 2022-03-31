@@ -1,0 +1,26 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Kraft', [from:0, to:5, pos:'NNP', lemma:'kraft', sem:'ORG', wordnet:'company.n.01'])),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    fa((s:dcl\np)/pp,
+     t(((s:dcl\np)/pp)/np, 'sold', [from:6, to:10, pos:'VBD', lemma:'sell', sem:'EPS', wordnet:'sell.v.01', verbnet:['Theme','Agent']]),
+     lx(np, n,
+      t(n, 'Celestial~Seasonings', [from:11, to:31, pos:'NNP', lemma:'celestial~seasonings', sem:'ORG', wordnet:'company.n.01']))),
+    fa(pp,
+     t(pp/np, 'to', [from:32, to:34, pos:'TO', lemma:'to', sem:'REL', wordnet:'O', verbnet:['Recipient']]),
+     lx(np, n,
+      t(n, 'Lipton', [from:35, to:41, pos:'NNP', lemma:'lipton', sem:'ORG', wordnet:'company.n.01'])))),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'in', [from:42, to:44, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Time']]),
+    rp(np,
+     lx(np, n,
+      t(n, '1986', [from:45, to:49, pos:'CD', lemma:'1986', sem:'YOC', wordnet:'O'])),
+     t(., '.', [from:49, to:50, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

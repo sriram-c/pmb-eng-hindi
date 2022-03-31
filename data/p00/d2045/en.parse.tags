@@ -1,0 +1,15 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Mary', [from:0, to:4, pos:'NNP', lemma:'mary', sem:'PER', wordnet:'female.n.02'])),
+  rp(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/np, 'misled', [from:5, to:11, pos:'VBD', lemma:'mislead', sem:'EPS', wordnet:'mislead.v.01', verbnet:['Patient','Agent']]),
+    t(np, 'me', [from:12, to:14, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O'])),
+   t(., '.', [from:14, to:15, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+

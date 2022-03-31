@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Bill', [from:0, to:4, pos:'NNP', lemma:'bill', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   fa((s:dcl\np)/pp,
+    t(((s:dcl\np)/pp)/np, 'tapped', [from:5, to:11, pos:'VBD', lemma:'tap', sem:'EPS', wordnet:'tap.v.03', verbnet:['Experiencer','Agent']]),
+    t(np, 'me', [from:12, to:14, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O'])),
+   fa(pp,
+    t(pp/np, 'on', [from:15, to:17, pos:'IN', lemma:'on', sem:'REL', wordnet:'O', verbnet:['Patient']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:18, to:21, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'shoulder', [from:22, to:30, pos:'NN', lemma:'shoulder', sem:'CON', wordnet:'shoulder.n.01'])),
+     t(., '.', [from:30, to:31, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

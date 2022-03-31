@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- She showers every morning . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">She</tag>
+     <tag type="cat">np</tag>
+     <tag type="sym">female</tag>
+     <tag type="lemma">female</tag>
+     <tag type="from">0</tag>
+     <tag type="to">3</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="sem">PRO</tag>
+     <tag type="wordnet">female.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="tok">showers</tag>
+     <tag type="cat">s:dcl\np</tag>
+     <tag type="sym">shower</tag>
+     <tag type="lemma">shower</tag>
+     <tag type="from">4</tag>
+     <tag type="to">11</tag>
+     <tag type="pos">VBZ</tag>
+     <tag type="sem">EXS</tag>
+     <tag type="wordnet">shower.v.03</tag>
+     <tag type="verbnet" n="1">[Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="tok">every</tag>
+     <tag type="cat">((s:dcl\np)\(s:dcl\np))/n</tag>
+     <tag type="sym">every</tag>
+     <tag type="lemma">every</tag>
+     <tag type="from">12</tag>
+     <tag type="to">17</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">AND</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Time]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">morning</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">morning</tag>
+     <tag type="lemma">morning</tag>
+     <tag type="from">18</tag>
+     <tag type="to">25</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">morning.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">25</tag>
+     <tag type="to">26</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b1">
+  <domain>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <not from="12" to="17">
+     <drs label="b2">
+      <domain>
+       <dr label="b2" name="x1" from="12" to="17"></dr>
+      </domain>
+      <conds>
+       <cond label="b2">
+        <not from="12" to="17">
+         <drs label="b4">
+          <domain>
+           <dr label="b3" name="x2" from="0" to="3"></dr>
+           <dr label="b4" name="e1" from="4" to="11"></dr>
+          </domain>
+          <conds>
+           <cond label="b3">
+            <pred arg="x2" symbol="female" synset="female.n.02" from="0" to="3"></pred>
+           </cond>
+           <cond label="b4">
+            <pred arg="e1" symbol="shower" synset="shower.v.03" from="4" to="11"></pred>
+           </cond>
+           <cond label="b4">
+            <rel arg1="e1" arg2="x1" symbol="Time" framenet="Time" from="12" to="17"></rel>
+           </cond>
+           <cond label="b4">
+            <rel arg1="e1" arg2="x2" symbol="Agent" framenet="Grooming@Agent" from="4" to="11"></rel>
+           </cond>
+          </conds>
+         </drs>
+        </not>
+       </cond>
+       <cond label="b2">
+        <pred arg="x1" symbol="morning" synset="morning.n.01" from="18" to="25"></pred>
+       </cond>
+      </conds>
+     </drs>
+    </not>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

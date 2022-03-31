@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   fa(n,
+    t(n/n, 'big', [from:4, to:7, pos:'JJ', lemma:'big', sem:'DEG', wordnet:'big.a.01', verbnet:['Attribute']]),
+    fa(n,
+     t(n/n, 'white', [from:8, to:13, pos:'JJ', lemma:'white', sem:'COL', wordnet:'white.a.01', verbnet:['Colour']]),
+     t(n, 'dog', [from:14, to:17, pos:'NN', lemma:'dog', sem:'CON', wordnet:'dog.n.01'])))),
+  fa(s:dcl\np,
+   t((s:dcl\np)/pp, 'looks', [from:18, to:23, pos:'VBZ', lemma:'look', sem:'ENS', wordnet:'look.v.01', verbnet:['Agent']]),
+   fa(pp,
+    t(pp/np, 'at', [from:24, to:26, pos:'IN', lemma:'at', sem:'REL', wordnet:'O', verbnet:['Theme']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'that', [from:27, to:31, pos:'DT', lemma:'entity', sem:'DST', wordnet:'entity.n.01']),
+      t(n, 'cat', [from:32, to:35, pos:'NN', lemma:'cat', sem:'CON', wordnet:'cat.n.01'])),
+     t(., '.', [from:35, to:36, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

@@ -1,0 +1,14 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'Everyone', [from:0, to:8, pos:'DT', lemma:'person', sem:'AND', wordnet:'person.n.01']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'knows', [from:9, to:14, pos:'VBZ', lemma:'know', sem:'ENS', wordnet:'know.v.04', verbnet:['Stimulus','Experiencer']]),
+   rp(np,
+    t(np, 'everyone', [from:15, to:23, pos:'DT', lemma:'person', sem:'AND', wordnet:'person.n.01']),
+    t(., '.', [from:23, to:24, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:wq,
+  fa(s:wq/(s:q/np),
+   t((s:wq/(s:q/np))/n, 'How', [from:0, to:3, pos:'WRB', lemma:'how', sem:'QUE', wordnet:'O', verbnet:['Unit']]),
+   t(n, 'much', [from:4, to:8, pos:'RB', lemma:'?', sem:'QUV', wordnet:'O'])),
+  fc(s:q/np,
+   fa(s:q/(s:b\np),
+    t((s:q/(s:b\np))/np, 'did', [from:9, to:12, pos:'VBD', lemma:'do', sem:'PST', wordnet:'O']),
+    fa(np,
+     t(np/n, 'the', [from:13, to:16, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'glasses', [from:17, to:24, pos:'NNS', lemma:'glasses', sem:'CON', wordnet:'glasses.n.03']))),
+   rp((s:b\np)/np,
+    t((s:b\np)/np, 'cost', [from:25, to:29, pos:'NN', lemma:'cost', sem:'EXS', wordnet:'cost.v.01', verbnet:['Value','Theme']]),
+    t(., '?', [from:29, to:30, pos:'.', lemma:'?', sem:'QUE', wordnet:'O']))))).
+

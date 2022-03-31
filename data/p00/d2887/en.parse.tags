@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'We', [from:0, to:2, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), '\'re', [from:2, to:5, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+   fa(s:adj\np,
+    t((s:adj\np)/(s:adj\np), 'very', [from:6, to:10, pos:'RB', lemma:'very', sem:'INT', wordnet:'very.r.01']),
+    fa(s:adj\np,
+     t((s:adj\np)/pp, 'happy', [from:11, to:16, pos:'JJ', lemma:'happy', sem:'IST', wordnet:'happy.a.01', verbnet:['Experiencer']]),
+     fa(pp,
+      t(pp/np, 'with', [from:17, to:21, pos:'IN', lemma:'with', sem:'REL', wordnet:'O', verbnet:['Stimulus']]),
+      rp(np,
+       fa(np,
+        t(np/n, 'the', [from:22, to:25, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+        t(n, 'results', [from:26, to:33, pos:'NNS', lemma:'result', sem:'CON', wordnet:'result.n.03'])),
+       t(., '.', [from:33, to:34, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))))).
+

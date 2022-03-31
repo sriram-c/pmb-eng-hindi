@@ -1,0 +1,12 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:b\np,
+  ba(s:b\np,
+   t(s:b\np, 'Speak', [from:0, to:5, pos:'NNP', lemma:'speak', sem:'EXS', wordnet:'speak.v.01', verbnet:['Agent']]),
+   t((s\np)\(s\np), 'clear', [from:6, to:11, pos:'JJ', lemma:'clear', sem:'IST', wordnet:'clear.a.09', verbnet:['Manner']])),
+  t((s\np)\(s\np), '.', [from:11, to:12, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+

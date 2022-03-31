@@ -1,0 +1,25 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:q,
+  ba(s:dcl,
+   lx(np, n,
+    t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:ng\np), 'is', [from:4, to:6, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+    fa(s:ng\np,
+     t((s:ng\np)/(s:adj\np), 'being', [from:7, to:12, pos:'VBG', lemma:'be', sem:'PRG', wordnet:'O']),
+     t(s:adj\np, 'silly', [from:13, to:18, pos:'JJ', lemma:'silly', sem:'IST', wordnet:'silly.a.01', verbnet:['Attribute']])))),
+  fa(s:q\s:dcl,
+   t((s:q\s:dcl)/(s:q/(s:ng\np)), ',', [from:18, to:19, pos:',', lemma:',', sem:'NIL', wordnet:'O']),
+   fa(s:q/(s:ng\np),
+    gbxc((s:q/(s:ng\np))/np,
+     t((s:q/(s:ng\np))/np, 'is', [from:20, to:22, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+     t(s:q\s:q, 'n\'t', [from:22, to:25, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+    rp(np,
+     t(np, 'he', [antecedent:'0,3', from:26, to:28, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+     t(., '?', [from:28, to:29, pos:'.', lemma:'?', sem:'QUE', wordnet:'O'])))))).
+

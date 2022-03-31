@@ -1,0 +1,28 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:pt\np), 'has', [from:4, to:7, pos:'VBZ', lemma:'have', sem:'NOW', wordnet:'O']),
+   fa(s:pt\np,
+    t((s:pt\np)/np, 'bought', [from:8, to:14, pos:'VBN', lemma:'buy', sem:'EXT', wordnet:'buy.v.01', verbnet:['Theme','Agent']]),
+    fa(np,
+     t(np/n, 'a', [from:15, to:16, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+     ba(n,
+      t(n, 'house', [from:17, to:22, pos:'NN', lemma:'house', sem:'CON', wordnet:'house.n.01']),
+      fa(n\n,
+       t((n\n)/(s:dcl\np), 'which', [from:23, to:28, pos:'WDT', lemma:'which', sem:'REL', wordnet:'O']),
+       fa(s:dcl\np,
+        t((s:dcl\np)/np, 'has', [from:29, to:32, pos:'VBZ', lemma:'have', sem:'ENS', wordnet:'have.v.02', verbnet:['Theme','Pivot']]),
+        rp(np,
+         lx(np, n,
+          fa(n,
+           t(n/n, 'six', [from:33, to:36, pos:'CD', lemma:'6', sem:'QUC', wordnet:'O', verbnet:['Quantity']]),
+           t(n, 'rooms', [from:37, to:42, pos:'NNS', lemma:'room', sem:'CON', wordnet:'room.n.01']))),
+         t(., '.', [from:42, to:43, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))))))).
+

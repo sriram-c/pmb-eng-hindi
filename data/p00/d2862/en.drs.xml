@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- ø Tom was carrying a bucket of ø water . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="from">0</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">Tom</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">tom</tag>
+     <tag type="lemma">tom</tag>
+     <tag type="from">0</tag>
+     <tag type="to">3</tag>
+     <tag type="pos">NNP</tag>
+     <tag type="sem">PER</tag>
+     <tag type="wordnet">male.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">was</tag>
+     <tag type="cat">(s:dcl\np)/(s:ng\np)</tag>
+     <tag type="sym">be</tag>
+     <tag type="lemma">be</tag>
+     <tag type="from">4</tag>
+     <tag type="to">7</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="sem">PST</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="tok">carrying</tag>
+     <tag type="cat">(s:ng\np)/np</tag>
+     <tag type="sym">carry</tag>
+     <tag type="lemma">carry</tag>
+     <tag type="from">8</tag>
+     <tag type="to">16</tag>
+     <tag type="pos">VBG</tag>
+     <tag type="sem">EXG</tag>
+     <tag type="wordnet">carry.v.01</tag>
+     <tag type="verbnet" n="2">[Theme,Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">a</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">a</tag>
+     <tag type="lemma">a</tag>
+     <tag type="from">17</tag>
+     <tag type="to">18</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">bucket</tag>
+     <tag type="cat">n/pp</tag>
+     <tag type="sym">bucket</tag>
+     <tag type="lemma">bucket</tag>
+     <tag type="from">19</tag>
+     <tag type="to">25</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">bucket.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="tok">of</tag>
+     <tag type="cat">pp/np</tag>
+     <tag type="sym">of</tag>
+     <tag type="lemma">of</tag>
+     <tag type="from">26</tag>
+     <tag type="to">28</tag>
+     <tag type="pos">IN</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Content]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="from">29</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1009">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">water</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">water</tag>
+     <tag type="lemma">water</tag>
+     <tag type="from">29</tag>
+     <tag type="to">34</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">water.n.06</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1010">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">34</tag>
+     <tag type="to">35</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b2">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="-1"></dr>
+   <dr label="b2" name="x2" from="17" to="18"></dr>
+   <dr label="b2" name="x3" from="29" to="-1"></dr>
+   <dr label="b2" name="e1" from="8" to="16"></dr>
+   <dr label="b2" name="t1" from="4" to="7"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="male" synset="male.n.02" from="0" to="3"></pred>
+   </cond>
+   <cond label="b1">
+    <named arg="x1" symbol="tom" from="0" to="3"></named>
+   </cond>
+   <cond label="b2">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="4" to="7"></pred>
+   </cond>
+   <cond label="b2">
+    <comp symbol="TPR" arg1="t1" arg2="now" from="4" to="7"></comp>
+   </cond>
+   <cond label="b2">
+    <pred arg="e1" symbol="carry" synset="carry.v.01" from="8" to="16"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="4" to="7"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x2" symbol="Theme" framenet="Carry_goods@Goods" from="8" to="16"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x1" symbol="Agent" framenet="Carry_goods@Distributor" from="8" to="16"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="x2" symbol="bucket" synset="bucket.n.01" from="19" to="25"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="x2" arg2="x3" symbol="Content" framenet="Content" from="26" to="28"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="x3" symbol="water" synset="water.n.06" from="29" to="34"></pred>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

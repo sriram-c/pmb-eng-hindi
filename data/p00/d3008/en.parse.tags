@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  ba(s:dcl,
+   t(np, 'He', [from:0, to:2, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+   fa(s:dcl\np,
+    t((s:dcl\np)/np, 'played', [from:3, to:9, pos:'VBD', lemma:'play', sem:'EPS', wordnet:'play.v.03', verbnet:['Theme','Agent']]),
+    fa(np,
+     t(np/n, 'the', [from:10, to:13, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'piano', [from:14, to:19, pos:'NN', lemma:'piano', sem:'CON', wordnet:'piano.n.01'])))),
+  conj(s:dcl\s:dcl,
+   t(conj, 'and', [from:20, to:23, pos:'CC', lemma:'and', sem:'COO', wordnet:'O']),
+   ba(s:dcl,
+    t(np, 'she', [from:24, to:27, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02']),
+    rp(s:dcl\np,
+     t(s:dcl\np, 'sang', [from:28, to:32, pos:'VBD', lemma:'sing', sem:'EPS', wordnet:'sing.v.01', verbnet:['Agent']]),
+     t(., '.', [from:32, to:33, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

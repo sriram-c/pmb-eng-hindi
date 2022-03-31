@@ -1,0 +1,23 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'college', [from:4, to:11, pos:'NN', lemma:'college', sem:'CON', wordnet:'college.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:pss\np), 'was', [from:12, to:15, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+   ba(s:pss\np,
+    t(s:pss\np, 'founded', [from:16, to:23, pos:'VBN', lemma:'found', sem:'EXS', wordnet:'found.v.01', verbnet:['Theme']]),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/np, 'by', [from:24, to:26, pos:'IN', lemma:'by', sem:'REL', wordnet:'O', verbnet:['Agent']]),
+     rp(np,
+      lx(np, n,
+       fa(n,
+        t(n/n, 'Mr', [from:27, to:29, pos:'NNP', lemma:'mr', sem:'ROL', wordnet:'mr.n.01', verbnet:['Title']]),
+        t(n, 'Smith', [from:30, to:35, pos:'NNP', lemma:'smith', sem:'PER', wordnet:'male.n.02']))),
+      t(., '.', [from:35, to:36, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

@@ -1,0 +1,28 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  ba(s:dcl,
+   t(np, 'He', [from:0, to:2, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+   rp(s:dcl\np,
+    fa(s:dcl\np,
+     t((s:dcl\np)/(s:to\np), 'promised', [from:3, to:11, pos:'VBD', lemma:'promise', sem:'EPS', wordnet:'promise.v.01', verbnet:['Theme','Agent']]),
+     fa(s:to\np,
+      t((s:to\np)/(s:b\np), 'to', [from:12, to:14, pos:'TO', lemma:'to', sem:'NIL', wordnet:'O']),
+      t(s:b\np, 'come', [from:15, to:19, pos:'VB', lemma:'come', sem:'EXS', wordnet:'come.v.02', verbnet:['Theme']]))),
+    t(,, ',', [from:19, to:20, pos:',', lemma:',', sem:'NIL', wordnet:'O']))),
+  conj(s:dcl\s:dcl,
+   t(conj, 'but', [from:21, to:24, pos:'CC', lemma:'but', sem:'BUT', wordnet:'O']),
+   ba(s:dcl,
+    t(np, 'he', [from:25, to:27, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+    fa(s:dcl\np,
+     bxc((s:dcl\np)/(s:b\np),
+      t((s:dcl\np)/(s:b\np), 'did', [from:28, to:31, pos:'VBD', lemma:'do', sem:'PST', wordnet:'O']),
+      t((s\np)\(s\np), 'n\'t', [from:31, to:34, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+     rp(s:b\np,
+      t(s:b\np, 'come', [from:35, to:39, pos:'VB', lemma:'come', sem:'EXS', wordnet:'come.v.02', verbnet:['Theme']]),
+      t(., '.', [from:39, to:40, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

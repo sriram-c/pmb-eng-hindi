@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:wq,
+  fa(s:wq/(s:q/np),
+   t((s:wq/(s:q/np))/n, 'Whose', [from:0, to:5, pos:'JJ', lemma:'person', sem:'HAS', wordnet:'person.n.01', verbnet:['User','Name']]),
+   t(n, 'handbag', [from:6, to:13, pos:'NN', lemma:'handbag', sem:'CON', wordnet:'handbag.n.01'])),
+  fa(s:q/np,
+   t((s:q/np)/np, 'is', [from:14, to:16, pos:'VBZ', lemma:'be', sem:'ENS', wordnet:'be.v.02', verbnet:['Theme','Co-Theme']]),
+   rp(np,
+    t(np, 'this', [from:17, to:21, pos:'DT', lemma:'entity', sem:'PRX', wordnet:'entity.n.01']),
+    t(., '?', [from:21, to:22, pos:'.', lemma:'?', sem:'QUE', wordnet:'O']))))).
+

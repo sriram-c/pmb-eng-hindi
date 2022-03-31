@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- If the text does n't make sense , it is n't coherent . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">If</tag>
+     <tag type="cat">(s:dcl/s:dcl)/s:dcl</tag>
+     <tag type="sym">if</tag>
+     <tag type="lemma">if</tag>
+     <tag type="from">0</tag>
+     <tag type="to">2</tag>
+     <tag type="pos">IN</tag>
+     <tag type="sem">SUB</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">the</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">the</tag>
+     <tag type="lemma">the</tag>
+     <tag type="from">3</tag>
+     <tag type="to">6</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">text</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">text</tag>
+     <tag type="lemma">text</tag>
+     <tag type="from">7</tag>
+     <tag type="to">11</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">text.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">does</tag>
+     <tag type="cat">(s:dcl\np)/(s:b\np)</tag>
+     <tag type="sym">do</tag>
+     <tag type="lemma">do</tag>
+     <tag type="from">12</tag>
+     <tag type="to">16</tag>
+     <tag type="pos">VBZ</tag>
+     <tag type="sem">NOW</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">n't</tag>
+     <tag type="cat">(s:dcl\np)\(s:dcl\np)</tag>
+     <tag type="sym">not</tag>
+     <tag type="lemma">not</tag>
+     <tag type="from">16</tag>
+     <tag type="to">19</tag>
+     <tag type="pos">RB</tag>
+     <tag type="sem">NOT</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="tok">make</tag>
+     <tag type="cat">(s:b\np)/pr</tag>
+     <tag type="sym">make~sense</tag>
+     <tag type="lemma">make~sense</tag>
+     <tag type="from">20</tag>
+     <tag type="to">24</tag>
+     <tag type="pos">VB</tag>
+     <tag type="sem">EXS</tag>
+     <tag type="wordnet">make_sense.v.01</tag>
+     <tag type="verbnet" n="1">[Theme]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">sense</tag>
+     <tag type="cat">pr</tag>
+     <tag type="sym">sense</tag>
+     <tag type="lemma">sense</tag>
+     <tag type="from">25</tag>
+     <tag type="to">30</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">,</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">,</tag>
+     <tag type="lemma">,</tag>
+     <tag type="from">30</tag>
+     <tag type="to">31</tag>
+     <tag type="pos">,</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1009">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">it</tag>
+     <tag type="cat">np</tag>
+     <tag type="sym">entity</tag>
+     <tag type="lemma">entity</tag>
+     <tag type="antecedent">7,11</tag>
+     <tag type="from">32</tag>
+     <tag type="to">34</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="sem">PRO</tag>
+     <tag type="wordnet">entity.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1010">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">is</tag>
+     <tag type="cat">(s:dcl\np)/(s:adj\np)</tag>
+     <tag type="sym">be</tag>
+     <tag type="lemma">be</tag>
+     <tag type="from">35</tag>
+     <tag type="to">37</tag>
+     <tag type="pos">VBZ</tag>
+     <tag type="sem">NOW</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1011">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">n't</tag>
+     <tag type="cat">(s:dcl\np)\(s:dcl\np)</tag>
+     <tag type="sym">not</tag>
+     <tag type="lemma">not</tag>
+     <tag type="from">37</tag>
+     <tag type="to">40</tag>
+     <tag type="pos">RB</tag>
+     <tag type="sem">NOT</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1012">
+   <tags>
+     <tag type="tok">coherent</tag>
+     <tag type="cat">s:adj\np</tag>
+     <tag type="sym">coherent</tag>
+     <tag type="lemma">coherent</tag>
+     <tag type="from">41</tag>
+     <tag type="to">49</tag>
+     <tag type="pos">JJ</tag>
+     <tag type="sem">IST</tag>
+     <tag type="wordnet">coherent.a.01</tag>
+     <tag type="verbnet" n="1">[Attribute]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1013">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">49</tag>
+     <tag type="to">50</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <sdrs>
+  <constituents>
+   <constituent label="b2">
+    <tokens>
+     <token>the</token>
+     <token>text</token>
+     <token>does</token>
+     <token>n't</token>
+     <token>make</token>
+    </tokens>
+    <drs label="b2">
+     <domain>
+      <dr label="b1" name="x1" from="3" to="6"></dr>
+     </domain>
+     <conds>
+      <cond label="b1">
+       <pred arg="x1" symbol="text" synset="text.n.01" from="7" to="11"></pred>
+      </cond>
+      <cond label="b2">
+       <not from="16" to="19">
+        <drs label="b3">
+         <domain>
+          <dr label="b3" name="e1" from="20" to="24"></dr>
+          <dr label="b2" name="t1" from="12" to="16"></dr>
+         </domain>
+         <conds>
+          <cond label="b2">
+           <pred arg="t1" symbol="time" synset="time.n.08" from="12" to="16"></pred>
+          </cond>
+          <cond label="b2">
+           <comp symbol="EQU" arg1="t1" arg2="now" from="12" to="16"></comp>
+          </cond>
+          <cond label="b3">
+           <pred arg="e1" symbol="make_sense" synset="make_sense.v.01" from="20" to="24"></pred>
+          </cond>
+          <cond label="b3">
+           <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="12" to="16"></rel>
+          </cond>
+          <cond label="b3">
+           <rel arg1="e1" arg2="x1" symbol="Theme" framenet="Placing@Theme" from="20" to="24"></rel>
+          </cond>
+         </conds>
+        </drs>
+       </not>
+      </cond>
+     </conds>
+    </drs>
+   </constituent>
+   <constituent label="b4">
+    <tokens>
+     <token>it</token>
+     <token>is</token>
+     <token>n't</token>
+     <token>coherent</token>
+     <token>.</token>
+    </tokens>
+    <drs label="b4">
+     <domain>
+      <dr label="b1" name="x1" from="32" to="34"></dr>
+     </domain>
+     <conds>
+      <cond label="b1">
+       <pred arg="x1" symbol="entity" synset="entity.n.01" from="32" to="34"></pred>
+      </cond>
+      <cond label="b4">
+       <not from="37" to="40">
+        <drs label="b5">
+         <domain>
+          <dr label="b5" name="s1" from="41" to="49"></dr>
+          <dr label="b2" name="t2" from="35" to="37"></dr>
+         </domain>
+         <conds>
+          <cond label="b2">
+           <pred arg="t2" symbol="time" synset="time.n.08" from="35" to="37"></pred>
+          </cond>
+          <cond label="b2">
+           <comp symbol="EQU" arg1="t2" arg2="now" from="35" to="37"></comp>
+          </cond>
+          <cond label="b5">
+           <pred arg="s1" symbol="coherent" synset="coherent.a.01" from="41" to="49"></pred>
+          </cond>
+          <cond label="b5">
+           <rel arg1="s1" arg2="t2" symbol="Time" framenet="Time" from="35" to="37"></rel>
+          </cond>
+          <cond label="b5">
+           <rel arg1="s1" arg2="x1" symbol="AttributeOf" framenet="AttributeOf" from="41" to="49"></rel>
+          </cond>
+         </conds>
+        </drs>
+       </not>
+      </cond>
+     </conds>
+    </drs>
+   </constituent>
+  </constituents>
+  <relations>
+   <drel arg1="b2" arg2="b4" sym="CONSEQUENCE" from="0" to="2"></drel>
+  </relations>
+ </sdrs>
+</xdrs>
+</xdrs-output>

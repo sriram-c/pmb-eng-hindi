@@ -1,0 +1,19 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:wq,
+  fa(s:wq/(s:q/np),
+   t((s:wq/(s:q/np))/n, 'What', [from:0, to:4, pos:'WP', lemma:'entity', sem:'QUE', wordnet:'entity.n.01', verbnet:['Name']]),
+   t(n, 'city', [from:5, to:9, pos:'NN', lemma:'city', sem:'CON', wordnet:'city.n.01'])),
+  fc(s:q/np,
+   fa(s:q/pp,
+    t((s:q/pp)/np, 'is', [from:10, to:12, pos:'VBZ', lemma:'be', sem:'ENS', wordnet:'be.v.03', verbnet:['Theme']]),
+    lx(np, n,
+     t(n, 'Southwestern~University', [from:13, to:36, pos:'NN', lemma:'southwestern~university', sem:'ORG', wordnet:'university.n.03']))),
+   rp(pp/np,
+    t(pp/np, 'in', [from:37, to:39, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Location']]),
+    t(., '?', [from:39, to:40, pos:'.', lemma:'?', sem:'QUE', wordnet:'O']))))).
+

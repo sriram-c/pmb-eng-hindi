@@ -1,0 +1,27 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'A', [from:0, to:1, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+   fa(n,
+    t(n/pp, 'lot', [from:2, to:5, pos:'NN', lemma:'+', sem:'QUV', wordnet:'O']),
+    fa(pp,
+     t(pp/np, 'of', [from:6, to:8, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['Equal']]),
+     lx(np, n,
+      t(n, 'insects', [from:9, to:16, pos:'NNS', lemma:'insect', sem:'CON', wordnet:'insect.n.01']))))),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:ng\np), 'are', [from:17, to:20, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+    t(s:ng\np, 'chirping', [from:21, to:29, pos:'VBG', lemma:'chirp', sem:'EXG', wordnet:'chirp.v.01', verbnet:['Agent']])),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'in', [from:30, to:32, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Location']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:33, to:36, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'field', [from:37, to:42, pos:'NN', lemma:'field', sem:'CON', wordnet:'field.n.01'])),
+     t(., '.', [from:42, to:43, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

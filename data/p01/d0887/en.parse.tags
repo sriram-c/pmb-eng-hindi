@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:wq,
+  fa(s:wq/(s:q/np),
+   t((s:wq/(s:q/np))/n, 'What', [from:0, to:4, pos:'WP', lemma:'entity', sem:'QUE', wordnet:'entity.n.01', verbnet:['Equal']]),
+   fa(n,
+    t(n/pp, 'kind', [from:5, to:9, pos:'NN', lemma:'entity', sem:'CON', wordnet:'entity.n.01']),
+    fa(pp,
+     t(pp/np, 'of', [from:10, to:12, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['InstanceOf']]),
+     lx(np, n,
+      t(n, 'monkeys', [from:13, to:20, pos:'NNS', lemma:'monkey', sem:'CON', wordnet:'monkey.n.01']))))),
+  rp(s:q/np,
+   fa(s:q/np,
+    t((s:q/np)/np, 'are', [from:21, to:24, pos:'VBP', lemma:'be', sem:'ENS', wordnet:'be.v.01', verbnet:['Theme','Co-Theme']]),
+    t(np, 'those', [from:25, to:30, pos:'DT', lemma:'entity', sem:'DST', wordnet:'entity.n.01'])),
+   t(., '?', [from:30, to:31, pos:'.', lemma:'?', sem:'QUE', wordnet:'O'])))).
+

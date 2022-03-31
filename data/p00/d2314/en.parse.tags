@@ -1,0 +1,14 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:q,
+  fa(s:q/(s:adj\np),
+   t((s:q/(s:adj\np))/np, 'Are', [from:0, to:3, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+   t(np, 'you', [from:4, to:7, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O'])),
+  rp(s:adj\np,
+   t(s:adj\np, 'lucky', [from:8, to:13, pos:'JJ', lemma:'lucky', sem:'IST', wordnet:'lucky.a.02', verbnet:['Attribute']]),
+   t(., '?', [from:13, to:14, pos:'.', lemma:'?', sem:'QUE', wordnet:'O'])))).
+

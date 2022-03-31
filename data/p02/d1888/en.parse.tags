@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), 'was', [from:2, to:5, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+   fa(s:adj\np,
+    fa((s:adj\np)/pp,
+     t(((s:adj\np)/pp)/(s:adj\np), 'as', [from:6, to:8, pos:'RB', lemma:'as', sem:'EQU', wordnet:'O', verbnet:['Theme']]),
+     t(s:adj\np, 'cool', [from:9, to:13, pos:'JJ', lemma:'cool', sem:'IST', wordnet:'cool.a.02', verbnet:['Attribute']])),
+    fa(pp,
+     t(pp/np, 'as', [from:14, to:16, pos:'IN', lemma:'as', sem:'REL', wordnet:'O', verbnet:['Co-Theme']]),
+     rp(np,
+      fa(np,
+       t(np/n, 'a', [from:17, to:18, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+       t(n, 'cucumber', [from:19, to:27, pos:'NN', lemma:'cucumber', sem:'CON', wordnet:'cucumber.n.02'])),
+      t(., '.', [from:27, to:28, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

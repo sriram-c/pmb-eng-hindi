@@ -1,0 +1,15 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Mary', [from:0, to:4, pos:'NNP', lemma:'mary', sem:'PER', wordnet:'female.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:ng\np), 'is', [from:5, to:7, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+   rp(s:ng\np,
+    t(s:ng\np, 'snoring', [from:8, to:15, pos:'VBG', lemma:'snore', sem:'EXG', wordnet:'snore.v.01', verbnet:['Agent']]),
+    t(., '.', [from:15, to:16, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

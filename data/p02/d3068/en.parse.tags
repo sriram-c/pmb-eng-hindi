@@ -1,0 +1,27 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'She', [from:0, to:3, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02']),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:pt\np), 'has', [from:4, to:7, pos:'VBZ', lemma:'have', sem:'NOW', wordnet:'O']),
+    fa(s:pt\np,
+     t((s:pt\np)/(s:ng\np), 'been', [from:8, to:12, pos:'VBN', lemma:'be', sem:'PFT', wordnet:'O']),
+     fa(s:ng\np,
+      t((s:ng\np)/np, 'studying', [from:13, to:21, pos:'VBG', lemma:'study', sem:'EXG', wordnet:'study.v.04', verbnet:['Theme','Agent']]),
+      lx(np, n,
+       t(n, 'French', [from:22, to:28, pos:'JJ', lemma:'french', sem:'CON', wordnet:'french.n.01']))))),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'for', [from:29, to:32, pos:'IN', lemma:'for', sem:'REL', wordnet:'O', verbnet:['Duration']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'a', [from:33, to:34, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+      fa(n,
+       t(n/n, 'few', [from:35, to:38, pos:'JJ', lemma:'-', sem:'QUV', wordnet:'O', verbnet:['Quantity']]),
+       t(n, 'years', [from:39, to:44, pos:'NNS', lemma:'year', sem:'UOM', wordnet:'year.n.01']))),
+     t(., '.', [from:44, to:45, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

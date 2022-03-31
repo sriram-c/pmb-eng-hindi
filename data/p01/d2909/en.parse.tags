@@ -1,0 +1,14 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:dcl,
+  ba(s:dcl,
+   t(np, 'You', [from:0, to:3, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O']),
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:ng\np), '\'re', [from:3, to:6, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+    t(s:ng\np, 'winning', [from:7, to:14, pos:'VBG', lemma:'win', sem:'EXG', wordnet:'win.v.01', verbnet:['Agent']]))),
+  t(., '.', [from:14, to:15, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+

@@ -1,0 +1,28 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'boat', [from:4, to:8, pos:'NN', lemma:'boat', sem:'CON', wordnet:'boat.n.01'])),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:pss\np), 'was', [from:9, to:12, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+    fa(s:pss\np,
+     t((s:pss\np)/pp, 'tied', [from:13, to:17, pos:'VBN', lemma:'tie', sem:'EXS', wordnet:'tie.v.01', verbnet:['Patient']]),
+     fa(pp,
+      t(pp/np, 'to', [from:18, to:20, pos:'TO', lemma:'to', sem:'REL', wordnet:'O', verbnet:['Co-Patient']]),
+      fa(np,
+       t(np/n, 'the', [from:21, to:24, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+       t(n, 'shore', [from:25, to:30, pos:'NN', lemma:'shore', sem:'CON', wordnet:'O']))))),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'by', [from:31, to:33, pos:'IN', lemma:'by', sem:'REL', wordnet:'O', verbnet:['Instrument']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'a', [from:34, to:35, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+      t(n, 'cable', [from:36, to:41, pos:'NN', lemma:'cable', sem:'CON', wordnet:'cable.n.03'])),
+     t(., '.', [from:41, to:42, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

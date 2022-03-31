@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'doll', [from:4, to:8, pos:'NN', lemma:'doll', sem:'CON', wordnet:'doll.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/pp, 'lay', [from:9, to:12, pos:'VBD', lemma:'lie', sem:'EPS', wordnet:'lie.v.01', verbnet:['Theme']]),
+   fa(pp,
+    t(pp/np, 'on', [from:13, to:15, pos:'IN', lemma:'on', sem:'REL', wordnet:'O', verbnet:['Location']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:16, to:19, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'floor', [from:20, to:25, pos:'NN', lemma:'floor', sem:'CON', wordnet:'floor.n.01'])),
+     t(., '.', [from:25, to:26, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

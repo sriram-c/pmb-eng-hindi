@@ -1,0 +1,25 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'suit', [from:4, to:8, pos:'NN', lemma:'suit', sem:'CON', wordnet:'suit.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:b\np), '\'s', [from:8, to:10, pos:'POS', lemma:'be', sem:'NOW', wordnet:'O']),
+   fa(s:b\np,
+    t((s:b\np)/pp, 'made', [from:11, to:15, pos:'VBN', lemma:'make', sem:'EXS', wordnet:'make.v.03', verbnet:['Result']]),
+    fa(pp,
+     t(pp/np, 'of', [from:16, to:18, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['Material']]),
+     rp(np,
+      lx(np, n,
+       fa(n,
+        fa(n/n,
+         t((n/n)/(s:adj\np), 'very', [from:19, to:23, pos:'RB', lemma:'very', sem:'INT', wordnet:'very.r.01']),
+         t(s:adj\np, 'rough', [from:24, to:29, pos:'JJ', lemma:'rough', sem:'IST', wordnet:'rough.a.01', verbnet:['Attribute']])),
+        t(n, 'material', [from:30, to:38, pos:'NN', lemma:'material', sem:'CON', wordnet:'material.n.01']))),
+      t(., '.', [from:38, to:39, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

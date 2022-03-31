@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:dcl,
+  ba(s:dcl,
+   fa(np,
+    t(np/pp, 'All', [from:0, to:3, pos:'DT', lemma:'person', sem:'AND', wordnet:'person.n.01']),
+    fa(pp,
+     t(pp/np, 'of', [from:4, to:6, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['SubOf']]),
+     t(np, 'us', [from:7, to:9, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']))),
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:pss\np), 'were', [from:10, to:14, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+    ba(s:pss\np,
+     t(s:pss\np, 'surprised', [from:15, to:24, pos:'VBN', lemma:'surprised', sem:'IST', wordnet:'surprised.a.01', verbnet:['Experiencer']]),
+     fa((s\np)\(s\np),
+      t(((s\np)\(s\np))/np, 'at', [from:25, to:27, pos:'IN', lemma:'at', sem:'REL', wordnet:'O', verbnet:['Stimulus']]),
+      fa(np,
+       t(np/n, 'the', [from:28, to:31, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+       t(n, 'news', [from:32, to:36, pos:'NN', lemma:'news', sem:'CON', wordnet:'news.n.01'])))))),
+  t(., '.', [from:36, to:37, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+

@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'He', [from:0, to:2, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'fells', [from:3, to:8, pos:'VBZ', lemma:'fell', sem:'ENS', wordnet:'fell.v.01', verbnet:['Patient','Agent']]),
+   lx(np, n,
+    ba(n,
+     t(n, 'trees', [from:9, to:14, pos:'NNS', lemma:'tree', sem:'CON', wordnet:'tree.n.01']),
+     fa(n\n,
+      t((n\n)/np, 'in', [from:15, to:17, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Location']]),
+      rp(np,
+       fa(np,
+        t(np/n, 'the', [from:18, to:21, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+        t(n, 'mountain', [from:22, to:30, pos:'NN', lemma:'mountain', sem:'CON', wordnet:'mountain.n.01'])),
+       t(., '.', [from:30, to:31, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))))).
+

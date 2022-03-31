@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'horse', [from:4, to:9, pos:'NN', lemma:'horse', sem:'CON', wordnet:'horse.n.01'])),
+  rp(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:adj\np), 'is', [from:10, to:12, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+    fa(s:adj\np,
+     t((s:adj\np)/(s:adj\np), 'not', [from:13, to:16, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O']),
+     t(s:adj\np, 'white', [from:17, to:22, pos:'JJ', lemma:'white', sem:'COL', wordnet:'white.a.01', verbnet:['Colour']]))),
+   t(., '.', [from:22, to:23, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+

@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:dcl,
+  ba(s:dcl,
+   fa(np,
+    t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+    fa(n,
+     t(n/n, 'famous', [from:4, to:10, pos:'JJ', lemma:'famous', sem:'IST', wordnet:'famous.a.01', verbnet:['Attribute']]),
+     t(n, 'conductor', [from:11, to:20, pos:'NN', lemma:'conductor', sem:'ROL', wordnet:'conductor.n.01']))),
+   ba(s:dcl\np,
+    t(s:dcl\np, 'lives', [from:21, to:26, pos:'NNS', lemma:'live', sem:'ENS', wordnet:'live.v.01', verbnet:['Theme']]),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/np, 'in', [from:27, to:29, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Location']]),
+     lx(np, n,
+      t(n, 'New~York', [from:30, to:38, pos:'NNP', lemma:'new~york', sem:'GPE', wordnet:'city.n.01']))))),
+  t(., '.', [from:38, to:39, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+

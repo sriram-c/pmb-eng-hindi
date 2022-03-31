@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'We', [from:0, to:2, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/np, 'saw', [from:3, to:6, pos:'VBD', lemma:'see', sem:'EPS', wordnet:'see.v.01', verbnet:['Stimulus','Experiencer']]),
+    fa(np,
+     t(np/n, 'the', [from:7, to:10, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'monkey', [from:11, to:17, pos:'NN', lemma:'monkey', sem:'CON', wordnet:'monkey.n.01']))),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'at', [from:18, to:20, pos:'IN', lemma:'at', sem:'REL', wordnet:'O', verbnet:['Location']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:21, to:24, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'zoo', [from:25, to:28, pos:'NN', lemma:'zoo', sem:'CON', wordnet:'zoo.n.01'])),
+     t(., '.', [from:28, to:29, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

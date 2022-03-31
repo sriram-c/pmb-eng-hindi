@@ -1,0 +1,26 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:b\np), '\'ll', [from:1, to:4, pos:'MD', lemma:'will', sem:'FUT', wordnet:'O']),
+    fa(s:b\np,
+     fa((s:b\np)/pr,
+      t(((s:b\np)/pr)/np, 'hang', [from:5, to:9, pos:'VB', lemma:'hang~up', sem:'EXS', wordnet:'hang_up.v.02', verbnet:['Theme','Agent']]),
+      fa(np,
+       t(np/(n/pp), 'my', [from:10, to:12, pos:'PRP$', lemma:'speaker', sem:'HAS', wordnet:'O', verbnet:['User']]),
+       t(n/pp, 'coat', [from:13, to:17, pos:'NN', lemma:'coat', sem:'CON', wordnet:'coat.n.01']))),
+     t(pr, 'up', [from:18, to:20, pos:'RP', lemma:'up', sem:'REL', wordnet:'O']))),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'behind', [from:21, to:27, pos:'IN', lemma:'behind', sem:'REL', wordnet:'O', verbnet:['Destination']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:28, to:31, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'door', [from:32, to:36, pos:'NN', lemma:'door', sem:'CON', wordnet:'door.n.01'])),
+     t(., '.', [from:36, to:37, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

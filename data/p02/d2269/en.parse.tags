@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'Her', [from:0, to:3, pos:'PRP$', lemma:'female', sem:'HAS', wordnet:'female.n.02', verbnet:['Owner']]),
+   t(n, 'dog', [from:4, to:7, pos:'NN', lemma:'dog', sem:'CON', wordnet:'dog.n.01'])),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/(s:adj\np),
+    t((s:dcl\np)/(s:adj\np), 'is', [from:8, to:10, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+    t((s\np)\(s\np), 'n\'t', [from:10, to:13, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+   fa(s:adj\np,
+    t((s:adj\np)/(s:adj\np), 'very', [from:14, to:18, pos:'RB', lemma:'very', sem:'INT', wordnet:'very.r.01']),
+    rp(s:adj\np,
+     t(s:adj\np, 'fast', [from:19, to:23, pos:'RB', lemma:'fast', sem:'DEG', wordnet:'fast.a.01', verbnet:['Attribute']]),
+     t(., '.', [from:23, to:24, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

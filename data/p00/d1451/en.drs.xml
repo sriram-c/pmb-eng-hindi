@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- He 's absent-minded . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">He</tag>
+     <tag type="cat">np</tag>
+     <tag type="sym">male</tag>
+     <tag type="lemma">male</tag>
+     <tag type="from">0</tag>
+     <tag type="to">2</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="sem">PRO</tag>
+     <tag type="wordnet">male.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">'s</tag>
+     <tag type="cat">(s:dcl\np)/(s:adj\np)</tag>
+     <tag type="sym">be</tag>
+     <tag type="lemma">be</tag>
+     <tag type="from">2</tag>
+     <tag type="to">4</tag>
+     <tag type="pos">VBZ</tag>
+     <tag type="sem">NOW</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="tok">absent-minded</tag>
+     <tag type="cat">s:adj\np</tag>
+     <tag type="sym">absentminded</tag>
+     <tag type="lemma">absentminded</tag>
+     <tag type="from">5</tag>
+     <tag type="to">18</tag>
+     <tag type="pos">JJ</tag>
+     <tag type="sem">IST</tag>
+     <tag type="wordnet">absentminded.a.01</tag>
+     <tag type="verbnet" n="1">[Attribute]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">18</tag>
+     <tag type="to">19</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b2">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="2"></dr>
+   <dr label="b2" name="s1" from="5" to="18"></dr>
+   <dr label="b2" name="t1" from="2" to="4"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="male" synset="male.n.02" from="0" to="2"></pred>
+   </cond>
+   <cond label="b2">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="2" to="4"></pred>
+   </cond>
+   <cond label="b2">
+    <comp symbol="EQU" arg1="t1" arg2="now" from="2" to="4"></comp>
+   </cond>
+   <cond label="b2">
+    <pred arg="s1" symbol="absentminded" synset="absentminded.a.01" from="5" to="18"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="s1" arg2="t1" symbol="Time" framenet="Time" from="2" to="4"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="s1" arg2="x1" symbol="AttributeOf" framenet="AttributeOf" from="5" to="18"></rel>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

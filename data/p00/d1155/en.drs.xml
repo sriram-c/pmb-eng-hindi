@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- The boy-scouts jeered and scuttled into the building . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">The</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">the</tag>
+     <tag type="lemma">the</tag>
+     <tag type="from">0</tag>
+     <tag type="to">3</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">boy-scouts</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">boy~scout</tag>
+     <tag type="lemma">boy~scout</tag>
+     <tag type="from">4</tag>
+     <tag type="to">14</tag>
+     <tag type="pos">NNS</tag>
+     <tag type="sem">ROL</tag>
+     <tag type="wordnet">boy_scout.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="tok">jeered</tag>
+     <tag type="cat">s:dcl\np</tag>
+     <tag type="sym">jeer</tag>
+     <tag type="lemma">jeer</tag>
+     <tag type="from">15</tag>
+     <tag type="to">21</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="sem">EPS</tag>
+     <tag type="wordnet">jeer.v.01</tag>
+     <tag type="verbnet" n="1">[Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">and</tag>
+     <tag type="cat">conj: \(s:dcl,np)</tag>
+     <tag type="sym">and</tag>
+     <tag type="lemma">and</tag>
+     <tag type="from">22</tag>
+     <tag type="to">25</tag>
+     <tag type="pos">CC</tag>
+     <tag type="sem">COO</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="tok">scuttled</tag>
+     <tag type="cat">(s:dcl\np)/pp</tag>
+     <tag type="sym">scuttle</tag>
+     <tag type="lemma">scuttle</tag>
+     <tag type="from">26</tag>
+     <tag type="to">34</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="sem">EPS</tag>
+     <tag type="wordnet">scuttle.v.01</tag>
+     <tag type="verbnet" n="1">[Theme]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="tok">into</tag>
+     <tag type="cat">pp/np</tag>
+     <tag type="sym">into</tag>
+     <tag type="lemma">into</tag>
+     <tag type="from">35</tag>
+     <tag type="to">39</tag>
+     <tag type="pos">IN</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Destination]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">the</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">the</tag>
+     <tag type="lemma">the</tag>
+     <tag type="from">40</tag>
+     <tag type="to">43</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">building</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">building</tag>
+     <tag type="lemma">building</tag>
+     <tag type="from">44</tag>
+     <tag type="to">52</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">building.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1009">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">52</tag>
+     <tag type="to">53</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <sdrs>
+  <constituents>
+   <constituent label="b2">
+    <tokens>
+     <token>The</token>
+     <token>boy-scouts</token>
+     <token>jeered</token>
+    </tokens>
+    <drs label="b2">
+     <domain>
+      <dr label="b1" name="x1" from="0" to="3"></dr>
+      <dr label="b1" name="x2" from="4" to="14"></dr>
+      <dr label="b2" name="e1" from="15" to="21"></dr>
+      <dr label="b2" name="t1" from="15" to="21"></dr>
+     </domain>
+     <conds>
+      <cond label="b1">
+       <pred arg="x2" symbol="boy_scout" synset="boy_scout.n.01" from="4" to="14"></pred>
+      </cond>
+      <cond label="b1">
+       <pred arg="x1" symbol="person" synset="person.n.01" from="4" to="14"></pred>
+      </cond>
+      <cond label="b1">
+       <rel arg1="x1" arg2="x2" symbol="Role" framenet="Role" from="4" to="14"></rel>
+      </cond>
+      <cond label="b2">
+       <pred arg="t1" symbol="time" synset="time.n.08" from="15" to="21"></pred>
+      </cond>
+      <cond label="b2">
+       <comp symbol="TPR" arg1="t1" arg2="now" from="15" to="21"></comp>
+      </cond>
+      <cond label="b2">
+       <pred arg="e1" symbol="jeer" synset="jeer.v.01" from="15" to="21"></pred>
+      </cond>
+      <cond label="b2">
+       <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="15" to="21"></rel>
+      </cond>
+      <cond label="b2">
+       <rel arg1="e1" arg2="x1" symbol="Agent" framenet="Communication_noise@Speaker" from="15" to="21"></rel>
+      </cond>
+     </conds>
+    </drs>
+   </constituent>
+   <constituent label="b3">
+    <tokens>
+     <token>scuttled</token>
+     <token>into</token>
+     <token>the</token>
+     <token>building</token>
+     <token>.</token>
+    </tokens>
+    <drs label="b3">
+     <domain>
+      <dr label="b3" name="e2" from="26" to="34"></dr>
+      <dr label="b4" name="x3" from="40" to="43"></dr>
+      <dr label="b2" name="t1" from="26" to="34"></dr>
+     </domain>
+     <conds>
+      <cond label="b2">
+       <pred arg="t1" symbol="time" synset="time.n.08" from="26" to="34"></pred>
+      </cond>
+      <cond label="b2">
+       <comp symbol="TPR" arg1="t1" arg2="now" from="26" to="34"></comp>
+      </cond>
+      <cond label="b3">
+       <pred arg="e2" symbol="scuttle" synset="scuttle.v.01" from="26" to="34"></pred>
+      </cond>
+      <cond label="b3">
+       <rel arg1="e2" arg2="t1" symbol="Time" framenet="Time" from="26" to="34"></rel>
+      </cond>
+      <cond label="b3">
+       <rel arg1="e2" arg2="x3" symbol="Destination" framenet="Cause_impact@Impactee" from="35" to="39"></rel>
+      </cond>
+      <cond label="b3">
+       <rel arg1="e2" arg2="x1" symbol="Theme" framenet="Cause_to_move_in_place@Theme" from="26" to="34"></rel>
+      </cond>
+      <cond label="b4">
+       <pred arg="x3" symbol="building" synset="building.n.01" from="44" to="52"></pred>
+      </cond>
+     </conds>
+    </drs>
+   </constituent>
+  </constituents>
+  <relations>
+   <drel arg1="b2" arg2="b3" sym="CONTINUATION" from="22" to="25"></drel>
+  </relations>
+ </sdrs>
+</xdrs>
+</xdrs-output>

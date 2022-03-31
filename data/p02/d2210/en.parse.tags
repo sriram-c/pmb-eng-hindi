@@ -1,0 +1,17 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Lambs', [from:0, to:5, pos:'NNS', lemma:'lamb', sem:'CON', wordnet:'lamb.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), 'are', [from:6, to:9, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+   fa(s:adj\np,
+    t((s:adj\np)/(s:adj\np), 'very', [from:10, to:14, pos:'RB', lemma:'very', sem:'INT', wordnet:'O']),
+    rp(s:adj\np,
+     t(s:adj\np, 'cute', [from:15, to:19, pos:'JJ', lemma:'cute', sem:'IST', wordnet:'cute.a.01', verbnet:['Attribute']]),
+     t(., '.', [from:19, to:20, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

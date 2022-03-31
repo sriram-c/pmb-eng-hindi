@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   fa(n,
+    t(n/n, 'Many', [from:0, to:4, pos:'JJ', lemma:'+', sem:'QUV', wordnet:'O', verbnet:['Quantity']]),
+    t(n, 'peasants', [from:5, to:13, pos:'NNS', lemma:'peasant', sem:'ROL', wordnet:'peasant.n.01']))),
+  ba(s:dcl\np,
+   t(s:dcl\np, 'died', [from:14, to:18, pos:'VBD', lemma:'die', sem:'EPS', wordnet:'die.v.01', verbnet:['Patient']]),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'during', [from:19, to:25, pos:'IN', lemma:'during', sem:'REL', wordnet:'O', verbnet:['Duration']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:26, to:29, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'drought', [from:30, to:37, pos:'NN', lemma:'drought', sem:'CON', wordnet:'drought.n.01'])),
+     t(., '.', [from:37, to:38, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

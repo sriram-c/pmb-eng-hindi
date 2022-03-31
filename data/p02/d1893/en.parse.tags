@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'He', [from:0, to:2, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), 'was', [from:3, to:6, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+   fa(s:adj\np,
+    t((s:adj\np)/pp, 'ashamed', [from:7, to:14, pos:'VBN', lemma:'ashamed', sem:'IST', wordnet:'ashamed.a.01', verbnet:['Experiencer']]),
+    fa(pp,
+     t(pp/np, 'of', [from:15, to:17, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['Stimulus']]),
+     fa(np,
+      t(np/(n/pp), 'his', [from:18, to:21, pos:'PRP$', lemma:'male', sem:'HAS', wordnet:'male.n.02', verbnet:['Creator']]),
+      rp(n/pp,
+       t(n/pp, 'ignorance', [from:22, to:31, pos:'NN', lemma:'ignorance', sem:'CON', wordnet:'ignorance.n.01']),
+       t(., '.', [from:31, to:32, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))))).
+

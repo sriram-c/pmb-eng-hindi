@@ -1,0 +1,27 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:dcl,
+  ba(s:dcl,
+   fa(np,
+    t(np/(s:dcl\np), 'Whoever', [from:0, to:7, pos:'WP', lemma:'person', sem:'AND', wordnet:'person.n.01']),
+    ba(s:dcl\np,
+     fa(s:dcl\np,
+      t((s:dcl\np)/(s:pss\np), 'is', [from:8, to:10, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+      t(s:pss\np, 'born', [from:11, to:15, pos:'VBN', lemma:'bear', sem:'EXS', wordnet:'bear.v.02', verbnet:['Patient']])),
+     fa((s\np)\(s\np),
+      t(((s\np)\(s\np))/np, 'in', [from:16, to:18, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Location']]),
+      rp(np,
+       lx(np, n,
+        t(n, 'Austria', [from:19, to:26, pos:'NNP', lemma:'austria', sem:'GPE', wordnet:'country.n.02'])),
+       t(,, ',', [from:26, to:27, pos:',', lemma:',', sem:'NIL', wordnet:'O']))))),
+   fa(s:dcl\np,
+    t((s:dcl\np)/np, 'is', [from:28, to:30, pos:'VBZ', lemma:'be', sem:'ENS', wordnet:'be.v.01', verbnet:['Co-Theme','Theme']]),
+    fa(np,
+     t(np/n, 'an', [from:31, to:33, pos:'DT', lemma:'an', sem:'DIS', wordnet:'O']),
+     t(n, 'Austrian', [from:34, to:42, pos:'JJ', lemma:'austria', sem:'GPO', wordnet:'country.n.02'])))),
+  t(., '.', [from:42, to:43, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+

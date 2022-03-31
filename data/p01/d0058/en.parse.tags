@@ -1,0 +1,27 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   fa(n,
+    t(n/n, 'Two', [from:0, to:3, pos:'CD', lemma:'2', sem:'QUC', wordnet:'O', verbnet:['Quantity']]),
+    t(n, 'children', [from:4, to:12, pos:'NNS', lemma:'child', sem:'CON', wordnet:'child.n.01']))),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:ng\np), 'are', [from:13, to:16, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+   ba(s:ng\np,
+    fa(s:ng\np,
+     t((s:ng\np)/pp, 'playing', [from:17, to:24, pos:'VBG', lemma:'play', sem:'EXG', wordnet:'play.v.05', verbnet:['Agent']]),
+     fa(pp,
+      t(pp/np, 'with', [from:25, to:29, pos:'IN', lemma:'with', sem:'REL', wordnet:'O', verbnet:['Instrument']]),
+      fa(np,
+       t(np/n, 'a', [from:30, to:31, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+       t(n, 'ball', [from:32, to:36, pos:'NN', lemma:'ball', sem:'CON', wordnet:'ball.n.01'])))),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/np, 'in', [from:37, to:39, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Location']]),
+     fa(np,
+      t(np/n, 'the', [from:40, to:43, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'park', [from:44, to:48, pos:'NN', lemma:'park', sem:'CON', wordnet:'park.n.02']))))))).
+

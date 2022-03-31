@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- ø Twenty-five~hundred British soldiers guarded the border . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="from">0</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="tok">Twenty-five~hundred</tag>
+     <tag type="cat">n/n</tag>
+     <tag type="sym">2500</tag>
+     <tag type="lemma">2500</tag>
+     <tag type="from">0</tag>
+     <tag type="to">19</tag>
+     <tag type="pos">JJ</tag>
+     <tag type="sem">QUC</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Quantity]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="tok">British</tag>
+     <tag type="cat">n/n</tag>
+     <tag type="sym">britain</tag>
+     <tag type="lemma">britain</tag>
+     <tag type="from">20</tag>
+     <tag type="to">27</tag>
+     <tag type="pos">JJ</tag>
+     <tag type="sem">GPO</tag>
+     <tag type="wordnet">country.n.02</tag>
+     <tag type="verbnet" n="1">[Source]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">soldiers</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">soldier</tag>
+     <tag type="lemma">soldier</tag>
+     <tag type="from">28</tag>
+     <tag type="to">36</tag>
+     <tag type="pos">NNS</tag>
+     <tag type="sem">ROL</tag>
+     <tag type="wordnet">soldier.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="tok">guarded</tag>
+     <tag type="cat">(s:dcl\np)/np</tag>
+     <tag type="sym">guard</tag>
+     <tag type="lemma">guard</tag>
+     <tag type="from">37</tag>
+     <tag type="to">44</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="sem">EPS</tag>
+     <tag type="wordnet">guard.v.03</tag>
+     <tag type="verbnet" n="2">[Theme,Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">the</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">the</tag>
+     <tag type="lemma">the</tag>
+     <tag type="from">45</tag>
+     <tag type="to">48</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">border</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">frontier</tag>
+     <tag type="lemma">frontier</tag>
+     <tag type="from">49</tag>
+     <tag type="to">55</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">frontier.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">55</tag>
+     <tag type="to">56</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b1">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="-1"></dr>
+   <dr label="b2" name="x2" from="20" to="27"></dr>
+   <dr label="b1" name="x3" from="28" to="36"></dr>
+   <dr label="b3" name="x4" from="45" to="48"></dr>
+   <dr label="b1" name="e1" from="37" to="44"></dr>
+   <dr label="b1" name="t1" from="37" to="44"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="person" synset="person.n.01" from="28" to="36"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x1" arg2="x3" symbol="Role" framenet="Role" from="28" to="36"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x1" arg2="x2" symbol="Source" framenet="Source" from="20" to="27"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x1" arg2="2500" symbol="Quantity" framenet="Quantity" from="0" to="19"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="x2" symbol="country" synset="country.n.02" from="20" to="27"></pred>
+   </cond>
+   <cond label="b2">
+    <named arg="x2" symbol="britain" from="20" to="27"></named>
+   </cond>
+   <cond label="b1">
+    <pred arg="x3" symbol="soldier" synset="soldier.n.01" from="28" to="36"></pred>
+   </cond>
+   <cond label="b1">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="37" to="44"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="TPR" arg1="t1" arg2="now" from="37" to="44"></comp>
+   </cond>
+   <cond label="b1">
+    <pred arg="e1" symbol="guard" synset="guard.v.03" from="37" to="44"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="37" to="44"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x4" symbol="Theme" framenet="Change_of_leadership@New_leader" from="37" to="44"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x1" symbol="Agent" framenet="Commitment@Speaker" from="37" to="44"></rel>
+   </cond>
+   <cond label="b3">
+    <pred arg="x4" symbol="frontier" synset="frontier.n.02" from="49" to="55"></pred>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

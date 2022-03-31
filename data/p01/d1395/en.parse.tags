@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:wq,
+  fa(s:wq/(s:dcl\np),
+   t((s:wq/(s:dcl\np))/n, 'What', [from:0, to:4, pos:'WP', lemma:'entity', sem:'QUE', wordnet:'entity.n.01', verbnet:['Name']]),
+   fa(n,
+    t(n/n, 'Liverpool', [from:5, to:14, pos:'NNP', lemma:'liverpool', sem:'GPE', wordnet:'city.n.01', verbnet:['Location']]),
+    t(n, 'club', [from:15, to:19, pos:'NN', lemma:'club', sem:'CON', wordnet:'club.n.07']))),
+  rp(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/np, 'spawned', [from:20, to:27, pos:'VBD', lemma:'spawn', sem:'EPS', wordnet:'spawn.v.01', verbnet:['Theme','Causer']]),
+    fa(np,
+     t(np/n, 'the', [from:28, to:31, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'Beatles', [from:32, to:39, pos:'NNPS', lemma:'beatles', sem:'ORG', wordnet:'musical_organization.n.01']))),
+   t(., '?', [from:39, to:40, pos:'.', lemma:'?', sem:'QUE', wordnet:'O'])))).
+

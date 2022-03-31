@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  ba(s:dcl,
+   lx(np, n,
+    fa(n,
+     t(n/n, 'Two', [from:0, to:3, pos:'CD', lemma:'2', sem:'QUC', wordnet:'O', verbnet:['Quantity']]),
+     t(n, 'people', [from:4, to:10, pos:'NNS', lemma:'person', sem:'CON', wordnet:'person.n.01']))),
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:ng\np), 'are', [from:11, to:14, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+    t(s:ng\np, 'kickboxing', [from:15, to:25, pos:'VBG', lemma:'kickbox', sem:'EXG', wordnet:'O', verbnet:['Agent']]))),
+  conj(s:dcl\s:dcl,
+   t(conj, 'and', [from:26, to:29, pos:'CC', lemma:'and', sem:'AND', wordnet:'O']),
+   ba(s:dcl,
+    lx(np, n,
+     t(n, 'spectators', [from:30, to:40, pos:'NNS', lemma:'spectator', sem:'CON', wordnet:'spectator.n.01'])),
+    fa(s:dcl\np,
+     t((s:dcl\np)/(s:ng\np), 'are', [from:41, to:44, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+     t(s:ng\np, 'watching', [from:45, to:53, pos:'VBG', lemma:'watch', sem:'EXG', wordnet:'watch.v.01', verbnet:['Experiencer']])))))).
+

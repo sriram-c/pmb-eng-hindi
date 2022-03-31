@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'dictionary', [from:4, to:14, pos:'NN', lemma:'dictionary', sem:'CON', wordnet:'dictionary.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'contains', [from:15, to:23, pos:'VBZ', lemma:'contain', sem:'ENS', wordnet:'contain.v.01', verbnet:['Theme','Pivot']]),
+   rp(np,
+    lx(np, n,
+     fa(n,
+      fa(n/n,
+       t((n/n)/(n/n), 'about', [from:24, to:29, pos:'IN', lemma:'about', sem:'APX', wordnet:'O']),
+       t(n/n, 'half~a~million', [from:30, to:44, pos:'NN', lemma:'500000', sem:'QUC', wordnet:'O', verbnet:['Equal']])),
+      t(n, 'words', [from:45, to:50, pos:'NNS', lemma:'word', sem:'CON', wordnet:'word.n.01']))),
+    t(., '.', [from:50, to:51, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

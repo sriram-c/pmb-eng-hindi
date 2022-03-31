@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np:thr, 'There', [from:0, to:5, pos:'EX', lemma:'there', sem:'NIL', wordnet:'O']),
+  fa(s:dcl\np:thr,
+   fa((s:dcl\np:thr)/pp,
+    t(((s:dcl\np:thr)/pp)/np, 'are', [from:6, to:9, pos:'VBP', lemma:'be', sem:'ENS', wordnet:'be.v.03', verbnet:['Theme','Equal']]),
+    lx(np, n,
+     t(n, 'rats', [from:10, to:14, pos:'NNS', lemma:'rat', sem:'CON', wordnet:'rat.n.01']))),
+   fa(pp,
+    t(pp/np, 'in', [from:15, to:17, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Location']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:18, to:21, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'kitchen', [from:22, to:29, pos:'NN', lemma:'kitchen', sem:'CON', wordnet:'kitchen.n.01'])),
+     t(., '.', [from:29, to:30, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'He', [from:0, to:2, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/np, 'left', [from:3, to:7, pos:'VBD', lemma:'leave', sem:'EPS', wordnet:'leave.v.01', verbnet:['Source','Theme']]),
+    fa(np,
+     t(np/n, 'the', [from:8, to:11, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'bedroom', [from:12, to:19, pos:'NN', lemma:'bedroom', sem:'CON', wordnet:'bedroom.n.01']))),
+   conj((s:dcl\np)\(s:dcl\np),
+    t(conj, 'and', [from:20, to:23, pos:'CC', lemma:'and', sem:'COO', wordnet:'O']),
+    fa(s:dcl\np,
+     t((s:dcl\np)/np, 'entered', [from:24, to:31, pos:'VBD', lemma:'enter', sem:'EPS', wordnet:'enter.v.01', verbnet:['Destination','Theme']]),
+     rp(np,
+      fa(np,
+       t(np/n, 'the', [from:32, to:35, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+       t(n, 'living~room', [from:36, to:47, pos:'NN', lemma:'living~room', sem:'CON', wordnet:'living_room.n.01'])),
+      t(., '.', [from:47, to:48, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

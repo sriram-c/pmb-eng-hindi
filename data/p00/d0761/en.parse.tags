@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Pierce', [from:0, to:6, pos:'NNP', lemma:'pierce', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/pp, 'lives', [from:7, to:12, pos:'VBZ', lemma:'live', sem:'ENS', wordnet:'live.v.01', verbnet:['Theme']]),
+   fa(pp,
+    t(pp/np, 'near', [from:13, to:17, pos:'IN', lemma:'near', sem:'APX', wordnet:'near.a.01', verbnet:['Location']]),
+    rp(np,
+     lx(np, n,
+      t(n, 'Rossville~Blvd', [from:18, to:32, pos:'NNP', lemma:'rossville~boulevard', sem:'GEO', wordnet:'way.n.06'])),
+     t(., '.', [from:32, to:33, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

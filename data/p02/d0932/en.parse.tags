@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   t((s\np)/(s\np), 'just', [from:2, to:6, pos:'RB', lemma:'just', sem:'IST', wordnet:'just.r.03', verbnet:['Theme','Agent']]),
+   fa(s:dcl\np,
+    t((s:dcl\np)/np, 'received', [from:7, to:15, pos:'VBD', lemma:'receive', sem:'EPS', wordnet:'receive.v.01', verbnet:['Theme','Agent']]),
+    fa(np,
+     t(np/(n/pp), 'your', [from:16, to:20, pos:'PRP$', lemma:'hearer', sem:'HAS', wordnet:'O', verbnet:['Creator']]),
+     rp(n/pp,
+      t(n/pp, 'letter', [from:21, to:27, pos:'NN', lemma:'letter', sem:'CON', wordnet:'letter.n.01']),
+      t(., '.', [from:27, to:28, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'house', [from:4, to:9, pos:'NN', lemma:'house', sem:'CON', wordnet:'house.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:pt\np), 'has', [from:10, to:13, pos:'VBZ', lemma:'have', sem:'NOW', wordnet:'O']),
+   fa(s:pt\np,
+    t((s:pt\np)/pr, 'burnt', [from:14, to:19, pos:'VBN', lemma:'burn~down', sem:'EXT', wordnet:'burn_down.v.01', verbnet:['Patient']]),
+    rp(pr,
+     t(pr, 'down', [from:20, to:24, pos:'RP', lemma:'down', sem:'REL', wordnet:'O']),
+     t(., '.', [from:24, to:25, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

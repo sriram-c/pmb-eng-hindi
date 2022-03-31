@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'He', [from:0, to:2, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'designed', [from:3, to:11, pos:'VBD', lemma:'design', sem:'EPS', wordnet:'design.v.03', verbnet:['Result','Agent']]),
+   rp(np,
+    fa(np,
+     t(np/n, 'the', [from:12, to:15, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'car', [from:16, to:19, pos:'NN', lemma:'car', sem:'CON', wordnet:'car.n.01'])),
+    t(., '.', [from:19, to:20, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

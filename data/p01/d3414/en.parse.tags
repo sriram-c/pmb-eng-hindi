@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np:thr, 'There', [from:0, to:5, pos:'EX', lemma:'there', sem:'NIL', wordnet:'O']),
+  ba(s:dcl\np:thr,
+   fa(s:dcl\np:thr,
+    t((s:dcl\np:thr)/np, 'is', [from:6, to:8, pos:'VBZ', lemma:'be', sem:'ENS', wordnet:'be.v.03', verbnet:['Theme','Equal']]),
+    fa(np,
+     t(np/n, 'a', [from:9, to:10, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+     fa(n,
+      t(n/n, 'strange', [from:11, to:18, pos:'JJ', lemma:'strange', sem:'IST', wordnet:'strange.a.02', verbnet:['Attribute']]),
+      t(n, 'man', [from:19, to:22, pos:'NN', lemma:'man', sem:'CON', wordnet:'man.n.01'])))),
+   fa((s:dcl\np)\(s:dcl\np),
+    t(((s:dcl\np)\(s:dcl\np))/np, 'at', [from:23, to:25, pos:'IN', lemma:'at', sem:'REL', wordnet:'O', verbnet:['Location']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:26, to:29, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'door', [from:30, to:34, pos:'NN', lemma:'door', sem:'CON', wordnet:'door.n.01'])),
+     t(., '.', [from:34, to:35, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

@@ -1,0 +1,29 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  ba(s:dcl\np,
+   ba(s:dcl\np,
+    fa(s:dcl\np,
+     t((s:dcl\np)/(s:pt\np), 'has', [from:4, to:7, pos:'VBZ', lemma:'have', sem:'NOW', wordnet:'O']),
+     fa(s:pt\np,
+      t((s:pt\np)/(s:ng\np), 'been', [from:8, to:12, pos:'VBN', lemma:'be', sem:'PFT', wordnet:'O']),
+      t(s:ng\np, 'living', [from:13, to:19, pos:'VBG', lemma:'live', sem:'EXG', wordnet:'live.v.01', verbnet:['Theme']]))),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/np, 'in', [from:20, to:22, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Location']]),
+     lx(np, n,
+      t(n, 'Boston', [from:23, to:29, pos:'NNP', lemma:'boston', sem:'GPE', wordnet:'city.n.01'])))),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'for', [from:30, to:33, pos:'IN', lemma:'for', sem:'REL', wordnet:'O', verbnet:['Duration']]),
+    rp(np,
+     lx(np, n,
+      fa(n,
+       t(n/n, 'three', [from:34, to:39, pos:'CD', lemma:'3', sem:'QUC', wordnet:'O', verbnet:['Quantity']]),
+       t(n, 'years', [from:40, to:45, pos:'NNS', lemma:'year', sem:'UOM', wordnet:'year.n.01']))),
+     t(., '.', [from:45, to:46, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

@@ -1,0 +1,25 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'garden', [from:4, to:10, pos:'NN', lemma:'garden', sem:'CON', wordnet:'garden.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), 'was', [from:11, to:14, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+   fa(s:adj\np,
+    t((s:adj\np)/pp, 'full', [from:15, to:19, pos:'JJ', lemma:'full', sem:'IST', wordnet:'full.a.01', verbnet:['Attribute']]),
+    fa(pp,
+     t(pp/np, 'of', [from:20, to:22, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['Theme']]),
+     rp(np,
+      lx(np, n,
+       fa(n,
+        t(n/n, 'beautiful', [from:23, to:32, pos:'JJ', lemma:'beautiful', sem:'IST', wordnet:'beautiful.a.01', verbnet:['Attribute']]),
+        fa(n,
+         t(n/n, 'yellow', [from:33, to:39, pos:'JJ', lemma:'yellow', sem:'COL', wordnet:'yellow.a.01', verbnet:['Colour']]),
+         t(n, 'flowers', [from:40, to:47, pos:'NNS', lemma:'flower', sem:'CON', wordnet:'flower.n.01'])))),
+      t(., '.', [from:47, to:48, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

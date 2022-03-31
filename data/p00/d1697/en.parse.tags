@@ -1,0 +1,25 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'That', [from:0, to:4, pos:'DT', lemma:'entity', sem:'DST', wordnet:'entity.n.01']),
+   fa(n,
+    t(n/pp, 'kind', [from:5, to:9, pos:'NN', lemma:'entity', sem:'CON', wordnet:'entity.n.01']),
+    fa(pp,
+     t(pp/np, 'of', [from:10, to:12, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['InstanceOf']]),
+     lx(np, n,
+      t(n, 'remark', [from:13, to:19, pos:'NN', lemma:'remark', sem:'CON', wordnet:'remark.n.01']))))),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/(s:b\np),
+    t((s:dcl\np)/(s:b\np), 'does', [from:20, to:24, pos:'VBZ', lemma:'do', sem:'NOW', wordnet:'O']),
+    t((s\np)\(s\np), 'not', [from:25, to:28, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+   rp(s:b\np,
+    fa(s:b\np,
+     t((s:b\np)/np, 'befit', [from:29, to:34, pos:'VB', lemma:'befit', sem:'EXS', wordnet:'befit.v.01', verbnet:['Patient','Agent']]),
+     t(np, 'you', [from:35, to:38, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O'])),
+    t(., '.', [from:38, to:39, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

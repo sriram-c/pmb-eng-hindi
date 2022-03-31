@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'He', [from:0, to:2, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:ng\np), 'was', [from:3, to:6, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+   rp(s:ng\np,
+    fa(s:ng\np,
+     t((s:ng\np)/np, 'sharpening', [from:7, to:17, pos:'VBG', lemma:'sharpen', sem:'EXG', wordnet:'sharpen.v.01', verbnet:['Patient','Agent']]),
+     fa(np,
+      t(np/n, 'a', [from:18, to:19, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+      t(n, 'knife', [from:20, to:25, pos:'NN', lemma:'knife', sem:'CON', wordnet:'knife.n.01']))),
+    t(., '.', [from:25, to:26, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

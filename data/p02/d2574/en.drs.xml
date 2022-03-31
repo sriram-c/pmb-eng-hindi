@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- She mistook me for my brother . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">She</tag>
+     <tag type="cat">np</tag>
+     <tag type="sym">female</tag>
+     <tag type="lemma">female</tag>
+     <tag type="from">0</tag>
+     <tag type="to">3</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="sem">PRO</tag>
+     <tag type="wordnet">female.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="tok">mistook</tag>
+     <tag type="cat">((s:dcl\np)/pp)/np</tag>
+     <tag type="sym">mistake</tag>
+     <tag type="lemma">mistake</tag>
+     <tag type="from">4</tag>
+     <tag type="to">11</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="sem">EPS</tag>
+     <tag type="wordnet">mistake.v.01</tag>
+     <tag type="verbnet" n="2">[Theme,Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">me</tag>
+     <tag type="cat">np</tag>
+     <tag type="sym">speaker</tag>
+     <tag type="lemma">speaker</tag>
+     <tag type="from">12</tag>
+     <tag type="to">14</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="sem">PRO</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="tok">for</tag>
+     <tag type="cat">pp/np</tag>
+     <tag type="sym">for</tag>
+     <tag type="lemma">for</tag>
+     <tag type="from">15</tag>
+     <tag type="to">18</tag>
+     <tag type="pos">IN</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Co-Theme]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="tok">my</tag>
+     <tag type="cat">np/(n/pp)</tag>
+     <tag type="sym">speaker</tag>
+     <tag type="lemma">speaker</tag>
+     <tag type="from">19</tag>
+     <tag type="to">21</tag>
+     <tag type="pos">PRP$</tag>
+     <tag type="sem">HAS</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Of]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">brother</tag>
+     <tag type="cat">n/pp</tag>
+     <tag type="sym">brother</tag>
+     <tag type="lemma">brother</tag>
+     <tag type="from">22</tag>
+     <tag type="to">29</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">ROL</tag>
+     <tag type="wordnet">brother.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">29</tag>
+     <tag type="to">30</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b2">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="3"></dr>
+   <dr label="b2" name="x2" from="12" to="14"></dr>
+   <dr label="b2" name="e1" from="4" to="11"></dr>
+   <dr label="b3" name="x3" from="19" to="21"></dr>
+   <dr label="b3" name="x4" from="22" to="29"></dr>
+   <dr label="b2" name="t1" from="4" to="11"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="female" synset="female.n.02" from="0" to="3"></pred>
+   </cond>
+   <cond label="b2">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="4" to="11"></pred>
+   </cond>
+   <cond label="b2">
+    <comp symbol="TPR" arg1="t1" arg2="now" from="4" to="11"></comp>
+   </cond>
+   <cond label="b2">
+    <pred arg="e1" symbol="mistake" synset="mistake.v.01" from="4" to="11"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="4" to="11"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x3" symbol="Co-Theme" framenet="Replacing@New" from="15" to="18"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x2" symbol="Theme" framenet="Placing@Theme" from="4" to="11"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x1" symbol="Agent" framenet="Placing@Agent" from="4" to="11"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="x2" symbol="person" synset="person.n.01" from="12" to="14"></pred>
+   </cond>
+   <cond label="b2">
+    <comp symbol="EQU" arg1="x2" arg2="speaker" from="12" to="14"></comp>
+   </cond>
+   <cond label="b3">
+    <pred arg="x4" symbol="brother" synset="brother.n.01" from="22" to="29"></pred>
+   </cond>
+   <cond label="b3">
+    <rel arg1="x4" arg2="speaker" symbol="Of" framenet="Of" from="19" to="21"></rel>
+   </cond>
+   <cond label="b3">
+    <pred arg="x3" symbol="person" synset="person.n.01" from="22" to="29"></pred>
+   </cond>
+   <cond label="b3">
+    <rel arg1="x3" arg2="x4" symbol="Role" framenet="Role" from="22" to="29"></rel>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

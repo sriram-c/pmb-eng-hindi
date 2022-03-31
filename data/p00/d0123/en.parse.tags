@@ -1,0 +1,14 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:dcl,
+  ba(s:dcl,
+   t(np, 'You', [from:0, to:3, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O']),
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:pss\np), 'are', [from:4, to:7, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+    t(s:pss\np, 'screwed', [from:8, to:15, pos:'VBN', lemma:'screw', sem:'EXS', wordnet:'screw.v.05', verbnet:['Agent']]))),
+  t(., '.', [from:15, to:16, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+

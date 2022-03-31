@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- He set down the telephone~number . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">He</tag>
+     <tag type="cat">np</tag>
+     <tag type="sym">male</tag>
+     <tag type="lemma">male</tag>
+     <tag type="from">0</tag>
+     <tag type="to">2</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="sem">PRO</tag>
+     <tag type="wordnet">male.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="tok">set</tag>
+     <tag type="cat">((s:dcl\np)/np)/pr</tag>
+     <tag type="sym">set~down</tag>
+     <tag type="lemma">set~down</tag>
+     <tag type="from">3</tag>
+     <tag type="to">6</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="sem">EPS</tag>
+     <tag type="wordnet">set_down.v.01</tag>
+     <tag type="verbnet" n="2">[Theme,Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">down</tag>
+     <tag type="cat">pr</tag>
+     <tag type="sym">down</tag>
+     <tag type="lemma">down</tag>
+     <tag type="from">7</tag>
+     <tag type="to">11</tag>
+     <tag type="pos">RP</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">the</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">the</tag>
+     <tag type="lemma">the</tag>
+     <tag type="from">12</tag>
+     <tag type="to">15</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">telephone~number</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">telephone~number</tag>
+     <tag type="lemma">telephone~number</tag>
+     <tag type="from">16</tag>
+     <tag type="to">32</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">telephone_number.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">32</tag>
+     <tag type="to">33</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b3">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="2"></dr>
+   <dr label="b2" name="x2" from="12" to="15"></dr>
+   <dr label="b3" name="e1" from="3" to="6"></dr>
+   <dr label="b3" name="t1" from="3" to="6"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="male" synset="male.n.02" from="0" to="2"></pred>
+   </cond>
+   <cond label="b3">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="3" to="6"></pred>
+   </cond>
+   <cond label="b3">
+    <comp symbol="TPR" arg1="t1" arg2="now" from="3" to="6"></comp>
+   </cond>
+   <cond label="b3">
+    <pred arg="e1" symbol="set_down" synset="set_down.v.01" from="3" to="6"></pred>
+   </cond>
+   <cond label="b3">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="3" to="6"></rel>
+   </cond>
+   <cond label="b3">
+    <rel arg1="e1" arg2="x2" symbol="Theme" framenet="Theme" from="3" to="6"></rel>
+   </cond>
+   <cond label="b3">
+    <rel arg1="e1" arg2="x1" symbol="Agent" framenet="Agent" from="3" to="6"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="x2" symbol="telephone_number" synset="telephone_number.n.01" from="16" to="32"></pred>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

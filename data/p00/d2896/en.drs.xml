@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- ø Man has been writing for ø about 6000 years . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="from">0</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">Man</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">man</tag>
+     <tag type="lemma">man</tag>
+     <tag type="from">0</tag>
+     <tag type="to">3</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">man.n.11</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">has</tag>
+     <tag type="cat">(s:dcl\np)/(s:pt\np)</tag>
+     <tag type="sym">have</tag>
+     <tag type="lemma">have</tag>
+     <tag type="from">4</tag>
+     <tag type="to">7</tag>
+     <tag type="pos">VBZ</tag>
+     <tag type="sem">NOW</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">been</tag>
+     <tag type="cat">(s:pt\np)/(s:ng\np)</tag>
+     <tag type="sym">be</tag>
+     <tag type="lemma">be</tag>
+     <tag type="from">8</tag>
+     <tag type="to">12</tag>
+     <tag type="pos">VBN</tag>
+     <tag type="sem">PFT</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="tok">writing</tag>
+     <tag type="cat">(s:ng\np)/pp</tag>
+     <tag type="sym">write</tag>
+     <tag type="lemma">write</tag>
+     <tag type="from">13</tag>
+     <tag type="to">20</tag>
+     <tag type="pos">VBG</tag>
+     <tag type="sem">EXG</tag>
+     <tag type="wordnet">write.v.02</tag>
+     <tag type="verbnet" n="1">[Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="tok">for</tag>
+     <tag type="cat">pp/np</tag>
+     <tag type="sym">for</tag>
+     <tag type="lemma">for</tag>
+     <tag type="from">21</tag>
+     <tag type="to">24</tag>
+     <tag type="pos">IN</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Duration]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="from">25</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">about</tag>
+     <tag type="cat">(n/n)/(n/n)</tag>
+     <tag type="sym">about</tag>
+     <tag type="lemma">about</tag>
+     <tag type="from">25</tag>
+     <tag type="to">30</tag>
+     <tag type="pos">IN</tag>
+     <tag type="sem">APX</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1009">
+   <tags>
+     <tag type="tok">6000</tag>
+     <tag type="cat">n/n</tag>
+     <tag type="sym">6000</tag>
+     <tag type="lemma">6000</tag>
+     <tag type="from">31</tag>
+     <tag type="to">35</tag>
+     <tag type="pos">CD</tag>
+     <tag type="sem">QUC</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Equal]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1010">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">years</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">year</tag>
+     <tag type="lemma">year</tag>
+     <tag type="from">36</tag>
+     <tag type="to">41</tag>
+     <tag type="pos">NNS</tag>
+     <tag type="sem">UOM</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1011">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">41</tag>
+     <tag type="to">42</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b1">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="-1"></dr>
+   <dr label="b1" name="e1" from="13" to="20"></dr>
+   <dr label="b1" name="x2" from="25" to="-1"></dr>
+   <dr label="b1" name="x3" from="25" to="30"></dr>
+   <dr label="b1" name="x4" from="25" to="30"></dr>
+   <dr label="b1" name="x5" from="36" to="41"></dr>
+   <dr label="b1" name="t1" from="8" to="12"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="man" synset="man.n.11" from="0" to="3"></pred>
+   </cond>
+   <cond label="b1">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="8" to="12"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="TPR" arg1="t1" arg2="now" from="8" to="12"></comp>
+   </cond>
+   <cond label="b1">
+    <pred arg="e1" symbol="write" synset="write.v.02" from="13" to="20"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="8" to="12"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x2" symbol="Duration" framenet="Duration" from="21" to="24"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x1" symbol="Agent" framenet="Achieving_first@Cognizer" from="13" to="20"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="x3" symbol="quantity" synset="quantity.n.01" from="25" to="30"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="APX" arg1="x3" arg2="x4" from="25" to="30"></comp>
+   </cond>
+   <cond label="b1">
+    <pred arg="x4" symbol="quantity" synset="quantity.n.01" from="25" to="30"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="EQU" arg1="x4" arg2="6000" from="31" to="35"></comp>
+   </cond>
+   <cond label="b1">
+    <pred arg="x2" symbol="measure" synset="measure.n.02" from="36" to="41"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x2" arg2="x5" symbol="Unit" framenet="Unit" from="36" to="41"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x2" arg2="x3" symbol="Quantity" framenet="Quantity" from="25" to="30"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="x5" symbol="year" synset="year.n.01" from="36" to="41"></pred>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

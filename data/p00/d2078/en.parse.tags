@@ -1,0 +1,17 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'My', [from:0, to:2, pos:'PRP$', lemma:'speaker', sem:'HAS', wordnet:'O', verbnet:['User']]),
+   t(n, 'watch', [from:3, to:8, pos:'NN', lemma:'watch', sem:'CON', wordnet:'watch.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'says', [from:9, to:13, pos:'VBZ', lemma:'say', sem:'ENS', wordnet:'say.v.11', verbnet:['Value','Theme']]),
+   rp(np,
+    lx(np, n,
+     t(n, '2:30', [from:14, to:18, pos:'CD', lemma:'14:30', sem:'CLO', wordnet:'O'])),
+    t(., '.', [from:18, to:19, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

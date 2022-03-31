@@ -1,0 +1,28 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'thief', [from:4, to:9, pos:'NN', lemma:'thief', sem:'ROL', wordnet:'thief.n.01'])),
+  fa(s:dcl\np,
+   fa((s:dcl\np)/s:dcl,
+    t(((s:dcl\np)/s:dcl)/np, 'told', [from:10, to:14, pos:'VBD', lemma:'tell', sem:'EPS', wordnet:'tell.v.01', verbnet:['Recipient','Topic','Agent']]),
+    fa(np,
+     t(np/n, 'the', [from:15, to:18, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'police', [from:19, to:25, pos:'NN', lemma:'police', sem:'CON', wordnet:'police.n.01']))),
+   ba(s:dcl,
+    t(np, 'he', [antecedent:'4,9', from:26, to:28, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+    fa(s:dcl\np,
+     bxc((s:dcl\np)/(s:pt\np),
+      t((s:dcl\np)/(s:pt\np), 'had', [from:29, to:32, pos:'VBD', lemma:'have', sem:'PST', wordnet:'O']),
+      t((s\np)\(s\np), 'n\'t', [from:32, to:35, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+     rp(s:pt\np,
+      fa(s:pt\np,
+       t((s:pt\np)/np, 'stolen', [from:36, to:42, pos:'VBN', lemma:'steal', sem:'EXT', wordnet:'steal.v.01', verbnet:['Theme','Agent']]),
+       t(np, 'anything', [from:43, to:51, pos:'DT', lemma:'entity', sem:'DIS', wordnet:'entity.n.01'])),
+      t(., '.', [from:51, to:52, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

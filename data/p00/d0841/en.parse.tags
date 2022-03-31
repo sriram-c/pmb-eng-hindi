@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:dcl,
+  ba(s:dcl,
+   t(np, 'He', [from:0, to:2, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:adj\np), 'is', [from:3, to:5, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+    ba(s:adj\np,
+     fa(np,
+      t(np/n, 'a', [from:6, to:7, pos:'DT', lemma:'1', sem:'QUC', wordnet:'O']),
+      t(n, 'head', [from:8, to:12, pos:'NN', lemma:'head', sem:'UOM', wordnet:'head.n.11'])),
+     fa((s:adj\np)\np,
+      t(((s:adj\np)\np)/pp, 'taller', [from:13, to:19, pos:'NN', lemma:'tall', sem:'MOR', wordnet:'tall.a.01', verbnet:['Value','Attribute']]),
+      fa(pp,
+       t(pp/np, 'than', [from:20, to:24, pos:'IN', lemma:'than', sem:'REL', wordnet:'O', verbnet:['Co-Theme']]),
+       t(np, 'me', [from:25, to:27, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O'])))))),
+  t(., '.', [from:27, to:28, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+

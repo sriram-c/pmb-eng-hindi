@@ -1,0 +1,29 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  rp(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:ng\np), 'am', [from:2, to:4, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+    ba(s:ng\np,
+     fa(s:ng\np,
+      t((s:ng\np)/pr, 'saving', [from:5, to:11, pos:'VBG', lemma:'save~up', sem:'EXG', wordnet:'save_up.v.01', verbnet:['Agent']]),
+      t(pr, 'up', [from:12, to:14, pos:'RP', lemma:'up', sem:'REL', wordnet:'O'])),
+     fa((s:ng\np)\(s:ng\np),
+      t(((s:ng\np)\(s:ng\np))/s:dcl, 'so~that', [from:15, to:22, pos:'NN', lemma:'so~that', sem:'SUB', wordnet:'O']),
+      ba(s:dcl,
+       t(np, 'I', [from:23, to:24, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+       fa(s:dcl\np,
+        t((s:dcl\np)/(s:b\np), 'can', [from:25, to:28, pos:'MD', lemma:'can', sem:'POS', wordnet:'O']),
+        fa(s:b\np,
+         t((s:b\np)/pp, 'go', [from:29, to:31, pos:'VB', lemma:'go', sem:'EXS', wordnet:'go.v.01', verbnet:['Theme']]),
+         fa(pp,
+          t(pp/np, 'to', [from:32, to:34, pos:'TO', lemma:'to', sem:'REL', wordnet:'O', verbnet:['Destination']]),
+          lx(np, n,
+           t(n, 'Australia', [from:35, to:44, pos:'NNP', lemma:'australia', sem:'GPE', wordnet:'country.n.02']))))))))),
+   t(., '.', [from:44, to:45, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+

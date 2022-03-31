@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Maria', [from:0, to:5, pos:'NNP', lemma:'maria', sem:'PER', wordnet:'female.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'has', [from:6, to:9, pos:'VBZ', lemma:'have', sem:'ENS', wordnet:'have.v.02', verbnet:['Theme','Pivot']]),
+   rp(np,
+    lx(np, n,
+     fa(n,
+      t(n/n, 'long', [from:10, to:14, pos:'JJ', lemma:'long', sem:'DEG', wordnet:'long.a.02', verbnet:['Attribute']]),
+      t(n, 'hair', [from:15, to:19, pos:'NN', lemma:'hair', sem:'CON', wordnet:'hair.n.01']))),
+    t(., '.', [from:19, to:20, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

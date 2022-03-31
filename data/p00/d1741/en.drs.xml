@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- My plan worked . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="tok">My</tag>
+     <tag type="cat">np/(n/pp)</tag>
+     <tag type="sym">speaker</tag>
+     <tag type="lemma">speaker</tag>
+     <tag type="from">0</tag>
+     <tag type="to">2</tag>
+     <tag type="pos">PRP$</tag>
+     <tag type="sem">HAS</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Creator]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">plan</tag>
+     <tag type="cat">n/pp</tag>
+     <tag type="sym">plan</tag>
+     <tag type="lemma">plan</tag>
+     <tag type="from">3</tag>
+     <tag type="to">7</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">plan.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="tok">worked</tag>
+     <tag type="cat">s:dcl\np</tag>
+     <tag type="sym">work</tag>
+     <tag type="lemma">work</tag>
+     <tag type="from">8</tag>
+     <tag type="to">14</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="sem">EPS</tag>
+     <tag type="wordnet">work.v.03</tag>
+     <tag type="verbnet" n="1">[Theme]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">14</tag>
+     <tag type="to">15</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b2">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="2"></dr>
+   <dr label="b2" name="e1" from="8" to="14"></dr>
+   <dr label="b2" name="t1" from="8" to="14"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="plan" synset="plan.n.01" from="3" to="7"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x1" arg2="speaker" symbol="Creator" framenet="Creator" from="0" to="2"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="8" to="14"></pred>
+   </cond>
+   <cond label="b2">
+    <comp symbol="TPR" arg1="t1" arg2="now" from="8" to="14"></comp>
+   </cond>
+   <cond label="b2">
+    <pred arg="e1" symbol="work" synset="work.v.03" from="8" to="14"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="8" to="14"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x1" symbol="Theme" framenet="Participation@Event" from="8" to="14"></rel>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

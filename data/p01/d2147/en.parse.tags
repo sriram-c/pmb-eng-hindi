@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:dcl,
+  ba(s:dcl,
+   lx(np, n,
+    fa(n,
+     t(n/n, 'Mrs.', [from:0, to:4, pos:'NNP', lemma:'mrs', sem:'ROL', wordnet:'mrs.n.01', verbnet:['Title']]),
+     t(n, 'Baker', [from:5, to:10, pos:'NNP', lemma:'baker', sem:'PER', wordnet:'female.n.02']))),
+   fa(s:dcl\np,
+    fa((s:dcl\np)/(s:pss\np),
+     t(((s:dcl\np)/(s:pss\np))/np, 'had', [from:11, to:14, pos:'VBD', lemma:'have', sem:'PST', wordnet:'O', verbnet:['Beneficiary']]),
+     fa(np,
+      t(np/n, 'her', [antecedent:'5,10', from:15, to:18, pos:'PRP$', lemma:'female', sem:'HAS', wordnet:'female.n.02', verbnet:['Owner']]),
+      t(n, 'purse', [from:19, to:24, pos:'NN', lemma:'purse', sem:'CON', wordnet:'purse.n.01']))),
+    t(s:pss\np, 'stolen', [from:25, to:31, pos:'VBN', lemma:'steal', sem:'EXS', wordnet:'steal.v.01', verbnet:['Theme']]))),
+  t(., '.', [from:31, to:32, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+

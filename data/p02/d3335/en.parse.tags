@@ -1,0 +1,23 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'This', [from:0, to:4, pos:'DT', lemma:'this', sem:'PRX', wordnet:'O']),
+   fa(n,
+    t(n/pp, 'painting', [from:5, to:13, pos:'NN', lemma:'painting', sem:'CON', wordnet:'painting.n.01']),
+    fa(pp,
+     t(pp/np, 'by', [from:14, to:16, pos:'IN', lemma:'by', sem:'REL', wordnet:'O', verbnet:['Creator']]),
+     lx(np, n,
+      t(n, 'Rembrandt', [from:17, to:26, pos:'NNP', lemma:'rembrandt', sem:'PER', wordnet:'male.n.02']))))),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'is', [from:27, to:29, pos:'VBZ', lemma:'be', sem:'ENS', wordnet:'be.v.01', verbnet:['Co-Theme','Theme']]),
+   rp(np,
+    fa(np,
+     t(np/n, 'a', [from:30, to:31, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+     t(n, 'masterpiece', [from:32, to:43, pos:'NN', lemma:'masterpiece', sem:'CON', wordnet:'masterpiece.n.01'])),
+    t(., '.', [from:43, to:44, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

@@ -1,0 +1,29 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  ba(s:dcl,
+   lx(np, n,
+    t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+   fa(s:dcl\np,
+    t((s:dcl\np)/np, 'drives', [from:4, to:10, pos:'VBZ', lemma:'drive', sem:'ENS', wordnet:'drive.v.01', verbnet:['Theme','Agent']]),
+    fa(np,
+     t(np/n, 'a', [from:11, to:12, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+     t(n, 'truck', [from:13, to:18, pos:'NN', lemma:'truck', sem:'CON', wordnet:'truck.n.01'])))),
+  conj(s:dcl\s:dcl,
+   t(conj, 'and', [from:19, to:22, pos:'CC', lemma:'and', sem:'AND', wordnet:'O']),
+   ba(s:dcl,
+    fa(np,
+     t(np/(n/pp), 'his', [antecedent:'0,3', from:23, to:26, pos:'PRP$', lemma:'male', sem:'HAS', wordnet:'male.n.02', verbnet:['Of']]),
+     t(n/pp, 'wife', [from:27, to:31, pos:'NN', lemma:'wife', sem:'ROL', wordnet:'wife.n.01'])),
+    fa(s:dcl\np,
+     t((s:dcl\np)/np, 'drives', [from:32, to:38, pos:'VBZ', lemma:'drive', sem:'ENS', wordnet:'drive.v.01', verbnet:['Theme','Agent']]),
+     rp(np,
+      fa(np,
+       t(np/n, 'a', [from:39, to:40, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+       t(n, 'station~wagon', [from:41, to:54, pos:'NN', lemma:'station~wagon', sem:'CON', wordnet:'station_wagon.n.01'])),
+      t(., '.', [from:54, to:55, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

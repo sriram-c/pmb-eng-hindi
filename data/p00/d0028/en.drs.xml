@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- A woman in a white dress and a woman in a blue dress are standing on a stage --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">A</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">a</tag>
+     <tag type="lemma">a</tag>
+     <tag type="from">0</tag>
+     <tag type="to">1</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">woman</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">woman</tag>
+     <tag type="lemma">woman</tag>
+     <tag type="from">2</tag>
+     <tag type="to">7</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">woman.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="tok">in</tag>
+     <tag type="cat">(n\n)/np</tag>
+     <tag type="sym">in</tag>
+     <tag type="lemma">in</tag>
+     <tag type="from">8</tag>
+     <tag type="to">10</tag>
+     <tag type="pos">IN</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[User]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">a</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">a</tag>
+     <tag type="lemma">a</tag>
+     <tag type="from">11</tag>
+     <tag type="to">12</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="tok">white</tag>
+     <tag type="cat">n/n</tag>
+     <tag type="sym">white</tag>
+     <tag type="lemma">white</tag>
+     <tag type="from">13</tag>
+     <tag type="to">18</tag>
+     <tag type="pos">JJ</tag>
+     <tag type="sem">COL</tag>
+     <tag type="wordnet">white.a.01</tag>
+     <tag type="verbnet" n="1">[Colour]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">dress</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">dress</tag>
+     <tag type="lemma">dress</tag>
+     <tag type="from">19</tag>
+     <tag type="to">24</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">dress.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">and</tag>
+     <tag type="cat">conj:np</tag>
+     <tag type="sym">and</tag>
+     <tag type="lemma">and</tag>
+     <tag type="from">25</tag>
+     <tag type="to">28</tag>
+     <tag type="pos">CC</tag>
+     <tag type="sem">GRP</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">a</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">a</tag>
+     <tag type="lemma">a</tag>
+     <tag type="from">29</tag>
+     <tag type="to">30</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1009">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">woman</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">woman</tag>
+     <tag type="lemma">woman</tag>
+     <tag type="from">31</tag>
+     <tag type="to">36</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">woman.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1010">
+   <tags>
+     <tag type="tok">in</tag>
+     <tag type="cat">(n\n)/np</tag>
+     <tag type="sym">in</tag>
+     <tag type="lemma">in</tag>
+     <tag type="from">37</tag>
+     <tag type="to">39</tag>
+     <tag type="pos">IN</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[User]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1011">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">a</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">a</tag>
+     <tag type="lemma">a</tag>
+     <tag type="from">40</tag>
+     <tag type="to">41</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1012">
+   <tags>
+     <tag type="tok">blue</tag>
+     <tag type="cat">n/n</tag>
+     <tag type="sym">blue</tag>
+     <tag type="lemma">blue</tag>
+     <tag type="from">42</tag>
+     <tag type="to">46</tag>
+     <tag type="pos">JJ</tag>
+     <tag type="sem">COL</tag>
+     <tag type="wordnet">blue.a.01</tag>
+     <tag type="verbnet" n="1">[Colour]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1013">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">dress</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">dress</tag>
+     <tag type="lemma">dress</tag>
+     <tag type="from">47</tag>
+     <tag type="to">52</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">dress.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1014">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">are</tag>
+     <tag type="cat">(s:dcl\np)/(s:ng\np)</tag>
+     <tag type="sym">be</tag>
+     <tag type="lemma">be</tag>
+     <tag type="from">53</tag>
+     <tag type="to">56</tag>
+     <tag type="pos">VBP</tag>
+     <tag type="sem">NOW</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1015">
+   <tags>
+     <tag type="tok">standing</tag>
+     <tag type="cat">(s:ng\np)/pp</tag>
+     <tag type="sym">stand</tag>
+     <tag type="lemma">stand</tag>
+     <tag type="from">57</tag>
+     <tag type="to">65</tag>
+     <tag type="pos">VBG</tag>
+     <tag type="sem">EXG</tag>
+     <tag type="wordnet">stand.v.03</tag>
+     <tag type="verbnet" n="1">[Theme]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1016">
+   <tags>
+     <tag type="tok">on</tag>
+     <tag type="cat">pp/np</tag>
+     <tag type="sym">on</tag>
+     <tag type="lemma">on</tag>
+     <tag type="from">66</tag>
+     <tag type="to">68</tag>
+     <tag type="pos">IN</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Location]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1017">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">a</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">a</tag>
+     <tag type="lemma">a</tag>
+     <tag type="from">69</tag>
+     <tag type="to">70</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1018">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">stage</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">stage</tag>
+     <tag type="lemma">stage</tag>
+     <tag type="from">71</tag>
+     <tag type="to">76</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">stage.n.03</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b1">
+  <domain>
+   <dr label="b1" name="x1" from="25" to="28"></dr>
+   <dr label="b1" name="x2" from="0" to="1"></dr>
+   <dr label="b1" name="x3" from="11" to="12"></dr>
+   <dr label="b1" name="s1" from="13" to="18"></dr>
+   <dr label="b1" name="x4" from="29" to="30"></dr>
+   <dr label="b1" name="x5" from="40" to="41"></dr>
+   <dr label="b1" name="s2" from="42" to="46"></dr>
+   <dr label="b1" name="e1" from="57" to="65"></dr>
+   <dr label="b1" name="x6" from="69" to="70"></dr>
+   <dr label="b1" name="t1" from="53" to="56"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x2" symbol="woman" synset="woman.n.01" from="2" to="7"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x2" arg2="x3" symbol="User" framenet="User" from="8" to="10"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="s1" symbol="white" synset="white.a.01" from="13" to="18"></pred>
+   </cond>
+   <cond label="b1">
+    <pred arg="x3" symbol="dress" synset="dress.n.01" from="19" to="24"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x3" arg2="s1" symbol="Colour" framenet="Colour" from="13" to="18"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="x1" symbol="entity" synset="entity.n.01" from="25" to="28"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x1" arg2="x4" symbol="Sub" framenet="Sub" from="25" to="28"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x1" arg2="x2" symbol="Sub" framenet="Sub" from="25" to="28"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="x4" symbol="woman" synset="woman.n.01" from="31" to="36"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x4" arg2="x5" symbol="User" framenet="User" from="37" to="39"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="s2" symbol="blue" synset="blue.a.01" from="42" to="46"></pred>
+   </cond>
+   <cond label="b1">
+    <pred arg="x5" symbol="dress" synset="dress.n.01" from="47" to="52"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x5" arg2="s2" symbol="Colour" framenet="Colour" from="42" to="46"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="53" to="56"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="EQU" arg1="t1" arg2="now" from="53" to="56"></comp>
+   </cond>
+   <cond label="b1">
+    <pred arg="e1" symbol="stand" synset="stand.v.03" from="57" to="65"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="53" to="56"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x6" symbol="Location" framenet="Cause_harm@Body_part" from="66" to="68"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x1" symbol="Theme" framenet="Existence@Entity" from="57" to="65"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="x6" symbol="stage" synset="stage.n.03" from="71" to="76"></pred>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

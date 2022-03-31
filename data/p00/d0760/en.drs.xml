@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- ø Bountiful reached ø San~Francisco on ø 1 November 1945 . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="from">0</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">Bountiful</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">bountiful</tag>
+     <tag type="lemma">bountiful</tag>
+     <tag type="from">0</tag>
+     <tag type="to">9</tag>
+     <tag type="pos">NNP</tag>
+     <tag type="sem">ART</tag>
+     <tag type="wordnet">vehicle.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="tok">reached</tag>
+     <tag type="cat">(s:dcl\np)/np</tag>
+     <tag type="sym">reach</tag>
+     <tag type="lemma">reach</tag>
+     <tag type="from">10</tag>
+     <tag type="to">17</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="sem">EPS</tag>
+     <tag type="wordnet">reach.v.01</tag>
+     <tag type="verbnet" n="2">[Destination,Theme]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="from">18</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">San~Francisco</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">san~francisco</tag>
+     <tag type="lemma">san~francisco</tag>
+     <tag type="from">18</tag>
+     <tag type="to">31</tag>
+     <tag type="pos">NNP</tag>
+     <tag type="sem">GPE</tag>
+     <tag type="wordnet">city.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="tok">on</tag>
+     <tag type="cat">((s:dcl\np)\(s:dcl\np))/np</tag>
+     <tag type="sym">on</tag>
+     <tag type="lemma">on</tag>
+     <tag type="from">32</tag>
+     <tag type="to">34</tag>
+     <tag type="pos">IN</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Time]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="from">35</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="tok">1</tag>
+     <tag type="cat">n/n</tag>
+     <tag type="sym">1</tag>
+     <tag type="lemma">1</tag>
+     <tag type="from">35</tag>
+     <tag type="to">36</tag>
+     <tag type="pos">CD</tag>
+     <tag type="sem">DOM</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Equal]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1009">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">November</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">november</tag>
+     <tag type="lemma">november</tag>
+     <tag type="from">37</tag>
+     <tag type="to">45</tag>
+     <tag type="pos">NNP</tag>
+     <tag type="sem">MOY</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1010">
+   <tags>
+     <tag type="tok">1945</tag>
+     <tag type="cat">n\n</tag>
+     <tag type="sym">1945</tag>
+     <tag type="lemma">1945</tag>
+     <tag type="from">46</tag>
+     <tag type="to">50</tag>
+     <tag type="pos">CD</tag>
+     <tag type="sem">YOC</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Equal]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1011">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">50</tag>
+     <tag type="to">51</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b1">
+  <domain>
+   <dr label="b1" name="t1" from="0" to="0"></dr>
+   <dr label="b2" name="x1" from="0" to="-1"></dr>
+   <dr label="b3" name="x2" from="18" to="-1"></dr>
+   <dr label="b1" name="e1" from="10" to="17"></dr>
+  </domain>
+  <conds>
+   <cond label="b2">
+    <pred arg="x1" symbol="vehicle" synset="vehicle.n.01" from="0" to="9"></pred>
+   </cond>
+   <cond label="b2">
+    <named arg="x1" symbol="bountiful" from="0" to="9"></named>
+   </cond>
+   <cond label="b1">
+    <pred arg="e1" symbol="reach" synset="reach.v.01" from="10" to="17"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="0" to="0"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x2" symbol="Destination" framenet="Arriving@Goal" from="10" to="17"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x1" symbol="Theme" framenet="Commerce_buy@Goods" from="10" to="17"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="0" to="0"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="t1" arg2="11" symbol="MonthOfYear" framenet="MonthOfYear" from="37" to="45"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="t1" arg2="1945" symbol="YearOfCentury" framenet="YearOfCentury" from="46" to="50"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="t1" arg2="01" symbol="DayOfMonth" framenet="DayOfMonth" from="35" to="36"></rel>
+   </cond>
+   <cond label="b1">
+    <comp symbol="TPR" arg1="t1" arg2="now" from="10" to="17"></comp>
+   </cond>
+   <cond label="b3">
+    <pred arg="x2" symbol="city" synset="city.n.01" from="18" to="31"></pred>
+   </cond>
+   <cond label="b3">
+    <named arg="x2" symbol="san~francisco" from="18" to="31"></named>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

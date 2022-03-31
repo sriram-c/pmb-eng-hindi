@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Charles~de~Gaulle', [from:0, to:17, pos:'NNP', lemma:'charles~de~gaulle', sem:'PER', wordnet:'male.n.02'])),
+  ba(s:dcl\np,
+   t(s:dcl\np, 'died', [from:18, to:22, pos:'VBD', lemma:'die', sem:'EPS', wordnet:'die.v.01', verbnet:['Patient']]),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'in', [from:23, to:25, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Time']]),
+    rp(np,
+     lx(np, n,
+      t(n, '1970', [from:26, to:30, pos:'CD', lemma:'1970', sem:'YOC', wordnet:'O'])),
+     t(., '.', [from:30, to:31, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

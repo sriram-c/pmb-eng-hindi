@@ -1,0 +1,19 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'has', [from:4, to:7, pos:'VBZ', lemma:'have', sem:'ENS', wordnet:'have.v.01', verbnet:['Theme','Pivot']]),
+   rp(np,
+    fa(np,
+     t(np/n, 'a', [from:8, to:9, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+     fa(n,
+      t(n/n, 'Swiss', [from:10, to:15, pos:'JJ', lemma:'switzerland', sem:'GPO', wordnet:'country.n.02', verbnet:['Source']]),
+      t(n, 'bank~account', [from:16, to:28, pos:'NN', lemma:'bank~account', sem:'CON', wordnet:'bank_account.n.01']))),
+    t(., '.', [from:28, to:29, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

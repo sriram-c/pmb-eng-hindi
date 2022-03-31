@@ -1,0 +1,23 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'girl', [from:4, to:8, pos:'NN', lemma:'girl', sem:'CON', wordnet:'girl.n.01'])),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/np, 'bought', [from:9, to:15, pos:'VBD', lemma:'buy', sem:'EPS', wordnet:'buy.v.01', verbnet:['Theme','Agent']]),
+    lx(np, n,
+     t(n, 'milk', [from:16, to:20, pos:'NN', lemma:'milk', sem:'CON', wordnet:'milk.n.01']))),
+   fa((s:dcl\np)\(s:dcl\np),
+    t(((s:dcl\np)\(s:dcl\np))/np, 'from', [from:21, to:25, pos:'IN', lemma:'from', sem:'REL', wordnet:'O', verbnet:['Source']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:26, to:29, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'market', [from:30, to:36, pos:'NN', lemma:'market', sem:'CON', wordnet:'market.n.05'])),
+     t(., '.', [from:36, to:37, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

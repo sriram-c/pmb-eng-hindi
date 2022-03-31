@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'This', [from:0, to:4, pos:'DT', lemma:'this', sem:'PRX', wordnet:'O']),
+   fa(n,
+    t(n/n, 'damned', [from:5, to:11, pos:'JJ', lemma:'damned', sem:'IST', wordnet:'damned.a.01', verbnet:['Attribute']]),
+    t(n, 'computer', [from:12, to:20, pos:'NN', lemma:'computer', sem:'CON', wordnet:'computer.n.01']))),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/(s:b\np),
+    t((s:dcl\np)/(s:b\np), 'wo', [from:21, to:23, pos:'MD', lemma:'will', sem:'FUT', wordnet:'O']),
+    t((s\np)\(s\np), 'n\'t', [from:23, to:26, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+   rp(s:b\np,
+    t(s:b\np, 'work', [from:27, to:31, pos:'VB', lemma:'work', sem:'EXS', wordnet:'work.v.04', verbnet:['Theme']]),
+    t(., '.', [from:31, to:32, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

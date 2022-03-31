@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'She', [from:0, to:3, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'smoked', [from:4, to:10, pos:'VBD', lemma:'smoke', sem:'EPS', wordnet:'smoke.v.01', verbnet:['Patient','Agent']]),
+   rp(np,
+    fa(np,
+     t(np/n, 'a', [from:11, to:12, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+     t(n, 'cigar', [from:13, to:18, pos:'NN', lemma:'cigar', sem:'CON', wordnet:'cigar.n.01'])),
+    t(., '.', [from:18, to:19, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

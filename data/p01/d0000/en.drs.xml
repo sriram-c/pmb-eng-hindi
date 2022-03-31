@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- A animal is grazing in a field --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">A</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">a</tag>
+     <tag type="lemma">a</tag>
+     <tag type="from">0</tag>
+     <tag type="to">1</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">animal</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">animal</tag>
+     <tag type="lemma">animal</tag>
+     <tag type="from">2</tag>
+     <tag type="to">8</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">animal.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">is</tag>
+     <tag type="cat">(s:dcl\np)/(s:ng\np)</tag>
+     <tag type="sym">be</tag>
+     <tag type="lemma">be</tag>
+     <tag type="from">9</tag>
+     <tag type="to">11</tag>
+     <tag type="pos">VBZ</tag>
+     <tag type="sem">NOW</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="tok">grazing</tag>
+     <tag type="cat">s:ng\np</tag>
+     <tag type="sym">graze</tag>
+     <tag type="lemma">graze</tag>
+     <tag type="from">12</tag>
+     <tag type="to">19</tag>
+     <tag type="pos">VBG</tag>
+     <tag type="sem">EXG</tag>
+     <tag type="wordnet">graze.v.01</tag>
+     <tag type="verbnet" n="1">[Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="tok">in</tag>
+     <tag type="cat">((s:dcl\np)\(s:dcl\np))/np</tag>
+     <tag type="sym">in</tag>
+     <tag type="lemma">in</tag>
+     <tag type="from">20</tag>
+     <tag type="to">22</tag>
+     <tag type="pos">IN</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Location]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">a</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">a</tag>
+     <tag type="lemma">a</tag>
+     <tag type="from">23</tag>
+     <tag type="to">24</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">field</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">field</tag>
+     <tag type="lemma">field</tag>
+     <tag type="from">25</tag>
+     <tag type="to">30</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">field.n.01</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b1">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="1"></dr>
+   <dr label="b1" name="e1" from="12" to="19"></dr>
+   <dr label="b1" name="t1" from="9" to="11"></dr>
+   <dr label="b1" name="x2" from="23" to="24"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="animal" synset="animal.n.01" from="2" to="8"></pred>
+   </cond>
+   <cond label="b1">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="9" to="11"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="EQU" arg1="t1" arg2="now" from="9" to="11"></comp>
+   </cond>
+   <cond label="b1">
+    <pred arg="e1" symbol="graze" synset="graze.v.01" from="12" to="19"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x2" symbol="Location" framenet="Containing@Container" from="20" to="22"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="9" to="11"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x1" symbol="Agent" framenet="Ingestion@Ingestor" from="12" to="19"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="x2" symbol="field" synset="field.n.01" from="25" to="30"></pred>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

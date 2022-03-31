@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'witch', [from:4, to:9, pos:'NN', lemma:'witch', sem:'ROL', wordnet:'witch.n.01'])),
+  fa(s:dcl\np,
+   fa((s:dcl\np)/pp,
+    t(((s:dcl\np)/pp)/np, 'threw', [from:10, to:15, pos:'VBD', lemma:'throw', sem:'EPS', wordnet:'throw.v.01', verbnet:['Theme','Agent']]),
+    fa(np,
+     t(np/n, 'the', [from:16, to:19, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'toad', [from:20, to:24, pos:'NN', lemma:'toad', sem:'CON', wordnet:'toad.n.01']))),
+   fa(pp,
+    t(pp/np, 'into', [from:25, to:29, pos:'IN', lemma:'into', sem:'REL', wordnet:'O', verbnet:['Destination']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'her', [from:30, to:33, pos:'PRP$', lemma:'female', sem:'HAS', wordnet:'female.n.02', verbnet:['User']]),
+      t(n, 'cauldron', [from:34, to:42, pos:'NN', lemma:'cauldron', sem:'CON', wordnet:'cauldron.n.01'])),
+     t(., '.', [from:42, to:43, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

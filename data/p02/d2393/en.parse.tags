@@ -1,0 +1,14 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'That', [from:0, to:4, pos:'DT', lemma:'entity', sem:'DST', wordnet:'entity.n.01']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), 'was', [from:5, to:8, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+   rp(s:adj\np,
+    t(s:adj\np, 'legit', [from:9, to:14, pos:'NN', lemma:'legitimate', sem:'IST', wordnet:'legitimate.a.03', verbnet:['Attribute']]),
+    t(., '.', [from:14, to:15, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

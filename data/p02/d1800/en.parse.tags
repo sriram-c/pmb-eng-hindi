@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:wq,
+  fa(s:wq/(s:q/pp),
+   t((s:wq/(s:q/pp))/(s:wq/(s:q/np)), 'With', [from:0, to:4, pos:'IN', lemma:'with', sem:'REL', wordnet:'O', verbnet:['Co-Agent']]),
+   t(s:wq/(s:q/np), 'whom', [from:5, to:9, pos:'WP', lemma:'person', sem:'QUE', wordnet:'person.n.01', verbnet:['Name']])),
+  fc(s:q/pp,
+   fa(s:q/(s:ng\np),
+    t((s:q/(s:ng\np))/np, 'am', [from:10, to:12, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+    t(np, 'I', [from:13, to:14, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O'])),
+   rp((s:ng\np)/pp,
+    t((s:ng\np)/pp, 'speaking', [from:15, to:23, pos:'VBG', lemma:'speak', sem:'EXG', wordnet:'speak.v.02', verbnet:['Agent']]),
+    t(., '?', [from:23, to:24, pos:'.', lemma:'?', sem:'QUE', wordnet:'O']))))).
+

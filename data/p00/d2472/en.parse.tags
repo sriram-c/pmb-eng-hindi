@@ -1,0 +1,28 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:dcl,
+  ba(s:dcl,
+   t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+   ba(s:dcl\np,
+    fa(s:dcl\np,
+     t((s:dcl\np)/(s:ng\np), 'am', [from:2, to:4, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+     fa(s:ng\np,
+      t((s:ng\np)/np, 'spreading', [from:5, to:14, pos:'VBG', lemma:'spread', sem:'EXG', wordnet:'spread.v.10', verbnet:['Theme','Agent']]),
+      lx(np, n,
+       t(n, 'mustard', [from:15, to:22, pos:'NN', lemma:'mustard', sem:'CON', wordnet:'mustard.n.02'])))),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/np, 'on', [from:23, to:25, pos:'IN', lemma:'on', sem:'REL', wordnet:'O', verbnet:['Destination']]),
+     fa(np,
+      t(np/n, 'a', [from:26, to:27, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+      fa(n,
+       t(n/pp, 'slice', [from:28, to:33, pos:'NN', lemma:'slice', sem:'CON', wordnet:'slice.n.02']),
+       fa(pp,
+        t(pp/np, 'of', [from:34, to:36, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['PartOf']]),
+        lx(np, n,
+         t(n, 'bread', [from:37, to:42, pos:'NN', lemma:'bread', sem:'CON', wordnet:'bread.n.01'])))))))),
+  t(., '.', [from:42, to:43, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+

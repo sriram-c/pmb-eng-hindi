@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/(n/pp), 'Your', [from:0, to:4, pos:'PRP$', lemma:'hearer', sem:'HAS', wordnet:'O', verbnet:['Creator']]),
+   t(n/pp, 'jokes', [from:5, to:10, pos:'NNS', lemma:'joke', sem:'CON', wordnet:'joke.n.01'])),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/(s:adj\np),
+    t((s:dcl\np)/(s:adj\np), 'are', [from:11, to:14, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+    t((s\np)\(s\np), 'n\'t', [from:14, to:17, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+   rp(s:adj\np,
+    t(s:adj\np, 'funny', [from:18, to:23, pos:'JJ', lemma:'funny', sem:'IST', wordnet:'funny.a.01', verbnet:['Attribute']]),
+    t(., '.', [from:23, to:24, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

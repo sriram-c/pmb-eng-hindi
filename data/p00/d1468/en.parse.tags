@@ -1,0 +1,15 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:q,
+  fa(s:q/(s:b\np),
+   t((s:q/(s:b\np))/np, 'Will', [from:0, to:4, pos:'NNP', lemma:'will', sem:'FUT', wordnet:'O']),
+   lx(np, n,
+    t(n, 'Tom', [from:5, to:8, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02']))),
+  rp(s:b\np,
+   t(s:b\np, 'die', [from:9, to:12, pos:'VB', lemma:'die', sem:'EXS', wordnet:'die.v.01', verbnet:['Patient']]),
+   t(., '?', [from:12, to:13, pos:'.', lemma:'?', sem:'QUE', wordnet:'O'])))).
+

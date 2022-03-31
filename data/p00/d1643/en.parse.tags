@@ -1,0 +1,19 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'He', [from:0, to:2, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:ng\np), 'is', [from:3, to:5, pos:'VBZ', lemma:'be', sem:'FUT', wordnet:'O']),
+    fa(s:ng\np,
+     t((s:ng\np)/np, 'leaving', [from:6, to:13, pos:'VBG', lemma:'leave', sem:'EXG', wordnet:'leave.v.01', verbnet:['Source','Theme']]),
+     lx(np, n,
+      t(n, 'Chicago', [from:14, to:21, pos:'NNP', lemma:'chicago', sem:'GPE', wordnet:'city.n.01'])))),
+   rp((s\np)\(s\np),
+    t((s\np)\(s\np), 'tomorrow', [from:22, to:30, pos:'NN', lemma:'day', sem:'FUT', wordnet:'O']),
+    t(., '.', [from:30, to:31, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

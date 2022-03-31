@@ -1,0 +1,15 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'Everyone', [from:0, to:8, pos:'DT', lemma:'person', sem:'AND', wordnet:'person.n.01']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'shook', [from:9, to:14, pos:'VBD', lemma:'shake', sem:'EPS', wordnet:'shake.v.09', verbnet:['Patient','Agent']]),
+   rp(np,
+    lx(np, n,
+     t(n, 'hands', [from:15, to:20, pos:'NNS', lemma:'hand', sem:'CON', wordnet:'hand.n.01'])),
+    t(., '.', [from:20, to:21, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

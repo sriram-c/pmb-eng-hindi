@@ -1,0 +1,28 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   ba(n,
+    t(n, 'war', [from:4, to:7, pos:'NN', lemma:'war', sem:'CON', wordnet:'war.n.01']),
+    fa(n\n,
+     t((n\n)/np, 'in', [from:8, to:10, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Location']]),
+     lx(np, n,
+      t(n, 'Iraq', [from:11, to:15, pos:'NNP', lemma:'iraq', sem:'GPE', wordnet:'country.n.02']))))),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/pr, 'broke', [from:16, to:21, pos:'VBD', lemma:'break~out', sem:'EPS', wordnet:'break_out.v.01', verbnet:['Theme']]),
+    t(pr, 'out', [from:22, to:25, pos:'RP', lemma:'out', sem:'REL', wordnet:'O'])),
+   ba((s\np)\(s\np),
+    lx(np, n,
+     fa(n,
+      t(n/n, 'ten', [from:26, to:29, pos:'CD', lemma:'10', sem:'QUC', wordnet:'O', verbnet:['Quantity']]),
+      t(n, 'years', [from:30, to:35, pos:'NNS', lemma:'year', sem:'UOM', wordnet:'year.n.01']))),
+    rp(((s\np)\(s\np))\np,
+     t(((s\np)\(s\np))\np, 'ago', [from:36, to:39, pos:'RB', lemma:'ago', sem:'PST', wordnet:'O']),
+     t(., '.', [from:39, to:40, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

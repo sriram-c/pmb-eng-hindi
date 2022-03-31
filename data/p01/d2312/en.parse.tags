@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'He', [from:0, to:2, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/np, 'put', [from:3, to:6, pos:'VBD', lemma:'put', sem:'EPS', wordnet:'put.v.01', verbnet:['Theme','Agent']]),
+    fa(np,
+     t(np/np, 'all', [from:7, to:10, pos:'PDT', lemma:'entity', sem:'AND', wordnet:'entity.n.01', verbnet:['PartOf']]),
+     fa(np,
+      t(np/n, 'his', [from:11, to:14, pos:'PRP$', lemma:'male', sem:'HAS', wordnet:'male.n.02', verbnet:['Owner']]),
+      t(n, 'money', [from:15, to:20, pos:'NN', lemma:'money', sem:'CON', wordnet:'money.n.01'])))),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'in', [from:21, to:23, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Destination']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:24, to:27, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'box', [from:28, to:31, pos:'NN', lemma:'box', sem:'CON', wordnet:'box.n.01'])),
+     t(., '.', [from:31, to:32, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

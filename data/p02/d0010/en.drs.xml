@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- A girl is styling her hair --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">A</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">a</tag>
+     <tag type="lemma">a</tag>
+     <tag type="from">0</tag>
+     <tag type="to">1</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">girl</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">girl</tag>
+     <tag type="lemma">girl</tag>
+     <tag type="from">2</tag>
+     <tag type="to">6</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">girl.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">is</tag>
+     <tag type="cat">(s:dcl\np)/(s:ng\np)</tag>
+     <tag type="sym">be</tag>
+     <tag type="lemma">be</tag>
+     <tag type="from">7</tag>
+     <tag type="to">9</tag>
+     <tag type="pos">VBZ</tag>
+     <tag type="sem">NOW</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="tok">styling</tag>
+     <tag type="cat">(s:ng\np)/np</tag>
+     <tag type="sym">style</tag>
+     <tag type="lemma">style</tag>
+     <tag type="from">10</tag>
+     <tag type="to">17</tag>
+     <tag type="pos">VBG</tag>
+     <tag type="sem">EXG</tag>
+     <tag type="wordnet">style.v.02</tag>
+     <tag type="verbnet" n="2">[Patient,Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="tok">her</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">female</tag>
+     <tag type="lemma">female</tag>
+     <tag type="antecedent">2,6</tag>
+     <tag type="from">18</tag>
+     <tag type="to">21</tag>
+     <tag type="pos">PRP$</tag>
+     <tag type="sem">HAS</tag>
+     <tag type="wordnet">female.n.02</tag>
+     <tag type="verbnet" n="1">[PartOf]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">hair</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">hair</tag>
+     <tag type="lemma">hair</tag>
+     <tag type="from">22</tag>
+     <tag type="to">26</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">hair.n.01</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b1">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="0"></dr>
+   <dr label="b1" name="x2" from="18" to="21"></dr>
+   <dr label="b1" name="e1" from="10" to="17"></dr>
+   <dr label="b1" name="t1" from="7" to="9"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="girl" synset="girl.n.01" from="2" to="6"></pred>
+   </cond>
+   <cond label="b1">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="7" to="9"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="EQU" arg1="t1" arg2="now" from="7" to="9"></comp>
+   </cond>
+   <cond label="b1">
+    <pred arg="e1" symbol="style" synset="style.v.02" from="10" to="17"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="7" to="9"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x2" symbol="Patient" framenet="Grooming@Body_part" from="10" to="17"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x1" symbol="Agent" framenet="Grooming@Agent" from="10" to="17"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="x1" symbol="female" synset="female.n.02" from="18" to="21"></pred>
+   </cond>
+   <cond label="b1">
+    <pred arg="x2" symbol="hair" synset="hair.n.01" from="22" to="26"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x2" arg2="x1" symbol="PartOf" framenet="PartOf" from="18" to="21"></rel>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'This', [from:0, to:4, pos:'DT', lemma:'entity', sem:'PRX', wordnet:'entity.n.01']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'is', [from:5, to:7, pos:'VBZ', lemma:'be', sem:'ENS', wordnet:'be.v.02', verbnet:['Co-Theme','Theme']]),
+   fa(np,
+    t(np/n, 'the', [from:8, to:11, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+    ba(n,
+     t(n, 'woman', [from:12, to:17, pos:'NN', lemma:'woman', sem:'CON', wordnet:'woman.n.01']),
+     fa(n\n,
+      fa((n\n)/(s:dcl\np),
+       t(((n\n)/(s:dcl\np))/n, 'whose', [from:18, to:23, pos:'WP$', lemma:'person', sem:'HAS', wordnet:'person.n.01', verbnet:['Owner']]),
+       t(n, 'cars', [from:24, to:28, pos:'NNS', lemma:'car', sem:'CON', wordnet:'car.n.01'])),
+      fa(s:dcl\np,
+       t((s:dcl\np)/(s:pss\np), 'were', [from:29, to:33, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+       rp(s:pss\np,
+        t(s:pss\np, 'stolen', [from:34, to:40, pos:'VBN', lemma:'steal', sem:'EXS', wordnet:'steal.v.01', verbnet:['Theme']]),
+        t(., '.', [from:40, to:41, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))))).
+

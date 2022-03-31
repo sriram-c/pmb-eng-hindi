@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  rp(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:ng\np), 'was', [from:4, to:7, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+    fa(s:ng\np,
+     t((s:ng\np)/np, 'carrying', [from:8, to:16, pos:'VBG', lemma:'carry', sem:'EXG', wordnet:'carry.v.01', verbnet:['Theme','Agent']]),
+     fa(np,
+      t(np/n, 'a', [from:17, to:18, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+      fa(n,
+       t(n/pp, 'bucket', [from:19, to:25, pos:'NN', lemma:'bucket', sem:'CON', wordnet:'bucket.n.01']),
+       fa(pp,
+        t(pp/np, 'of', [from:26, to:28, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['Content']]),
+        lx(np, n,
+         t(n, 'water', [from:29, to:34, pos:'NN', lemma:'water', sem:'CON', wordnet:'water.n.06']))))))),
+   t(., '.', [from:34, to:35, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+

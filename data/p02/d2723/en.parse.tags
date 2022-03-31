@@ -1,0 +1,19 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:pss\np), 'was', [from:2, to:5, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+    t(s:pss\np, 'abducted', [from:6, to:14, pos:'VBN', lemma:'abduct', sem:'EXS', wordnet:'abduct.v.01', verbnet:['Theme']])),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'by', [from:15, to:17, pos:'IN', lemma:'by', sem:'REL', wordnet:'O', verbnet:['Agent']]),
+    rp(np,
+     lx(np, n,
+      t(n, 'extraterrestrials', [from:18, to:35, pos:'NNS', lemma:'extraterrestrial', sem:'CON', wordnet:'extraterrestrial.n.01'])),
+     t(., '.', [from:35, to:36, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

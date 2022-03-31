@@ -1,0 +1,28 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:dcl,
+  fa(s:dcl/s:dcl,
+   t((s:dcl/s:dcl)/s:dcl, 'As~soon~as', [from:0, to:10, pos:'NNP', lemma:'as~soon~as', sem:'REL', wordnet:'O']),
+   ba(s:dcl,
+    ba(s:dcl,
+     t(np, 'he', [from:11, to:13, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+     ba(s:dcl\np,
+      t(s:dcl\np, 'sat', [from:14, to:17, pos:'VBD', lemma:'sit~down', sem:'EPS', wordnet:'sit_down.v.01', verbnet:['Agent']]),
+      t((s\np)\(s\np), 'down', [from:18, to:22, pos:'RB', lemma:'down', sem:'REL', wordnet:'O']))),
+    t(s:dcl\s:dcl, ',', [from:22, to:23, pos:',', lemma:',', sem:'NIL', wordnet:'O']))),
+  ba(s:dcl,
+   t(np, 'he', [from:24, to:26, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+   fa(s:dcl\np,
+    fa((s:dcl\np)/np,
+     t(((s:dcl\np)/np)/pr, 'picked', [from:27, to:33, pos:'VBD', lemma:'pick~up', sem:'EPS', wordnet:'pick_up.v.02', verbnet:['Theme','Agent']]),
+     t(pr, 'up', [from:34, to:36, pos:'RP', lemma:'up', sem:'REL', wordnet:'O'])),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:37, to:40, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'telephone', [from:41, to:50, pos:'NN', lemma:'telephone', sem:'CON', wordnet:'telephone.n.01'])),
+     t(., '.', [from:50, to:51, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

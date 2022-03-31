@@ -1,0 +1,14 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:dcl,
+  ba(s:dcl,
+   t(np, 'This', [from:0, to:4, pos:'DT', lemma:'entity', sem:'PRX', wordnet:'entity.n.01']),
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:adj\np), 'is', [from:5, to:7, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+    t(s:adj\np, 'personal', [from:8, to:16, pos:'JJ', lemma:'personal', sem:'IST', wordnet:'personal.a.01', verbnet:['AttributeOf']]))),
+  t(., '.', [from:16, to:17, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+

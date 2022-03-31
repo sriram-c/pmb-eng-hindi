@@ -1,0 +1,19 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'girls', [from:4, to:9, pos:'NNS', lemma:'girl', sem:'CON', wordnet:'girl.n.01'])),
+  ba(s:dcl\np,
+   t(s:dcl\np, 'reveled', [from:10, to:17, pos:'VBD', lemma:'revel', sem:'EPS', wordnet:'revel.v.01', verbnet:['Experiencer']]),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'in', [from:18, to:20, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Stimulus']]),
+    rp(np,
+     lx(np, n,
+      t(n, 'dancing', [from:21, to:28, pos:'NN', lemma:'dance', sem:'CON', wordnet:'dance.n.03'])),
+     t(., '.', [from:28, to:29, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

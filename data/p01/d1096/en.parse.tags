@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'He', [from:0, to:2, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/pr, 'broke', [from:3, to:8, pos:'VBD', lemma:'break~down', sem:'EPS', wordnet:'break_down.v.03', verbnet:['Patient']]),
+    t(pr, 'down', [from:9, to:13, pos:'RP', lemma:'down', sem:'REL', wordnet:'O'])),
+   rp((s:dcl\np)\(s:dcl\np),
+    t((s:dcl\np)\(s:dcl\np), 'all~at~once', [from:14, to:25, pos:'NN', lemma:'all~at~once', sem:'IST', wordnet:'all_at_once.r.02', verbnet:['Manner']]),
+    t(., '.', [from:25, to:26, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

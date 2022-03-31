@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'She', [from:0, to:3, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:ng\np), '\'s', [from:3, to:5, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+   fa(s:ng\np,
+    t((s:ng\np)/np, 'brushing', [from:6, to:14, pos:'VBG', lemma:'brush', sem:'EXG', wordnet:'brush.v.03', verbnet:['Patient','Agent']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'her', [from:15, to:18, pos:'PRP$', lemma:'female', sem:'HAS', wordnet:'female.n.02', verbnet:['PartOf']]),
+      t(n, 'hair', [from:19, to:23, pos:'NN', lemma:'hair', sem:'CON', wordnet:'hair.n.01'])),
+     t(., '.', [from:23, to:24, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

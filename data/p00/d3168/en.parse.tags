@@ -1,0 +1,27 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    fa((s:dcl\np)/pr,
+     t(((s:dcl\np)/pr)/np, 'picked', [from:4, to:10, pos:'VBD', lemma:'pick~up', sem:'EPS', wordnet:'pick_up.v.02', verbnet:['Theme','Agent']]),
+     fa(np,
+      t(np/n, 'the', [from:11, to:14, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'diamond', [from:15, to:22, pos:'NN', lemma:'diamond', sem:'CON', wordnet:'O']))),
+    t(pr, 'up', [from:23, to:25, pos:'RB', lemma:'up', sem:'REL', wordnet:'O'])),
+   conj((s:dcl\np)\(s:dcl\np),
+    t(conj, 'and', [from:26, to:29, pos:'CC', lemma:'and', sem:'COO', wordnet:'O']),
+    fa(s:dcl\np,
+     t((s:dcl\np)/pp, 'looked', [from:30, to:36, pos:'VBD', lemma:'look', sem:'EPS', wordnet:'look.v.01', verbnet:['Agent']]),
+     rp(pp,
+      fa(pp,
+       t(pp/np, 'at', [from:37, to:39, pos:'IN', lemma:'at', sem:'REL', wordnet:'O', verbnet:['Theme']]),
+       t(np, 'it', [antecedent:'15,22', from:40, to:42, pos:'PRP', lemma:'entity', sem:'PRO', wordnet:'entity.n.01'])),
+      t(., '.', [from:42, to:43, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'He', [from:0, to:2, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    fa((s:dcl\np)/pr,
+     t(((s:dcl\np)/pr)/np, 'called', [from:3, to:9, pos:'VBD', lemma:'call~up', sem:'EPS', wordnet:'call_up.v.02', verbnet:['Recipient','Agent']]),
+     fa(np,
+      t(np/(n/pp), 'his', [from:10, to:13, pos:'PRP$', lemma:'male', sem:'HAS', wordnet:'male.n.02', verbnet:['Of']]),
+      t(n/pp, 'mother', [from:14, to:20, pos:'NN', lemma:'mother', sem:'ROL', wordnet:'mother.n.01']))),
+    t(pr, 'up', [from:21, to:23, pos:'RB', lemma:'up', sem:'REL', wordnet:'O'])),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'from', [from:24, to:28, pos:'IN', lemma:'from', sem:'REL', wordnet:'O', verbnet:['Source']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:29, to:32, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'airport', [from:33, to:40, pos:'NN', lemma:'airport', sem:'CON', wordnet:'airport.n.01'])),
+     t(., '.', [from:40, to:41, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

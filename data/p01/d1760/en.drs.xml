@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- I 'll put it somewhere safe . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">I</tag>
+     <tag type="cat">np</tag>
+     <tag type="sym">speaker</tag>
+     <tag type="lemma">speaker</tag>
+     <tag type="from">0</tag>
+     <tag type="to">1</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="sem">PRO</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">'ll</tag>
+     <tag type="cat">(s:dcl\np)/(s:b\np)</tag>
+     <tag type="sym">will</tag>
+     <tag type="lemma">will</tag>
+     <tag type="from">1</tag>
+     <tag type="to">4</tag>
+     <tag type="pos">MD</tag>
+     <tag type="sem">FUT</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="tok">put</tag>
+     <tag type="cat">((s:b\np)/pp)/np</tag>
+     <tag type="sym">put</tag>
+     <tag type="lemma">put</tag>
+     <tag type="from">5</tag>
+     <tag type="to">8</tag>
+     <tag type="pos">VB</tag>
+     <tag type="sem">EXS</tag>
+     <tag type="wordnet">put.v.01</tag>
+     <tag type="verbnet" n="2">[Theme,Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">it</tag>
+     <tag type="cat">np</tag>
+     <tag type="sym">entity</tag>
+     <tag type="lemma">entity</tag>
+     <tag type="from">9</tag>
+     <tag type="to">11</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="sem">PRO</tag>
+     <tag type="wordnet">entity.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="tok">somewhere</tag>
+     <tag type="cat">pp/(s:adj\np)</tag>
+     <tag type="sym">location</tag>
+     <tag type="lemma">location</tag>
+     <tag type="from">12</tag>
+     <tag type="to">21</tag>
+     <tag type="pos">RB</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="wordnet">location.n.01</tag>
+     <tag type="verbnet" n="1">[Location]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="tok">safe</tag>
+     <tag type="cat">s:adj\np</tag>
+     <tag type="sym">safe</tag>
+     <tag type="lemma">safe</tag>
+     <tag type="from">22</tag>
+     <tag type="to">26</tag>
+     <tag type="pos">JJ</tag>
+     <tag type="sem">IST</tag>
+     <tag type="wordnet">safe.a.01</tag>
+     <tag type="verbnet" n="1">[Attribute]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">26</tag>
+     <tag type="to">27</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b1">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="1"></dr>
+   <dr label="b2" name="x2" from="9" to="11"></dr>
+   <dr label="b1" name="e1" from="5" to="8"></dr>
+   <dr label="b1" name="x3" from="12" to="21"></dr>
+   <dr label="b1" name="s1" from="22" to="26"></dr>
+   <dr label="b1" name="t1" from="1" to="4"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="person" synset="person.n.01" from="0" to="1"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="EQU" arg1="x1" arg2="speaker" from="0" to="1"></comp>
+   </cond>
+   <cond label="b1">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="1" to="4"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="TSU" arg1="t1" arg2="now" from="1" to="4"></comp>
+   </cond>
+   <cond label="b1">
+    <pred arg="e1" symbol="put" synset="put.v.01" from="5" to="8"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="1" to="4"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x3" symbol="Location" framenet="Location" from="12" to="21"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x2" symbol="Theme" framenet="Commerce_buy@Goods" from="5" to="8"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x1" symbol="Agent" framenet="Commerce_buy@Buyer" from="5" to="8"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="x2" symbol="entity" synset="entity.n.01" from="9" to="11"></pred>
+   </cond>
+   <cond label="b1">
+    <pred arg="x3" symbol="location" synset="location.n.01" from="12" to="21"></pred>
+   </cond>
+   <cond label="b1">
+    <pred arg="s1" symbol="safe" synset="safe.a.01" from="22" to="26"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="s1" arg2="x3" symbol="AttributeOf" framenet="AttributeOf" from="22" to="26"></rel>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'This', [from:0, to:4, pos:'DT', lemma:'entity', sem:'PRX', wordnet:'entity.n.01']),
+   t(n, 'tour', [from:5, to:9, pos:'NN', lemma:'tour', sem:'CON', wordnet:'tour.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:ng\np), 'is', [from:10, to:12, pos:'VBZ', lemma:'be', sem:'NIL', wordnet:'O']),
+   fa(s:ng\np,
+    t((s:ng\np)/(s:to\np), 'going', [from:13, to:18, pos:'VBG', lemma:'go', sem:'FUT', wordnet:'O']),
+    rp(s:to\np,
+     fa(s:to\np,
+      t((s:to\np)/(s:b\np), 'to', [from:19, to:21, pos:'TO', lemma:'to', sem:'NIL', wordnet:'O']),
+      fa(s:b\np,
+       t((s:b\np)/(s:adj\np), 'be', [from:22, to:24, pos:'VB', lemma:'be', sem:'NIL', wordnet:'O']),
+       t(s:adj\np, 'amazing', [from:25, to:32, pos:'JJ', lemma:'amazing', sem:'IST', wordnet:'amazing.a.01', verbnet:['Attribute']]))),
+     t(., '!', [from:32, to:33, pos:'.', lemma:'!', sem:'EMP', wordnet:'O'])))))).
+

@@ -1,0 +1,14 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:dcl,
+  fa(s:dcl,
+   t(s:dcl/np, 'What', [from:0, to:4, pos:'WP', lemma:'what', sem:'EMP', wordnet:'O']),
+   fa(np,
+    t(np/n, 'a', [from:5, to:6, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+    t(n, 'jungle', [from:7, to:13, pos:'NN', lemma:'jungle', sem:'CON', wordnet:'jungle.n.01']))),
+  t(., '!', [from:13, to:14, pos:'.', lemma:'!', sem:'EMP', wordnet:'O']))).
+

@@ -1,0 +1,23 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Coffee', [from:0, to:6, pos:'NNP', lemma:'coffee', sem:'CON', wordnet:'coffee.n.01'])),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:b\np), 'will', [from:7, to:11, pos:'MD', lemma:'will', sem:'FUT', wordnet:'O']),
+    fa(s:b\np,
+     t((s:b\np)/(s:pss\np), 'be', [from:12, to:14, pos:'VB', lemma:'be', sem:'NIL', wordnet:'O']),
+     t(s:pss\np, 'served', [from:15, to:21, pos:'VBN', lemma:'serve', sem:'EXS', wordnet:'serve.v.05', verbnet:['Theme']]))),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'after', [from:22, to:27, pos:'IN', lemma:'after', sem:'REL', wordnet:'O', verbnet:['Time']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:28, to:31, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'meal', [from:32, to:36, pos:'NN', lemma:'meal', sem:'CON', wordnet:'meal.n.01'])),
+     t(., '.', [from:36, to:37, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

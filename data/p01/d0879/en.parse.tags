@@ -1,0 +1,25 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   ba(np/(n/pp),
+    lx(np, n,
+     fa(n,
+      t(n/n, 'Mr.', [from:0, to:3, pos:'NNP', lemma:'mr', sem:'ROL', wordnet:'mr.n.01', verbnet:['Title']]),
+      t(n, 'Johnson', [from:4, to:11, pos:'NNP', lemma:'johnson', sem:'PER', wordnet:'male.n.02']))),
+    t((np/(n/pp))\np, '\'s', [from:11, to:13, pos:'POS', lemma:'\'s', sem:'HAS', wordnet:'O', verbnet:['User']])),
+   t(n/pp, 'room', [from:14, to:18, pos:'NN', lemma:'room', sem:'CON', wordnet:'room.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'was', [from:19, to:22, pos:'VBD', lemma:'be', sem:'EPS', wordnet:'be.v.01', verbnet:['Co-Theme','Theme']]),
+   rp(np,
+    fa(np,
+     t(np/n, 'a', [from:23, to:24, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+     fa(n,
+      t(n/n, 'large', [from:25, to:30, pos:'JJ', lemma:'large', sem:'DEG', wordnet:'large.a.01', verbnet:['Attribute']]),
+      t(n, 'one', [from:31, to:34, pos:'CD', lemma:'room', sem:'CON', wordnet:'room.n.01']))),
+    t(., '.', [from:34, to:35, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

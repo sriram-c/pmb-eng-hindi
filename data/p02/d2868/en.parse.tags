@@ -1,0 +1,26 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   ba(n,
+    t(n, 'word~processor', [from:4, to:18, pos:'NN', lemma:'word~processor', sem:'CON', wordnet:'word_processor.n.01']),
+    fa(n\n,
+     t((n\n)/np, 'on', [from:19, to:21, pos:'IN', lemma:'on', sem:'REL', wordnet:'O', verbnet:['Location']]),
+     fa(np,
+      t(np/n, 'the', [from:22, to:25, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'desk', [from:26, to:30, pos:'NN', lemma:'desk', sem:'CON', wordnet:'desk.n.01']))))),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'is', [from:31, to:33, pos:'VBZ', lemma:'be', sem:'ENS', wordnet:'be.v.02', verbnet:['Co-Theme','Theme']]),
+   rp(np,
+    ba(np,
+     fa(np,
+      t(np/(n/pp), 'my', [from:34, to:36, pos:'PRP$', lemma:'speaker', sem:'HAS', wordnet:'O', verbnet:['Of']]),
+      t(n/pp, 'father', [from:37, to:43, pos:'NN', lemma:'father', sem:'ROL', wordnet:'father.n.01'])),
+     t(np\np, '\'s', [from:43, to:45, pos:'POS', lemma:'word~processor', sem:'HAS', wordnet:'word_processor.n.01', verbnet:['User']])),
+    t(., '.', [from:45, to:46, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

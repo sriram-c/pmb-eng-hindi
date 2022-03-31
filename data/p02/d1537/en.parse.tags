@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Beethoven', [from:0, to:9, pos:'NNP', lemma:'beethoven', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'wrote', [from:10, to:15, pos:'VBD', lemma:'write', sem:'EPS', wordnet:'write.v.06', verbnet:['Result','Agent']]),
+   rp(np,
+    lx(np, n,
+     fa(n,
+      t(n/n, 'nine', [from:16, to:20, pos:'CD', lemma:'9', sem:'QUC', wordnet:'O', verbnet:['Quantity']]),
+      t(n, 'symphonies', [from:21, to:31, pos:'NNS', lemma:'symphony', sem:'CON', wordnet:'symphony.n.01']))),
+    t(., '.', [from:31, to:32, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

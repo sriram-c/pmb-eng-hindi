@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'You', [from:0, to:3, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O']),
+  rp(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:adj\np), '\'re', [from:3, to:6, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+    fa(s:adj\np,
+     t((s:adj\np)/(s:adj\np), 'so', [from:7, to:9, pos:'SO', lemma:'so', sem:'INT', wordnet:'so.r.01']),
+     t(s:adj\np, 'stupid', [from:10, to:16, pos:'JJ', lemma:'stupid', sem:'IST', wordnet:'stupid.a.01', verbnet:['Attribute']]))),
+   t(., '.', [from:16, to:17, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+

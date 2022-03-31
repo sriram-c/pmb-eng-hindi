@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- Our plane was flying above the clouds . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="tok">Our</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">speaker</tag>
+     <tag type="lemma">speaker</tag>
+     <tag type="from">0</tag>
+     <tag type="to">3</tag>
+     <tag type="pos">PRP$</tag>
+     <tag type="sem">HAS</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[User]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">plane</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">plane</tag>
+     <tag type="lemma">plane</tag>
+     <tag type="from">4</tag>
+     <tag type="to">9</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">plane.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">was</tag>
+     <tag type="cat">(s:dcl\np)/(s:ng\np)</tag>
+     <tag type="sym">be</tag>
+     <tag type="lemma">be</tag>
+     <tag type="from">10</tag>
+     <tag type="to">13</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="sem">PST</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="tok">flying</tag>
+     <tag type="cat">s:ng\np</tag>
+     <tag type="sym">fly</tag>
+     <tag type="lemma">fly</tag>
+     <tag type="from">14</tag>
+     <tag type="to">20</tag>
+     <tag type="pos">VBG</tag>
+     <tag type="sem">EXG</tag>
+     <tag type="wordnet">fly.v.01</tag>
+     <tag type="verbnet" n="1">[Theme]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="tok">above</tag>
+     <tag type="cat">((s:dcl\np)\(s:dcl\np))/np</tag>
+     <tag type="sym">above</tag>
+     <tag type="lemma">above</tag>
+     <tag type="from">21</tag>
+     <tag type="to">26</tag>
+     <tag type="pos">IN</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Location]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">the</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">the</tag>
+     <tag type="lemma">the</tag>
+     <tag type="from">27</tag>
+     <tag type="to">30</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">clouds</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">cloud</tag>
+     <tag type="lemma">cloud</tag>
+     <tag type="from">31</tag>
+     <tag type="to">37</tag>
+     <tag type="pos">NNS</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">cloud.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">37</tag>
+     <tag type="to">38</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b2">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="3"></dr>
+   <dr label="b2" name="e1" from="14" to="20"></dr>
+   <dr label="b2" name="t1" from="10" to="13"></dr>
+   <dr label="b3" name="x2" from="27" to="30"></dr>
+   <dr label="b2" name="x3" from="21" to="26"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="plane" synset="plane.n.01" from="4" to="9"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x1" arg2="speaker" symbol="User" framenet="User" from="0" to="3"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="10" to="13"></pred>
+   </cond>
+   <cond label="b2">
+    <comp symbol="TPR" arg1="t1" arg2="now" from="10" to="13"></comp>
+   </cond>
+   <cond label="b2">
+    <pred arg="e1" symbol="fly" synset="fly.v.01" from="14" to="20"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x3" symbol="Location" framenet="Cause_to_move_in_place@Fixed_location" from="21" to="26"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="10" to="13"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x1" symbol="Theme" framenet="Carry_goods@Goods" from="14" to="20"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="x3" symbol="location" synset="location.n.01" from="21" to="26"></pred>
+   </cond>
+   <cond label="b2">
+    <comp symbol="SZP" arg1="x3" arg2="x2" from="21" to="26"></comp>
+   </cond>
+   <cond label="b3">
+    <pred arg="x2" symbol="cloud" synset="cloud.n.02" from="31" to="37"></pred>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

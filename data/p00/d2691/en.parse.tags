@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'She', [from:0, to:3, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:to\np), 'loves', [from:4, to:9, pos:'VBZ', lemma:'love', sem:'ENS', wordnet:'love.v.02', verbnet:['Stimulus','Experiencer']]),
+   fa(s:to\np,
+    t((s:to\np)/(s:b\np), 'to', [from:10, to:12, pos:'TO', lemma:'to', sem:'NIL', wordnet:'O']),
+    rp(s:b\np,
+     t(s:b\np, 'cook', [from:13, to:17, pos:'VB', lemma:'cook', sem:'EXS', wordnet:'cook.v.01', verbnet:['Agent']]),
+     t(., '.', [from:17, to:18, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

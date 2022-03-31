@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Kohl', [from:0, to:4, pos:'NNP', lemma:'kohl', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'announced', [from:5, to:14, pos:'VBD', lemma:'announce', sem:'EPS', wordnet:'announce.v.02', verbnet:['Result','Agent']]),
+   lx(np, n,
+    fa(n,
+     t(n/n, 'economy', [from:15, to:22, pos:'NN', lemma:'economy', sem:'CON', wordnet:'economy.n.01', verbnet:['Theme']]),
+     t(n, 'measures', [from:23, to:31, pos:'NNS', lemma:'measure', sem:'CON', wordnet:'measure.n.01'])))))).
+

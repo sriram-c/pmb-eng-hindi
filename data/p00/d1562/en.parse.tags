@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:q,
+  fa(s:q/(s:ng\np),
+   t((s:q/(s:ng\np))/np, 'Is', [from:0, to:2, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+   fa(np,
+    t(np/n, 'the', [from:3, to:6, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+    t(n, 'phone', [from:7, to:12, pos:'NN', lemma:'phone', sem:'CON', wordnet:'phone.n.01']))),
+  rp(s:ng\np,
+   t(s:ng\np, 'ringing', [from:13, to:20, pos:'VBG', lemma:'ring', sem:'EXG', wordnet:'ring.v.01', verbnet:['Theme']]),
+   t(., '?', [from:20, to:21, pos:'.', lemma:'?', sem:'QUE', wordnet:'O'])))).
+

@@ -1,0 +1,27 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  ba(np,
+   lx(np, n,
+    t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+   conj(np\np,
+    t(conj, 'and', [from:4, to:7, pos:'CC', lemma:'and', sem:'GRP', wordnet:'O']),
+    lx(np, n,
+     t(n, 'Mary', [from:8, to:12, pos:'NNP', lemma:'mary', sem:'PER', wordnet:'female.n.02'])))),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/(s:pss\np),
+    t((s:dcl\np)/(s:pss\np), 'were', [from:13, to:17, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+    t((s\np)\(s\np), 'both', [from:18, to:22, pos:'DT', lemma:'both', sem:'AND', wordnet:'O'])),
+   ba(s:pss\np,
+    t(s:pss\np, 'born', [from:23, to:27, pos:'VBN', lemma:'bear', sem:'EXS', wordnet:'bear.v.02', verbnet:['Patient']]),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/np, 'in', [from:28, to:30, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Location']]),
+     rp(np,
+      lx(np, n,
+       t(n, 'Boston', [from:31, to:37, pos:'NNP', lemma:'boston', sem:'GPE', wordnet:'city.n.01'])),
+      t(., '.', [from:37, to:38, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

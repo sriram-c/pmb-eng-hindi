@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'buds', [from:4, to:8, pos:'NNS', lemma:'bud', sem:'CON', wordnet:'bud.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:to\np), 'began', [from:9, to:14, pos:'VBD', lemma:'begin', sem:'EPS', wordnet:'begin.v.01', verbnet:['PartOf','Causer']]),
+   fa(s:to\np,
+    t((s:to\np)/(s:b\np), 'to', [from:15, to:17, pos:'TO', lemma:'to', sem:'NIL', wordnet:'O']),
+    rp(s:b\np,
+     t(s:b\np, 'open', [from:18, to:22, pos:'VB', lemma:'open', sem:'EXS', wordnet:'open.v.03', verbnet:['Theme']]),
+     t(., '.', [from:22, to:23, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

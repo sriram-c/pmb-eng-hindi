@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:wq,
+  t(s:wq/(s:dcl\np), 'Who', [from:0, to:3, pos:'WP', lemma:'person', sem:'QUE', wordnet:'person.n.01', verbnet:['Name']]),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'directed', [from:4, to:12, pos:'VBD', lemma:'direct', sem:'EPS', wordnet:'direct.v.03', verbnet:['Theme','Agent']]),
+   fa(np,
+    t(np/n, 'the', [from:13, to:16, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+    ba(n,
+     ba(n,
+      t(n, 'film', [from:17, to:21, pos:'NN', lemma:'film', sem:'CON', wordnet:'film.n.01', verbnet:['Equal']]),
+      fxc(n\n,
+       t(n/n, '\"', [from:22, to:23, pos:'RQU', lemma:'\"', sem:'NIL', wordnet:'O']),
+       t(n\n, 'Fail~Safe', [from:23, to:32, pos:'VB', lemma:'fail~safe', sem:'LIT', wordnet:'O', verbnet:['Name']]))),
+     rp(n\n,
+      t(n\n, '\"', [from:32, to:33, pos:'LQU', lemma:'\"', sem:'NIL', wordnet:'O']),
+      t(., '?', [from:33, to:34, pos:'.', lemma:'?', sem:'QUE', wordnet:'O']))))))).
+

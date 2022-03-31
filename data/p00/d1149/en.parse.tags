@@ -1,0 +1,15 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Kerensky', [from:0, to:8, pos:'NNP', lemma:'kerensky', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:pt\np), 'has', [from:9, to:12, pos:'VBZ', lemma:'have', sem:'NOW', wordnet:'O']),
+   rp(s:pt\np,
+    t(s:pt\np, 'fled', [from:13, to:17, pos:'VBN', lemma:'flee', sem:'EXT', wordnet:'flee.v.01', verbnet:['Theme']]),
+    t(., '.', [from:17, to:18, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

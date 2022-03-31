@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:wq,
+  t(s:wq/(s:dcl\np), 'Who', [from:0, to:3, pos:'WP', lemma:'person', sem:'QUE', wordnet:'person.n.01', verbnet:['Name']]),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:b\np), 'could', [from:4, to:9, pos:'MD', lemma:'could', sem:'POS', wordnet:'O']),
+   fa(s:b\np,
+    t((s:b\np)/(s:pt\np), '\'ve', [from:9, to:12, pos:'VB', lemma:'have', sem:'NOW', wordnet:'O']),
+    fa(s:pt\np,
+     t((s:pt\np)/np, 'broken', [from:13, to:19, pos:'VBN', lemma:'break', sem:'EXT', wordnet:'break.v.02', verbnet:['Patient','Agent']]),
+     rp(np,
+      fa(np,
+       t(np/n, 'the', [from:20, to:23, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+       t(n, 'fishbowl', [from:24, to:32, pos:'NN', lemma:'fishbowl', sem:'CON', wordnet:'fishbowl.n.02'])),
+      t(., '?', [from:32, to:33, pos:'.', lemma:'?', sem:'QUE', wordnet:'O']))))))).
+

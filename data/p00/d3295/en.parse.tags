@@ -1,0 +1,13 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:b\np,
+  t((s:b\np)/np, 'Warn', [from:0, to:4, pos:'NNP', lemma:'warn', sem:'EXS', wordnet:'warn.v.01', verbnet:['Recipient','Agent']]),
+  rp(np,
+   lx(np, n,
+    t(n, 'Tom', [from:5, to:8, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+   t(., '.', [from:8, to:9, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+

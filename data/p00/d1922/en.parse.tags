@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'That', [from:0, to:4, pos:'DT', lemma:'entity', sem:'DST', wordnet:'entity.n.01']),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/(s:b\np),
+    t((s:dcl\np)/(s:b\np), 'does', [from:5, to:9, pos:'VBZ', lemma:'do', sem:'NOW', wordnet:'O']),
+    t((s\np)\(s\np), 'n\'t', [from:9, to:12, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+   ba(s:b\np,
+    fa(s:b\np,
+     t((s:b\np)/np, 'regard', [from:13, to:19, pos:'VB', lemma:'regard', sem:'EXS', wordnet:'regard.v.03', verbnet:['Theme','Agent']]),
+     t(np, 'you', [from:20, to:23, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O'])),
+    rp((s:b\np)\(s:b\np),
+     t((s:b\np)\(s:b\np), 'at~all', [from:24, to:30, pos:'NN', lemma:'at~all', sem:'EMP', wordnet:'O']),
+     t(., '.', [from:30, to:31, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

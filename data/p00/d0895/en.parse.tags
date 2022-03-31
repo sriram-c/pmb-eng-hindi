@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:wq,
+  t(s:wq/(s:q/pp), 'Where', [from:0, to:5, pos:'WRB', lemma:'location', sem:'QUE', wordnet:'location.n.01', verbnet:['Equal']]),
+  fa(s:q/pp,
+   t((s:q/pp)/np, 'are', [from:6, to:9, pos:'VBP', lemma:'be', sem:'ENS', wordnet:'be.v.03', verbnet:['Theme']]),
+   rp(np,
+    fa(np,
+     t(np/n, 'the', [from:10, to:13, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'parking~metres', [from:14, to:28, pos:'NNS', lemma:'parking~meter', sem:'CON', wordnet:'parking_meter.n.01'])),
+    t(., '?', [from:28, to:29, pos:'.', lemma:'?', sem:'QUE', wordnet:'O']))))).
+

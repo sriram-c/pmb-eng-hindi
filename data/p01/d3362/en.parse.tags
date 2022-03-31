@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  ba(s:dcl\np,
+   t(s:dcl\np, 'died', [from:4, to:8, pos:'VBD', lemma:'die', sem:'EPS', wordnet:'die.v.01', verbnet:['Patient']]),
+   ba((s\np)\(s\np),
+    lx(np, n,
+     fa(n,
+      t(n/n, 'three', [from:9, to:14, pos:'CD', lemma:'3', sem:'QUC', wordnet:'O', verbnet:['Quantity']]),
+      t(n, 'years', [from:15, to:20, pos:'NNS', lemma:'year', sem:'UOM', wordnet:'year.n.01']))),
+    rp(((s\np)\(s\np))\np,
+     t(((s\np)\(s\np))\np, 'ago', [from:21, to:24, pos:'RB', lemma:'ago', sem:'PST', wordnet:'O']),
+     t(., '.', [from:24, to:25, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

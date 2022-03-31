@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/(n/pp), 'Our', [from:0, to:3, pos:'PRP$', lemma:'speaker', sem:'HAS', wordnet:'O', verbnet:['Part']]),
+   t(n/pp, 'team', [from:4, to:8, pos:'NN', lemma:'team', sem:'CON', wordnet:'team.n.01'])),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/np, 'beat', [from:9, to:13, pos:'VBD', lemma:'beat', sem:'EPS', wordnet:'beat.v.01', verbnet:['Co-Agent','Agent']]),
+    fa(np,
+     t(np/n, 'the', [from:14, to:17, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'Lions', [from:18, to:23, pos:'NNPS', lemma:'lions', sem:'ORG', wordnet:'team.n.01']))),
+   rp((s:dcl\np)\(s:dcl\np),
+    t((s:dcl\np)\(s:dcl\np), '3~to~0', [from:24, to:30, pos:'CD', lemma:'3-0', sem:'SCO', wordnet:'O', verbnet:['Extent']]),
+    t(., '.', [from:30, to:31, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

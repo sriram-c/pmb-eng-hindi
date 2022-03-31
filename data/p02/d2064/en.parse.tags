@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:wq,
+  t(s:wq/(s:dcl\np), 'Who', [from:0, to:3, pos:'WP', lemma:'person', sem:'QUE', wordnet:'person.n.01', verbnet:['Name']]),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:ng\np), 'is', [from:4, to:6, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+    t(s:ng\np, 'lurking', [from:7, to:14, pos:'VBG', lemma:'lurk', sem:'EXG', wordnet:'lurk.v.01', verbnet:['Theme']])),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'in', [from:15, to:17, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Location']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:18, to:21, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'shadows', [from:22, to:29, pos:'NNS', lemma:'shadow', sem:'CON', wordnet:'shadow.n.02'])),
+     t(., '?', [from:29, to:30, pos:'.', lemma:'?', sem:'QUE', wordnet:'O'])))))).
+

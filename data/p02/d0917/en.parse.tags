@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:dcl,
+  ba(s:dcl,
+   lx(np, n,
+    t(n, 'Mary', [from:0, to:4, pos:'NNP', lemma:'mary', sem:'PER', wordnet:'female.n.02'])),
+   ba(s:dcl\np,
+    fa(s:dcl\np,
+     t((s:dcl\np)/(s:pss\np), 'was', [from:5, to:8, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+     t(s:pss\np, 'kidnapped', [from:9, to:18, pos:'VBN', lemma:'kidnap', sem:'EXS', wordnet:'kidnap.v.01', verbnet:['Theme']])),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/np, 'by', [from:19, to:21, pos:'IN', lemma:'by', sem:'REL', wordnet:'O', verbnet:['Agent']]),
+     lx(np, n,
+      t(n, 'pirates', [from:22, to:29, pos:'NNS', lemma:'pirate', sem:'ROL', wordnet:'pirate.n.02']))))),
+  t(., '.', [from:29, to:30, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+

@@ -1,0 +1,27 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/np, 'opened', [from:4, to:10, pos:'VBD', lemma:'open', sem:'EPS', wordnet:'open.v.01', verbnet:['Patient','Agent']]),
+    fa(np,
+     t(np/n, 'the', [from:11, to:14, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'freezer', [from:15, to:22, pos:'NN', lemma:'freezer', sem:'CON', wordnet:'freezer.n.01']))),
+   conj((s:dcl\np)\(s:dcl\np),
+    t(conj, 'and', [from:23, to:26, pos:'CC', lemma:'and', sem:'COO', wordnet:'O']),
+    fa(s:dcl\np,
+     fa((s:dcl\np)/np,
+      t(((s:dcl\np)/np)/pr, 'got', [from:27, to:30, pos:'VBD', lemma:'get~out', sem:'EPS', wordnet:'get_out.v.02', verbnet:['Theme','Agent']]),
+      t(pr, 'out', [from:31, to:34, pos:'RP', lemma:'out', sem:'REL', wordnet:'O'])),
+     rp(np,
+      fa(np,
+       t(np/n, 'the', [from:35, to:38, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+       t(n, 'ice~cream', [from:39, to:48, pos:'NN', lemma:'ice~cream', sem:'CON', wordnet:'ice_cream.n.01'])),
+      t(., '.', [from:48, to:49, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

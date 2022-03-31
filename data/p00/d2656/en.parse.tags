@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:dcl,
+  t(s/s, 'But', [from:0, to:3, pos:'CC', lemma:'but', sem:'BUT', wordnet:'O']),
+  ba(s:dcl,
+   t(np, 'nobody', [from:4, to:10, pos:'DT', lemma:'person', sem:'NOT', wordnet:'O']),
+   fa(s:dcl\np,
+    t((s:dcl\np)/np, 'believed', [from:11, to:19, pos:'VBD', lemma:'believe', sem:'EPS', wordnet:'believe.v.01', verbnet:['Stimulus','Experiencer']]),
+    rp(np,
+     t(np, 'her', [from:20, to:23, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02']),
+     t(., '.', [from:23, to:24, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

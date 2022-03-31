@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/(s:pt\np),
+    t((s:dcl\np)/(s:pt\np), '\'ve', [from:1, to:4, pos:'VBP', lemma:'have', sem:'NOW', wordnet:'O']),
+    t((s\np)\(s\np), 'never', [from:5, to:10, pos:'RB', lemma:'time', sem:'NOT', wordnet:'O'])),
+   fa(s:pt\np,
+    t((s:pt\np)/pp, 'been', [from:11, to:15, pos:'VBN', lemma:'be', sem:'EXT', wordnet:'be.v.03', verbnet:['Theme']]),
+    fa(pp,
+     t(pp/np, 'to', [from:16, to:18, pos:'TO', lemma:'to', sem:'REL', wordnet:'O', verbnet:['Location']]),
+     rp(np,
+      lx(np, n,
+       t(n, 'Paris', [from:19, to:24, pos:'NNP', lemma:'paris', sem:'GPE', wordnet:'city.n.01'])),
+      t(., '.', [from:24, to:25, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

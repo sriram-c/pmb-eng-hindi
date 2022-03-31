@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'He', [from:0, to:2, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), 'is', [from:3, to:5, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+   fa(s:adj\np,
+    t((s:adj\np)/(s:adj\np), 'no', [from:6, to:8, pos:'DT', lemma:'no', sem:'NOT', wordnet:'O']),
+    fa(s:adj\np,
+     fa((s:adj\np)/pp,
+      t(((s:adj\np)/pp)/(s:adj\np), 'less', [from:9, to:13, pos:'RBR', lemma:'less', sem:'LES', wordnet:'O', verbnet:['Theme']]),
+      t(s:adj\np, 'diligent', [from:14, to:22, pos:'JJ', lemma:'diligent', sem:'IST', wordnet:'diligent.a.01', verbnet:['Attribute']])),
+     rp(pp,
+      fa(pp,
+       t(pp/np, 'than', [from:23, to:27, pos:'IN', lemma:'than', sem:'REL', wordnet:'O', verbnet:['Co-Theme']]),
+       t(np, 'she', [from:28, to:31, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02'])),
+      t(., '.', [from:31, to:32, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

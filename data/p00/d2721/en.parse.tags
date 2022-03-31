@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'That', [from:0, to:4, pos:'DT', lemma:'entity', sem:'DST', wordnet:'entity.n.01']),
+   t(n, 'politician', [from:5, to:15, pos:'NN', lemma:'politician', sem:'ROL', wordnet:'politician.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'is', [from:16, to:18, pos:'VBZ', lemma:'be', sem:'ENS', wordnet:'be.v.01', verbnet:['Co-Theme','Theme']]),
+   rp(np,
+    fa(np,
+     t(np/n, 'an', [from:19, to:21, pos:'DT', lemma:'an', sem:'DIS', wordnet:'O']),
+     fa(n,
+      t(n/(n/pp), 'old', [from:22, to:25, pos:'JJ', lemma:'old', sem:'IST', wordnet:'old.a.04', verbnet:['Attribute']]),
+      t(n/pp, 'fox', [from:26, to:29, pos:'NN', lemma:'fox', sem:'ROL', wordnet:'fox.n.02']))),
+    t(., '.', [from:29, to:30, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

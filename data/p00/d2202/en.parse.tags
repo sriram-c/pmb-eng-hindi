@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Fish', [from:0, to:4, pos:'JJ', lemma:'fish', sem:'CON', wordnet:'fish.n.01'])),
+  ba(s:dcl\np,
+   t(s:dcl\np, 'surface', [from:5, to:12, pos:'NN', lemma:'surface', sem:'ENS', wordnet:'surface.v.01', verbnet:['Theme']]),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'for', [from:13, to:16, pos:'IN', lemma:'for', sem:'REL', wordnet:'O', verbnet:['Goal']]),
+    rp(np,
+     lx(np, n,
+      t(n, 'air', [from:17, to:20, pos:'NN', lemma:'air', sem:'CON', wordnet:'air.n.01'])),
+     t(., '.', [from:20, to:21, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

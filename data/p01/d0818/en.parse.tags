@@ -1,0 +1,23 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   fa((s:dcl\np)/pp,
+    t(((s:dcl\np)/pp)/np, 'bought', [from:2, to:8, pos:'VBD', lemma:'buy', sem:'EPS', wordnet:'buy.v.01', verbnet:['Theme','Agent']]),
+    fa(np,
+     t(np/n, 'the', [from:9, to:12, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'book', [from:13, to:17, pos:'NN', lemma:'book', sem:'CON', wordnet:'book.n.02']))),
+   fa(pp,
+    t(pp/np, 'for', [from:18, to:21, pos:'IN', lemma:'for', sem:'REL', wordnet:'O', verbnet:['Asset']]),
+    rp(np,
+     lx(np, n,
+      fa(n,
+       t(n/n, 'ten', [from:22, to:25, pos:'JJ', lemma:'10', sem:'QUC', wordnet:'O', verbnet:['Quantity']]),
+       t(n, 'dollars', [from:26, to:33, pos:'NNS', lemma:'dollar', sem:'UOM', wordnet:'dollar.n.01']))),
+     t(., '.', [from:33, to:34, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

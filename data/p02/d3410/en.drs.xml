@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- Stop yelling . My head hurts . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="tok">Stop</tag>
+     <tag type="cat">(s:b\np)/(s:ng\np)</tag>
+     <tag type="sym">stop</tag>
+     <tag type="lemma">stop</tag>
+     <tag type="from">0</tag>
+     <tag type="to">4</tag>
+     <tag type="pos">NNP</tag>
+     <tag type="sem">EXS</tag>
+     <tag type="wordnet">stop.v.02</tag>
+     <tag type="verbnet" n="2">[PartOf,Causer]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="tok">yelling</tag>
+     <tag type="cat">s:ng\np</tag>
+     <tag type="sym">yell</tag>
+     <tag type="lemma">yell</tag>
+     <tag type="from">5</tag>
+     <tag type="to">12</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">EXG</tag>
+     <tag type="wordnet">yell.v.01</tag>
+     <tag type="verbnet" n="1">[Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">(s:b\np)\(s:b\np)</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">12</tag>
+     <tag type="to">13</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i2001">
+   <tags>
+     <tag type="tok">My</tag>
+     <tag type="cat">np/(n/pp)</tag>
+     <tag type="sym">speaker</tag>
+     <tag type="lemma">speaker</tag>
+     <tag type="from">14</tag>
+     <tag type="to">16</tag>
+     <tag type="pos">PRP$</tag>
+     <tag type="sem">HAS</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[PartOf]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i2002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">head</tag>
+     <tag type="cat">n/pp</tag>
+     <tag type="sym">head</tag>
+     <tag type="lemma">head</tag>
+     <tag type="from">17</tag>
+     <tag type="to">21</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">head.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i2003">
+   <tags>
+     <tag type="tok">hurts</tag>
+     <tag type="cat">s:dcl\np</tag>
+     <tag type="sym">hurt</tag>
+     <tag type="lemma">hurt</tag>
+     <tag type="from">22</tag>
+     <tag type="to">27</tag>
+     <tag type="pos">NNS</tag>
+     <tag type="sem">ENS</tag>
+     <tag type="wordnet">hurt.v.01</tag>
+     <tag type="verbnet" n="1">[Patient]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i2004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">27</tag>
+     <tag type="to">28</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <sdrs>
+  <constituents>
+   <constituent label="b1">
+    <tokens>
+     <token>Stop</token>
+     <token>yelling</token>
+     <token>.</token>
+    </tokens>
+    <drs label="b1">
+     <domain>
+      <dr label="b1" name="x1" from="0" to="0"></dr>
+      <dr label="b1" name="e1" from="0" to="4"></dr>
+      <dr label="b1" name="e2" from="5" to="12"></dr>
+     </domain>
+     <conds>
+      <cond label="b1">
+       <pred arg="e1" symbol="stop" synset="stop.v.02" from="0" to="4"></pred>
+      </cond>
+      <cond label="b1">
+       <rel arg1="e1" arg2="e2" symbol="PartOf" framenet="PartOf" from="0" to="4"></rel>
+      </cond>
+      <cond label="b1">
+       <pred arg="e2" symbol="yell" synset="yell.v.01" from="5" to="12"></pred>
+      </cond>
+      <cond label="b1">
+       <rel arg1="e2" arg2="x1" symbol="Agent" framenet="Communication_manner@Speaker" from="5" to="12"></rel>
+      </cond>
+      <cond label="b1">
+       <pred arg="x1" symbol="person" synset="person.n.01" from="0" to="0"></pred>
+      </cond>
+      <cond label="b1">
+       <comp symbol="EQU" arg1="x1" arg2="hearer" from="0" to="0"></comp>
+      </cond>
+     </conds>
+    </drs>
+   </constituent>
+   <constituent label="b3">
+    <tokens>
+     <token>My</token>
+     <token>head</token>
+     <token>hurts</token>
+     <token>.</token>
+    </tokens>
+    <drs label="b3">
+     <domain>
+      <dr label="b2" name="x2" from="14" to="16"></dr>
+      <dr label="b3" name="e3" from="22" to="27"></dr>
+      <dr label="b1" name="t1" from="22" to="27"></dr>
+     </domain>
+     <conds>
+      <cond label="b2">
+       <pred arg="x2" symbol="head" synset="head.n.01" from="17" to="21"></pred>
+      </cond>
+      <cond label="b2">
+       <rel arg1="x2" arg2="speaker" symbol="PartOf" framenet="PartOf" from="14" to="16"></rel>
+      </cond>
+      <cond label="b1">
+       <pred arg="t1" symbol="time" synset="time.n.08" from="22" to="27"></pred>
+      </cond>
+      <cond label="b1">
+       <comp symbol="EQU" arg1="t1" arg2="now" from="22" to="27"></comp>
+      </cond>
+      <cond label="b3">
+       <pred arg="e3" symbol="hurt" synset="hurt.v.01" from="22" to="27"></pred>
+      </cond>
+      <cond label="b3">
+       <rel arg1="e3" arg2="t1" symbol="Time" framenet="Time" from="22" to="27"></rel>
+      </cond>
+      <cond label="b3">
+       <rel arg1="e3" arg2="x2" symbol="Patient" framenet="Perception_body@Body_part" from="22" to="27"></rel>
+      </cond>
+     </conds>
+    </drs>
+   </constituent>
+  </constituents>
+  <relations>
+   <drel arg1="b1" arg2="b3" sym="CONTINUATION" from="14" to="-1"></drel>
+  </relations>
+ </sdrs>
+</xdrs>
+</xdrs-output>

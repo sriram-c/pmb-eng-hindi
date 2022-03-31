@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'monkey', [from:4, to:10, pos:'NN', lemma:'monkey', sem:'CON', wordnet:'monkey.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/pp, 'escaped', [from:11, to:18, pos:'VBD', lemma:'escape', sem:'EPS', wordnet:'escape.v.01', verbnet:['Theme']]),
+   fa(pp,
+    t(pp/np, 'from', [from:19, to:23, pos:'IN', lemma:'from', sem:'REL', wordnet:'O', verbnet:['Source']]),
+    fa(np,
+     t(np/(n/pp), 'its', [from:24, to:27, pos:'PRP$', lemma:'entity', sem:'HAS', wordnet:'entity.n.01', verbnet:['User']]),
+     rp(n/pp,
+      t(n/pp, 'cage', [from:28, to:32, pos:'NN', lemma:'cage', sem:'CON', wordnet:'cage.n.01']),
+      t(., '.', [from:32, to:33, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

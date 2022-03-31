@@ -1,0 +1,25 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/(s:b\np),
+    t((s:dcl\np)/(s:b\np), 'ca', [from:2, to:4, pos:'MD', lemma:'can', sem:'POS', wordnet:'O']),
+    t((s\np)\(s\np), 'n\'t', [from:4, to:7, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+   fa(s:b\np,
+    t((s:b\np)/np, 'stand', [from:8, to:13, pos:'VB', lemma:'stand', sem:'EXS', wordnet:'stand.v.05', verbnet:['Stimulus','Experiencer']]),
+    fa(np,
+     t(np/n, 'those', [from:14, to:19, pos:'DT', lemma:'entity', sem:'DST', wordnet:'entity.n.01']),
+     fa(n,
+      t(n/pp, 'kinds', [from:20, to:25, pos:'NNS', lemma:'kind', sem:'CON', wordnet:'kind.n.01']),
+      fa(pp,
+       t(pp/np, 'of', [from:26, to:28, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['PartOf']]),
+       rp(np,
+        lx(np, n,
+         t(n, 'people', [from:29, to:35, pos:'NNS', lemma:'person', sem:'CON', wordnet:'person.n.01'])),
+        t(., '.', [from:35, to:36, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))))).
+

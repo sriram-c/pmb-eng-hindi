@@ -1,0 +1,17 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'She', [from:0, to:3, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/pp, 'graduated', [from:4, to:13, pos:'VBD', lemma:'graduate', sem:'EPS', wordnet:'graduate.v.01', verbnet:['Agent']]),
+   fa(pp,
+    t(pp/np, 'from', [from:14, to:18, pos:'IN', lemma:'from', sem:'REL', wordnet:'O', verbnet:['Source']]),
+    rp(np,
+     lx(np, n,
+      t(n, 'Kobe~University', [from:19, to:34, pos:'NNP', lemma:'kobe~university', sem:'ORG', wordnet:'university.n.03'])),
+     t(., '.', [from:34, to:35, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

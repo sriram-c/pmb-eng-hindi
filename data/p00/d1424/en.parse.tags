@@ -1,0 +1,14 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'They', [from:0, to:4, pos:'PRP', lemma:'person', sem:'PRO', wordnet:'person.n.01']),
+  rp(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:adj\np), 'were', [from:5, to:9, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+    t(s:adj\np, 'satisfied', [from:10, to:19, pos:'VBN', lemma:'satisfied', sem:'IST', wordnet:'satisfied.a.01', verbnet:['Attribute']])),
+   t(., '.', [from:19, to:20, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+

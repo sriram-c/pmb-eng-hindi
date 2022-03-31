@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- There is no man playing ø two keyboards --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">There</tag>
+     <tag type="cat">np</tag>
+     <tag type="sym">there</tag>
+     <tag type="lemma">there</tag>
+     <tag type="from">0</tag>
+     <tag type="to">5</tag>
+     <tag type="pos">EX</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">is</tag>
+     <tag type="cat">((s:dcl\np)/(s:ng\np))/np</tag>
+     <tag type="sym">be</tag>
+     <tag type="lemma">be</tag>
+     <tag type="from">6</tag>
+     <tag type="to">8</tag>
+     <tag type="pos">VBZ</tag>
+     <tag type="sem">NOW</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">no</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">no</tag>
+     <tag type="lemma">no</tag>
+     <tag type="from">9</tag>
+     <tag type="to">11</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">NOT</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">man</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">man</tag>
+     <tag type="lemma">man</tag>
+     <tag type="from">12</tag>
+     <tag type="to">15</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">man.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="tok">playing</tag>
+     <tag type="cat">(s:ng\np)/np</tag>
+     <tag type="sym">play</tag>
+     <tag type="lemma">play</tag>
+     <tag type="from">16</tag>
+     <tag type="to">23</tag>
+     <tag type="pos">VBG</tag>
+     <tag type="sem">EXG</tag>
+     <tag type="wordnet">play.v.07</tag>
+     <tag type="verbnet" n="2">[Theme,Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="from">24</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="tok">two</tag>
+     <tag type="cat">n/n</tag>
+     <tag type="sym">2</tag>
+     <tag type="lemma">2</tag>
+     <tag type="from">24</tag>
+     <tag type="to">27</tag>
+     <tag type="pos">CD</tag>
+     <tag type="sem">QUC</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Quantity]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">keyboards</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">keyboard</tag>
+     <tag type="lemma">keyboard</tag>
+     <tag type="from">28</tag>
+     <tag type="to">37</tag>
+     <tag type="pos">NNS</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">keyboard.n.01</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b1">
+  <domain>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <not from="9" to="11">
+     <drs label="b2">
+      <domain>
+       <dr label="b2" name="e1" from="0" to="0"></dr>
+       <dr label="b2" name="x1" from="9" to="11"></dr>
+       <dr label="b2" name="x2" from="24" to="-1"></dr>
+       <dr label="b1" name="t1" from="6" to="8"></dr>
+      </domain>
+      <conds>
+       <cond label="b1">
+        <pred arg="t1" symbol="time" synset="time.n.08" from="6" to="8"></pred>
+       </cond>
+       <cond label="b1">
+        <comp symbol="EQU" arg1="t1" arg2="now" from="6" to="8"></comp>
+       </cond>
+       <cond label="b2">
+        <pred arg="e1" symbol="play" synset="play.v.07" from="0" to="0"></pred>
+       </cond>
+       <cond label="b2">
+        <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="6" to="8"></rel>
+       </cond>
+       <cond label="b2">
+        <rel arg1="e1" arg2="x2" symbol="Theme" framenet="Behind_the_scenes@Production" from="16" to="23"></rel>
+       </cond>
+       <cond label="b2">
+        <rel arg1="e1" arg2="x1" symbol="Agent" framenet="Quarreling@Arguer1" from="16" to="23"></rel>
+       </cond>
+       <cond label="b2">
+        <pred arg="x1" symbol="man" synset="man.n.01" from="12" to="15"></pred>
+       </cond>
+       <cond label="b2">
+        <pred arg="x2" symbol="keyboard" synset="keyboard.n.01" from="28" to="37"></pred>
+       </cond>
+       <cond label="b2">
+        <rel arg1="x2" arg2="2" symbol="Quantity" framenet="Quantity" from="24" to="27"></rel>
+       </cond>
+      </conds>
+     </drs>
+    </not>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

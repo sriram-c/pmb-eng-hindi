@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:b\np,
+  fa((s:b\np)/pp,
+   t(((s:b\np)/pp)/np, 'Stir', [from:0, to:4, pos:'NNP', lemma:'stir', sem:'EXS', wordnet:'stir.v.01', verbnet:['Patient','Agent']]),
+   fa(np,
+    t(np/n, 'the', [from:5, to:8, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+    t(n, 'paint', [from:9, to:14, pos:'NN', lemma:'paint', sem:'CON', wordnet:'paint.n.01']))),
+  fa(pp,
+   t(pp/np, 'with', [from:15, to:19, pos:'IN', lemma:'with', sem:'REL', wordnet:'O', verbnet:['Instrument']]),
+   rp(np,
+    fa(np,
+     t(np/n, 'a', [from:20, to:21, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+     t(n, 'stick', [from:22, to:27, pos:'NN', lemma:'stick', sem:'CON', wordnet:'stick.n.01'])),
+    t(., '.', [from:27, to:28, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

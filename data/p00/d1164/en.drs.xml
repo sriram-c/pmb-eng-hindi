@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- ø Five rings --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="from">0</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="tok">Five</tag>
+     <tag type="cat">n/n</tag>
+     <tag type="sym">5</tag>
+     <tag type="lemma">5</tag>
+     <tag type="from">0</tag>
+     <tag type="to">4</tag>
+     <tag type="pos">CD</tag>
+     <tag type="sem">QUC</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Quantity]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">rings</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">ring</tag>
+     <tag type="lemma">ring</tag>
+     <tag type="from">5</tag>
+     <tag type="to">10</tag>
+     <tag type="pos">NNS</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">ring.n.08</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b1">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="-1"></dr>
+   <dr label="b1" name="e1" from="0" to="0"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="ring" synset="ring.n.08" from="5" to="10"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x1" arg2="5" symbol="Quantity" framenet="Quantity" from="0" to="4"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="e1" symbol="event" synset="event.v.01" from="0" to="0"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x1" symbol="Participant" framenet="Participant" from="0" to="0"></rel>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

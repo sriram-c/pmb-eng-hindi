@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   fa(n,
+    t(n/n, 'Twenty-five~hundred', [from:0, to:19, pos:'JJ', lemma:'2500', sem:'QUC', wordnet:'O', verbnet:['Quantity']]),
+    fa(n,
+     t(n/n, 'British', [from:20, to:27, pos:'JJ', lemma:'britain', sem:'GPO', wordnet:'country.n.02', verbnet:['Source']]),
+     t(n, 'soldiers', [from:28, to:36, pos:'NNS', lemma:'soldier', sem:'ROL', wordnet:'soldier.n.01'])))),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'guarded', [from:37, to:44, pos:'VBD', lemma:'guard', sem:'EPS', wordnet:'guard.v.03', verbnet:['Theme','Agent']]),
+   rp(np,
+    fa(np,
+     t(np/n, 'the', [from:45, to:48, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'border', [from:49, to:55, pos:'NN', lemma:'frontier', sem:'CON', wordnet:'frontier.n.02'])),
+    t(., '.', [from:55, to:56, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

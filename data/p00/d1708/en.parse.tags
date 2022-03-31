@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:dcl,
+  ba(s:dcl,
+   fa(np,
+    t(np/(n/pp), 'His', [from:0, to:3, pos:'PRP$', lemma:'male', sem:'HAS', wordnet:'male.n.02', verbnet:['Creator']]),
+    t(n/pp, 'stupidity', [from:4, to:13, pos:'NN', lemma:'stupidity', sem:'CON', wordnet:'stupidity.n.01'])),
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:adj\np), 'is', [from:14, to:16, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+    t(s:adj\np, 'abysmal', [from:17, to:24, pos:'JJ', lemma:'abysmal', sem:'IST', wordnet:'abysmal.a.01', verbnet:['Attribute']]))),
+  t(., '.', [from:24, to:25, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+

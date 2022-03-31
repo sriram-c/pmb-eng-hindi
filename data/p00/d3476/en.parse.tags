@@ -1,0 +1,23 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'love', [from:2, to:6, pos:'VBP', lemma:'love', sem:'ENS', wordnet:'love.v.01', verbnet:['Stimulus','Experiencer']]),
+   rp(np,
+    lx(np, n,
+     fa(n,
+      ba(n/n,
+       t(n/n, 'thick', [from:7, to:12, pos:'JJ', lemma:'thick', sem:'IST', wordnet:'thick.a.03', verbnet:['Attribute']]),
+       conj((n/n)\(n/n),
+        t(conj, ',', [from:12, to:13, pos:',', lemma:',', sem:'NIL', wordnet:'O']),
+        t(n/n, 'creamy', [from:14, to:20, pos:'JJ', lemma:'creamy', sem:'IST', wordnet:'creamy.a.02', verbnet:['Attribute']]))),
+      fa(n,
+       t(n/n, 'mushroom', [from:21, to:29, pos:'NN', lemma:'mushroom', sem:'CON', wordnet:'mushroom.n.01', verbnet:['MadeOf']]),
+       t(n, 'soup', [from:30, to:34, pos:'NN', lemma:'soup', sem:'CON', wordnet:'soup.n.01'])))),
+    t(., '.', [from:34, to:35, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

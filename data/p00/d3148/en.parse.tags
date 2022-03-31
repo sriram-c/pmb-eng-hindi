@@ -1,0 +1,17 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   fa((s:dcl\np)/pr,
+    t(((s:dcl\np)/pr)/np, 'ripped', [from:4, to:10, pos:'VBD', lemma:'rip~off', sem:'EPS', wordnet:'rip_off.v.01', verbnet:['Source','Agent']]),
+    t(np, 'you', [from:11, to:14, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O'])),
+   rp(pr,
+    t(pr, 'off', [from:15, to:18, pos:'RP', lemma:'off', sem:'REL', wordnet:'O']),
+    t(., '.', [from:18, to:19, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

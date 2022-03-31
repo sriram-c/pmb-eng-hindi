@@ -1,0 +1,14 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:b\np,
+  t((s:b\np)/pp, 'Think', [from:0, to:5, pos:'VB', lemma:'think', sem:'EXS', wordnet:'think.v.03', verbnet:['Agent']]),
+  rp(pp,
+   fa(pp,
+    t(pp/np, 'about', [from:6, to:11, pos:'IN', lemma:'about', sem:'REL', wordnet:'O', verbnet:['Theme']]),
+    t(np, 'it', [from:12, to:14, pos:'PRP', lemma:'entity', sem:'PRO', wordnet:'entity.n.01'])),
+   t(., '.', [from:14, to:15, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+

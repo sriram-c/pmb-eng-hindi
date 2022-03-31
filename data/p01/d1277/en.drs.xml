@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- ø http://www.anl.siemens.de/news/press.html --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="from">0</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">http://www.anl.siemens.de/news/press.html</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">http://www.anl.siemens.de/news/press.html</tag>
+     <tag type="lemma">http://www.anl.siemens.de/news/press.html</tag>
+     <tag type="from">0</tag>
+     <tag type="to">41</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CTC</tag>
+     <tag type="wordnet">url.n.01</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b2">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="-1"></dr>
+   <dr label="b2" name="e1" from="0" to="0"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="url" synset="url.n.01" from="0" to="41"></pred>
+   </cond>
+   <cond label="b1">
+    <named arg="x1" symbol="http://www.anl.siemens.de/news/press.html" from="0" to="41"></named>
+   </cond>
+   <cond label="b2">
+    <pred arg="e1" symbol="event" synset="event.v.01" from="0" to="0"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x1" symbol="Participant" framenet="Participant" from="0" to="0"></rel>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Yumi', [from:0, to:4, pos:'NNP', lemma:'yumi', sem:'PER', wordnet:'female.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), 'is', [from:5, to:7, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+   fa(s:adj\np,
+    t((s:adj\np)/pp, 'good', [from:8, to:12, pos:'JJ', lemma:'good', sem:'IST', wordnet:'good.a.01', verbnet:['Attribute']]),
+    fa(pp,
+     t(pp/np, 'at', [from:13, to:15, pos:'IN', lemma:'at', sem:'REL', wordnet:'O', verbnet:['Theme']]),
+     fa(np,
+      t(np/np, 'playing', [from:16, to:23, pos:'VBG', lemma:'play', sem:'EXG', wordnet:'play.v.01', verbnet:['Theme']]),
+      rp(np,
+       lx(np, n,
+        t(n, 'tennis', [from:24, to:30, pos:'NN', lemma:'tennis', sem:'CON', wordnet:'tennis.n.01'])),
+       t(., '.', [from:30, to:31, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))))).
+

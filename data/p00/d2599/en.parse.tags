@@ -1,0 +1,23 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  ba(s:dcl\np,
+   t(s:dcl\np, 'failed', [from:4, to:10, pos:'VBD', lemma:'fail', sem:'EPS', wordnet:'fail.v.07', verbnet:['Agent']]),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/s:dcl, 'because', [from:11, to:18, pos:'IN', lemma:'because', sem:'SUB', wordnet:'O']),
+    ba(s:dcl,
+     t(np, 'he', [antecedent:'0,3', from:19, to:21, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+     fa(s:dcl\np,
+      bxc((s:dcl\np)/(s:b\np),
+       t((s:dcl\np)/(s:b\np), 'did', [from:22, to:25, pos:'VBD', lemma:'do', sem:'PST', wordnet:'O']),
+       t((s\np)\(s\np), 'n\'t', [from:25, to:28, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+      rp(s:b\np,
+       t(s:b\np, 'study', [from:29, to:34, pos:'VB', lemma:'study', sem:'EXS', wordnet:'study.v.05', verbnet:['Agent']]),
+       t(., '.', [from:34, to:35, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))))).
+

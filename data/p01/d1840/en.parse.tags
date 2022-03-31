@@ -1,0 +1,26 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/pp, 'emigrated', [from:4, to:13, pos:'VBD', lemma:'emigrate', sem:'EPS', wordnet:'emigrate.v.01', verbnet:['Theme']]),
+    fa(pp,
+     t(pp/np, 'to', [from:14, to:16, pos:'TO', lemma:'to', sem:'REL', wordnet:'O', verbnet:['Destination']]),
+     lx(np, n,
+      t(n, 'Australia', [from:17, to:26, pos:'NNP', lemma:'australia', sem:'GPE', wordnet:'country.n.02'])))),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/s:dcl, 'when', [from:27, to:31, pos:'WRB', lemma:'when', sem:'REL', wordnet:'O', verbnet:['Time']]),
+    ba(s:dcl,
+     t(np, 'he', [from:32, to:34, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+     rp(s:dcl\np,
+      fa(s:dcl\np,
+       t((s:dcl\np)/(s:adj\np), 'was', [from:35, to:38, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+       t(s:adj\np, 'thirty', [from:39, to:45, pos:'JJ', lemma:'30', sem:'QUC', wordnet:'O', verbnet:['Theme']])),
+      t(., '.', [from:45, to:46, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

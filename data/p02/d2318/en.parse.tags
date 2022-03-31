@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'She', [from:0, to:3, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02']),
+  fa(s:dcl\np,
+   fa((s:dcl\np)/np,
+    t(((s:dcl\np)/np)/np, 'gave', [from:4, to:8, pos:'VBD', lemma:'give', sem:'EPS', wordnet:'give.v.03', verbnet:['Recipient','Theme','Agent']]),
+    t(np, 'him', [from:9, to:12, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02'])),
+   rp(np,
+    fa(np,
+     t(np/n, 'the', [from:13, to:16, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'money', [from:17, to:22, pos:'NN', lemma:'money', sem:'CON', wordnet:'money.n.01'])),
+    t(., '.', [from:22, to:23, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

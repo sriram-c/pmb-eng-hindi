@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- He drives me crazy . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">He</tag>
+     <tag type="cat">np</tag>
+     <tag type="sym">male</tag>
+     <tag type="lemma">male</tag>
+     <tag type="from">0</tag>
+     <tag type="to">2</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="sem">PRO</tag>
+     <tag type="wordnet">male.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="tok">drives</tag>
+     <tag type="cat">((s:dcl\np)/(s:adj\np))/np</tag>
+     <tag type="sym">drive</tag>
+     <tag type="lemma">drive</tag>
+     <tag type="from">3</tag>
+     <tag type="to">9</tag>
+     <tag type="pos">VBZ</tag>
+     <tag type="sem">ENS</tag>
+     <tag type="wordnet">drive.v.04</tag>
+     <tag type="verbnet" n="3">[Patient,Result,Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">me</tag>
+     <tag type="cat">np</tag>
+     <tag type="sym">speaker</tag>
+     <tag type="lemma">speaker</tag>
+     <tag type="from">10</tag>
+     <tag type="to">12</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="sem">PRO</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="tok">crazy</tag>
+     <tag type="cat">s:adj\np</tag>
+     <tag type="sym">crazy</tag>
+     <tag type="lemma">crazy</tag>
+     <tag type="from">13</tag>
+     <tag type="to">18</tag>
+     <tag type="pos">JJ</tag>
+     <tag type="sem">IST</tag>
+     <tag type="wordnet">crazy.a.03</tag>
+     <tag type="verbnet" n="1">[Attribute]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">18</tag>
+     <tag type="to">19</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b2">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="2"></dr>
+   <dr label="b2" name="x2" from="10" to="12"></dr>
+   <dr label="b2" name="e1" from="3" to="9"></dr>
+   <dr label="b2" name="s1" from="13" to="18"></dr>
+   <dr label="b2" name="t1" from="3" to="9"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="male" synset="male.n.02" from="0" to="2"></pred>
+   </cond>
+   <cond label="b2">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="3" to="9"></pred>
+   </cond>
+   <cond label="b2">
+    <comp symbol="EQU" arg1="t1" arg2="now" from="3" to="9"></comp>
+   </cond>
+   <cond label="b2">
+    <pred arg="e1" symbol="drive" synset="drive.v.04" from="3" to="9"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="3" to="9"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="s1" symbol="Result" framenet="Result" from="3" to="9"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x1" symbol="Agent" framenet="Agent" from="3" to="9"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x2" symbol="Patient" framenet="Patient" from="3" to="9"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="x2" symbol="person" synset="person.n.01" from="10" to="12"></pred>
+   </cond>
+   <cond label="b2">
+    <comp symbol="EQU" arg1="x2" arg2="speaker" from="10" to="12"></comp>
+   </cond>
+   <cond label="b2">
+    <pred arg="s1" symbol="crazy" synset="crazy.a.03" from="13" to="18"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="s1" arg2="x2" symbol="AttributeOf" framenet="AttributeOf" from="13" to="18"></rel>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   fa(n,
+    t(n/pp, 'cube~root', [from:4, to:13, pos:'NN', lemma:'cube~root', sem:'CON', wordnet:'cube_root.n.01']),
+    fa(pp,
+     t(pp/np, 'of', [from:14, to:16, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['Of']]),
+     t(np, 'twenty-seven', [from:17, to:29, pos:'NN', lemma:'27', sem:'QUC', wordnet:'O'])))),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'is', [from:30, to:32, pos:'VBZ', lemma:'be', sem:'EXS', wordnet:'be.v.06', verbnet:['Co-Theme','Theme']]),
+   rp(np,
+    t(np, 'three', [from:33, to:38, pos:'CD', lemma:'3', sem:'QUC', wordnet:'O']),
+    t(., '.', [from:38, to:39, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

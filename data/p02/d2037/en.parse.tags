@@ -1,0 +1,17 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'bought', [from:4, to:10, pos:'VBD', lemma:'buy', sem:'EPS', wordnet:'buy.v.01', verbnet:['Theme','Agent']]),
+   rp(np,
+    fa(np,
+     t(np/n, 'a', [from:11, to:12, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+     t(n, 'Geiger~counter', [from:13, to:27, pos:'NNP', lemma:'geiger~counter', sem:'CON', wordnet:'geiger_counter.n.01'])),
+    t(., '.', [from:27, to:28, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

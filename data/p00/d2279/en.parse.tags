@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   fa((s:dcl\np)/pp,
+    t(((s:dcl\np)/pp)/pr, 'took', [from:4, to:8, pos:'VBD', lemma:'take~part', sem:'EPS', wordnet:'take_part.v.01', verbnet:['Agent']]),
+    t(pr, 'part', [from:9, to:13, pos:'NN', lemma:'part', sem:'NIL', wordnet:'O'])),
+   fa(pp,
+    t(pp/np, 'in', [from:14, to:16, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Theme']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:17, to:20, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'race', [from:21, to:25, pos:'NN', lemma:'race', sem:'CON', wordnet:'race.n.02'])),
+     t(., '.', [from:25, to:26, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

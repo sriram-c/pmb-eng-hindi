@@ -1,0 +1,19 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'This', [from:0, to:4, pos:'DT', lemma:'entity', sem:'PRX', wordnet:'entity.n.01']),
+   t(n, 'casino', [from:5, to:11, pos:'NN', lemma:'casino', sem:'CON', wordnet:'casino.n.01'])),
+  rp(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:ng\np), 'is', [from:12, to:14, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+    fa(s:ng\np,
+     t((s:ng\np)/np, 'losing', [from:15, to:21, pos:'VBG', lemma:'lose', sem:'EXG', wordnet:'lose.v.07', verbnet:['Theme','Agent']]),
+     lx(np, n,
+      t(n, 'money', [from:22, to:27, pos:'NN', lemma:'money', sem:'CON', wordnet:'money.n.01'])))),
+   t(., '.', [from:27, to:28, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+

@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'This', [from:0, to:4, pos:'DT', lemma:'entity', sem:'PRX', wordnet:'entity.n.01']),
+   t(n, 'story', [from:5, to:10, pos:'NN', lemma:'story', sem:'CON', wordnet:'story.n.02'])),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/(s:b\np),
+    t((s:dcl\np)/(s:b\np), 'does', [from:11, to:15, pos:'VBZ', lemma:'do', sem:'NOW', wordnet:'O']),
+    t((s\np)\(s\np), 'n\'t', [from:15, to:18, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+   fa(s:b\np,
+    t((s:b\np)/np, 'have', [from:19, to:23, pos:'VB', lemma:'have', sem:'EXS', wordnet:'have.v.02', verbnet:['Theme','Pivot']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'a', [from:24, to:25, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+      fa(n,
+       t(n/n, 'happy', [from:26, to:31, pos:'JJ', lemma:'happy', sem:'IST', wordnet:'happy.a.01', verbnet:['Attribute']]),
+       t(n, 'ending', [from:32, to:38, pos:'NN', lemma:'ending', sem:'CON', wordnet:'ending.n.04']))),
+     t(., '.', [from:38, to:39, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

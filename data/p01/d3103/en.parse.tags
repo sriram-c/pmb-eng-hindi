@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'She', [from:0, to:3, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02']),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:pt\np), 'has', [from:4, to:7, pos:'VBZ', lemma:'have', sem:'NOW', wordnet:'O']),
+    fa(s:pt\np,
+     t((s:pt\np)/np, 'hit', [from:8, to:11, pos:'VBN', lemma:'hit', sem:'EXT', wordnet:'hit.v.08', verbnet:['Theme','Agent']]),
+     fa(np,
+      t(np/n, 'the', [from:12, to:15, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'jackpot', [from:16, to:23, pos:'NN', lemma:'jackpot', sem:'CON', wordnet:'jackpot.n.01'])))),
+   rp((s\np)\(s\np),
+    t((s\np)\(s\np), 'once~again', [from:24, to:34, pos:'NN', lemma:'once~again', sem:'ALT', wordnet:'O']),
+    t(., '.', [from:34, to:35, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

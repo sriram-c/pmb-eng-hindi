@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/np, 'All', [from:0, to:3, pos:'PDT', lemma:'all', sem:'AND', wordnet:'O', verbnet:['PartOf']]),
+   fa(np,
+    t(np/n, 'the', [from:4, to:7, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+    t(n, 'students', [from:8, to:16, pos:'NNS', lemma:'student', sem:'ROL', wordnet:'student.n.01']))),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), 'are', [from:17, to:20, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+   rp(s:adj\np,
+    t(s:adj\np, 'present', [from:21, to:28, pos:'JJ', lemma:'present', sem:'IST', wordnet:'present.a.02', verbnet:['Attribute']]),
+    t(., '.', [from:28, to:29, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

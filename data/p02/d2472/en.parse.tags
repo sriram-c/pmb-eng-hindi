@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'This', [from:0, to:4, pos:'DT', lemma:'this', sem:'PRX', wordnet:'O']),
+   t(n, 'penguin', [from:5, to:12, pos:'NN', lemma:'penguin', sem:'CON', wordnet:'penguin.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), 'is', [from:13, to:15, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+   fa(s:adj\np,
+    t((s:adj\np)/(s:adj\np), 'really', [from:16, to:22, pos:'RB', lemma:'really', sem:'INT', wordnet:'really.r.04']),
+    rp(s:adj\np,
+     t(s:adj\np, 'cute', [from:23, to:27, pos:'JJ', lemma:'cute', sem:'IST', wordnet:'cute.a.01', verbnet:['Attribute']]),
+     t(., '.', [from:27, to:28, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

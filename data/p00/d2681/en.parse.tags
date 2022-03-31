@@ -1,0 +1,23 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), 'is', [from:4, to:6, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+   fa(s:adj\np,
+    fa((s:adj\np)/pp,
+     t(((s:adj\np)/pp)/(s:adj\np), 'as', [from:7, to:9, pos:'RB', lemma:'as', sem:'EQU', wordnet:'O', verbnet:['Theme']]),
+     t(s:adj\np, 'fast', [from:10, to:14, pos:'RB', lemma:'speed', sem:'IST', wordnet:'O', verbnet:['Attribute']])),
+    fa(pp,
+     t(pp/np, 'as', [from:15, to:17, pos:'IN', lemma:'as', sem:'REL', wordnet:'O', verbnet:['Co-Theme']]),
+     rp(np,
+      fa(np,
+       t(np/n, 'a', [from:18, to:19, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+       t(n, 'leopard', [from:20, to:27, pos:'NN', lemma:'leopard', sem:'CON', wordnet:'leopard.n.02'])),
+      t(., '.', [from:27, to:28, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

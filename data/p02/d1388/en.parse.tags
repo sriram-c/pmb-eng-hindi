@@ -1,0 +1,19 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:wq,
+  fa(s:wq/(s:q/np),
+   t((s:wq/(s:q/np))/n, 'What', [from:0, to:4, pos:'WP', lemma:'entity', sem:'QUE', wordnet:'entity.n.01', verbnet:['Name']]),
+   t(n, 'company', [from:5, to:12, pos:'NN', lemma:'company', sem:'CON', wordnet:'company.n.01'])),
+  fc(s:q/np,
+   fa(s:q/(s:b\np),
+    t((s:q/(s:b\np))/np, 'did', [from:13, to:16, pos:'VBD', lemma:'do', sem:'PST', wordnet:'O']),
+    lx(np, n,
+     t(n, 'Nicholas~Brady', [from:17, to:31, pos:'NNP', lemma:'nicholas~brady', sem:'PER', wordnet:'male.n.02']))),
+   rp((s:b\np)/np,
+    t((s:b\np)/np, 'found', [from:32, to:37, pos:'VBD', lemma:'found', sem:'EXS', wordnet:'found.v.01', verbnet:['Theme','Agent']]),
+    t(., '?', [from:37, to:38, pos:'.', lemma:'?', sem:'QUE', wordnet:'O']))))).
+

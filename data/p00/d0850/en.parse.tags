@@ -1,0 +1,23 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'She', [antecedent:0, from:0, to:3, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:to\np), 'used', [from:4, to:8, pos:'VBD', lemma:'use', sem:'PST', wordnet:'use.v.06']),
+   ba(s:to\np,
+    fa(s:to\np,
+     t((s:to\np)/(s:b\np), 'to', [from:9, to:11, pos:'TO', lemma:'to', sem:'NIL', wordnet:'O']),
+     fa(s:b\np,
+      t((s:b\np)/np, 'play', [from:12, to:16, pos:'VB', lemma:'play', sem:'EXS', wordnet:'play.v.01', verbnet:['Theme','Agent']]),
+      lx(np, n,
+       t(n, 'tennis', [from:17, to:23, pos:'NN', lemma:'tennis', sem:'CON', wordnet:'tennis.n.01'])))),
+    rp((s\np)\(s\np),
+     fa((s\np)\(s\np),
+      t(((s\np)\(s\np))/n, 'every', [from:24, to:29, pos:'DT', lemma:'every', sem:'AND', wordnet:'O', verbnet:['Time']]),
+      t(n, 'Sunday', [from:30, to:36, pos:'NNP', lemma:'sunday', sem:'DOW', wordnet:'sunday.n.01'])),
+     t(., '.', [from:36, to:37, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

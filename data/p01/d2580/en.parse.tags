@@ -1,0 +1,30 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:dcl,
+  ba(s:dcl,
+   t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+   ba(s:dcl\np,
+    fa(s:dcl\np,
+     t((s:dcl\np)/(s:pt\np), '\'ve', [from:1, to:4, pos:'VBP', lemma:'have', sem:'NOW', wordnet:'O']),
+     fa(s:pt\np,
+      t((s:pt\np)/(s:ng\np), 'been', [from:5, to:9, pos:'VBN', lemma:'be', sem:'PFT', wordnet:'O']),
+      fa(s:ng\np,
+       t((s:ng\np)/pp, 'dreaming', [from:10, to:18, pos:'VBG', lemma:'dream', sem:'EXG', wordnet:'dream.v.01', verbnet:['Experiencer']]),
+       fa(pp,
+        t(pp/np, 'of', [from:19, to:21, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['Stimulus']]),
+        fa(np,
+         t(np/n, 'this', [from:22, to:26, pos:'DT', lemma:'this', sem:'PRX', wordnet:'O']),
+         t(n, 'trip', [from:27, to:31, pos:'NN', lemma:'trip', sem:'CON', wordnet:'trip.n.01'])))))),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/np, 'for', [from:32, to:35, pos:'IN', lemma:'for', sem:'REL', wordnet:'O', verbnet:['Duration']]),
+     fa(np,
+      t(np/n, 'a', [from:36, to:37, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+      fa(n,
+       t(n/n, 'long', [from:38, to:42, pos:'JJ', lemma:'long', sem:'DEG', wordnet:'long.a.01', verbnet:['Attribute']]),
+       t(n, 'time', [from:43, to:47, pos:'NN', lemma:'time', sem:'CON', wordnet:'time.n.03'])))))),
+  t(., '.', [from:47, to:48, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+

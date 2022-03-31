@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'You', [from:0, to:3, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/(s:ng\np),
+    t((s:dcl\np)/(s:ng\np), 'are', [from:4, to:7, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+    t((s\np)\(s\np), 'not', [from:8, to:11, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+   ba(s:ng\np,
+    fa(s:ng\np,
+     t((s:ng\np)/np, 'watching', [from:12, to:20, pos:'VBG', lemma:'watch', sem:'EXG', wordnet:'watch.v.03', verbnet:['Theme','Agent']]),
+     lx(np, n,
+      t(n, 'TV', [from:21, to:23, pos:'NN', lemma:'tv', sem:'CON', wordnet:'tv.n.01']))),
+    rp((s\np)\(s\np),
+     t((s\np)\(s\np), 'now', [from:24, to:27, pos:'RB', lemma:'now', sem:'NOW', wordnet:'O']),
+     t(., '.', [from:27, to:28, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

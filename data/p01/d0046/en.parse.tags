@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'man', [from:4, to:7, pos:'NN', lemma:'man', sem:'CON', wordnet:'man.n.01'])),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:ng\np), 'is', [from:8, to:10, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+    t(s:ng\np, 'racing', [from:11, to:17, pos:'VBG', lemma:'race', sem:'EXG', wordnet:'race.v.02', verbnet:['Theme']])),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'for', [from:18, to:21, pos:'IN', lemma:'for', sem:'REL', wordnet:'O', verbnet:['Goal']]),
+    fa(np,
+     t(np/n, 'the', [from:22, to:25, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'lead', [from:26, to:30, pos:'NN', lemma:'lead', sem:'CON', wordnet:'lead.n.01'])))))).
+

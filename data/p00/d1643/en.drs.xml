@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- He is leaving ø Chicago tomorrow . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">He</tag>
+     <tag type="cat">np</tag>
+     <tag type="sym">male</tag>
+     <tag type="lemma">male</tag>
+     <tag type="from">0</tag>
+     <tag type="to">2</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="sem">PRO</tag>
+     <tag type="wordnet">male.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">is</tag>
+     <tag type="cat">(s:dcl\np)/(s:ng\np)</tag>
+     <tag type="sym">be</tag>
+     <tag type="lemma">be</tag>
+     <tag type="from">3</tag>
+     <tag type="to">5</tag>
+     <tag type="pos">VBZ</tag>
+     <tag type="sem">FUT</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="tok">leaving</tag>
+     <tag type="cat">(s:ng\np)/np</tag>
+     <tag type="sym">leave</tag>
+     <tag type="lemma">leave</tag>
+     <tag type="from">6</tag>
+     <tag type="to">13</tag>
+     <tag type="pos">VBG</tag>
+     <tag type="sem">EXG</tag>
+     <tag type="wordnet">leave.v.01</tag>
+     <tag type="verbnet" n="2">[Source,Theme]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="from">14</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">Chicago</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">chicago</tag>
+     <tag type="lemma">chicago</tag>
+     <tag type="from">14</tag>
+     <tag type="to">21</tag>
+     <tag type="pos">NNP</tag>
+     <tag type="sem">GPE</tag>
+     <tag type="wordnet">city.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">tomorrow</tag>
+     <tag type="cat">(s:dcl\np)\(s:dcl\np)</tag>
+     <tag type="sym">day</tag>
+     <tag type="lemma">day</tag>
+     <tag type="from">22</tag>
+     <tag type="to">30</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">FUT</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">30</tag>
+     <tag type="to">31</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b3">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="2"></dr>
+   <dr label="b2" name="x2" from="14" to="-1"></dr>
+   <dr label="b3" name="e1" from="6" to="13"></dr>
+   <dr label="b3" name="t1" from="0" to="0"></dr>
+   <dr label="b3" name="x3" from="22" to="30"></dr>
+   <dr label="b3" name="t2" from="22" to="30"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="male" synset="male.n.02" from="0" to="2"></pred>
+   </cond>
+   <cond label="b3">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="0" to="0"></pred>
+   </cond>
+   <cond label="b3">
+    <comp symbol="TIN" arg1="t1" arg2="x3" from="22" to="30"></comp>
+   </cond>
+   <cond label="b3">
+    <comp symbol="TSU" arg1="t1" arg2="now" from="3" to="5"></comp>
+   </cond>
+   <cond label="b3">
+    <pred arg="e1" symbol="leave" synset="leave.v.01" from="6" to="13"></pred>
+   </cond>
+   <cond label="b3">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="0" to="0"></rel>
+   </cond>
+   <cond label="b3">
+    <rel arg1="e1" arg2="x2" symbol="Source" framenet="Getting@Source" from="6" to="13"></rel>
+   </cond>
+   <cond label="b3">
+    <rel arg1="e1" arg2="x1" symbol="Theme" framenet="Self_motion@Self_mover" from="6" to="13"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="x2" symbol="city" synset="city.n.01" from="14" to="21"></pred>
+   </cond>
+   <cond label="b2">
+    <named arg="x2" symbol="chicago" from="14" to="21"></named>
+   </cond>
+   <cond label="b3">
+    <comp symbol="TIN" arg1="now" arg2="t2" from="22" to="30"></comp>
+   </cond>
+   <cond label="b3">
+    <pred arg="t2" symbol="day" synset="day.n.03" from="22" to="30"></pred>
+   </cond>
+   <cond label="b3">
+    <comp symbol="TAB" arg1="t2" arg2="x3" from="22" to="30"></comp>
+   </cond>
+   <cond label="b3">
+    <pred arg="x3" symbol="day" synset="day.n.03" from="22" to="30"></pred>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/s:qem, 'wonder', [from:2, to:8, pos:'VBP', lemma:'wonder', sem:'ENS', wordnet:'wonder.v.01', verbnet:['Theme','Agent']]),
+   fa(s:qem,
+    t(s:qem/s:dcl, 'if', [from:9, to:11, pos:'IN', lemma:'if', sem:'DIS', wordnet:'O']),
+    ba(s:dcl,
+     t(np, 'he', [from:12, to:14, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+     rp(s:dcl\np,
+      fa(s:dcl\np,
+       t((s:dcl\np)/np, 'likes', [from:15, to:20, pos:'VBZ', lemma:'like', sem:'ENS', wordnet:'like.v.03', verbnet:['Stimulus','Experiencer']]),
+       t(np, 'me', [from:21, to:23, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O'])),
+      t(., '.', [from:23, to:24, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

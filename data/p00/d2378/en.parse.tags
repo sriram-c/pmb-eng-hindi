@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'She', [from:0, to:3, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02']),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/(s:b\np),
+    t((s:dcl\np)/(s:b\np), 'did', [from:4, to:7, pos:'VBD', lemma:'do', sem:'PST', wordnet:'O']),
+    t((s\np)\(s\np), 'not', [from:8, to:11, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+   fa(s:b\np,
+    t((s:b\np)/np, 'read', [from:12, to:16, pos:'VB', lemma:'read', sem:'EXS', wordnet:'read.v.01', verbnet:['Source','Agent']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:17, to:20, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'book', [from:21, to:25, pos:'NN', lemma:'book', sem:'CON', wordnet:'book.n.01'])),
+     t(., '.', [from:25, to:26, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

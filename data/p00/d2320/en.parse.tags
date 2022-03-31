@@ -1,0 +1,27 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/(n/pp), 'My', [from:0, to:2, pos:'PRP$', lemma:'speaker', sem:'HAS', wordnet:'O', verbnet:['Of']]),
+   t(n/pp, 'friend', [from:3, to:9, pos:'NN', lemma:'friend', sem:'ROL', wordnet:'friend.n.01'])),
+  fa(s:dcl\np,
+   fa((s:dcl\np)/pp,
+    t(((s:dcl\np)/pp)/np, 'invited', [from:10, to:17, pos:'VBD', lemma:'invite', sem:'EPS', wordnet:'invite.v.05', verbnet:['Beneficiary','Agent']]),
+    t(np, 'me', [from:18, to:20, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O'])),
+   fa(pp,
+    t(pp/np, 'to', [from:21, to:23, pos:'TO', lemma:'to', sem:'REL', wordnet:'O', verbnet:['Theme']]),
+    lx(np, n,
+     ba(n,
+      t(n, 'dinner', [from:24, to:30, pos:'NN', lemma:'dinner', sem:'CON', wordnet:'dinner.n.02']),
+      fa(n\n,
+       t((n\n)/np, 'at', [from:31, to:33, pos:'IN', lemma:'at', sem:'REL', wordnet:'O', verbnet:['Location']]),
+       rp(np,
+        fa(np,
+         t(np/n, 'the', [from:34, to:37, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+         t(n, 'restaurant', [from:38, to:48, pos:'NN', lemma:'restaurant', sem:'CON', wordnet:'restaurant.n.01'])),
+        t(., '.', [from:48, to:49, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))))).
+

@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:wq,
+  fa(s:wq/(s:q/np),
+   t((s:wq/(s:q/np))/n, 'How', [from:0, to:3, pos:'WRB', lemma:'how', sem:'QUE', wordnet:'O', verbnet:['Quantity']]),
+   fa(n,
+    t(n/n, 'many', [from:4, to:8, pos:'JJ', lemma:'?', sem:'QUV', wordnet:'O', verbnet:['Quantity']]),
+    t(n, 'home~runs', [from:9, to:18, pos:'NNS', lemma:'home~run', sem:'CON', wordnet:'home_run.n.01']))),
+  fc(s:q/np,
+   fa(s:q/(s:b\np),
+    t((s:q/(s:b\np))/np, 'did', [from:19, to:22, pos:'VBD', lemma:'do', sem:'PST', wordnet:'O']),
+    lx(np, n,
+     t(n, 'Babe~Ruth', [from:23, to:32, pos:'NNP', lemma:'babe~ruth', sem:'PER', wordnet:'male.n.02']))),
+   rp((s:b\np)/np,
+    t((s:b\np)/np, 'hit', [from:33, to:36, pos:'VB', lemma:'hit', sem:'EXS', wordnet:'hit.v.08', verbnet:['Theme','Agent']]),
+    t(., '?', [from:36, to:37, pos:'.', lemma:'?', sem:'QUE', wordnet:'O']))))).
+

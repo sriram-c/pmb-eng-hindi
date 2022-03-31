@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'dentist', [from:4, to:11, pos:'NN', lemma:'dentist', sem:'ROL', wordnet:'dentist.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'pulled', [from:12, to:18, pos:'VBD', lemma:'pull', sem:'EPS', wordnet:'pull.v.15', verbnet:['Theme','Agent']]),
+   fa(np,
+    t(np/(n/pp), 'my', [from:19, to:21, pos:'PRP$', lemma:'speaker', sem:'HAS', wordnet:'O', verbnet:['PartOf']]),
+    fc(n/pp,
+     t(n/n, 'bad', [from:22, to:25, pos:'JJ', lemma:'bad', sem:'IST', wordnet:'bad.a.03', verbnet:['Attribute']]),
+     rp(n/pp,
+      t(n/pp, 'tooth', [from:26, to:31, pos:'NN', lemma:'tooth', sem:'CON', wordnet:'tooth.n.01']),
+      t(., '.', [from:31, to:32, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

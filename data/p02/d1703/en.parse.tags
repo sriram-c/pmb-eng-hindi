@@ -1,0 +1,31 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'We', [from:0, to:2, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    fa((s:dcl\np)/pp,
+     t(((s:dcl\np)/pp)/pr, 'ran', [from:3, to:6, pos:'VBD', lemma:'run~out', sem:'EPS', wordnet:'run_out.v.01', verbnet:['Source']]),
+     t(pr, 'out', [from:7, to:10, pos:'IN', lemma:'out', sem:'REL', wordnet:'O'])),
+    fa(pp,
+     t(pp/np, 'of', [from:11, to:13, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['Patient']]),
+     lx(np, n,
+      t(n, 'gas', [from:14, to:17, pos:'NN', lemma:'gas', sem:'CON', wordnet:'gas.n.03'])))),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'in', [from:18, to:20, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Location']]),
+    fa(np,
+     t(np/n, 'the', [from:21, to:24, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     fa(n,
+      t(n/pp, 'middle', [from:25, to:31, pos:'NN', lemma:'middle', sem:'CON', wordnet:'middle.n.01']),
+      fa(pp,
+       t(pp/np, 'of', [from:32, to:34, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['PartOf']]),
+       rp(np,
+        fa(np,
+         t(np/n, 'the', [from:35, to:38, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+         t(n, 'desert', [from:39, to:45, pos:'NN', lemma:'desert', sem:'CON', wordnet:'desert.n.01'])),
+        t(., '.', [from:45, to:46, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))))).
+

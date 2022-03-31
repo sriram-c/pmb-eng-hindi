@@ -1,0 +1,17 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'knew', [from:4, to:8, pos:'VBD', lemma:'know', sem:'EPS', wordnet:'know.v.01', verbnet:['Stimulus','Experiencer']]),
+   rp(np,
+    fa(np,
+     t(np/n, 'the', [from:9, to:12, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'answer', [from:13, to:19, pos:'NN', lemma:'answer', sem:'CON', wordnet:'answer.n.02'])),
+    t(., '.', [from:19, to:20, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

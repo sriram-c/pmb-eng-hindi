@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:dcl,
+  ba(s:dcl,
+   fa(np,
+    t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+    t(n, 'rain', [from:4, to:8, pos:'NN', lemma:'rain', sem:'CON', wordnet:'rain.n.01'])),
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:ng\np), 'is', [from:9, to:11, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+    fa(s:ng\np,
+     t((s:ng\np)/pr, 'letting', [from:12, to:19, pos:'VBG', lemma:'let~up', sem:'EXG', wordnet:'let_up.v.01', verbnet:['Patient']]),
+     t(pr, 'up', [from:20, to:22, pos:'RP', lemma:'up', sem:'REL', wordnet:'O'])))),
+  t(., '.', [from:22, to:23, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+

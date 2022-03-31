@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Millie', [from:0, to:6, pos:'NNP', lemma:'millie', sem:'PER', wordnet:'female.n.02'])),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/(s:ng\np),
+    t((s:dcl\np)/(s:ng\np), 'is', [from:7, to:9, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+    t((s\np)\(s\np), 'n\'t', [from:9, to:12, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+   fa(s:ng\np,
+    t((s:ng\np)/np, 'eating', [from:13, to:19, pos:'VBG', lemma:'eat', sem:'EXG', wordnet:'eat.v.01', verbnet:['Patient','Agent']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'an', [from:20, to:22, pos:'DT', lemma:'an', sem:'DIS', wordnet:'O']),
+      t(n, 'apple', [from:23, to:28, pos:'NN', lemma:'apple', sem:'CON', wordnet:'apple.n.01'])),
+     t(., '.', [from:28, to:29, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

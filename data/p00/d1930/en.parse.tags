@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   fa(n,
+    t(n/n, 'Ten', [from:0, to:3, pos:'CD', lemma:'10', sem:'QUC', wordnet:'O', verbnet:['Quantity']]),
+    t(n, 'prisoners', [from:4, to:13, pos:'NNS', lemma:'prisoner', sem:'ROL', wordnet:'prisoner.n.01']))),
+  fa(s:dcl\np,
+   fa((s:dcl\np)/pp,
+    t(((s:dcl\np)/pp)/pr, 'broke', [from:14, to:19, pos:'VBD', lemma:'break~out', sem:'EPS', wordnet:'break_out.v.03', verbnet:['Theme']]),
+    t(pr, 'out', [from:20, to:23, pos:'IN', lemma:'out', sem:'REL', wordnet:'O'])),
+   fa(pp,
+    t(pp/np, 'of', [from:24, to:26, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['Source']]),
+    rp(np,
+     lx(np, n,
+      t(n, 'jail', [from:27, to:31, pos:'NN', lemma:'jail', sem:'CON', wordnet:'jail.n.01'])),
+     t(., '.', [from:31, to:32, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

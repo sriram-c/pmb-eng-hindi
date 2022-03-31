@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'Your', [from:0, to:4, pos:'PRP$', lemma:'hearer', sem:'HAS', wordnet:'O', verbnet:['Owner']]),
+   t(n, 'zipper', [from:5, to:11, pos:'NN', lemma:'zipper', sem:'CON', wordnet:'zipper.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), '\'s', [from:11, to:13, pos:'POS', lemma:'be', sem:'NOW', wordnet:'O']),
+   rp(s:adj\np,
+    t(s:adj\np, 'open', [from:14, to:18, pos:'JJ', lemma:'open', sem:'IST', wordnet:'open.a.01', verbnet:['Attribute']]),
+    t(., '.', [from:18, to:19, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

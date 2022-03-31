@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- What Liverpool club spawned the Beatles ? --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="tok">What</tag>
+     <tag type="cat">(s:wq/(s:dcl\np))/n</tag>
+     <tag type="sym">entity</tag>
+     <tag type="lemma">entity</tag>
+     <tag type="from">0</tag>
+     <tag type="to">4</tag>
+     <tag type="pos">WP</tag>
+     <tag type="sem">QUE</tag>
+     <tag type="wordnet">entity.n.01</tag>
+     <tag type="verbnet" n="1">[Name]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="tok">Liverpool</tag>
+     <tag type="cat">n/n</tag>
+     <tag type="sym">liverpool</tag>
+     <tag type="lemma">liverpool</tag>
+     <tag type="from">5</tag>
+     <tag type="to">14</tag>
+     <tag type="pos">NNP</tag>
+     <tag type="sem">GPE</tag>
+     <tag type="wordnet">city.n.01</tag>
+     <tag type="verbnet" n="1">[Location]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">club</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">club</tag>
+     <tag type="lemma">club</tag>
+     <tag type="from">15</tag>
+     <tag type="to">19</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">club.n.07</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="tok">spawned</tag>
+     <tag type="cat">(s:dcl\np)/np</tag>
+     <tag type="sym">spawn</tag>
+     <tag type="lemma">spawn</tag>
+     <tag type="from">20</tag>
+     <tag type="to">27</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="sem">EPS</tag>
+     <tag type="wordnet">spawn.v.01</tag>
+     <tag type="verbnet" n="2">[Theme,Causer]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">the</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">the</tag>
+     <tag type="lemma">the</tag>
+     <tag type="from">28</tag>
+     <tag type="to">31</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">Beatles</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">beatles</tag>
+     <tag type="lemma">beatles</tag>
+     <tag type="from">32</tag>
+     <tag type="to">39</tag>
+     <tag type="pos">NNPS</tag>
+     <tag type="sem">ORG</tag>
+     <tag type="wordnet">musical_organization.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">?</tag>
+     <tag type="cat">s:wq\s:wq</tag>
+     <tag type="sym">?</tag>
+     <tag type="lemma">?</tag>
+     <tag type="from">39</tag>
+     <tag type="to">40</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">QUE</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b1">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="4"></dr>
+   <dr label="b2" name="x2" from="5" to="14"></dr>
+   <dr label="b3" name="x3" from="28" to="31"></dr>
+   <dr label="b1" name="e1" from="20" to="27"></dr>
+   <dr label="b1" name="t1" from="20" to="27"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="club" synset="club.n.07" from="15" to="19"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x1" arg2="x2" symbol="Location" framenet="Location" from="5" to="14"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x1" arg2="?" symbol="Name" framenet="Name" from="0" to="4"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="x2" symbol="city" synset="city.n.01" from="5" to="14"></pred>
+   </cond>
+   <cond label="b2">
+    <named arg="x2" symbol="liverpool" from="5" to="14"></named>
+   </cond>
+   <cond label="b1">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="20" to="27"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="TPR" arg1="t1" arg2="now" from="20" to="27"></comp>
+   </cond>
+   <cond label="b1">
+    <pred arg="e1" symbol="spawn" synset="spawn.v.01" from="20" to="27"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="20" to="27"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x3" symbol="Theme" framenet="Causation@Effect" from="20" to="27"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x1" symbol="Causer" framenet="Causer" from="20" to="27"></rel>
+   </cond>
+   <cond label="b3">
+    <pred arg="x3" symbol="musical_organization" synset="musical_organization.n.01" from="32" to="39"></pred>
+   </cond>
+   <cond label="b3">
+    <named arg="x3" symbol="beatles" from="32" to="39"></named>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

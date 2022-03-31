@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'She', [from:0, to:3, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02']),
+  fa(s:dcl\np,
+   fa((s:dcl\np)/np,
+    t(((s:dcl\np)/np)/np, 'showed', [from:4, to:10, pos:'VBD', lemma:'show', sem:'EPS', wordnet:'show.v.04', verbnet:['Recipient','Theme','Agent']]),
+    t(np, 'me', [from:11, to:13, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O'])),
+   rp(np,
+    fa(np,
+     t(np/(n/pp), 'his', [from:14, to:17, pos:'PRP$', lemma:'male', sem:'HAS', wordnet:'male.n.02', verbnet:['Owner']]),
+     t(n/pp, 'album', [from:18, to:23, pos:'NN', lemma:'album', sem:'CON', wordnet:'album.n.02'])),
+    t(., '.', [from:23, to:24, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

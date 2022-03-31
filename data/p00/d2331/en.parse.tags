@@ -1,0 +1,19 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Mary', [from:0, to:4, pos:'NNP', lemma:'mary', sem:'PER', wordnet:'female.n.02'])),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/pr, 'broke', [from:5, to:10, pos:'VBD', lemma:'break~up', sem:'EPS', wordnet:'break_up.v.02', verbnet:['Patient']]),
+    t(pr, 'up', [from:11, to:13, pos:'RP', lemma:'up', sem:'REL', wordnet:'O'])),
+   rp((s\np)\(s\np),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/np, 'with', [from:14, to:18, pos:'IN', lemma:'with', sem:'REL', wordnet:'O', verbnet:['Co-Patient']]),
+     t(np, 'me', [from:19, to:21, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O'])),
+    t(., '.', [from:21, to:22, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'She', [from:0, to:3, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02']),
+  fa(s:dcl\np,
+   fa((s:dcl\np)/np,
+    t(((s:dcl\np)/np)/pr, 'picked', [from:4, to:10, pos:'VBD', lemma:'pick~up', sem:'EPS', wordnet:'pick_up.v.02', verbnet:['Theme','Agent']]),
+    t(pr, 'up', [from:11, to:13, pos:'RP', lemma:'up', sem:'REL', wordnet:'O'])),
+   rp(np,
+    fa(np,
+     t(np/n, 'a', [from:14, to:15, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+     t(n, 'coin', [from:16, to:20, pos:'NN', lemma:'coin', sem:'CON', wordnet:'coin.n.01'])),
+    t(., '.', [from:20, to:21, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

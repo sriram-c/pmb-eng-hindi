@@ -1,0 +1,23 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   fa(n,
+    fa(n/n,
+     t((n/n)/(n/n), 'Only', [from:0, to:4, pos:'RB', lemma:'only', sem:'XCL', wordnet:'O']),
+     t(n/n, 'six', [from:5, to:8, pos:'CD', lemma:'6', sem:'QUC', wordnet:'O', verbnet:['Quantity']])),
+    t(n, 'people', [from:9, to:15, pos:'NNS', lemma:'person', sem:'CON', wordnet:'person.n.01']))),
+  fa(s:dcl\np,
+   t((s:dcl\np)/pp, 'came', [from:16, to:20, pos:'VBD', lemma:'come', sem:'EPS', wordnet:'come.v.02', verbnet:['Theme']]),
+   fa(pp,
+    t(pp/np, 'to', [from:21, to:23, pos:'TO', lemma:'to', sem:'REL', wordnet:'O', verbnet:['Destination']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:24, to:27, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'party', [from:28, to:33, pos:'NN', lemma:'party', sem:'CON', wordnet:'party.n.04'])),
+     t(., '.', [from:33, to:34, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

@@ -1,0 +1,23 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'plays', [from:4, to:9, pos:'VBZ', lemma:'play', sem:'ENS', wordnet:'play.v.07', verbnet:['Theme','Agent']]),
+   ba(np,
+    fa(np,
+     t(np/n, 'the', [from:10, to:13, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'drums', [from:14, to:19, pos:'NNS', lemma:'drum', sem:'CON', wordnet:'drum.n.01'])),
+    conj(np\np,
+     t(conj, 'as~well~as', [from:20, to:30, pos:'VBZ', lemma:'as~well~as', sem:'AND', wordnet:'O']),
+     rp(np,
+      fa(np,
+       t(np/n, 'the', [from:31, to:34, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+       t(n, 'organ', [from:35, to:40, pos:'NN', lemma:'organ', sem:'CON', wordnet:'organ.n.05'])),
+      t(., '.', [from:40, to:41, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

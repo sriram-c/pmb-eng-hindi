@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'He', [from:0, to:2, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), '\'s', [from:2, to:4, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+   ba(s:adj\np,
+    t(np, 'much', [from:5, to:9, pos:'RB', lemma:'+', sem:'QUV', wordnet:'O']),
+    fa((s:adj\np)\np,
+     t(((s:adj\np)\np)/pp, 'younger', [from:10, to:17, pos:'JJR', lemma:'young', sem:'MOR', wordnet:'young.a.01', verbnet:['Value','Attribute']]),
+     fa(pp,
+      t(pp/np, 'than', [from:18, to:22, pos:'IN', lemma:'than', sem:'REL', wordnet:'O', verbnet:['Co-Theme']]),
+      rp(np,
+       lx(np, n,
+        t(n, 'Tom', [from:23, to:26, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+       t(., '.', [from:26, to:27, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))))).
+

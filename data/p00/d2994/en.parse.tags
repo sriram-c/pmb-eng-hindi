@@ -1,0 +1,19 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Mary', [from:0, to:4, pos:'NNP', lemma:'mary', sem:'PER', wordnet:'female.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:ng\np), 'is', [from:5, to:7, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+   fa(s:ng\np,
+    t((s:ng\np)/np, 'watering', [from:8, to:16, pos:'VBG', lemma:'water', sem:'EXG', wordnet:'water.v.02', verbnet:['Destination','Agent']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:17, to:20, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'garden', [from:21, to:27, pos:'NN', lemma:'garden', sem:'CON', wordnet:'garden.n.01'])),
+     t(., '.', [from:27, to:28, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

@@ -1,0 +1,19 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  ba(s:dcl\np,
+   t(s:dcl\np, 'played', [from:4, to:10, pos:'VBD', lemma:'play', sem:'EPS', wordnet:'play.v.05', verbnet:['Agent']]),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'with', [from:11, to:15, pos:'IN', lemma:'with', sem:'REL', wordnet:'O', verbnet:['Co-Agent']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'his', [antecedent:'0,3', from:16, to:19, pos:'PRP$', lemma:'male', sem:'HAS', wordnet:'male.n.02', verbnet:['Owner']]),
+      t(n, 'dog', [from:20, to:23, pos:'NN', lemma:'dog', sem:'CON', wordnet:'dog.n.01'])),
+     t(., '.', [from:23, to:24, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

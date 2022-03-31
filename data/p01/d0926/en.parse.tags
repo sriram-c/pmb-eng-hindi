@@ -1,0 +1,19 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:q,
+  fa(s:q/(s:b\np),
+   t((s:q/(s:b\np))/np, 'Do', [from:0, to:2, pos:'VBP', lemma:'do', sem:'NOW', wordnet:'O']),
+   t(np, 'you', [from:3, to:6, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O'])),
+  fa(s:b\np,
+   t((s:b\np)/np, 'remember', [from:7, to:15, pos:'VB', lemma:'remember', sem:'EXS', wordnet:'remember.v.01', verbnet:['Theme','Agent']]),
+   rp(np,
+    lx(np, n,
+     fa(n,
+      t(n/n, 'Mr.', [from:16, to:19, pos:'NNP', lemma:'mr', sem:'ROL', wordnet:'mr.n.01', verbnet:['Title']]),
+      t(n, 'Saito', [from:20, to:25, pos:'NNP', lemma:'saito', sem:'PER', wordnet:'male.n.02']))),
+    t(., '?', [from:25, to:26, pos:'.', lemma:'?', sem:'QUE', wordnet:'O']))))).
+

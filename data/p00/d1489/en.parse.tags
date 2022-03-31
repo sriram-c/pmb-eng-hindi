@@ -1,0 +1,26 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/(s:pt\np),
+    t((s:dcl\np)/(s:pt\np), 'have', [from:2, to:6, pos:'VBP', lemma:'have', sem:'NOW', wordnet:'O']),
+    t((s\np)\(s\np), 'n\'t', [from:6, to:9, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+   ba(s:pt\np,
+    fa(s:pt\np,
+     t((s:pt\np)/pp, 'been', [from:10, to:14, pos:'VBN', lemma:'be', sem:'EXT', wordnet:'be.v.03', verbnet:['Theme']]),
+     fa(pp,
+      t(pp/np, 'to', [from:15, to:17, pos:'TO', lemma:'to', sem:'REL', wordnet:'O', verbnet:['Location']]),
+      lx(np, n,
+       t(n, 'Boston', [from:18, to:24, pos:'NNP', lemma:'boston', sem:'GPE', wordnet:'city.n.01'])))),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/np, 'since', [from:25, to:30, pos:'IN', lemma:'since', sem:'REL', wordnet:'O', verbnet:['Start']]),
+     rp(np,
+      lx(np, n,
+       t(n, '2013', [from:31, to:35, pos:'CD', lemma:'2013', sem:'YOC', wordnet:'O'])),
+      t(., '.', [from:35, to:36, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

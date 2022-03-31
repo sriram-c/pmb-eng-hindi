@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:dcl,
+  ba(s:dcl,
+   fa(np,
+    t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+    t(n, 'car', [from:4, to:7, pos:'NN', lemma:'car', sem:'CON', wordnet:'car.n.01'])),
+   ba(s:dcl\np,
+    t(s:dcl\np, 'crashed', [from:8, to:15, pos:'VBD', lemma:'crash', sem:'EPS', wordnet:'crash.v.03', verbnet:['Patient']]),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/s:dcl, 'because', [from:16, to:23, pos:'IN', lemma:'because', sem:'SUB', wordnet:'O']),
+     ba(s:dcl,
+      fa(np,
+       t(np/n, 'the', [from:24, to:27, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+       t(n, 'driver', [from:28, to:34, pos:'NN', lemma:'driver', sem:'ROL', wordnet:'driver.n.01'])),
+      fa(s:dcl\np,
+       t((s:dcl\np)/(s:adj\np), 'was', [from:35, to:38, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+       t(s:adj\np, 'careless', [from:39, to:47, pos:'JJ', lemma:'careless', sem:'IST', wordnet:'careless.a.01', verbnet:['Attribute']])))))),
+  t(., '.', [from:47, to:48, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+

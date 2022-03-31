@@ -1,0 +1,19 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'We', [from:0, to:2, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/np,
+    t((s:dcl\np)/np, 'use', [from:3, to:6, pos:'VBP', lemma:'use', sem:'ENS', wordnet:'use.v.01', verbnet:['Theme','Agent']]),
+    t((s\np)\(s\np), 'really', [from:7, to:13, pos:'RB', lemma:'really', sem:'INT', wordnet:'really.r.01'])),
+   rp(np,
+    lx(np, n,
+     fa(n,
+      t(n/n, 'state-of-the-art', [from:14, to:30, pos:'JJ', lemma:'state-of-the-art', sem:'IST', wordnet:'state-of-the-art.a.01', verbnet:['Attribute']]),
+      t(n, 'equipment', [from:31, to:40, pos:'NN', lemma:'equipment', sem:'CON', wordnet:'equipment.n.01']))),
+    t(., '.', [from:40, to:41, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

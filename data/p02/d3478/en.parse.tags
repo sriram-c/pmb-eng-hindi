@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'He', [from:0, to:2, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:pss\np), 'was', [from:3, to:6, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+    t(s:pss\np, 'stabbed', [from:7, to:14, pos:'VBN', lemma:'stab', sem:'EXS', wordnet:'stab.v.01', verbnet:['Experiencer']])),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'in', [from:15, to:17, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Patient']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:18, to:21, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'back', [from:22, to:26, pos:'NN', lemma:'back', sem:'CON', wordnet:'back.n.01'])),
+     t(., '.', [from:26, to:27, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

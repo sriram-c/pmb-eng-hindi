@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:pt\np), 'has', [from:4, to:7, pos:'VBZ', lemma:'have', sem:'NOW', wordnet:'O']),
+    fa(s:pt\np,
+     t((s:pt\np)/np, 'visited', [from:8, to:15, pos:'VBN', lemma:'visit', sem:'EXT', wordnet:'visit.v.01', verbnet:['Destination','Theme']]),
+     lx(np, n,
+      t(n, 'Boston', [from:16, to:22, pos:'NNP', lemma:'boston', sem:'GPE', wordnet:'city.n.01'])))),
+   rp((s\np)\(s\np),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/n, 'three', [from:23, to:28, pos:'CD', lemma:'3', sem:'QUC', wordnet:'O', verbnet:['Frequency']]),
+     t(n, 'times', [from:29, to:34, pos:'NNS', lemma:'times', sem:'CON', wordnet:'times.n.03'])),
+    t(., '.', [from:34, to:35, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

@@ -1,0 +1,13 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Packing', [from:0, to:7, pos:'VBG', lemma:'pack', sem:'EXG', wordnet:'pack.v.01'])),
+  rp(s:dcl\np,
+   t(s:dcl\np, 'sucks', [from:8, to:13, pos:'NNS', lemma:'suck', sem:'ENS', wordnet:'suck.v.04', verbnet:['Stimulus']]),
+   t(., '.', [from:13, to:14, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+

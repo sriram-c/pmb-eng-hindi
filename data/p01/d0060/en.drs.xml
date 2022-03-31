@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- ø Two people are kickboxing and ø spectators are watching --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="from">0</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="tok">Two</tag>
+     <tag type="cat">n/n</tag>
+     <tag type="sym">2</tag>
+     <tag type="lemma">2</tag>
+     <tag type="from">0</tag>
+     <tag type="to">3</tag>
+     <tag type="pos">CD</tag>
+     <tag type="sem">QUC</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Quantity]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">people</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">person</tag>
+     <tag type="lemma">person</tag>
+     <tag type="from">4</tag>
+     <tag type="to">10</tag>
+     <tag type="pos">NNS</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">person.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">are</tag>
+     <tag type="cat">(s:dcl\np)/(s:ng\np)</tag>
+     <tag type="sym">be</tag>
+     <tag type="lemma">be</tag>
+     <tag type="from">11</tag>
+     <tag type="to">14</tag>
+     <tag type="pos">VBP</tag>
+     <tag type="sem">NOW</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="tok">kickboxing</tag>
+     <tag type="cat">s:ng\np</tag>
+     <tag type="sym">kickbox</tag>
+     <tag type="lemma">kickbox</tag>
+     <tag type="from">15</tag>
+     <tag type="to">25</tag>
+     <tag type="pos">VBG</tag>
+     <tag type="sem">EXG</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">and</tag>
+     <tag type="cat">conj:s:dcl</tag>
+     <tag type="sym">and</tag>
+     <tag type="lemma">and</tag>
+     <tag type="from">26</tag>
+     <tag type="to">29</tag>
+     <tag type="pos">CC</tag>
+     <tag type="sem">AND</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="from">30</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">spectators</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">spectator</tag>
+     <tag type="lemma">spectator</tag>
+     <tag type="from">30</tag>
+     <tag type="to">40</tag>
+     <tag type="pos">NNS</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">spectator.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1009">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">are</tag>
+     <tag type="cat">(s:dcl\np)/(s:ng\np)</tag>
+     <tag type="sym">be</tag>
+     <tag type="lemma">be</tag>
+     <tag type="from">41</tag>
+     <tag type="to">44</tag>
+     <tag type="pos">VBP</tag>
+     <tag type="sem">NOW</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1010">
+   <tags>
+     <tag type="tok">watching</tag>
+     <tag type="cat">s:ng\np</tag>
+     <tag type="sym">watch</tag>
+     <tag type="lemma">watch</tag>
+     <tag type="from">45</tag>
+     <tag type="to">53</tag>
+     <tag type="pos">VBG</tag>
+     <tag type="sem">EXG</tag>
+     <tag type="wordnet">watch.v.01</tag>
+     <tag type="verbnet" n="1">[Experiencer]</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <sdrs>
+  <constituents>
+   <constituent label="b1">
+    <tokens>
+     <token>Two</token>
+     <token>people</token>
+     <token>are</token>
+     <token>kickboxing</token>
+    </tokens>
+    <drs label="b1">
+     <domain>
+      <dr label="b1" name="x1" from="0" to="-1"></dr>
+      <dr label="b1" name="e1" from="15" to="25"></dr>
+      <dr label="b1" name="t1" from="11" to="14"></dr>
+     </domain>
+     <conds>
+      <cond label="b1">
+       <pred arg="x1" symbol="person" synset="person.n.01" from="4" to="10"></pred>
+      </cond>
+      <cond label="b1">
+       <rel arg1="x1" arg2="2" symbol="Quantity" framenet="Quantity" from="0" to="3"></rel>
+      </cond>
+      <cond label="b1">
+       <pred arg="t1" symbol="time" synset="time.n.08" from="11" to="14"></pred>
+      </cond>
+      <cond label="b1">
+       <comp symbol="EQU" arg1="t1" arg2="now" from="11" to="14"></comp>
+      </cond>
+      <cond label="b1">
+       <pred arg="e1" symbol="kickbox" synset="kickbox.v.01" from="15" to="25"></pred>
+      </cond>
+      <cond label="b1">
+       <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="11" to="14"></rel>
+      </cond>
+      <cond label="b1">
+       <rel arg1="e1" arg2="x1" symbol="Agent" framenet="Placing@Agent" from="15" to="25"></rel>
+      </cond>
+     </conds>
+    </drs>
+   </constituent>
+   <constituent label="b2">
+    <tokens>
+     <token>spectators</token>
+     <token>are</token>
+     <token>watching</token>
+    </tokens>
+    <drs label="b2">
+     <domain>
+      <dr label="b2" name="x2" from="30" to="-1"></dr>
+      <dr label="b2" name="e2" from="45" to="53"></dr>
+      <dr label="b1" name="t1" from="41" to="44"></dr>
+     </domain>
+     <conds>
+      <cond label="b2">
+       <pred arg="x2" symbol="spectator" synset="spectator.n.01" from="30" to="40"></pred>
+      </cond>
+      <cond label="b1">
+       <pred arg="t1" symbol="time" synset="time.n.08" from="41" to="44"></pred>
+      </cond>
+      <cond label="b1">
+       <comp symbol="EQU" arg1="t1" arg2="now" from="41" to="44"></comp>
+      </cond>
+      <cond label="b2">
+       <pred arg="e2" symbol="watch" synset="watch.v.01" from="45" to="53"></pred>
+      </cond>
+      <cond label="b2">
+       <rel arg1="e2" arg2="t1" symbol="Time" framenet="Time" from="41" to="44"></rel>
+      </cond>
+      <cond label="b2">
+       <rel arg1="e2" arg2="x2" symbol="Experiencer" framenet="Cause_impact@Impactee" from="45" to="53"></rel>
+      </cond>
+     </conds>
+    </drs>
+   </constituent>
+  </constituents>
+  <relations>
+   <drel arg1="b1" arg2="b2" sym="CONTINUATION" from="26" to="29"></drel>
+  </relations>
+ </sdrs>
+</xdrs>
+</xdrs-output>

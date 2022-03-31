@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 10 September 2021, 09:36:38)'">
+<!-- ø Bill tapped me on the shoulder . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="from">0</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">Bill</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">bill</tag>
+     <tag type="lemma">bill</tag>
+     <tag type="from">0</tag>
+     <tag type="to">4</tag>
+     <tag type="pos">NNP</tag>
+     <tag type="sem">PER</tag>
+     <tag type="wordnet">male.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="tok">tapped</tag>
+     <tag type="cat">((s:dcl\np)/pp)/np</tag>
+     <tag type="sym">tap</tag>
+     <tag type="lemma">tap</tag>
+     <tag type="from">5</tag>
+     <tag type="to">11</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="sem">EPS</tag>
+     <tag type="wordnet">tap.v.03</tag>
+     <tag type="verbnet" n="2">[Experiencer,Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">me</tag>
+     <tag type="cat">np</tag>
+     <tag type="sym">speaker</tag>
+     <tag type="lemma">speaker</tag>
+     <tag type="from">12</tag>
+     <tag type="to">14</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="sem">PRO</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="tok">on</tag>
+     <tag type="cat">pp/np</tag>
+     <tag type="sym">on</tag>
+     <tag type="lemma">on</tag>
+     <tag type="from">15</tag>
+     <tag type="to">17</tag>
+     <tag type="pos">IN</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Patient]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">the</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">the</tag>
+     <tag type="lemma">the</tag>
+     <tag type="from">18</tag>
+     <tag type="to">21</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">shoulder</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">shoulder</tag>
+     <tag type="lemma">shoulder</tag>
+     <tag type="from">22</tag>
+     <tag type="to">30</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">shoulder.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">30</tag>
+     <tag type="to">31</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b2">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="-1"></dr>
+   <dr label="b2" name="x2" from="12" to="14"></dr>
+   <dr label="b2" name="e1" from="5" to="11"></dr>
+   <dr label="b3" name="x3" from="18" to="21"></dr>
+   <dr label="b2" name="t1" from="5" to="11"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="male" synset="male.n.02" from="0" to="4"></pred>
+   </cond>
+   <cond label="b1">
+    <named arg="x1" symbol="bill" from="0" to="4"></named>
+   </cond>
+   <cond label="b2">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="5" to="11"></pred>
+   </cond>
+   <cond label="b2">
+    <comp symbol="TPR" arg1="t1" arg2="now" from="5" to="11"></comp>
+   </cond>
+   <cond label="b2">
+    <pred arg="e1" symbol="tap" synset="tap.v.03" from="5" to="11"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="5" to="11"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x3" symbol="Patient" framenet="Ingestion@Ingestibles" from="15" to="17"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x2" symbol="Experiencer" framenet="Cause_impact@Impactee" from="5" to="11"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x1" symbol="Agent" framenet="Cause_harm@Agent" from="5" to="11"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="x2" symbol="person" synset="person.n.01" from="12" to="14"></pred>
+   </cond>
+   <cond label="b2">
+    <comp symbol="EQU" arg1="x2" arg2="speaker" from="12" to="14"></comp>
+   </cond>
+   <cond label="b3">
+    <pred arg="x3" symbol="shoulder" synset="shoulder.n.01" from="22" to="30"></pred>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

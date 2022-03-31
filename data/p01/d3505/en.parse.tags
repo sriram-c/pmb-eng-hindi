@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/(s:b\np),
+    t((s:dcl\np)/(s:b\np), 'does', [from:4, to:8, pos:'VBZ', lemma:'do', sem:'NOW', wordnet:'O']),
+    t((s\np)\(s\np), 'n\'t', [from:8, to:11, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+   ba(s:b\np,
+    ba(s:b\np,
+     t(s:b\np, 'live', [from:12, to:16, pos:'VB', lemma:'live', sem:'EXS', wordnet:'live.v.01', verbnet:['Theme']]),
+     fa((s\np)\(s\np),
+      t(((s\np)\(s\np))/np, 'in', [from:17, to:19, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Location']]),
+      lx(np, n,
+       t(n, 'Boston', [from:20, to:26, pos:'NNP', lemma:'boston', sem:'GPE', wordnet:'city.n.01'])))),
+    rp((s\np)\(s\np),
+     t((s\np)\(s\np), 'anymore', [from:27, to:34, pos:'RB', lemma:'anymore', sem:'ALT', wordnet:'O']),
+     t(., '.', [from:34, to:35, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

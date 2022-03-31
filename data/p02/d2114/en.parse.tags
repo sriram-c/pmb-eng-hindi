@@ -1,0 +1,14 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'Farting', [from:0, to:7, pos:'NN', lemma:'fart', sem:'EXG', wordnet:'fart.v.01']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), 'is', [from:8, to:10, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+   rp(s:adj\np,
+    t(s:adj\np, 'rude', [from:11, to:15, pos:'NN', lemma:'rude', sem:'IST', wordnet:'rude.a.01', verbnet:['Attribute']]),
+    t(., '.', [from:15, to:16, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

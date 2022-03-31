@@ -1,0 +1,27 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:b\np,
+  fa(s:b\np,
+   t((s:b\np)/np, 'Forgive', [from:0, to:7, pos:'VB', lemma:'forgive', sem:'EXS', wordnet:'forgive.v.01', verbnet:['Theme','Agent']]),
+   t(np, 'me', [from:8, to:10, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O'])),
+  fa((s:b\np)\(s:b\np),
+   t(((s:b\np)\(s:b\np))/s:dcl, 'if', [from:11, to:13, pos:'IN', lemma:'if', sem:'SUB', wordnet:'O']),
+   ba(s:dcl,
+    t(np, 'I', [from:14, to:15, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+    fa(s:dcl\np,
+     bxc((s:dcl\np)/(s:pt\np),
+      t((s:dcl\np)/(s:pt\np), 'have', [from:16, to:20, pos:'VBP', lemma:'have', sem:'NOW', wordnet:'O']),
+      t((s\np)\(s\np), 'n\'t', [from:20, to:23, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+     ba(s:pt\np,
+      fa(s:pt\np,
+       t((s:pt\np)/np, 'cooked', [from:24, to:30, pos:'VBN', lemma:'cook', sem:'EXT', wordnet:'cook.v.02', verbnet:['Product','Agent']]),
+       lx(np, n,
+        t(n, 'supper', [from:31, to:37, pos:'NN', lemma:'supper', sem:'CON', wordnet:'supper.n.01']))),
+      rp((s\np)\(s\np),
+       t((s\np)\(s\np), 'well', [from:38, to:42, pos:'RB', lemma:'well', sem:'IST', wordnet:'O', verbnet:['Manner']]),
+       t(., '.', [from:42, to:43, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))))).
+

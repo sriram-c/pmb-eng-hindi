@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np:thr, 'There', [from:0, to:5, pos:'EX', lemma:'there', sem:'NIL', wordnet:'O']),
+  fa(s:dcl\np,
+   fa((s:dcl\np)/(s:ng\np),
+    t(((s:dcl\np)/(s:ng\np))/np, 'is', [from:6, to:8, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+    fa(np,
+     t(np/n, 'no', [from:9, to:11, pos:'DT', lemma:'no', sem:'NOT', wordnet:'O']),
+     t(n, 'man', [from:12, to:15, pos:'NN', lemma:'man', sem:'CON', wordnet:'man.n.01']))),
+   fa(s:ng\np,
+    t((s:ng\np)/np, 'playing', [from:16, to:23, pos:'VBG', lemma:'play', sem:'EXG', wordnet:'play.v.07', verbnet:['Theme','Agent']]),
+    lx(np, n,
+     fa(n,
+      t(n/n, 'two', [from:24, to:27, pos:'CD', lemma:'2', sem:'QUC', wordnet:'O', verbnet:['Quantity']]),
+      t(n, 'keyboards', [from:28, to:37, pos:'NNS', lemma:'keyboard', sem:'CON', wordnet:'keyboard.n.01']))))))).
+

@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'man', [from:4, to:7, pos:'NN', lemma:'man', sem:'CON', wordnet:'man.n.01'])),
+  fa(s:dcl\np,
+   fa((s:dcl\np)/pp,
+    t(((s:dcl\np)/pp)/np, 'chased', [from:8, to:14, pos:'VBD', lemma:'chase', sem:'EPS', wordnet:'chase.v.01', verbnet:['Theme','Agent']]),
+    fa(np,
+     t(np/n, 'the', [from:15, to:18, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'robber', [from:19, to:25, pos:'NN', lemma:'robber', sem:'ROL', wordnet:'robber.n.01']))),
+   rp(pp,
+    fa(pp,
+     t(pp/np, 'into', [from:26, to:30, pos:'IN', lemma:'into', sem:'REL', wordnet:'O', verbnet:['Destination']]),
+     fa(np,
+      t(np/n, 'the', [from:31, to:34, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'street', [from:35, to:41, pos:'NN', lemma:'street', sem:'CON', wordnet:'street.n.01']))),
+    t(., '.', [from:41, to:42, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

@@ -1,0 +1,26 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Palestine', [from:0, to:9, pos:'NNP', lemma:'palestine', sem:'GPE', wordnet:'region.n.03'])),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:pss\np), 'is', [from:10, to:12, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+    fa(s:pss\np,
+     t((s:pss\np)/np, 'called', [from:13, to:19, pos:'VBN', lemma:'call', sem:'EXS', wordnet:'call.v.01', verbnet:['Result','Theme']]),
+     ba(np,
+      fa(np,
+       t(np/np, '\"', [from:20, to:21, pos:'LQU', lemma:'\"', sem:'NIL', wordnet:'O']),
+       t(np, 'Filastin', [from:21, to:29, pos:'NNP', lemma:'filastin', sem:'LIT', wordnet:'O'])),
+      t(np\np, '\"', [from:29, to:30, pos:'RQU', lemma:'\"', sem:'NIL', wordnet:'O'])))),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'in', [from:31, to:33, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Context']]),
+    rp(np,
+     lx(np, n,
+      t(n, 'Arabic', [from:34, to:40, pos:'NNP', lemma:'arabic', sem:'CON', wordnet:'arabic.n.01'])),
+     t(., '.', [from:40, to:41, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

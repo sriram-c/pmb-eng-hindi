@@ -1,0 +1,25 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Sue', [from:0, to:3, pos:'NNP', lemma:'sue', sem:'PER', wordnet:'female.n.02'])),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    fa((s:dcl\np)/np,
+     t(((s:dcl\np)/np)/pr, 'picked', [from:4, to:10, pos:'VBD', lemma:'pick~up', sem:'EPS', wordnet:'pick_up.v.02', verbnet:['Theme','Agent']]),
+     t(pr, 'up', [from:11, to:13, pos:'RP', lemma:'up', sem:'REL', wordnet:'O'])),
+    fa(np,
+     t(np/n, 'a', [from:14, to:15, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+     t(n, 'pencil', [from:16, to:22, pos:'NN', lemma:'pencil', sem:'CON', wordnet:'pencil.n.01']))),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'off', [from:23, to:26, pos:'IN', lemma:'off', sem:'REL', wordnet:'O', verbnet:['Source']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:27, to:30, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'floor', [from:31, to:36, pos:'NN', lemma:'floor', sem:'CON', wordnet:'floor.n.01'])),
+     t(., '.', [from:36, to:37, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

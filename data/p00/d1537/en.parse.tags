@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'girl', [from:4, to:8, pos:'NN', lemma:'girl', sem:'CON', wordnet:'girl.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), 'was', [from:9, to:12, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+   ba(s:adj\np,
+    fa(s:adj\np,
+     t((s\np)/(s\np), 'visibly', [from:13, to:20, pos:'RB', lemma:'visibly', sem:'INT', wordnet:'visibly.r.01']),
+     t(s:adj\np, 'shaken', [from:21, to:27, pos:'VBN', lemma:'shaken', sem:'IST', wordnet:'shaken.a.01', verbnet:['Attribute']])),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/np, 'after', [from:28, to:33, pos:'IN', lemma:'after', sem:'REL', wordnet:'O', verbnet:['Time']]),
+     rp(np,
+      fa(np,
+       t(np/n, 'the', [from:34, to:37, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+       t(n, 'accident', [from:38, to:46, pos:'NN', lemma:'accident', sem:'CON', wordnet:'accident.n.01'])),
+      t(., '.', [from:46, to:47, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

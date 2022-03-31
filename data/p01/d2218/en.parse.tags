@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   fa(n,
+    t(n/n, 'Mongolian', [from:4, to:13, pos:'JJ', lemma:'mongolia', sem:'GPO', wordnet:'country.n.02', verbnet:['Source']]),
+    t(n, 'army', [from:14, to:18, pos:'NN', lemma:'army', sem:'CON', wordnet:'army.n.01']))),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'approached', [from:19, to:29, pos:'VBD', lemma:'approach', sem:'EPS', wordnet:'approach.v.01', verbnet:['Destination','Theme']]),
+   rp(np,
+    fa(np,
+     t(np/n, 'the', [from:30, to:33, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'city', [from:34, to:38, pos:'NN', lemma:'city', sem:'CON', wordnet:'city.n.01'])),
+    t(., '.', [from:38, to:39, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

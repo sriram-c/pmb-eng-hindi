@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- The suit 's made of ø very rough material . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">The</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">the</tag>
+     <tag type="lemma">the</tag>
+     <tag type="from">0</tag>
+     <tag type="to">3</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">suit</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">suit</tag>
+     <tag type="lemma">suit</tag>
+     <tag type="from">4</tag>
+     <tag type="to">8</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">suit.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">'s</tag>
+     <tag type="cat">(s:dcl\np)/(s:b\np)</tag>
+     <tag type="sym">be</tag>
+     <tag type="lemma">be</tag>
+     <tag type="from">8</tag>
+     <tag type="to">10</tag>
+     <tag type="pos">POS</tag>
+     <tag type="sem">NOW</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="tok">made</tag>
+     <tag type="cat">(s:b\np)/pp</tag>
+     <tag type="sym">make</tag>
+     <tag type="lemma">make</tag>
+     <tag type="from">11</tag>
+     <tag type="to">15</tag>
+     <tag type="pos">VBN</tag>
+     <tag type="sem">EXS</tag>
+     <tag type="wordnet">make.v.03</tag>
+     <tag type="verbnet" n="1">[Result]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="tok">of</tag>
+     <tag type="cat">pp/np</tag>
+     <tag type="sym">of</tag>
+     <tag type="lemma">of</tag>
+     <tag type="from">16</tag>
+     <tag type="to">18</tag>
+     <tag type="pos">IN</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Material]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="from">19</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">very</tag>
+     <tag type="cat">(n/n)/(s:adj\np)</tag>
+     <tag type="sym">very</tag>
+     <tag type="lemma">very</tag>
+     <tag type="from">19</tag>
+     <tag type="to">23</tag>
+     <tag type="pos">RB</tag>
+     <tag type="sem">INT</tag>
+     <tag type="wordnet">very.r.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="tok">rough</tag>
+     <tag type="cat">s:adj\np</tag>
+     <tag type="sym">rough</tag>
+     <tag type="lemma">rough</tag>
+     <tag type="from">24</tag>
+     <tag type="to">29</tag>
+     <tag type="pos">JJ</tag>
+     <tag type="sem">IST</tag>
+     <tag type="wordnet">rough.a.01</tag>
+     <tag type="verbnet" n="1">[Attribute]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1009">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">material</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">material</tag>
+     <tag type="lemma">material</tag>
+     <tag type="from">30</tag>
+     <tag type="to">38</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">material.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1010">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">38</tag>
+     <tag type="to">39</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b2">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="3"></dr>
+   <dr label="b2" name="e1" from="11" to="15"></dr>
+   <dr label="b2" name="x2" from="19" to="-1"></dr>
+   <dr label="b2" name="s1" from="24" to="29"></dr>
+   <dr label="b2" name="s2" from="19" to="23"></dr>
+   <dr label="b2" name="t1" from="8" to="10"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="suit" synset="suit.n.01" from="4" to="8"></pred>
+   </cond>
+   <cond label="b2">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="8" to="10"></pred>
+   </cond>
+   <cond label="b2">
+    <comp symbol="EQU" arg1="t1" arg2="now" from="8" to="10"></comp>
+   </cond>
+   <cond label="b2">
+    <pred arg="e1" symbol="make" synset="make.v.03" from="11" to="15"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="8" to="10"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x2" symbol="Material" framenet="Building@Components" from="16" to="18"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x1" symbol="Result" framenet="Achieving_first@New_idea" from="11" to="15"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="s2" symbol="very" synset="very.r.01" from="19" to="23"></pred>
+   </cond>
+   <cond label="b2">
+    <pred arg="s1" symbol="rough" synset="rough.a.01" from="24" to="29"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="s1" arg2="s2" symbol="Degree" framenet="Degree" from="19" to="23"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="s1" arg2="x2" symbol="AttributeOf" framenet="AttributeOf" from="24" to="29"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="x2" symbol="material" synset="material.n.01" from="30" to="38"></pred>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

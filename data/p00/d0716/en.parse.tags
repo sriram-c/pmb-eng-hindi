@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Alfred~Nobel', [from:0, to:12, pos:'NNP', lemma:'alfred~nobel', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'is', [from:13, to:15, pos:'VBZ', lemma:'be', sem:'ENS', wordnet:'be.v.02', verbnet:['Co-Theme','Theme']]),
+   rp(np,
+    fa(np,
+     t(np/n, 'the', [from:16, to:19, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     fa(n,
+      t(n/pp, 'inventor', [from:20, to:28, pos:'NN', lemma:'inventor', sem:'ROL', wordnet:'inventor.n.01']),
+      fa(pp,
+       t(pp/np, 'of', [from:29, to:31, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['Result']]),
+       lx(np, n,
+        t(n, 'dynamite', [from:32, to:40, pos:'NN', lemma:'dynamite', sem:'CON', wordnet:'dynamite.n.01']))))),
+    t(., '.', [from:40, to:41, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

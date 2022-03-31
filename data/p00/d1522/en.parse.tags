@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'door', [from:4, to:8, pos:'NN', lemma:'door', sem:'CON', wordnet:'door.n.01'])),
+  rp(s:dcl\np,
+   ba(s:dcl\np,
+    fa(s:dcl\np,
+     t((s:dcl\np)/(s:ng\np), 'is', [from:9, to:11, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+     t(s:ng\np, 'opening', [from:12, to:19, pos:'VBG', lemma:'open', sem:'EXG', wordnet:'open.v.01', verbnet:['Theme']])),
+    t((s\np)\(s\np), 'now', [from:20, to:23, pos:'RB', lemma:'now', sem:'NOW', wordnet:'O'])),
+   t(., '.', [from:23, to:24, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+

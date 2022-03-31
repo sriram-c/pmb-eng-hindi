@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'car', [from:4, to:7, pos:'NN', lemma:'car', sem:'CON', wordnet:'car.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:ng\np), 'is', [from:8, to:10, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+   fa(s:ng\np,
+    t((s:ng\np)/np, 'exceeding', [from:11, to:20, pos:'VBG', lemma:'exceed', sem:'EXG', wordnet:'exceed.v.01', verbnet:['Theme','Agent']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:21, to:24, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'speed~limit', [from:25, to:36, pos:'NN', lemma:'speed~limit', sem:'CON', wordnet:'speed_limit.n.01'])),
+     t(., '.', [from:36, to:37, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

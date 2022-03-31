@@ -1,0 +1,14 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:dcl,
+  ba(s:dcl,
+   t(np, 'Everyone', [from:0, to:8, pos:'DT', lemma:'person', sem:'AND', wordnet:'person.n.01']),
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:pss\np), 'was', [from:9, to:12, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+    t(s:pss\np, 'killed', [from:13, to:19, pos:'VBN', lemma:'kill', sem:'EXS', wordnet:'kill.v.01', verbnet:['Patient']]))),
+  t(., '.', [from:19, to:20, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+

@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'hunter', [from:4, to:10, pos:'NN', lemma:'hunter', sem:'ROL', wordnet:'hunter.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'shoots', [from:11, to:17, pos:'VBZ', lemma:'shoot', sem:'ENS', wordnet:'shoot.v.02', verbnet:['Patient','Agent']]),
+   ba(np,
+    lx(np, n,
+     t(n, 'stags', [from:18, to:23, pos:'NNS', lemma:'stag', sem:'CON', wordnet:'stag.n.01'])),
+    rp(np\np,
+     conj(np\np,
+      t(conj, 'and', [from:24, to:27, pos:'CC', lemma:'and', sem:'AND', wordnet:'O']),
+      lx(np, n,
+       t(n, 'hares', [from:28, to:33, pos:'NNS', lemma:'hare', sem:'CON', wordnet:'hare.n.01']))),
+     t(., '.', [from:33, to:34, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

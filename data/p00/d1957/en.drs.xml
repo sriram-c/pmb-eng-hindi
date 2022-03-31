@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- I know that ø John is honest . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">I</tag>
+     <tag type="cat">np</tag>
+     <tag type="sym">speaker</tag>
+     <tag type="lemma">speaker</tag>
+     <tag type="from">0</tag>
+     <tag type="to">1</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="sem">PRO</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="tok">know</tag>
+     <tag type="cat">(s:dcl\np)/s:em</tag>
+     <tag type="sym">know</tag>
+     <tag type="lemma">know</tag>
+     <tag type="from">2</tag>
+     <tag type="to">6</tag>
+     <tag type="pos">VBP</tag>
+     <tag type="sem">ENS</tag>
+     <tag type="wordnet">know.v.01</tag>
+     <tag type="verbnet" n="2">[Stimulus,Experiencer]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">that</tag>
+     <tag type="cat">s:em/s:dcl</tag>
+     <tag type="sym">that</tag>
+     <tag type="lemma">that</tag>
+     <tag type="from">7</tag>
+     <tag type="to">11</tag>
+     <tag type="pos">IN</tag>
+     <tag type="sem">SUB</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="from">12</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">John</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">john</tag>
+     <tag type="lemma">john</tag>
+     <tag type="from">12</tag>
+     <tag type="to">16</tag>
+     <tag type="pos">NNP</tag>
+     <tag type="sem">PER</tag>
+     <tag type="wordnet">male.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">is</tag>
+     <tag type="cat">(s:dcl\np)/(s:adj\np)</tag>
+     <tag type="sym">be</tag>
+     <tag type="lemma">be</tag>
+     <tag type="from">17</tag>
+     <tag type="to">19</tag>
+     <tag type="pos">VBZ</tag>
+     <tag type="sem">NOW</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="tok">honest</tag>
+     <tag type="cat">s:adj\np</tag>
+     <tag type="sym">honest</tag>
+     <tag type="lemma">honest</tag>
+     <tag type="from">20</tag>
+     <tag type="to">26</tag>
+     <tag type="pos">JJ</tag>
+     <tag type="sem">IST</tag>
+     <tag type="wordnet">honest.a.01</tag>
+     <tag type="verbnet" n="1">[Attribute]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">26</tag>
+     <tag type="to">27</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <sdrs>
+  <constituents>
+   <constituent label="b1">
+    <tokens>
+     <token>I</token>
+     <token>know</token>
+    </tokens>
+    <drs label="b1">
+     <domain>
+      <dr label="b1" name="x1" from="0" to="1"></dr>
+      <dr label="b1" name="e1" from="2" to="6"></dr>
+      <dr label="b1" name="t1" from="2" to="6"></dr>
+     </domain>
+     <conds>
+      <cond label="b1">
+       <pred arg="x1" symbol="person" synset="person.n.01" from="0" to="1"></pred>
+      </cond>
+      <cond label="b1">
+       <comp symbol="EQU" arg1="x1" arg2="speaker" from="0" to="1"></comp>
+      </cond>
+      <cond label="b1">
+       <pred arg="t1" symbol="time" synset="time.n.08" from="2" to="6"></pred>
+      </cond>
+      <cond label="b1">
+       <comp symbol="EQU" arg1="t1" arg2="now" from="2" to="6"></comp>
+      </cond>
+      <cond label="b1">
+       <pred arg="e1" symbol="know" synset="know.v.01" from="2" to="6"></pred>
+      </cond>
+      <cond label="b1">
+       <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="2" to="6"></rel>
+      </cond>
+      <cond label="b1">
+       <rel arg1="e1" arg2="x1" symbol="Experiencer" framenet="Experiencer" from="2" to="6"></rel>
+      </cond>
+      <cond label="b1">
+       <rel arg1="e1" arg2="b3" symbol="Proposition" framenet="Proposition" from="2" to="6"></rel>
+      </cond>
+     </conds>
+    </drs>
+   </constituent>
+   <constituent label="b3">
+    <tokens>
+     <token>John</token>
+     <token>is</token>
+     <token>honest</token>
+     <token>.</token>
+    </tokens>
+    <drs label="b3">
+     <domain>
+      <dr label="b2" name="x2" from="12" to="-1"></dr>
+      <dr label="b3" name="s1" from="20" to="26"></dr>
+      <dr label="b1" name="t1" from="17" to="19"></dr>
+     </domain>
+     <conds>
+      <cond label="b2">
+       <pred arg="x2" symbol="male" synset="male.n.02" from="12" to="16"></pred>
+      </cond>
+      <cond label="b2">
+       <named arg="x2" symbol="john" from="12" to="16"></named>
+      </cond>
+      <cond label="b1">
+       <pred arg="t1" symbol="time" synset="time.n.08" from="17" to="19"></pred>
+      </cond>
+      <cond label="b1">
+       <comp symbol="EQU" arg1="t1" arg2="now" from="17" to="19"></comp>
+      </cond>
+      <cond label="b3">
+       <pred arg="s1" symbol="honest" synset="honest.a.01" from="20" to="26"></pred>
+      </cond>
+      <cond label="b3">
+       <rel arg1="s1" arg2="t1" symbol="Time" framenet="Time" from="17" to="19"></rel>
+      </cond>
+      <cond label="b3">
+       <rel arg1="s1" arg2="x2" symbol="AttributeOf" framenet="AttributeOf" from="20" to="26"></rel>
+      </cond>
+     </conds>
+    </drs>
+   </constituent>
+  </constituents>
+  <relations>
+   <drel arg1="b1" arg2="b3" sym="ATTRIBUTION" from="0" to="0"></drel>
+  </relations>
+ </sdrs>
+</xdrs>
+</xdrs-output>

@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:ng\np), 'was', [from:2, to:5, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+   ba(s:ng\np,
+    fa(s:ng\np,
+     t((s:ng\np)/np, 'having', [from:6, to:12, pos:'VBG', lemma:'have', sem:'EXG', wordnet:'have.v.06', verbnet:['Patient','Agent']]),
+     lx(np, n,
+      t(n, 'dinner', [from:13, to:19, pos:'NN', lemma:'dinner', sem:'CON', wordnet:'dinner.n.01']))),
+    rp((s:ng\np)\(s:ng\np),
+     fa((s:ng\np)\(s:ng\np),
+      t(((s:ng\np)\(s:ng\np))/np, 'with', [from:20, to:24, pos:'IN', lemma:'with', sem:'REL', wordnet:'O', verbnet:['Co-Agent']]),
+      lx(np, n,
+       t(n, 'Tom', [from:25, to:28, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02']))),
+     t(., '.', [from:28, to:29, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

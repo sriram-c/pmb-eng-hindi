@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- ø Alfred~Nobel is the inventor of ø dynamite . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="from">0</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">Alfred~Nobel</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">alfred~nobel</tag>
+     <tag type="lemma">alfred~nobel</tag>
+     <tag type="from">0</tag>
+     <tag type="to">12</tag>
+     <tag type="pos">NNP</tag>
+     <tag type="sem">PER</tag>
+     <tag type="wordnet">male.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="tok">is</tag>
+     <tag type="cat">(s:dcl\np)/np</tag>
+     <tag type="sym">be</tag>
+     <tag type="lemma">be</tag>
+     <tag type="from">13</tag>
+     <tag type="to">15</tag>
+     <tag type="pos">VBZ</tag>
+     <tag type="sem">ENS</tag>
+     <tag type="wordnet">be.v.02</tag>
+     <tag type="verbnet" n="2">[Co-Theme,Theme]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">the</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">the</tag>
+     <tag type="lemma">the</tag>
+     <tag type="from">16</tag>
+     <tag type="to">19</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">inventor</tag>
+     <tag type="cat">n/pp</tag>
+     <tag type="sym">inventor</tag>
+     <tag type="lemma">inventor</tag>
+     <tag type="from">20</tag>
+     <tag type="to">28</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">ROL</tag>
+     <tag type="wordnet">inventor.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="tok">of</tag>
+     <tag type="cat">pp/np</tag>
+     <tag type="sym">of</tag>
+     <tag type="lemma">of</tag>
+     <tag type="from">29</tag>
+     <tag type="to">31</tag>
+     <tag type="pos">IN</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Result]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="from">32</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">dynamite</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">dynamite</tag>
+     <tag type="lemma">dynamite</tag>
+     <tag type="from">32</tag>
+     <tag type="to">40</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">dynamite.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1009">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">40</tag>
+     <tag type="to">41</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b3">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="-1"></dr>
+   <dr label="b2" name="x2" from="16" to="19"></dr>
+   <dr label="b2" name="x3" from="20" to="28"></dr>
+   <dr label="b2" name="x4" from="32" to="-1"></dr>
+   <dr label="b3" name="e1" from="13" to="15"></dr>
+   <dr label="b3" name="t1" from="13" to="15"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="male" synset="male.n.02" from="0" to="12"></pred>
+   </cond>
+   <cond label="b1">
+    <named arg="x1" symbol="alfred~nobel" from="0" to="12"></named>
+   </cond>
+   <cond label="b3">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="13" to="15"></pred>
+   </cond>
+   <cond label="b3">
+    <comp symbol="EQU" arg1="t1" arg2="now" from="13" to="15"></comp>
+   </cond>
+   <cond label="b3">
+    <pred arg="e1" symbol="be" synset="be.v.02" from="13" to="15"></pred>
+   </cond>
+   <cond label="b3">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="13" to="15"></rel>
+   </cond>
+   <cond label="b3">
+    <rel arg1="e1" arg2="x2" symbol="Co-Theme" framenet="Replacing@New" from="13" to="15"></rel>
+   </cond>
+   <cond label="b3">
+    <rel arg1="e1" arg2="x1" symbol="Theme" framenet="Placing@Theme" from="13" to="15"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="x2" symbol="person" synset="person.n.01" from="20" to="28"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="x2" arg2="x3" symbol="Role" framenet="Role" from="20" to="28"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="x3" symbol="inventor" synset="inventor.n.01" from="20" to="28"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="x3" arg2="x4" symbol="Result" framenet="Filling@Result" from="29" to="31"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="x4" symbol="dynamite" synset="dynamite.n.01" from="32" to="40"></pred>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

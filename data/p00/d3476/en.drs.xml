@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 10 September 2021, 09:36:38)'">
+<!-- I love ø thick , creamy mushroom soup . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">I</tag>
+     <tag type="cat">np</tag>
+     <tag type="sym">speaker</tag>
+     <tag type="lemma">speaker</tag>
+     <tag type="from">0</tag>
+     <tag type="to">1</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="sem">PRO</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="tok">love</tag>
+     <tag type="cat">(s:dcl\np)/np</tag>
+     <tag type="sym">love</tag>
+     <tag type="lemma">love</tag>
+     <tag type="from">2</tag>
+     <tag type="to">6</tag>
+     <tag type="pos">VBP</tag>
+     <tag type="sem">ENS</tag>
+     <tag type="wordnet">love.v.01</tag>
+     <tag type="verbnet" n="2">[Stimulus,Experiencer]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="from">7</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="tok">thick</tag>
+     <tag type="cat">n/n</tag>
+     <tag type="sym">thick</tag>
+     <tag type="lemma">thick</tag>
+     <tag type="from">7</tag>
+     <tag type="to">12</tag>
+     <tag type="pos">JJ</tag>
+     <tag type="sem">IST</tag>
+     <tag type="wordnet">thick.a.03</tag>
+     <tag type="verbnet" n="1">[Attribute]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">,</tag>
+     <tag type="cat">conj:n/n</tag>
+     <tag type="sym">,</tag>
+     <tag type="lemma">,</tag>
+     <tag type="from">12</tag>
+     <tag type="to">13</tag>
+     <tag type="pos">,</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="tok">creamy</tag>
+     <tag type="cat">n/n</tag>
+     <tag type="sym">creamy</tag>
+     <tag type="lemma">creamy</tag>
+     <tag type="from">14</tag>
+     <tag type="to">20</tag>
+     <tag type="pos">JJ</tag>
+     <tag type="sem">IST</tag>
+     <tag type="wordnet">creamy.a.02</tag>
+     <tag type="verbnet" n="1">[Attribute]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="tok">mushroom</tag>
+     <tag type="cat">n/n</tag>
+     <tag type="sym">mushroom</tag>
+     <tag type="lemma">mushroom</tag>
+     <tag type="from">21</tag>
+     <tag type="to">29</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">mushroom.n.01</tag>
+     <tag type="verbnet" n="1">[MadeOf]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">soup</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">soup</tag>
+     <tag type="lemma">soup</tag>
+     <tag type="from">30</tag>
+     <tag type="to">34</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">soup.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1009">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">34</tag>
+     <tag type="to">35</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b1">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="1"></dr>
+   <dr label="b1" name="x2" from="7" to="-1"></dr>
+   <dr label="b1" name="s1" from="7" to="12"></dr>
+   <dr label="b1" name="x3" from="21" to="29"></dr>
+   <dr label="b1" name="s2" from="14" to="20"></dr>
+   <dr label="b1" name="x4" from="21" to="29"></dr>
+   <dr label="b1" name="e1" from="2" to="6"></dr>
+   <dr label="b1" name="t1" from="2" to="6"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="person" synset="person.n.01" from="0" to="1"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="EQU" arg1="x1" arg2="speaker" from="0" to="1"></comp>
+   </cond>
+   <cond label="b1">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="2" to="6"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="EQU" arg1="t1" arg2="now" from="2" to="6"></comp>
+   </cond>
+   <cond label="b1">
+    <pred arg="e1" symbol="love" synset="love.v.01" from="2" to="6"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="2" to="6"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x2" symbol="Stimulus" framenet="Feeling@Emotion" from="2" to="6"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x1" symbol="Experiencer" framenet="Feeling@Experiencer" from="2" to="6"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="s1" symbol="thick" synset="thick.a.03" from="7" to="12"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="s1" arg2="x2" symbol="AttributeOf" framenet="AttributeOf" from="7" to="12"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="s2" symbol="creamy" synset="creamy.a.02" from="14" to="20"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="s2" arg2="x2" symbol="AttributeOf" framenet="AttributeOf" from="14" to="20"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="x3" symbol="mushroom" synset="mushroom.n.01" from="21" to="29"></pred>
+   </cond>
+   <cond label="b1">
+    <pred arg="x4" symbol="mushroom" synset="mushroom.n.01" from="21" to="29"></pred>
+   </cond>
+   <cond label="b1">
+    <pred arg="x2" symbol="soup" synset="soup.n.01" from="30" to="34"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x2" arg2="x4" symbol="MadeOf" framenet="MadeOf" from="21" to="29"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x2" arg2="x3" symbol="MadeOf" framenet="MadeOf" from="21" to="29"></rel>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

@@ -1,0 +1,29 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Bob', [from:0, to:3, pos:'NNP', lemma:'bob', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   fa((s:dcl\np)/pp,
+    t(((s:dcl\np)/pp)/np, 'charged', [from:4, to:11, pos:'VBD', lemma:'charge', sem:'EPS', wordnet:'charge.v.03', verbnet:['Asset','Agent']]),
+    lx(np, n,
+     fa(n,
+      t(n/n, '3', [from:12, to:13, pos:'CD', lemma:'3', sem:'QUC', wordnet:'O', verbnet:['Quantity']]),
+      ba(n,
+       t(n, 'dollars', [from:14, to:21, pos:'NNS', lemma:'dollar', sem:'UOM', wordnet:'dollar.n.01']),
+       fa(n\n,
+        t((n\n)/n, 'an', [from:22, to:24, pos:'DT', lemma:'division', sem:'UOM', wordnet:'division.n.11']),
+        t(n, 'hour', [from:25, to:29, pos:'NN', lemma:'hour', sem:'UOM', wordnet:'hour.n.01'])))))),
+   fa(pp,
+    t(pp/np, 'for', [from:30, to:33, pos:'IN', lemma:'for', sem:'REL', wordnet:'O', verbnet:['Theme']]),
+    fa(np,
+     t(np/np, 'mowing', [from:34, to:40, pos:'VBG', lemma:'mow', sem:'EXG', wordnet:'mow.v.01', verbnet:['Patient']]),
+     rp(np,
+      lx(np, n,
+       t(n, 'lawns', [from:41, to:46, pos:'NNS', lemma:'lawn', sem:'CON', wordnet:'lawn.n.01'])),
+      t(., '.', [from:46, to:47, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

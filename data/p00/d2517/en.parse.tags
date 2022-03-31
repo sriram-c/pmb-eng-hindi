@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  rp(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/np, 'eat', [from:2, to:5, pos:'VBP', lemma:'eat', sem:'ENS', wordnet:'eat.v.01', verbnet:['Patient','Agent']]),
+    fa(np,
+     t(np/n, 'a', [from:6, to:7, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+     t(n, 'banana', [from:8, to:14, pos:'NN', lemma:'banana', sem:'CON', wordnet:'banana.n.02']))),
+   t(., '.', [from:14, to:15, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+

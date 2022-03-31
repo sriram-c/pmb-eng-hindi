@@ -1,0 +1,14 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  rp(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/np, 'understand', [from:2, to:12, pos:'VBP', lemma:'understand', sem:'ENS', wordnet:'understand.v.01', verbnet:['Stimulus','Experiencer']]),
+    t(np, 'you', [from:13, to:16, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O'])),
+   t(., '.', [from:16, to:17, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+

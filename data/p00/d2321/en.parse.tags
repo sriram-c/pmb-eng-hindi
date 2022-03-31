@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/s:dcl, 'hope', [from:2, to:6, pos:'VBP', lemma:'hope', sem:'ENS', wordnet:'hope.v.01', verbnet:['Theme','Pivot']]),
+   ba(s:dcl,
+    t(np, 'she', [from:7, to:10, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02']),
+    fa(s:dcl\np,
+     t((s:dcl\np)/(s:adj\np), '\'s', [from:10, to:12, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+     rp(s:adj\np,
+      t(s:adj\np, 'all~right', [from:13, to:22, pos:'JJ', lemma:'all~right', sem:'IST', wordnet:'all_right.a.01', verbnet:['Attribute']]),
+      t(., '.', [from:22, to:23, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

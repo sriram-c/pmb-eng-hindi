@@ -1,0 +1,25 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Bountiful', [from:0, to:9, pos:'NNP', lemma:'bountiful', sem:'ART', wordnet:'vehicle.n.01'])),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/np, 'reached', [from:10, to:17, pos:'VBD', lemma:'reach', sem:'EPS', wordnet:'reach.v.01', verbnet:['Destination','Theme']]),
+    lx(np, n,
+     t(n, 'San~Francisco', [from:18, to:31, pos:'NNP', lemma:'san~francisco', sem:'GPE', wordnet:'city.n.01']))),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'on', [from:32, to:34, pos:'IN', lemma:'on', sem:'REL', wordnet:'O', verbnet:['Time']]),
+    lx(np, n,
+     fa(n,
+      t(n/n, '1', [from:35, to:36, pos:'CD', lemma:'1', sem:'DOM', wordnet:'O', verbnet:['Equal']]),
+      ba(n,
+       t(n, 'November', [from:37, to:45, pos:'NNP', lemma:'november', sem:'MOY', wordnet:'O']),
+       rp(n\n,
+        t(n\n, '1945', [from:46, to:50, pos:'CD', lemma:'1945', sem:'YOC', wordnet:'O', verbnet:['Equal']]),
+        t(., '.', [from:50, to:51, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))))).
+

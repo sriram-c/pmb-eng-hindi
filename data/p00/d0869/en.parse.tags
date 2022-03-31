@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'customer', [from:4, to:12, pos:'NN', lemma:'customer', sem:'ROL', wordnet:'customer.n.01'])),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/(s:adj\np),
+    t((s:dcl\np)/(s:adj\np), 'is', [from:13, to:15, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+    t((s\np)\(s\np), 'always', [from:16, to:22, pos:'RB', lemma:'time', sem:'AND', wordnet:'O'])),
+   rp(s:adj\np,
+    t(s:adj\np, 'right', [from:23, to:28, pos:'RB', lemma:'right', sem:'IST', wordnet:'right.a.02', verbnet:['Attribute']]),
+    t(., '.', [from:28, to:29, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

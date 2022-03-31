@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:wq,
+  t(s:wq/(s:q/np), 'What', [from:0, to:4, pos:'WP', lemma:'entity', sem:'QUE', wordnet:'entity.n.01', verbnet:['Equal']]),
+  fa(s:q/np,
+   t((s:q/np)/np, 'is', [from:5, to:7, pos:'VBZ', lemma:'be', sem:'ENS', wordnet:'be.v.02', verbnet:['Theme','Co-Theme']]),
+   fa(np,
+    t(np/n, 'the', [from:8, to:11, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+    fa(n,
+     t(n/pp, 'height', [from:12, to:18, pos:'NN', lemma:'height', sem:'CON', wordnet:'height.n.01']),
+     fa(pp,
+      t(pp/np, 'of', [from:19, to:21, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['AttributeOf']]),
+      rp(np,
+       fa(np,
+        t(np/n, 'the', [from:22, to:25, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+        fa(n,
+         t(n/n, 'tallest', [from:26, to:33, pos:'JJS', lemma:'tall', sem:'TOP', wordnet:'tall.a.01', verbnet:['Attribute']]),
+         t(n, 'redwood', [from:34, to:41, pos:'NN', lemma:'redwood', sem:'CON', wordnet:'redwood.n.02']))),
+       t(., '?', [from:41, to:42, pos:'.', lemma:'?', sem:'QUE', wordnet:'O'])))))))).
+

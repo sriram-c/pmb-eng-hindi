@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'We', [from:0, to:2, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  rp(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/np, 'rented', [from:3, to:9, pos:'VBD', lemma:'rent', sem:'EPS', wordnet:'rent.v.03', verbnet:['Theme','Agent']]),
+    fa(np,
+     t(np/n, 'a', [from:10, to:11, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+     t(n, 'canoe', [from:12, to:17, pos:'NN', lemma:'canoe', sem:'CON', wordnet:'canoe.n.01']))),
+   t(., '.', [from:17, to:18, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+

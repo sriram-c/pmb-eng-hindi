@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'He', [from:0, to:2, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:pt\np), 'has', [from:3, to:6, pos:'VBZ', lemma:'have', sem:'NOW', wordnet:'O']),
+   ba(s:pt\np,
+    fa(s:pt\np,
+     t((s:pt\np)/np, 'read', [from:7, to:11, pos:'VBN', lemma:'read', sem:'EXT', wordnet:'read.v.01', verbnet:['Theme','Agent']]),
+     lx(np, n,
+      t(n, 'War~and~Peace', [from:12, to:25, pos:'NNP', lemma:'war~and~peace', sem:'ART', wordnet:'book.n.01']))),
+    rp((s\np)\(s\np),
+     fa((s\np)\(s\np),
+      t(((s\np)\(s\np))/n, '15', [from:26, to:28, pos:'CD', lemma:'15', sem:'QUC', wordnet:'O', verbnet:['Frequency']]),
+      t(n, 'times', [from:29, to:34, pos:'NNS', lemma:'time', sem:'CON', wordnet:'time.n.01'])),
+     t(., '.', [from:34, to:35, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

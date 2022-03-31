@@ -1,0 +1,23 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'ticket', [from:4, to:10, pos:'NN', lemma:'ticket', sem:'CON', wordnet:'ticket.n.01'])),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:adj\np), 'is', [from:11, to:13, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+    t(s:adj\np, 'valid', [from:14, to:19, pos:'JJ', lemma:'valid', sem:'IST', wordnet:'valid.a.02', verbnet:['Attribute']])),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'to', [from:20, to:22, pos:'TO', lemma:'to', sem:'REL', wordnet:'O', verbnet:['Finish']]),
+    rp(np,
+     lx(np, n,
+      fa(n,
+       t(n/n:num, 'April', [from:23, to:28, pos:'NNP', lemma:'april', sem:'MOY', wordnet:'april.n.01', verbnet:['Equal']]),
+       t(n:num, '29', [from:29, to:31, pos:'CD', lemma:'29', sem:'DOM', wordnet:'O']))),
+     t(., '.', [from:31, to:32, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

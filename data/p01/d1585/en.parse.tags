@@ -1,0 +1,34 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/np, 'took', [from:4, to:8, pos:'VBD', lemma:'take', sem:'EPS', wordnet:'take.v.16', verbnet:['Theme','Agent']]),
+    fa(np,
+     t(np/n, 'a', [from:9, to:10, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+     fa(n,
+      t(n/pp, 'picture', [from:11, to:18, pos:'NN', lemma:'picture', sem:'CON', wordnet:'picture.n.01']),
+      fa(pp,
+       t(pp/np, 'of', [from:19, to:21, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['Topic']]),
+       fa(np,
+        t(np/n, 'his', [from:22, to:25, pos:'PRP$', lemma:'male', sem:'HAS', wordnet:'male.n.02', verbnet:['Owner']]),
+        t(n, 'dog', [from:26, to:29, pos:'NN', lemma:'dog', sem:'CON', wordnet:'dog.n.01'])))))),
+   conj((s:dcl\np)\(s:dcl\np),
+    t(conj, 'and', [from:30, to:33, pos:'CC', lemma:'and', sem:'COO', wordnet:'O']),
+    fa(s:dcl\np,
+     fa((s:dcl\np)/pp,
+      t(((s:dcl\np)/pp)/np, 'sent', [from:34, to:38, pos:'VBD', lemma:'send', sem:'EPS', wordnet:'send.v.03', verbnet:['Theme','Agent']]),
+      t(np, 'it', [antecedent:'11,18', from:39, to:41, pos:'PRP', lemma:'entity', sem:'PRO', wordnet:'entity.n.01'])),
+     fa(pp,
+      t(pp/np, 'to', [from:42, to:44, pos:'TO', lemma:'to', sem:'REL', wordnet:'O', verbnet:['Destination']]),
+      rp(np,
+       lx(np, n,
+        t(n, 'Mary', [from:45, to:49, pos:'NNP', lemma:'mary', sem:'PER', wordnet:'female.n.02'])),
+       t(., '.', [from:49, to:50, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))))).
+

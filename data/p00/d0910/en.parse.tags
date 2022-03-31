@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:dcl,
+  t(s:dcl/np, 'What', [from:0, to:4, pos:'WP', lemma:'what', sem:'EMP', wordnet:'O']),
+  rp(np,
+   fa(np,
+    t(np/n, 'a', [from:5, to:6, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+    fa(n,
+     t(n/n, 'beautiful', [from:7, to:16, pos:'JJ', lemma:'beautiful', sem:'IST', wordnet:'beautiful.a.01', verbnet:['Attribute']]),
+     t(n, 'rainbow', [from:17, to:24, pos:'NN', lemma:'rainbow', sem:'CON', wordnet:'rainbow.n.01']))),
+   t(., '!', [from:24, to:25, pos:'.', lemma:'!', sem:'EMP', wordnet:'O'])))).
+

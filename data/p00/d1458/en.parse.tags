@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'She', [from:0, to:3, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02']),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/np,
+    t((s:dcl\np)/np, 'is', [from:4, to:6, pos:'VBZ', lemma:'be', sem:'ENS', wordnet:'be.v.08', verbnet:['Co-Theme','Theme']]),
+    t((s\np)\(s\np), 'not', [from:7, to:10, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+   fa(np,
+    t(np/n, 'a', [from:11, to:12, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+    fa(n,
+     t(n/(n/pp), 'good', [from:13, to:17, pos:'JJ', lemma:'good', sem:'IST', wordnet:'good.a.01', verbnet:['Attribute']]),
+     rp(n/pp,
+      t(n/pp, 'sailor', [from:18, to:24, pos:'NN', lemma:'sailor', sem:'ROL', wordnet:'sailor.n.01']),
+      t(., '.', [from:24, to:25, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

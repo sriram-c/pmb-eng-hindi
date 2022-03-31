@@ -1,0 +1,25 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:dcl,
+  fa(s:dcl/(s:b\np),
+   t((s:dcl/(s:b\np))/s:dcl, 'If', [from:0, to:2, pos:'IN', lemma:'if', sem:'IMP', wordnet:'O']),
+   ba(s:dcl,
+    t(np, 'you', [from:3, to:6, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O']),
+    fa(s:dcl\np,
+     t((s:dcl\np)/(s:adj\np), '\'re', [from:6, to:9, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+     rp(s:adj\np,
+      t(s:adj\np, 'tired', [from:10, to:15, pos:'JJ', lemma:'tired', sem:'IST', wordnet:'tired.a.01', verbnet:['Experiencer']]),
+      t(,, ',', [from:15, to:16, pos:',', lemma:',', sem:'NIL', wordnet:'O']))))),
+  fa(s:b\np,
+   t((s:b\np)/pp, 'go', [from:17, to:19, pos:'VB', lemma:'go', sem:'EXS', wordnet:'go.v.01', verbnet:['Theme']]),
+   rp(pp,
+    fa(pp,
+     t(pp/np, 'to', [from:20, to:22, pos:'TO', lemma:'to', sem:'REL', wordnet:'O', verbnet:['Destination']]),
+     lx(np, n,
+      t(n, 'bed', [from:23, to:26, pos:'NN', lemma:'bed', sem:'CON', wordnet:'bed.n.01']))),
+    t(., '.', [from:26, to:27, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

@@ -1,0 +1,30 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/(s:b\np),
+    t((s:dcl\np)/(s:b\np), 'do', [from:2, to:4, pos:'VBP', lemma:'do', sem:'NOW', wordnet:'O']),
+    t((s\np)\(s\np), 'n\'t', [from:4, to:7, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+   fa(s:b\np,
+    t((s:b\np)/np, 'want', [from:8, to:12, pos:'VB', lemma:'want', sem:'EXS', wordnet:'want.v.01', verbnet:['Theme','Pivot']]),
+    rp(np,
+     lx(np, n,
+      t(n, 'pizza', [from:13, to:18, pos:'NN', lemma:'pizza', sem:'CON', wordnet:'pizza.n.01'])),
+     t(., '.', [from:18, to:19, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+
+ccg(2,
+ rp(s:dcl,
+  ba(s:dcl,
+   t(np, 'I', [from:20, to:21, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:adj\np), '\'m', [from:21, to:23, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+    fa(s:adj\np,
+     t((s:adj\np)/(s:adj\np), 'not', [from:24, to:27, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O']),
+     t(s:adj\np, 'hungry', [from:28, to:34, pos:'JJ', lemma:'hungry', sem:'IST', wordnet:'hungry.a.01', verbnet:['Experiencer']])))),
+  t(., '.', [from:34, to:35, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+

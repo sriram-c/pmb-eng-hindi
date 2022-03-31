@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'These', [from:0, to:5, pos:'DT', lemma:'entity', sem:'PRX', wordnet:'entity.n.01']),
+   t(n, 'shoes', [from:6, to:11, pos:'NNS', lemma:'shoe', sem:'CON', wordnet:'shoe.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), 'are', [from:12, to:15, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+   ba(s:adj\np,
+    fa(np,
+     t(np/n, 'a', [from:16, to:17, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+     t(n, 'little', [from:18, to:24, pos:'JJ', lemma:'-', sem:'QUV', wordnet:'O'])),
+    rp((s:adj\np)\np,
+     t((s:adj\np)\np, 'loose', [from:25, to:30, pos:'JJ', lemma:'loose', sem:'IST', wordnet:'loose.a.03', verbnet:['Value','Attribute']]),
+     t(., '.', [from:30, to:31, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

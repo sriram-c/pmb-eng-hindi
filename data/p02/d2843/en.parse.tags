@@ -1,0 +1,27 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    fa((s:dcl\np)/np,
+     t(((s:dcl\np)/np)/pr, 'took', [from:4, to:8, pos:'VBD', lemma:'take~out', sem:'EPS', wordnet:'take_out.v.06', verbnet:['Theme','Agent']]),
+     t(pr, 'out', [from:9, to:12, pos:'RP', lemma:'out', sem:'REL', wordnet:'O'])),
+    fa(np,
+     t(np/n, 'his', [from:13, to:16, pos:'PRP$', lemma:'male', sem:'HAS', wordnet:'male.n.02', verbnet:['User']]),
+     t(n, 'handkerchief', [from:17, to:29, pos:'NN', lemma:'handkerchief', sem:'CON', wordnet:'handkerchief.n.01']))),
+   conj((s:dcl\np)\(s:dcl\np),
+    t(conj, 'and', [from:30, to:33, pos:'CC', lemma:'and', sem:'COO', wordnet:'O']),
+    fa(s:dcl\np,
+     t((s:dcl\np)/np, 'blew', [from:34, to:38, pos:'VBD', lemma:'blow', sem:'EPS', wordnet:'blow.v.03', verbnet:['Patient','Agent']]),
+     rp(np,
+      fa(np,
+       t(np/(n/pp), 'his', [from:39, to:42, pos:'PRP$', lemma:'male', sem:'HAS', wordnet:'male.n.02', verbnet:['PartOf']]),
+       t(n/pp, 'nose', [from:43, to:47, pos:'NN', lemma:'nose', sem:'CON', wordnet:'nose.n.01'])),
+      t(., '.', [from:47, to:48, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  ba(np,
+   lx(np, n,
+    t(n, 'Liu~Bei', [from:0, to:7, pos:'NNP', lemma:'liu~bei', sem:'PER', wordnet:'male.n.02'])),
+   conj(np\np,
+    t(conj, 'and', [from:8, to:11, pos:'CC', lemma:'and', sem:'GRP', wordnet:'O']),
+    lx(np, n,
+     t(n, 'Zhuge~Liang', [from:12, to:23, pos:'NNP', lemma:'zhuge~liang', sem:'PER', wordnet:'male.n.02'])))),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'are', [from:24, to:27, pos:'VBP', lemma:'be', sem:'ENS', wordnet:'be.v.01', verbnet:['Co-Theme','Theme']]),
+   rp(np,
+    fa(np,
+     t(np/n, 'an', [from:28, to:30, pos:'DT', lemma:'an', sem:'DIS', wordnet:'O']),
+     fa(n,
+      t(n/n, 'unbeatable', [from:31, to:41, pos:'JJ', lemma:'unbeatable', sem:'IST', wordnet:'unbeatable.a.01', verbnet:['Attribute']]),
+      t(n, 'team', [from:42, to:46, pos:'NN', lemma:'team', sem:'CON', wordnet:'team.n.01']))),
+    t(., '.', [from:46, to:47, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

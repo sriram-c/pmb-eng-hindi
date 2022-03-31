@@ -1,0 +1,17 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:q,
+  fa(s:q/(s:b\np),
+   t((s:q/(s:b\np))/np, 'Does', [from:0, to:4, pos:'VBZ', lemma:'do', sem:'NOW', wordnet:'O']),
+   t(np, 'he', [from:5, to:7, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02'])),
+  fa(s:b\np,
+   t((s:b\np)/np, 'speak', [from:8, to:13, pos:'VB', lemma:'speak', sem:'EXS', wordnet:'speak.v.03', verbnet:['Theme','Agent']]),
+   rp(np,
+    lx(np, n,
+     t(n, 'English', [from:14, to:21, pos:'NNP', lemma:'english', sem:'CON', wordnet:'english.n.01'])),
+    t(., '?', [from:21, to:22, pos:'.', lemma:'?', sem:'QUE', wordnet:'O']))))).
+

@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'We', [from:0, to:2, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  rp(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:ng\np), 'are', [from:3, to:6, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+    fa(s:ng\np,
+     t((s:ng\np)/pr, 'dozing', [from:7, to:13, pos:'VBG', lemma:'doze~off', sem:'EXG', wordnet:'doze_off.v.01', verbnet:['Experiencer']]),
+     t(pr, 'off', [from:14, to:17, pos:'RP', lemma:'off', sem:'REL', wordnet:'O']))),
+   t(., '.', [from:17, to:18, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+

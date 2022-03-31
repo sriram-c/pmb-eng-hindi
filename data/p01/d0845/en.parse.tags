@@ -1,0 +1,19 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'They', [from:0, to:4, pos:'PRP', lemma:'person', sem:'PRO', wordnet:'person.n.01']),
+  fa(s:dcl\np,
+   fa((s:dcl\np)/pp,
+    t(((s:dcl\np)/pp)/np, 'armed', [from:5, to:10, pos:'JJ', lemma:'arm', sem:'EPS', wordnet:'arm.v.02', verbnet:['Recipient','Agent']]),
+    t(np, 'themselves', [from:11, to:21, pos:'PRP', lemma:'person', sem:'REF', wordnet:'person.n.01'])),
+   fa(pp,
+    t(pp/np, 'with', [from:22, to:26, pos:'IN', lemma:'with', sem:'REL', wordnet:'O', verbnet:['Theme']]),
+    rp(np,
+     lx(np, n,
+      t(n, 'guns', [from:27, to:31, pos:'NNS', lemma:'gun', sem:'CON', wordnet:'gun.n.01'])),
+     t(., '.', [from:31, to:32, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

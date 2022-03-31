@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 10 September 2021, 09:36:38)'">
+<!-- The astronauts went up to the moon in a rocket . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">The</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">the</tag>
+     <tag type="lemma">the</tag>
+     <tag type="from">0</tag>
+     <tag type="to">3</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">astronauts</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">astronaut</tag>
+     <tag type="lemma">astronaut</tag>
+     <tag type="from">4</tag>
+     <tag type="to">14</tag>
+     <tag type="pos">NNS</tag>
+     <tag type="sem">ROL</tag>
+     <tag type="wordnet">astronaut.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="tok">went</tag>
+     <tag type="cat">((s:dcl\np)/pp)/pr</tag>
+     <tag type="sym">go~up</tag>
+     <tag type="lemma">go~up</tag>
+     <tag type="from">15</tag>
+     <tag type="to">19</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="sem">EPS</tag>
+     <tag type="wordnet">go_up.v.07</tag>
+     <tag type="verbnet" n="1">[Theme]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">up</tag>
+     <tag type="cat">pr</tag>
+     <tag type="sym">up</tag>
+     <tag type="lemma">up</tag>
+     <tag type="from">20</tag>
+     <tag type="to">22</tag>
+     <tag type="pos">RB</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="tok">to</tag>
+     <tag type="cat">pp/np</tag>
+     <tag type="sym">to</tag>
+     <tag type="lemma">to</tag>
+     <tag type="from">23</tag>
+     <tag type="to">25</tag>
+     <tag type="pos">TO</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Destination]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">the</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">the</tag>
+     <tag type="lemma">the</tag>
+     <tag type="from">26</tag>
+     <tag type="to">29</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">moon</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">moon</tag>
+     <tag type="lemma">moon</tag>
+     <tag type="from">30</tag>
+     <tag type="to">34</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">moon.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="tok">in</tag>
+     <tag type="cat">((s:dcl\np)\(s:dcl\np))/np</tag>
+     <tag type="sym">in</tag>
+     <tag type="lemma">in</tag>
+     <tag type="from">35</tag>
+     <tag type="to">37</tag>
+     <tag type="pos">IN</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Instrument]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1009">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">a</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">a</tag>
+     <tag type="lemma">a</tag>
+     <tag type="from">38</tag>
+     <tag type="to">39</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1010">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">rocket</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">rocket</tag>
+     <tag type="lemma">rocket</tag>
+     <tag type="from">40</tag>
+     <tag type="to">46</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">rocket.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1011">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">46</tag>
+     <tag type="to">47</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b2">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="3"></dr>
+   <dr label="b1" name="x2" from="4" to="14"></dr>
+   <dr label="b2" name="e1" from="15" to="19"></dr>
+   <dr label="b3" name="x3" from="26" to="29"></dr>
+   <dr label="b2" name="t1" from="15" to="19"></dr>
+   <dr label="b2" name="x4" from="38" to="39"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x2" symbol="astronaut" synset="astronaut.n.01" from="4" to="14"></pred>
+   </cond>
+   <cond label="b1">
+    <pred arg="x1" symbol="person" synset="person.n.01" from="4" to="14"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x1" arg2="x2" symbol="Role" framenet="Role" from="4" to="14"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="15" to="19"></pred>
+   </cond>
+   <cond label="b2">
+    <comp symbol="TPR" arg1="t1" arg2="now" from="15" to="19"></comp>
+   </cond>
+   <cond label="b2">
+    <pred arg="e1" symbol="go_up" synset="go_up.v.07" from="15" to="19"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x4" symbol="Instrument" framenet="Apply_heat@Heating_instrument" from="35" to="37"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="15" to="19"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x3" symbol="Destination" framenet="Removing@Goal" from="23" to="25"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x1" symbol="Theme" framenet="Theme" from="15" to="19"></rel>
+   </cond>
+   <cond label="b3">
+    <pred arg="x3" symbol="moon" synset="moon.n.01" from="30" to="34"></pred>
+   </cond>
+   <cond label="b2">
+    <pred arg="x4" symbol="rocket" synset="rocket.n.01" from="40" to="46"></pred>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

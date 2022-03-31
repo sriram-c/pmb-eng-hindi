@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'That', [from:0, to:4, pos:'DT', lemma:'entity', sem:'DST', wordnet:'entity.n.01']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, '\'s', [from:4, to:6, pos:'VBZ', lemma:'be', sem:'ENS', wordnet:'be.v.01', verbnet:['Co-Theme','Theme']]),
+   rp(np,
+    fa(np,
+     t(np/n, 'a', [from:7, to:8, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+     fa(n,
+      t(n/n, 'nice', [from:9, to:13, pos:'JJ', lemma:'nice', sem:'IST', wordnet:'nice.a.01', verbnet:['Attribute']]),
+      t(n, 'T-shirt', [from:14, to:21, pos:'NN', lemma:'t-shirt', sem:'CON', wordnet:'t-shirt.n.01']))),
+    t(., '.', [from:21, to:22, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

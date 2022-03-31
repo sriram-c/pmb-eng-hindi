@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'Everybody', [from:0, to:9, pos:'DT', lemma:'person', sem:'AND', wordnet:'person.n.01']),
+  fa(s:dcl\np,
+   fa((s:dcl\np)/np,
+    t(((s:dcl\np)/np)/np, 'calls', [from:10, to:15, pos:'VBZ', lemma:'call', sem:'ENS', wordnet:'call.v.01', verbnet:['Theme','Result','Agent']]),
+    fa(np,
+     t(np/n, 'the', [from:16, to:19, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     fa(n,
+      t(n/n, 'small', [from:20, to:25, pos:'JJ', lemma:'small', sem:'DEG', wordnet:'small.a.01', verbnet:['Attribute']]),
+      t(n, 'cat', [from:26, to:29, pos:'NN', lemma:'cat', sem:'CON', wordnet:'cat.n.01'])))),
+   rp(np,
+    t(np, 'Tora', [from:30, to:34, pos:'NNP', lemma:'tora', sem:'LIT', wordnet:'O']),
+    t(., '.', [from:34, to:35, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

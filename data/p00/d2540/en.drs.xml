@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- ø Klava oversimplifies everything . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="from">0</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">Klava</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">klava</tag>
+     <tag type="lemma">klava</tag>
+     <tag type="from">0</tag>
+     <tag type="to">5</tag>
+     <tag type="pos">NNP</tag>
+     <tag type="sem">PER</tag>
+     <tag type="wordnet">female.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="tok">oversimplifies</tag>
+     <tag type="cat">(s:dcl\np)/np</tag>
+     <tag type="sym">oversimplify</tag>
+     <tag type="lemma">oversimplify</tag>
+     <tag type="from">6</tag>
+     <tag type="to">20</tag>
+     <tag type="pos">VBZ</tag>
+     <tag type="sem">ENS</tag>
+     <tag type="wordnet">oversimplify.v.01</tag>
+     <tag type="verbnet" n="2">[Theme,Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">everything</tag>
+     <tag type="cat">np</tag>
+     <tag type="sym">entity</tag>
+     <tag type="lemma">entity</tag>
+     <tag type="from">21</tag>
+     <tag type="to">31</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">AND</tag>
+     <tag type="wordnet">entity.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">31</tag>
+     <tag type="to">32</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b2">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="-1"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="female" synset="female.n.02" from="0" to="5"></pred>
+   </cond>
+   <cond label="b1">
+    <named arg="x1" symbol="klava" from="0" to="5"></named>
+   </cond>
+   <cond label="b2">
+    <not from="21" to="31">
+     <drs label="b3">
+      <domain>
+       <dr label="b3" name="x2" from="21" to="31"></dr>
+      </domain>
+      <conds>
+       <cond label="b3">
+        <not from="21" to="31">
+         <drs label="b4">
+          <domain>
+           <dr label="b4" name="e1" from="6" to="20"></dr>
+           <dr label="b2" name="t1" from="6" to="20"></dr>
+          </domain>
+          <conds>
+           <cond label="b2">
+            <pred arg="t1" symbol="time" synset="time.n.08" from="6" to="20"></pred>
+           </cond>
+           <cond label="b2">
+            <comp symbol="EQU" arg1="t1" arg2="now" from="6" to="20"></comp>
+           </cond>
+           <cond label="b4">
+            <pred arg="e1" symbol="oversimplify" synset="oversimplify.v.01" from="6" to="20"></pred>
+           </cond>
+           <cond label="b4">
+            <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="6" to="20"></rel>
+           </cond>
+           <cond label="b4">
+            <rel arg1="e1" arg2="x2" symbol="Theme" framenet="Placing@Theme" from="6" to="20"></rel>
+           </cond>
+           <cond label="b4">
+            <rel arg1="e1" arg2="x1" symbol="Agent" framenet="Placing@Agent" from="6" to="20"></rel>
+           </cond>
+          </conds>
+         </drs>
+        </not>
+       </cond>
+       <cond label="b3">
+        <pred arg="x2" symbol="entity" synset="entity.n.01" from="21" to="31"></pred>
+       </cond>
+      </conds>
+     </drs>
+    </not>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

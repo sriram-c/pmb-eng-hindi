@@ -1,0 +1,19 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'borrowed', [from:2, to:10, pos:'VBD', lemma:'borrow', sem:'EPS', wordnet:'borrow.v.01', verbnet:['Theme','Agent']]),
+   fa(np,
+    ba(np/(n/pp),
+     lx(np, n,
+      t(n, 'Tom', [from:11, to:14, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+     t((np/(n/pp))\np, '\'s', [from:14, to:16, pos:'POS', lemma:'\'s', sem:'HAS', wordnet:'O', verbnet:['Owner']])),
+    rp(n/pp,
+     t(n/pp, 'car', [from:17, to:20, pos:'NN', lemma:'car', sem:'CON', wordnet:'car.n.01']),
+     t(., '.', [from:20, to:21, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- The organizers expect ø more~than 300,000 visitors . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">The</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">the</tag>
+     <tag type="lemma">the</tag>
+     <tag type="from">0</tag>
+     <tag type="to">3</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">organizers</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">organizer</tag>
+     <tag type="lemma">organizer</tag>
+     <tag type="from">4</tag>
+     <tag type="to">14</tag>
+     <tag type="pos">NNS</tag>
+     <tag type="sem">ROL</tag>
+     <tag type="wordnet">organizer.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="tok">expect</tag>
+     <tag type="cat">(s:dcl\np)/np</tag>
+     <tag type="sym">expect</tag>
+     <tag type="lemma">expect</tag>
+     <tag type="from">15</tag>
+     <tag type="to">21</tag>
+     <tag type="pos">VBP</tag>
+     <tag type="sem">ENS</tag>
+     <tag type="wordnet">expect.v.01</tag>
+     <tag type="verbnet" n="2">[Theme,Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="from">22</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">more~than</tag>
+     <tag type="cat">(n/n)/(n/n)</tag>
+     <tag type="sym">more~than</tag>
+     <tag type="lemma">more~than</tag>
+     <tag type="from">22</tag>
+     <tag type="to">31</tag>
+     <tag type="pos">JJ</tag>
+     <tag type="sem">MOR</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="tok">300,000</tag>
+     <tag type="cat">n/n</tag>
+     <tag type="sym">300000</tag>
+     <tag type="lemma">300000</tag>
+     <tag type="from">32</tag>
+     <tag type="to">39</tag>
+     <tag type="pos">CD</tag>
+     <tag type="sem">QUC</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Equal]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">visitors</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">visitor</tag>
+     <tag type="lemma">visitor</tag>
+     <tag type="from">40</tag>
+     <tag type="to">48</tag>
+     <tag type="pos">NNS</tag>
+     <tag type="sem">ROL</tag>
+     <tag type="wordnet">visitor.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">48</tag>
+     <tag type="to">49</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b2">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="3"></dr>
+   <dr label="b1" name="x2" from="4" to="14"></dr>
+   <dr label="b2" name="x3" from="22" to="-1"></dr>
+   <dr label="b2" name="x4" from="22" to="31"></dr>
+   <dr label="b2" name="x5" from="22" to="31"></dr>
+   <dr label="b2" name="x6" from="40" to="48"></dr>
+   <dr label="b2" name="e1" from="15" to="21"></dr>
+   <dr label="b2" name="t1" from="15" to="21"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x2" symbol="organizer" synset="organizer.n.01" from="4" to="14"></pred>
+   </cond>
+   <cond label="b1">
+    <pred arg="x1" symbol="person" synset="person.n.01" from="4" to="14"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x1" arg2="x2" symbol="Role" framenet="Role" from="4" to="14"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="15" to="21"></pred>
+   </cond>
+   <cond label="b2">
+    <comp symbol="EQU" arg1="t1" arg2="now" from="15" to="21"></comp>
+   </cond>
+   <cond label="b2">
+    <pred arg="e1" symbol="expect" synset="expect.v.01" from="15" to="21"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="15" to="21"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x3" symbol="Theme" framenet="Statement@Addressee" from="15" to="21"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x1" symbol="Agent" framenet="Statement@Speaker" from="15" to="21"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="x4" symbol="quantity" synset="quantity.n.01" from="22" to="31"></pred>
+   </cond>
+   <cond label="b2">
+    <comp symbol="MOR" arg1="x4" arg2="x5" from="22" to="31"></comp>
+   </cond>
+   <cond label="b2">
+    <pred arg="x5" symbol="quantity" synset="quantity.n.01" from="22" to="31"></pred>
+   </cond>
+   <cond label="b2">
+    <comp symbol="EQU" arg1="x5" arg2="300000" from="32" to="39"></comp>
+   </cond>
+   <cond label="b2">
+    <pred arg="x3" symbol="person" synset="person.n.01" from="40" to="48"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="x3" arg2="x6" symbol="Role" framenet="Role" from="40" to="48"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="x3" arg2="x4" symbol="Quantity" framenet="Quantity" from="22" to="31"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="x6" symbol="visitor" synset="visitor.n.01" from="40" to="48"></pred>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

@@ -1,0 +1,26 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:dcl,
+  fa(s/s,
+   t((s/s)/np, 'Despite', [from:0, to:7, pos:'IN', lemma:'despite', sem:'BUT', wordnet:'O']),
+   fa(np,
+    t(np/(n/pp), 'their', [from:8, to:13, pos:'PRP$', lemma:'person', sem:'HAS', wordnet:'person.n.01', verbnet:['Owner']]),
+    fc(n/pp,
+     t(n/n, 'great', [from:14, to:19, pos:'JJ', lemma:'great', sem:'IST', wordnet:'great.a.01', verbnet:['Attribute']]),
+     rp(n/pp,
+      t(n/pp, 'wealth', [from:20, to:26, pos:'NN', lemma:'wealth', sem:'CON', wordnet:'wealth.n.01']),
+      t(,, ',', [from:26, to:27, pos:',', lemma:',', sem:'NIL', wordnet:'O']))))),
+  ba(s:dcl,
+   t(np, 'they', [from:28, to:32, pos:'PRP', lemma:'person', sem:'PRO', wordnet:'person.n.01']),
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:adj\np), 'are', [from:33, to:36, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+    fa(s:adj\np,
+     t((s:adj\np)/(s:adj\np), 'not', [from:37, to:40, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O']),
+     rp(s:adj\np,
+      t(s:adj\np, 'happy', [from:41, to:46, pos:'JJ', lemma:'happy', sem:'IST', wordnet:'happy.a.02', verbnet:['Experiencer']]),
+      t(., '.', [from:46, to:47, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- ø Palestine is called " Filastin " in ø Arabic . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="from">0</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">Palestine</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">palestine</tag>
+     <tag type="lemma">palestine</tag>
+     <tag type="from">0</tag>
+     <tag type="to">9</tag>
+     <tag type="pos">NNP</tag>
+     <tag type="sem">GPE</tag>
+     <tag type="wordnet">region.n.03</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">is</tag>
+     <tag type="cat">(s:dcl\np)/(s:pss\np)</tag>
+     <tag type="sym">be</tag>
+     <tag type="lemma">be</tag>
+     <tag type="from">10</tag>
+     <tag type="to">12</tag>
+     <tag type="pos">VBZ</tag>
+     <tag type="sem">NOW</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="tok">called</tag>
+     <tag type="cat">(s:pss\np)/np</tag>
+     <tag type="sym">call</tag>
+     <tag type="lemma">call</tag>
+     <tag type="from">13</tag>
+     <tag type="to">19</tag>
+     <tag type="pos">VBN</tag>
+     <tag type="sem">EXS</tag>
+     <tag type="wordnet">call.v.01</tag>
+     <tag type="verbnet" n="2">[Result,Theme]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">&quot;</tag>
+     <tag type="cat">np/np</tag>
+     <tag type="sym">&quot;</tag>
+     <tag type="lemma">&quot;</tag>
+     <tag type="from">20</tag>
+     <tag type="to">21</tag>
+     <tag type="pos">LQU</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">Filastin</tag>
+     <tag type="cat">np</tag>
+     <tag type="sym">filastin</tag>
+     <tag type="lemma">filastin</tag>
+     <tag type="from">21</tag>
+     <tag type="to">29</tag>
+     <tag type="pos">NNP</tag>
+     <tag type="sem">LIT</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">&quot;</tag>
+     <tag type="cat">np\np</tag>
+     <tag type="sym">&quot;</tag>
+     <tag type="lemma">&quot;</tag>
+     <tag type="from">29</tag>
+     <tag type="to">30</tag>
+     <tag type="pos">RQU</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="tok">in</tag>
+     <tag type="cat">((s:dcl\np)\(s:dcl\np))/np</tag>
+     <tag type="sym">in</tag>
+     <tag type="lemma">in</tag>
+     <tag type="from">31</tag>
+     <tag type="to">33</tag>
+     <tag type="pos">IN</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Context]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1009">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="from">34</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1010">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">Arabic</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">arabic</tag>
+     <tag type="lemma">arabic</tag>
+     <tag type="from">34</tag>
+     <tag type="to">40</tag>
+     <tag type="pos">NNP</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">arabic.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1011">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">40</tag>
+     <tag type="to">41</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b2">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="-1"></dr>
+   <dr label="b2" name="x2" from="21" to="29"></dr>
+   <dr label="b2" name="e1" from="13" to="19"></dr>
+   <dr label="b2" name="t1" from="10" to="12"></dr>
+   <dr label="b2" name="x3" from="34" to="-1"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="region" synset="region.n.03" from="0" to="9"></pred>
+   </cond>
+   <cond label="b1">
+    <named arg="x1" symbol="palestine" from="0" to="9"></named>
+   </cond>
+   <cond label="b2">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="10" to="12"></pred>
+   </cond>
+   <cond label="b2">
+    <comp symbol="EQU" arg1="t1" arg2="now" from="10" to="12"></comp>
+   </cond>
+   <cond label="b2">
+    <pred arg="e1" symbol="call" synset="call.v.01" from="13" to="19"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x3" symbol="Context" framenet="Context" from="31" to="33"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="10" to="12"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x2" symbol="Result" framenet="Being_named@Name" from="13" to="19"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x1" symbol="Theme" framenet="Being_named@Entity" from="13" to="19"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="x2" symbol="name" synset="name.n.01" from="21" to="29"></pred>
+   </cond>
+   <cond label="b2">
+    <comp symbol="EQU" arg1="x2" arg2="filastin" from="21" to="29"></comp>
+   </cond>
+   <cond label="b2">
+    <pred arg="x3" symbol="arabic" synset="arabic.n.01" from="34" to="40"></pred>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

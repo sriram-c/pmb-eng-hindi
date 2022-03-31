@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Bill', [from:0, to:4, pos:'NNP', lemma:'bill', sem:'PER', wordnet:'male.n.02'])),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:pss\np), 'was', [from:5, to:8, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+    t(s:pss\np, 'killed', [from:9, to:15, pos:'VBN', lemma:'kill', sem:'EXS', wordnet:'kill.v.01', verbnet:['Patient']])),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'by', [from:16, to:18, pos:'IN', lemma:'by', sem:'REL', wordnet:'O', verbnet:['Agent']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'an', [from:19, to:21, pos:'DT', lemma:'an', sem:'DIS', wordnet:'O']),
+      t(n, 'intruder', [from:22, to:30, pos:'NN', lemma:'intruder', sem:'ROL', wordnet:'intruder.n.01'])),
+     t(., '.', [from:30, to:31, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

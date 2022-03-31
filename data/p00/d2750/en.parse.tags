@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   bxc(np/n,
+    t(n/n, 'Many', [from:0, to:4, pos:'JJ', lemma:'+', sem:'QUV', wordnet:'O', verbnet:['Quantity']]),
+    t(np\n, 'a', [from:5, to:6, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O'])),
+   t(n, 'man', [from:7, to:10, pos:'NN', lemma:'man', sem:'CON', wordnet:'man.n.03'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:pt\np), 'has', [from:11, to:14, pos:'VBZ', lemma:'have', sem:'NOW', wordnet:'O']),
+   fa(s:pt\np,
+    t((s:pt\np)/np, 'predicted', [from:15, to:24, pos:'VBN', lemma:'predict', sem:'EXT', wordnet:'predict.v.01', verbnet:['Topic','Agent']]),
+    rp(np,
+     t(np, 'it', [from:25, to:27, pos:'PRP', lemma:'entity', sem:'PRO', wordnet:'entity.n.01']),
+     t(., '.', [from:27, to:28, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

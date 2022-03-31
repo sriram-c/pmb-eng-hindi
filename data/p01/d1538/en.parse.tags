@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Japan', [from:0, to:5, pos:'NNP', lemma:'japan', sem:'GPE', wordnet:'country.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/pp, 'is', [from:6, to:8, pos:'VBZ', lemma:'be', sem:'ENS', wordnet:'be.v.03', verbnet:['Theme']]),
+   fa(pp,
+    t(pp/np, 'to', [from:9, to:11, pos:'TO', lemma:'to', sem:'REL', wordnet:'O', verbnet:['Location']]),
+    fa(np,
+     t(np/n, 'the', [from:12, to:15, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     fa(n,
+      t(n/pp, 'east', [from:16, to:20, pos:'NN', lemma:'east', sem:'CON', wordnet:'east.n.05']),
+      fa(pp,
+       t(pp/np, 'of', [from:21, to:23, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['Of']]),
+       rp(np,
+        lx(np, n,
+         t(n, 'China', [from:24, to:29, pos:'NNP', lemma:'china', sem:'GPE', wordnet:'country.n.02'])),
+        t(., '.', [from:29, to:30, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))))).
+

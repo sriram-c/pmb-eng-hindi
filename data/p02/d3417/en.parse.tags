@@ -1,0 +1,17 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Mary', [from:0, to:4, pos:'NNP', lemma:'mary', sem:'PER', wordnet:'female.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'oiled', [from:5, to:10, pos:'VBD', lemma:'oil', sem:'EPS', wordnet:'oil.v.01', verbnet:['Destination','Agent']]),
+   rp(np,
+    fa(np,
+     t(np/n, 'her', [from:11, to:14, pos:'PRP$', lemma:'female', sem:'HAS', wordnet:'female.n.02', verbnet:['User']]),
+     t(n, 'bicycle', [from:15, to:22, pos:'NN', lemma:'bicycle', sem:'CON', wordnet:'bicycle.n.01'])),
+    t(., '.', [from:22, to:23, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

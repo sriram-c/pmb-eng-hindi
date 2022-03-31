@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'A', [from:0, to:1, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+   t(n, 'railroad', [from:2, to:10, pos:'NN', lemma:'railroad', sem:'CON', wordnet:'railroad.n.02'])),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:pss\np), 'was', [from:11, to:14, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+    t(s:pss\np, 'constructed', [from:15, to:26, pos:'VBN', lemma:'construct', sem:'EXS', wordnet:'construct.v.01', verbnet:['Result']])),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'in', [from:27, to:29, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Location']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'this', [from:30, to:34, pos:'DT', lemma:'this', sem:'PRX', wordnet:'O']),
+      t(n, 'town', [from:35, to:39, pos:'NN', lemma:'town', sem:'CON', wordnet:'town.n.01'])),
+     t(., '.', [from:39, to:40, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

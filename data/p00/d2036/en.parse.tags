@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  ba(s:dcl,
+   t(np, 'He', [from:0, to:2, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:adj\np), 'is', [from:3, to:5, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+    rp(s:adj\np,
+     t(s:adj\np, 'rich', [from:6, to:10, pos:'JJ', lemma:'rich', sem:'IST', wordnet:'rich.a.01', verbnet:['Attribute']]),
+     t(,, ',', [from:10, to:11, pos:',', lemma:',', sem:'NIL', wordnet:'O'])))),
+  conj(s:dcl\s:dcl,
+   t(conj, 'but', [from:12, to:15, pos:'CC', lemma:'but', sem:'BUT', wordnet:'O']),
+   ba(s:dcl,
+    t(np, 'he', [from:16, to:18, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+    fa(s:dcl\np,
+     t((s:dcl\np)/(s:adj\np), 'is', [from:19, to:21, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+     rp(s:adj\np,
+      t(s:adj\np, 'unkind', [from:22, to:28, pos:'JJ', lemma:'unkind', sem:'IST', wordnet:'unkind.a.01', verbnet:['Attribute']]),
+      t(., '.', [from:28, to:29, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

@@ -1,0 +1,25 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'Every', [from:0, to:5, pos:'DT', lemma:'every', sem:'AND', wordnet:'O']),
+   ba(n,
+    t(n, 'body', [from:5, to:9, pos:'NN', lemma:'person', sem:'CON', wordnet:'person.n.01']),
+    fa(n\n,
+     t((n\n)/np, 'except', [from:10, to:16, pos:'IN', lemma:'except', sem:'NOT', wordnet:'O']),
+     lx(np, n,
+      t(n, 'Joe', [from:17, to:20, pos:'NNP', lemma:'joe', sem:'PER', wordnet:'male.n.02']))))),
+  fa(s:dcl\np,
+   t((s:dcl\np)/pp, 'went', [from:21, to:25, pos:'VBD', lemma:'go', sem:'EPS', wordnet:'go.v.01', verbnet:['Theme']]),
+   fa(pp,
+    t(pp/np, 'to', [from:26, to:28, pos:'TO', lemma:'to', sem:'REL', wordnet:'O', verbnet:['Destination']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:29, to:32, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'party', [from:33, to:38, pos:'NN', lemma:'party', sem:'CON', wordnet:'party.n.04'])),
+     t(., '.', [from:38, to:39, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

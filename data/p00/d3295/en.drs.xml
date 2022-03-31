@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- Warn ø Tom . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="tok">Warn</tag>
+     <tag type="cat">(s:b\np)/np</tag>
+     <tag type="sym">warn</tag>
+     <tag type="lemma">warn</tag>
+     <tag type="from">0</tag>
+     <tag type="to">4</tag>
+     <tag type="pos">NNP</tag>
+     <tag type="sem">EXS</tag>
+     <tag type="wordnet">warn.v.01</tag>
+     <tag type="verbnet" n="2">[Recipient,Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="from">5</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">Tom</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">tom</tag>
+     <tag type="lemma">tom</tag>
+     <tag type="from">5</tag>
+     <tag type="to">8</tag>
+     <tag type="pos">NNP</tag>
+     <tag type="sem">PER</tag>
+     <tag type="wordnet">male.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">(s:b\np)\(s:b\np)</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">8</tag>
+     <tag type="to">9</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b1">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="0"></dr>
+   <dr label="b2" name="x2" from="5" to="-1"></dr>
+   <dr label="b1" name="e1" from="0" to="4"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="e1" symbol="warn" synset="warn.v.01" from="0" to="4"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x2" symbol="Recipient" framenet="Attempt_suasion@Addressee" from="0" to="4"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x1" symbol="Agent" framenet="Attempt_suasion@Speaker" from="0" to="4"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="x2" symbol="male" synset="male.n.02" from="5" to="8"></pred>
+   </cond>
+   <cond label="b2">
+    <named arg="x2" symbol="tom" from="5" to="8"></named>
+   </cond>
+   <cond label="b1">
+    <pred arg="x1" symbol="person" synset="person.n.01" from="0" to="0"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="EQU" arg1="x1" arg2="hearer" from="0" to="0"></comp>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'pond', [from:4, to:8, pos:'NN', lemma:'pond', sem:'CON', wordnet:'pond.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:pt\np), 'has', [from:9, to:12, pos:'VBZ', lemma:'have', sem:'NOW', wordnet:'O']),
+   fa(s:pt\np,
+    t((s:pt\np)/pr, 'dried', [from:13, to:18, pos:'VBN', lemma:'dry~up', sem:'EXT', wordnet:'dry_up.v.01', verbnet:['Patient']]),
+    rp(pr,
+     t(pr, 'up', [from:19, to:21, pos:'RP', lemma:'up', sem:'REL', wordnet:'O']),
+     t(., '.', [from:21, to:22, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

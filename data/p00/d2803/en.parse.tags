@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/(n/pp), 'My', [from:0, to:2, pos:'PRP$', lemma:'speaker', sem:'HAS', wordnet:'O', verbnet:['Of']]),
+   t(n/pp, 'son', [from:3, to:6, pos:'NN', lemma:'son', sem:'ROL', wordnet:'son.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:b\np), 'will', [from:7, to:11, pos:'MD', lemma:'will', sem:'FUT', wordnet:'O']),
+   fa(s:b\np,
+    fa((s:b\np)/np,
+     t(((s:b\np)/np)/pr, 'take', [from:12, to:16, pos:'VB', lemma:'take~over', sem:'EXS', wordnet:'take_over.v.03', verbnet:['Theme','Agent']]),
+     t(pr, 'over', [from:17, to:21, pos:'RP', lemma:'over', sem:'REL', wordnet:'O'])),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:22, to:25, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'job', [from:26, to:29, pos:'NN', lemma:'job', sem:'CON', wordnet:'job.n.02'])),
+     t(., '.', [from:29, to:30, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

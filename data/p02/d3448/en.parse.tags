@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'crowd', [from:4, to:9, pos:'NN', lemma:'crowd', sem:'CON', wordnet:'crowd.n.01'])),
+  ba(s:dcl\np,
+   t(s:dcl\np, 'applauded', [from:10, to:19, pos:'VBD', lemma:'applaud', sem:'EPS', wordnet:'applaud.v.01', verbnet:['Agent']]),
+   rp((s\np)\(s\np),
+    t((s\np)\(s\np), 'again', [from:20, to:25, pos:'RB', lemma:'again', sem:'ALT', wordnet:'O']),
+    t(., '.', [from:25, to:26, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

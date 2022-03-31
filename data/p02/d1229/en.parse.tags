@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'organizers', [from:4, to:14, pos:'NNS', lemma:'organizer', sem:'ROL', wordnet:'organizer.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'expect', [from:15, to:21, pos:'VBP', lemma:'expect', sem:'ENS', wordnet:'expect.v.01', verbnet:['Theme','Agent']]),
+   rp(np,
+    lx(np, n,
+     fa(n,
+      fa(n/n,
+       t((n/n)/(n/n), 'more~than', [from:22, to:31, pos:'JJ', lemma:'more~than', sem:'MOR', wordnet:'O']),
+       t(n/n, '300,000', [from:32, to:39, pos:'CD', lemma:'300000', sem:'QUC', wordnet:'O', verbnet:['Equal']])),
+      t(n, 'visitors', [from:40, to:48, pos:'NNS', lemma:'visitor', sem:'ROL', wordnet:'visitor.n.01']))),
+    t(., '.', [from:48, to:49, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

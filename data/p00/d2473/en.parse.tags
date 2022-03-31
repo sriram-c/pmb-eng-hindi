@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'These', [from:0, to:5, pos:'DT', lemma:'entity', sem:'PRX', wordnet:'entity.n.01']),
+   t(n, 'cups', [from:6, to:10, pos:'NNS', lemma:'cup', sem:'CON', wordnet:'cup.n.01'])),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/(s:adj\np),
+    t((s:dcl\np)/(s:adj\np), 'are', [from:11, to:14, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+    t((s\np)\(s\np), 'all', [from:15, to:18, pos:'DT', lemma:'all', sem:'AND', wordnet:'O'])),
+   rp(s:adj\np,
+    t(s:adj\np, 'broken', [from:19, to:25, pos:'VBN', lemma:'broken', sem:'IST', wordnet:'broken.a.01', verbnet:['Attribute']]),
+    t(., '.', [from:25, to:26, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

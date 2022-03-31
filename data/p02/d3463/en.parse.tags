@@ -1,0 +1,28 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'He', [from:0, to:2, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+  rp(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:adj\np), '\'s', [from:2, to:4, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+    t(s:adj\np, 'rich', [from:5, to:9, pos:'JJ', lemma:'rich', sem:'IST', wordnet:'rich.a.01', verbnet:['Attribute']])),
+   t(., '.', [from:9, to:10, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+
+ccg(2,
+ ba(s:dcl,
+  t(np, 'He', [from:11, to:13, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/(s:b\np),
+    t((s:dcl\np)/(s:b\np), 'does', [from:14, to:18, pos:'VBZ', lemma:'do', sem:'NOW', wordnet:'O']),
+    t((s\np)\(s\np), 'n\'t', [from:18, to:21, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+   fa(s:b\np,
+    t((s:b\np)/np, 'need', [from:22, to:26, pos:'VB', lemma:'need', sem:'EXS', wordnet:'need.v.03', verbnet:['Theme','Pivot']]),
+    rp(np,
+     lx(np, n,
+      t(n, 'money', [from:27, to:32, pos:'NN', lemma:'money', sem:'CON', wordnet:'money.n.01'])),
+     t(., '!', [from:32, to:33, pos:'.', lemma:'!', sem:'EMP', wordnet:'O'])))))).
+

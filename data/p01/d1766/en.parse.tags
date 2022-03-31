@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   fa((s:dcl\np)/pp,
+    t(((s:dcl\np)/pp)/np, 'filled', [from:2, to:8, pos:'VBD', lemma:'fill', sem:'EPS', wordnet:'fill.v.01', verbnet:['Destination','Agent']]),
+    fa(np,
+     t(np/n, 'a', [from:9, to:10, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+     t(n, 'vase', [from:11, to:15, pos:'NN', lemma:'vase', sem:'CON', wordnet:'vase.n.01']))),
+   fa(pp,
+    t(pp/np, 'with', [from:16, to:20, pos:'IN', lemma:'with', sem:'REL', wordnet:'O', verbnet:['Theme']]),
+    rp(np,
+     lx(np, n,
+      t(n, 'water', [from:21, to:26, pos:'NN', lemma:'water', sem:'CON', wordnet:'water.n.01'])),
+     t(., '.', [from:26, to:27, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

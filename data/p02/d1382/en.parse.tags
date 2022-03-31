@@ -1,0 +1,19 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:wq,
+  t(s:wq/(s:dcl\np), 'Who', [from:0, to:3, pos:'WP', lemma:'person', sem:'QUE', wordnet:'person.n.01', verbnet:['Name']]),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'painted', [from:4, to:11, pos:'VBD', lemma:'paint', sem:'EPS', wordnet:'paint.v.01', verbnet:['Result','Agent']]),
+   ba(np,
+    fa(np,
+     t(np/np, '\"', [from:12, to:13, pos:'LQU', lemma:'\"', sem:'NIL', wordnet:'O']),
+     lx(np, n,
+      t(n, 'Sunflowers', [from:13, to:23, pos:'NNPS', lemma:'sunflowers', sem:'ART', wordnet:'painting.n.01']))),
+    rp(np\np,
+     t(np\np, '\"', [from:23, to:24, pos:'RQU', lemma:'\"', sem:'NIL', wordnet:'O']),
+     t(., '?', [from:24, to:25, pos:'.', lemma:'?', sem:'QUE', wordnet:'O'])))))).
+

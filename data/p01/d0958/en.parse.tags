@@ -1,0 +1,10 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:intj,
+  t(s:intj, 'Hello', [from:0, to:5, pos:'UH', lemma:'hello', sem:'GRE', wordnet:'hello.n.01']),
+  t(., '!', [from:5, to:6, pos:'.', lemma:'!', sem:'EMP', wordnet:'O']))).
+

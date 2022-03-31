@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:q,
+  ba(s:dcl,
+   t(np, 'You', [from:0, to:3, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O']),
+   fa(s:dcl\np,
+    t((s:dcl\np)/pp, 'lied', [from:4, to:8, pos:'VBD', lemma:'lie', sem:'EPS', wordnet:'lie.v.05', verbnet:['Agent']]),
+    fa(pp,
+     t(pp/np, 'to', [from:9, to:11, pos:'TO', lemma:'to', sem:'REL', wordnet:'O', verbnet:['Recipient']]),
+     t(np, 'us', [from:12, to:14, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O'])))),
+  fa(s:q\s:dcl,
+   t((s:q\s:dcl)/(s:q/(s:b\np)), ',', [from:14, to:15, pos:',', lemma:',', sem:'NIL', wordnet:'O']),
+   fa(s:q/(s:b\np),
+    gbxc((s:q/(s:b\np))/np,
+     t((s:q/(s:b\np))/np, 'did', [from:16, to:19, pos:'VBD', lemma:'do', sem:'PST', wordnet:'O']),
+     t(s\s, 'n\'t', [from:19, to:22, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+    rp(np,
+     t(np, 'you', [from:23, to:26, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O']),
+     t(., '?', [from:26, to:27, pos:'.', lemma:'?', sem:'QUE', wordnet:'O'])))))).
+

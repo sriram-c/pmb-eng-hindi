@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:dcl,
+  ba(s:dcl,
+   t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+   ba(s:dcl\np,
+    fa(s:dcl\np,
+     t((s:dcl\np)/(s:pt\np), '\'ve', [from:1, to:4, pos:'VBP', lemma:'have', sem:'NOW', wordnet:'O']),
+     fa(s:pt\np,
+      t((s:pt\np)/np, 'studied', [from:5, to:12, pos:'VBN', lemma:'study', sem:'EXT', wordnet:'study.v.04', verbnet:['Theme','Agent']]),
+      lx(np, n,
+       t(n, 'Japanese', [from:13, to:21, pos:'JJ', lemma:'japanese', sem:'CON', wordnet:'japanese.n.02'])))),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/np, 'for', [from:22, to:25, pos:'IN', lemma:'for', sem:'REL', wordnet:'O', verbnet:['Duration']]),
+     lx(np, n,
+      fa(n,
+       t(n/n, 'five', [from:26, to:30, pos:'CD', lemma:'5', sem:'QUC', wordnet:'O', verbnet:['Quantity']]),
+       t(n, 'years', [from:31, to:36, pos:'NNS', lemma:'year', sem:'UOM', wordnet:'year.n.01'])))))),
+  t(., '.', [from:36, to:37, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+

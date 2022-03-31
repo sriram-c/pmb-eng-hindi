@@ -1,0 +1,14 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'Both', [from:0, to:4, pos:'DT', lemma:'both', sem:'AND', wordnet:'O']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), 'were', [from:5, to:9, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+   rp(s:adj\np,
+    t(s:adj\np, 'silent', [from:10, to:16, pos:'JJ', lemma:'silent', sem:'IST', wordnet:'silent.a.02', verbnet:['Attribute']]),
+    t(., '.', [from:16, to:17, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

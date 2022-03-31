@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np:thr, 'There', [from:0, to:5, pos:'EX', lemma:'there', sem:'NIL', wordnet:'O']),
+  fa(s:dcl\np,
+   fa((s:dcl\np)/(s:ng\np),
+    t(((s:dcl\np)/(s:ng\np))/np, 'is', [from:6, to:8, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+    fa(np,
+     t(np/n, 'no', [from:9, to:11, pos:'DT', lemma:'no', sem:'NOT', wordnet:'O']),
+     t(n, 'person', [from:12, to:18, pos:'NN', lemma:'person', sem:'CON', wordnet:'person.n.01']))),
+   fa(s:ng\np,
+    t((s:ng\np)/np, 'cutting', [from:19, to:26, pos:'VBG', lemma:'cut', sem:'EXG', wordnet:'cut.v.01', verbnet:['Patient','Agent']]),
+    fa(np,
+     t(np/n, 'some', [from:27, to:31, pos:'DT', lemma:'some', sem:'DIS', wordnet:'O']),
+     t(n, 'ginger', [from:32, to:38, pos:'NN', lemma:'ginger', sem:'CON', wordnet:'ginger.n.02'])))))).
+

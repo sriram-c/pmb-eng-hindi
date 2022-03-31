@@ -1,0 +1,34 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'doctor', [from:4, to:10, pos:'NN', lemma:'doctor', sem:'ROL', wordnet:'doctor.n.01'])),
+  fa(s:dcl\np,
+   fa((s:dcl\np)/s:em,
+    t(((s:dcl\np)/s:em)/np, 'told', [from:11, to:15, pos:'VBD', lemma:'tell', sem:'EPS', wordnet:'tell.v.02', verbnet:['Recipient','Topic','Agent']]),
+    lx(np, n,
+     t(n, 'Tom', [from:16, to:19, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02']))),
+   fa(s:em,
+    t(s:em/s:dcl, 'that', [from:20, to:24, pos:'IN', lemma:'that', sem:'SUB', wordnet:'O']),
+    ba(s:dcl,
+     t(np, 'he', [antecedent:'16,19', from:25, to:27, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+     fa(s:dcl\np,
+      t((s:dcl\np)/(s:b\np), 'should', [from:28, to:34, pos:'MD', lemma:'should', sem:'NEC', wordnet:'O']),
+      fa(s:b\np,
+       t((s:b\np)/np, 'eat', [from:35, to:38, pos:'VB', lemma:'eat', sem:'EXS', wordnet:'eat.v.01', verbnet:['Patient','Agent']]),
+       fa(np,
+        t(np/n, 'a', [from:39, to:40, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+        fa(n,
+         t(n/pp, 'lot', [from:41, to:44, pos:'NN', lemma:'+', sem:'QUV', wordnet:'O']),
+         fa(pp,
+          t(pp/np, 'of', [from:45, to:47, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['Equal']]),
+          rp(np,
+           lx(np, n,
+            t(n, 'vegetables', [from:48, to:58, pos:'NNS', lemma:'vegetable', sem:'CON', wordnet:'vegetable.n.01'])),
+           t(., '.', [from:58, to:59, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))))))))).
+

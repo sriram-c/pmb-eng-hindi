@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'deserve', [from:2, to:9, pos:'VBP', lemma:'deserve', sem:'ENS', wordnet:'deserve.v.01', verbnet:['Theme','Pivot']]),
+   rp(np,
+    fa(np,
+     t(np/n, 'an', [from:10, to:12, pos:'DT', lemma:'an', sem:'DIS', wordnet:'O']),
+     t(n, 'explanation', [from:13, to:24, pos:'NN', lemma:'explanation', sem:'CON', wordnet:'explanation.n.01'])),
+    t(., '.', [from:24, to:25, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

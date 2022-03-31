@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'He', [from:0, to:2, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/pp, 'jumped', [from:3, to:9, pos:'VBD', lemma:'jump', sem:'EPS', wordnet:'jump.v.01', verbnet:['Theme']]),
+   fa(pp,
+    t(pp/np, 'into', [from:10, to:14, pos:'IN', lemma:'into', sem:'REL', wordnet:'O', verbnet:['Destination']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:15, to:18, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'train', [from:19, to:24, pos:'NN', lemma:'train', sem:'CON', wordnet:'train.n.01'])),
+     t(., '.', [from:24, to:25, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

@@ -1,0 +1,14 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'He', [from:0, to:2, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'wants', [from:3, to:8, pos:'VBZ', lemma:'want', sem:'ENS', wordnet:'want.v.01', verbnet:['Theme','Pivot']]),
+   rp(np,
+    t(np, 'you', [from:9, to:12, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O']),
+    t(., '.', [from:12, to:13, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

@@ -1,0 +1,28 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:q,
+  fa(s:dcl,
+   t(s/s, 'But', [from:0, to:3, pos:'CC', lemma:'but', sem:'BUT', wordnet:'O']),
+   ba(s:dcl,
+    t(np, 'he', [from:4, to:6, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+    fa(s:dcl\np,
+     t((s:dcl\np)/(s:adj\np), 'is', [from:7, to:9, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+     ba(s:adj\np,
+      t(s:adj\np, 'quiet', [from:10, to:15, pos:'JJ', lemma:'quiet', sem:'IST', wordnet:'quiet.a.01', verbnet:['Theme']]),
+      conj((s:adj\np)\(s:adj\np),
+       t(conj, 'and', [from:16, to:19, pos:'CC', lemma:'and', sem:'COO', wordnet:'O']),
+       t(s:adj\np, 'thoughtful', [from:20, to:30, pos:'JJ', lemma:'thoughtful', sem:'IST', wordnet:'thoughtful.a.01', verbnet:['Attribute']])))))),
+  fa(s:q\s:dcl,
+   t((s:q\s:dcl)/(s:q/(s:adj\np)), ',', [from:30, to:31, pos:',', lemma:',', sem:'NIL', wordnet:'O']),
+   fa(s:q/(s:adj\np),
+    gbxc((s:q/(s:adj\np))/np,
+     t((s:q/(s:adj\np))/np, 'is', [from:32, to:34, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+     t(s\s, 'n\'t', [from:34, to:37, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+    rp(np,
+     t(np, 'he', [from:38, to:40, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+     t(., '?', [from:40, to:41, pos:'.', lemma:'?', sem:'QUE', wordnet:'O'])))))).
+

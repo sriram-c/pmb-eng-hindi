@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- ø Kraft sold ø Celestial~Seasonings to ø Lipton in ø 1986 . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="from">0</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">Kraft</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">kraft</tag>
+     <tag type="lemma">kraft</tag>
+     <tag type="from">0</tag>
+     <tag type="to">5</tag>
+     <tag type="pos">NNP</tag>
+     <tag type="sem">ORG</tag>
+     <tag type="wordnet">company.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="tok">sold</tag>
+     <tag type="cat">((s:dcl\np)/pp)/np</tag>
+     <tag type="sym">sell</tag>
+     <tag type="lemma">sell</tag>
+     <tag type="from">6</tag>
+     <tag type="to">10</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="sem">EPS</tag>
+     <tag type="wordnet">sell.v.01</tag>
+     <tag type="verbnet" n="2">[Theme,Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="from">11</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">Celestial~Seasonings</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">celestial~seasonings</tag>
+     <tag type="lemma">celestial~seasonings</tag>
+     <tag type="from">11</tag>
+     <tag type="to">31</tag>
+     <tag type="pos">NNP</tag>
+     <tag type="sem">ORG</tag>
+     <tag type="wordnet">company.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="tok">to</tag>
+     <tag type="cat">pp/np</tag>
+     <tag type="sym">to</tag>
+     <tag type="lemma">to</tag>
+     <tag type="from">32</tag>
+     <tag type="to">34</tag>
+     <tag type="pos">TO</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Recipient]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="from">35</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">Lipton</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">lipton</tag>
+     <tag type="lemma">lipton</tag>
+     <tag type="from">35</tag>
+     <tag type="to">41</tag>
+     <tag type="pos">NNP</tag>
+     <tag type="sem">ORG</tag>
+     <tag type="wordnet">company.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1009">
+   <tags>
+     <tag type="tok">in</tag>
+     <tag type="cat">((s:dcl\np)\(s:dcl\np))/np</tag>
+     <tag type="sym">in</tag>
+     <tag type="lemma">in</tag>
+     <tag type="from">42</tag>
+     <tag type="to">44</tag>
+     <tag type="pos">IN</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Time]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1010">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="from">45</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1011">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">1986</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">1986</tag>
+     <tag type="lemma">1986</tag>
+     <tag type="from">45</tag>
+     <tag type="to">49</tag>
+     <tag type="pos">CD</tag>
+     <tag type="sem">YOC</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1012">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">49</tag>
+     <tag type="to">50</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b3">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="-1"></dr>
+   <dr label="b2" name="x2" from="11" to="-1"></dr>
+   <dr label="b3" name="e1" from="6" to="10"></dr>
+   <dr label="b4" name="x3" from="35" to="-1"></dr>
+   <dr label="b3" name="t1" from="0" to="0"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="company" synset="company.n.01" from="0" to="5"></pred>
+   </cond>
+   <cond label="b1">
+    <named arg="x1" symbol="kraft" from="0" to="5"></named>
+   </cond>
+   <cond label="b3">
+    <pred arg="e1" symbol="sell" synset="sell.v.01" from="6" to="10"></pred>
+   </cond>
+   <cond label="b3">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="0" to="0"></rel>
+   </cond>
+   <cond label="b3">
+    <rel arg1="e1" arg2="x3" symbol="Recipient" framenet="Statement@Addressee" from="32" to="34"></rel>
+   </cond>
+   <cond label="b3">
+    <rel arg1="e1" arg2="x2" symbol="Theme" framenet="Giving@Theme" from="6" to="10"></rel>
+   </cond>
+   <cond label="b3">
+    <rel arg1="e1" arg2="x1" symbol="Agent" framenet="Giving@Donor" from="6" to="10"></rel>
+   </cond>
+   <cond label="b3">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="0" to="0"></pred>
+   </cond>
+   <cond label="b3">
+    <rel arg1="t1" arg2="1986" symbol="YearOfCentury" framenet="YearOfCentury" from="45" to="49"></rel>
+   </cond>
+   <cond label="b3">
+    <comp symbol="TPR" arg1="t1" arg2="now" from="6" to="10"></comp>
+   </cond>
+   <cond label="b2">
+    <pred arg="x2" symbol="company" synset="company.n.01" from="11" to="31"></pred>
+   </cond>
+   <cond label="b2">
+    <named arg="x2" symbol="celestial~seasonings" from="11" to="31"></named>
+   </cond>
+   <cond label="b4">
+    <pred arg="x3" symbol="company" synset="company.n.01" from="35" to="41"></pred>
+   </cond>
+   <cond label="b4">
+    <named arg="x3" symbol="lipton" from="35" to="41"></named>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:q,
+  fa(s:q/(s:b\np),
+   t((s:q/(s:b\np))/np, 'Can', [from:0, to:3, pos:'MD', lemma:'can', sem:'POS', wordnet:'O']),
+   t(np, 'I', [from:4, to:5, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O'])),
+  fa(s:b\np,
+   t((s:b\np)/np, 'borrow', [from:6, to:12, pos:'VB', lemma:'borrow', sem:'EXS', wordnet:'borrow.v.01', verbnet:['Theme','Agent']]),
+   rp(np,
+    fa(np,
+     t(np/n, 'the', [from:13, to:16, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'hair~dryer', [from:17, to:27, pos:'NN', lemma:'hair~dryer', sem:'CON', wordnet:'hair_dryer.n.01'])),
+    t(., '?', [from:27, to:28, pos:'.', lemma:'?', sem:'QUE', wordnet:'O']))))).
+

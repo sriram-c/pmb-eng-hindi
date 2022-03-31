@@ -1,0 +1,25 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Corsairfly', [from:0, to:10, pos:'NNP', lemma:'corsairfly', sem:'ORG', wordnet:'company.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'is', [from:11, to:13, pos:'VBZ', lemma:'be', sem:'ENS', wordnet:'be.v.01', verbnet:['Co-Theme','Theme']]),
+   fa(np,
+    t(np/n, 'an', [from:14, to:16, pos:'DT', lemma:'an', sem:'DIS', wordnet:'O']),
+    ba(n,
+     t(n, 'airline', [from:17, to:24, pos:'NN', lemma:'airline', sem:'CON', wordnet:'airline.n.02']),
+     lx(n\n, s:adj\np,
+      fa(s:adj\np,
+       t((s:adj\np)/pp, 'based', [from:25, to:30, pos:'VBN', lemma:'based', sem:'IST', wordnet:'based.a.02', verbnet:['Theme']]),
+       fa(pp,
+        t(pp/np, 'in', [from:31, to:33, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Location']]),
+        rp(np,
+         lx(np, n,
+          t(n, 'Paris', [from:34, to:39, pos:'NNP', lemma:'paris', sem:'GPE', wordnet:'city.n.01'])),
+         t(., '.', [from:39, to:40, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))))))).
+

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- What is the height of the tallest redwood ? --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="tok">What</tag>
+     <tag type="cat">s:wq/(s:q/np)</tag>
+     <tag type="sym">entity</tag>
+     <tag type="lemma">entity</tag>
+     <tag type="from">0</tag>
+     <tag type="to">4</tag>
+     <tag type="pos">WP</tag>
+     <tag type="sem">QUE</tag>
+     <tag type="wordnet">entity.n.01</tag>
+     <tag type="verbnet" n="1">[Equal]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="tok">is</tag>
+     <tag type="cat">(s:q/np)/np</tag>
+     <tag type="sym">be</tag>
+     <tag type="lemma">be</tag>
+     <tag type="from">5</tag>
+     <tag type="to">7</tag>
+     <tag type="pos">VBZ</tag>
+     <tag type="sem">ENS</tag>
+     <tag type="wordnet">be.v.02</tag>
+     <tag type="verbnet" n="2">[Theme,Co-Theme]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">the</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">the</tag>
+     <tag type="lemma">the</tag>
+     <tag type="from">8</tag>
+     <tag type="to">11</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">height</tag>
+     <tag type="cat">n/pp</tag>
+     <tag type="sym">height</tag>
+     <tag type="lemma">height</tag>
+     <tag type="from">12</tag>
+     <tag type="to">18</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">height.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="tok">of</tag>
+     <tag type="cat">pp/np</tag>
+     <tag type="sym">of</tag>
+     <tag type="lemma">of</tag>
+     <tag type="from">19</tag>
+     <tag type="to">21</tag>
+     <tag type="pos">IN</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[AttributeOf]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">the</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">the</tag>
+     <tag type="lemma">the</tag>
+     <tag type="from">22</tag>
+     <tag type="to">25</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="tok">tallest</tag>
+     <tag type="cat">n/n</tag>
+     <tag type="sym">tall</tag>
+     <tag type="lemma">tall</tag>
+     <tag type="from">26</tag>
+     <tag type="to">33</tag>
+     <tag type="pos">JJS</tag>
+     <tag type="sem">TOP</tag>
+     <tag type="wordnet">tall.a.01</tag>
+     <tag type="verbnet" n="1">[Attribute]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">redwood</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">redwood</tag>
+     <tag type="lemma">redwood</tag>
+     <tag type="from">34</tag>
+     <tag type="to">41</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">redwood.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1009">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">?</tag>
+     <tag type="cat">s:wq\s:wq</tag>
+     <tag type="sym">?</tag>
+     <tag type="lemma">?</tag>
+     <tag type="from">41</tag>
+     <tag type="to">42</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">QUE</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b1">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="4"></dr>
+   <dr label="b1" name="x2" from="8" to="11"></dr>
+   <dr label="b2" name="x3" from="22" to="25"></dr>
+   <dr label="b2" name="s1" from="26" to="33"></dr>
+   <dr label="b2" name="s2" from="26" to="33"></dr>
+   <dr label="b1" name="e1" from="5" to="7"></dr>
+   <dr label="b1" name="t1" from="5" to="7"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="entity" synset="entity.n.01" from="0" to="4"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="EQU" arg1="x1" arg2="?" from="0" to="4"></comp>
+   </cond>
+   <cond label="b1">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="5" to="7"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="EQU" arg1="t1" arg2="now" from="5" to="7"></comp>
+   </cond>
+   <cond label="b1">
+    <pred arg="e1" symbol="be" synset="be.v.02" from="5" to="7"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="5" to="7"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x2" symbol="Theme" framenet="Placing@Theme" from="5" to="7"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x1" symbol="Co-Theme" framenet="Replacing@New" from="5" to="7"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="x2" symbol="height" synset="height.n.01" from="12" to="18"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x2" arg2="x3" symbol="AttributeOf" framenet="AttributeOf" from="19" to="21"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="s2" symbol="most" synset="most.r.01" from="26" to="33"></pred>
+   </cond>
+   <cond label="b2">
+    <pred arg="s1" symbol="tall" synset="tall.a.01" from="26" to="33"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="s1" arg2="s2" symbol="Degree" framenet="Degree" from="26" to="33"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="x3" symbol="redwood" synset="redwood.n.02" from="34" to="41"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="x3" arg2="s1" symbol="Attribute" framenet="Attribute" from="26" to="33"></rel>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

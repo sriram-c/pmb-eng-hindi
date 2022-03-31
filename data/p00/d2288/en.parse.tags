@@ -1,0 +1,19 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/pp, 'dreamed', [from:4, to:11, pos:'VBD', lemma:'dream', sem:'EPS', wordnet:'dream.v.01', verbnet:['Experiencer']]),
+    fa(pp,
+     t(pp/np, 'of', [from:12, to:14, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['Stimulus']]),
+     t(np, 'her', [from:15, to:18, pos:'PRP$', lemma:'female', sem:'PRO', wordnet:'female.n.02']))),
+   rp((s\np)\(s\np),
+    t((s\np)\(s\np), 'often', [from:19, to:24, pos:'RB', lemma:'+', sem:'QUV', wordnet:'O']),
+    t(., '.', [from:24, to:25, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

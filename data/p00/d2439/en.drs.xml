@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- My grandmother passed away . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="tok">My</tag>
+     <tag type="cat">np/(n/pp)</tag>
+     <tag type="sym">speaker</tag>
+     <tag type="lemma">speaker</tag>
+     <tag type="from">0</tag>
+     <tag type="to">2</tag>
+     <tag type="pos">PRP$</tag>
+     <tag type="sem">HAS</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Of]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">grandmother</tag>
+     <tag type="cat">n/pp</tag>
+     <tag type="sym">grandmother</tag>
+     <tag type="lemma">grandmother</tag>
+     <tag type="from">3</tag>
+     <tag type="to">14</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">ROL</tag>
+     <tag type="wordnet">grandmother.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="tok">passed</tag>
+     <tag type="cat">(s:dcl\np)/pr</tag>
+     <tag type="sym">pass~away</tag>
+     <tag type="lemma">pass~away</tag>
+     <tag type="from">15</tag>
+     <tag type="to">21</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="sem">EPS</tag>
+     <tag type="wordnet">pass_away.v.01</tag>
+     <tag type="verbnet" n="1">[Patient]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">away</tag>
+     <tag type="cat">pr</tag>
+     <tag type="sym">away</tag>
+     <tag type="lemma">away</tag>
+     <tag type="from">22</tag>
+     <tag type="to">26</tag>
+     <tag type="pos">RB</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">26</tag>
+     <tag type="to">27</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b2">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="2"></dr>
+   <dr label="b1" name="x2" from="3" to="14"></dr>
+   <dr label="b2" name="e1" from="15" to="21"></dr>
+   <dr label="b2" name="t1" from="15" to="21"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x2" symbol="grandmother" synset="grandmother.n.01" from="3" to="14"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x2" arg2="speaker" symbol="Of" framenet="Of" from="0" to="2"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="x1" symbol="person" synset="person.n.01" from="3" to="14"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x1" arg2="x2" symbol="Role" framenet="Role" from="3" to="14"></rel>
+   </cond>
+   <cond label="b2">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="15" to="21"></pred>
+   </cond>
+   <cond label="b2">
+    <comp symbol="TPR" arg1="t1" arg2="now" from="15" to="21"></comp>
+   </cond>
+   <cond label="b2">
+    <pred arg="e1" symbol="pass_away" synset="pass_away.v.01" from="15" to="21"></pred>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="15" to="21"></rel>
+   </cond>
+   <cond label="b2">
+    <rel arg1="e1" arg2="x1" symbol="Patient" framenet="Eclipse@Eclipsed" from="15" to="21"></rel>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'It', [from:0, to:2, pos:'PRP', lemma:'entity', sem:'PRO', wordnet:'entity.n.01']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/pp, 'looks', [from:3, to:8, pos:'VBZ', lemma:'look~like', sem:'ENS', wordnet:'look_like.v.01', verbnet:['Theme']]),
+   rp(pp,
+    fa(pp,
+     t(pp/np, 'like', [from:9, to:13, pos:'IN', lemma:'like', sem:'REL', wordnet:'O', verbnet:['Co-Theme']]),
+     fa(np,
+      t(np/n, 'a', [from:14, to:15, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+      t(n, 'UFO', [from:16, to:19, pos:'NNP', lemma:'ufo', sem:'CON', wordnet:'ufo.n.01']))),
+    t(., '.', [from:19, to:20, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

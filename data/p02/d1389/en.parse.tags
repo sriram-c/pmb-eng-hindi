@@ -1,0 +1,25 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:wq,
+  t(s:wq/(s:dcl\np), 'What', [from:0, to:4, pos:'WP', lemma:'entity', sem:'QUE', wordnet:'entity.n.01', verbnet:['Equal']]),
+  rp(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/np, 'is', [from:5, to:7, pos:'VBZ', lemma:'be', sem:'ENS', wordnet:'be.v.02', verbnet:['Co-Theme','Theme']]),
+    fa(np,
+     t(np/n, 'the', [from:8, to:11, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     fa(n,
+      t(n/pp, 'first~name', [from:12, to:22, pos:'NN', lemma:'first~name', sem:'CON', wordnet:'first_name.n.01']),
+      fa(pp,
+       t(pp/np, 'of', [from:23, to:25, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['Bearer']]),
+       fa(np,
+        ba(np/(n/pp),
+         lx(np, n,
+          t(n, 'Nelson~Mandela', [from:26, to:40, pos:'NNP', lemma:'nelson~mandela', sem:'PER', wordnet:'male.n.02'])),
+         t((np/(n/pp))\np, '\'s', [from:40, to:42, pos:'POS', lemma:'\'s', sem:'HAS', wordnet:'O', verbnet:['Of']])),
+        t(n/pp, 'wife', [from:43, to:47, pos:'NN', lemma:'wife', sem:'ROL', wordnet:'wife.n.01'])))))),
+   t(., '?', [from:47, to:48, pos:'.', lemma:'?', sem:'QUE', wordnet:'O'])))).
+

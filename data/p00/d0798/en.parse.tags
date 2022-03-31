@@ -1,0 +1,27 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:dcl,
+  ba(s:dcl,
+   t(np:expl, 'It', [from:0, to:2, pos:'PRP', lemma:'entity', sem:'NIL', wordnet:'entity.n.01']),
+   fa(s:dcl\np,
+    fa((s:dcl\np)/(s:to\np),
+     fa(((s:dcl\np)/(s:to\np))/np,
+      t((((s:dcl\np)/(s:to\np))/np)/np, 'took', [from:3, to:7, pos:'VBD', lemma:'take', sem:'EPS', wordnet:'take.v.02', verbnet:['Duration']]),
+      t(np, 'me', [from:8, to:10, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O'])),
+     lx(np, n,
+      fa(n,
+       t(n/n, 'two', [from:11, to:14, pos:'CD', lemma:'2', sem:'QUC', wordnet:'O', verbnet:['Quantity']]),
+       t(n, 'hours', [from:15, to:20, pos:'NNS', lemma:'hour', sem:'UOM', wordnet:'hour.n.01'])))),
+    fa(s:to\np,
+     t((s:to\np)/(s:b\np), 'to', [from:21, to:23, pos:'TO', lemma:'to', sem:'NIL', wordnet:'O']),
+     fa(s:b\np,
+      t((s:b\np)/np, 'memorize', [from:24, to:32, pos:'VB', lemma:'memorize', sem:'EXS', wordnet:'memorize.v.01', verbnet:['Topic','Agent']]),
+      fa(np,
+       t(np/n, 'this', [from:33, to:37, pos:'DT', lemma:'entity', sem:'PRX', wordnet:'entity.n.01']),
+       t(n, 'sentence', [from:38, to:46, pos:'NN', lemma:'sentence', sem:'CON', wordnet:'sentence.n.01'])))))),
+  t(., '.', [from:46, to:47, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+

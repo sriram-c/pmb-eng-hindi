@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'skier', [from:4, to:9, pos:'NN', lemma:'skier', sem:'ROL', wordnet:'skier.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'suffered', [from:10, to:18, pos:'VBD', lemma:'suffer', sem:'EPS', wordnet:'suffer.v.02', verbnet:['Stimulus','Experiencer']]),
+   rp(np,
+    fa(np,
+     t(np/n, 'a', [from:19, to:20, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+     fa(n,
+      t(n/n, 'head', [from:21, to:25, pos:'NN', lemma:'head', sem:'CON', wordnet:'head.n.01', verbnet:['Location']]),
+      t(n, 'trauma', [from:26, to:32, pos:'NN', lemma:'trauma', sem:'CON', wordnet:'trauma.n.01']))),
+    t(., '.', [from:32, to:33, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

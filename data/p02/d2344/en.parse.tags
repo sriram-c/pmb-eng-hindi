@@ -1,0 +1,23 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  ba(s:dcl\np,
+   ba(s:dcl\np,
+    fa(s:dcl\np,
+     t((s:dcl\np)/(s:ng\np), 'is', [from:4, to:6, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+     t(s:ng\np, 'studying', [from:7, to:15, pos:'VBG', lemma:'study', sem:'EXG', wordnet:'study.v.05', verbnet:['Agent']])),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/np, 'in', [from:16, to:18, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Location']]),
+     fa(np,
+      t(np/n, 'the', [from:19, to:22, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'library', [from:23, to:30, pos:'NN', lemma:'library', sem:'CON', wordnet:'library.n.03'])))),
+   rp((s\np)\(s\np),
+    t((s\np)\(s\np), 'now', [from:31, to:34, pos:'RB', lemma:'now', sem:'NOW', wordnet:'O']),
+    t(., '.', [from:34, to:35, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

@@ -1,0 +1,28 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, '\'m', [from:1, to:3, pos:'VBP', lemma:'be', sem:'ENS', wordnet:'be.v.02', verbnet:['Co-Theme','Theme']]),
+   fa(np,
+    t(np/n, 'a', [from:4, to:5, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+    fa(n,
+     t(n/pp, 'friend', [from:6, to:12, pos:'NN', lemma:'friend', sem:'ROL', wordnet:'friend.n.01']),
+     fa(pp,
+      t(pp/np, 'of', [from:13, to:15, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['Of']]),
+      ba(np,
+       lx(np, n,
+        t(n, 'Tom', [from:16, to:19, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+       conj(np\np,
+        t(conj, 'and', [from:20, to:23, pos:'CC', lemma:'and', sem:'GRP', wordnet:'O']),
+        ba(np,
+         lx(np, n,
+          t(n, 'Mary', [from:24, to:28, pos:'NNP', lemma:'mary', sem:'PER', wordnet:'female.n.02'])),
+         rp(np\np,
+          t(np\np, '\'s', [from:28, to:30, pos:'POS', lemma:'be', sem:'NIL', wordnet:'O']),
+          t(., '.', [from:30, to:31, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))))))).
+

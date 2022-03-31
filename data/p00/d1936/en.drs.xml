@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 10 September 2021, 09:36:38)'">
+<!-- My watch may be ø one or two minutes fast . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="tok">My</tag>
+     <tag type="cat">np/(n/pp)</tag>
+     <tag type="sym">speaker</tag>
+     <tag type="lemma">speaker</tag>
+     <tag type="from">0</tag>
+     <tag type="to">2</tag>
+     <tag type="pos">PRP$</tag>
+     <tag type="sem">HAS</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[User]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">watch</tag>
+     <tag type="cat">n/pp</tag>
+     <tag type="sym">watch</tag>
+     <tag type="lemma">watch</tag>
+     <tag type="from">3</tag>
+     <tag type="to">8</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">watch.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">may</tag>
+     <tag type="cat">(s:dcl\np)/(s:b\np)</tag>
+     <tag type="sym">may</tag>
+     <tag type="lemma">may</tag>
+     <tag type="from">9</tag>
+     <tag type="to">12</tag>
+     <tag type="pos">MD</tag>
+     <tag type="sem">POS</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">be</tag>
+     <tag type="cat">(s:b\np)/(s:adj\np)</tag>
+     <tag type="sym">be</tag>
+     <tag type="lemma">be</tag>
+     <tag type="from">13</tag>
+     <tag type="to">15</tag>
+     <tag type="pos">VB</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">ø</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="sense">0</tag>
+     <tag type="sym">ø</tag>
+     <tag type="lemma">ø</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="from">16</tag>
+     <tag type="to">-1</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="tok">one</tag>
+     <tag type="cat">n/n</tag>
+     <tag type="sym">1</tag>
+     <tag type="lemma">1</tag>
+     <tag type="from">16</tag>
+     <tag type="to">19</tag>
+     <tag type="pos">CD</tag>
+     <tag type="sem">QUC</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Quantity]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">or</tag>
+     <tag type="cat">conj:n/n</tag>
+     <tag type="sym">or</tag>
+     <tag type="lemma">or</tag>
+     <tag type="from">20</tag>
+     <tag type="to">22</tag>
+     <tag type="pos">CC</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="tok">two</tag>
+     <tag type="cat">n/n</tag>
+     <tag type="sym">2</tag>
+     <tag type="lemma">2</tag>
+     <tag type="from">23</tag>
+     <tag type="to">26</tag>
+     <tag type="pos">CD</tag>
+     <tag type="sem">QUC</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Quantity]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1009">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">minutes</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">minute</tag>
+     <tag type="lemma">minute</tag>
+     <tag type="from">27</tag>
+     <tag type="to">34</tag>
+     <tag type="pos">NNS</tag>
+     <tag type="sem">UOM</tag>
+     <tag type="wordnet">minute.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1010">
+   <tags>
+     <tag type="tok">fast</tag>
+     <tag type="cat">(s:adj\np)\np</tag>
+     <tag type="sym">fast</tag>
+     <tag type="lemma">fast</tag>
+     <tag type="from">35</tag>
+     <tag type="to">39</tag>
+     <tag type="pos">RB</tag>
+     <tag type="sem">IST</tag>
+     <tag type="wordnet">fast.a.02</tag>
+     <tag type="verbnet" n="2">[Value,Theme]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1011">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">39</tag>
+     <tag type="to">40</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b2">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="2"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="watch" synset="watch.n.01" from="3" to="8"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="x1" arg2="speaker" symbol="User" framenet="User" from="0" to="2"></rel>
+   </cond>
+   <cond label="b2">
+    <pos from="9" to="12">
+     <drs label="b3">
+      <domain>
+       <dr label="b3" name="x2" from="16" to="-1"></dr>
+       <dr label="b3" name="s1" from="35" to="39"></dr>
+      </domain>
+      <conds>
+       <cond label="b3">
+        <not from="20" to="22">
+         <drs label="b4">
+          <domain>
+          </domain>
+          <conds>
+           <cond label="b4">
+            <not from="20" to="22">
+             <drs label="b5">
+              <domain>
+               <dr label="b5" name="x3" from="20" to="22"></dr>
+               <dr label="b5" name="x4" from="27" to="34"></dr>
+              </domain>
+              <conds>
+               <cond label="b5">
+                <pred arg="x3" symbol="measure" synset="measure.n.02" from="27" to="34"></pred>
+               </cond>
+               <cond label="b5">
+                <rel arg1="x3" arg2="x4" symbol="Unit" framenet="Unit" from="27" to="34"></rel>
+               </cond>
+               <cond label="b5">
+                <rel arg1="x3" arg2="1" symbol="Quantity" framenet="Quantity" from="16" to="19"></rel>
+               </cond>
+               <cond label="b5">
+                <comp symbol="EQU" arg1="x3" arg2="x2" from="20" to="22"></comp>
+               </cond>
+               <cond label="b5">
+                <pred arg="x4" symbol="minute" synset="minute.n.01" from="27" to="34"></pred>
+               </cond>
+              </conds>
+             </drs>
+            </not>
+           </cond>
+           <cond label="b4">
+            <not from="20" to="22">
+             <drs label="b6">
+              <domain>
+               <dr label="b6" name="x5" from="20" to="22"></dr>
+               <dr label="b6" name="x6" from="27" to="34"></dr>
+              </domain>
+              <conds>
+               <cond label="b6">
+                <pred arg="x5" symbol="measure" synset="measure.n.02" from="27" to="34"></pred>
+               </cond>
+               <cond label="b6">
+                <rel arg1="x5" arg2="x6" symbol="Unit" framenet="Unit" from="27" to="34"></rel>
+               </cond>
+               <cond label="b6">
+                <rel arg1="x5" arg2="2" symbol="Quantity" framenet="Quantity" from="23" to="26"></rel>
+               </cond>
+               <cond label="b6">
+                <comp symbol="EQU" arg1="x5" arg2="x2" from="20" to="22"></comp>
+               </cond>
+               <cond label="b6">
+                <pred arg="x6" symbol="minute" synset="minute.n.01" from="27" to="34"></pred>
+               </cond>
+              </conds>
+             </drs>
+            </not>
+           </cond>
+          </conds>
+         </drs>
+        </not>
+       </cond>
+       <cond label="b3">
+        <pred arg="x2" symbol="entity" synset="entity.n.01" from="20" to="22"></pred>
+       </cond>
+       <cond label="b3">
+        <pred arg="s1" symbol="fast" synset="fast.a.02" from="35" to="39"></pred>
+       </cond>
+       <cond label="b3">
+        <rel arg1="s1" arg2="x2" symbol="Value" framenet="Value" from="35" to="39"></rel>
+       </cond>
+       <cond label="b3">
+        <rel arg1="s1" arg2="x1" symbol="Theme" framenet="Theme" from="35" to="39"></rel>
+       </cond>
+      </conds>
+     </drs>
+    </pos>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

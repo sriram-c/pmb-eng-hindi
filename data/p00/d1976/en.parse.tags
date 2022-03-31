@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'method', [from:4, to:10, pos:'NN', lemma:'method', sem:'CON', wordnet:'method.n.01'])),
+  rp(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:adj\np), 'was', [from:11, to:14, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+    fa(s:adj\np,
+     fa((s:adj\np)/(s:to\np),
+      t(((s:adj\np)/(s:to\np))/(s:adj\np), 'too', [from:15, to:18, pos:'SO', lemma:'too', sem:'INT', wordnet:'too.r.01']),
+      t(s:adj\np, 'expensive', [from:19, to:28, pos:'JJ', lemma:'expensive', sem:'IST', wordnet:'expensive.a.01', verbnet:['Attribute']])),
+     fa(s:to\np,
+      t((s:to\np)/(s:b\np), 'to', [from:29, to:31, pos:'TO', lemma:'to', sem:'NIL', wordnet:'O']),
+      fa(s:b\np,
+       t((s:b\np)/(s:adj\np), 'be', [from:32, to:34, pos:'VB', lemma:'be', sem:'NIL', wordnet:'O']),
+       t(s:adj\np, 'practical', [from:35, to:44, pos:'JJ', lemma:'practical', sem:'IST', wordnet:'practical.a.01', verbnet:['Attribute']]))))),
+   t(., '.', [from:44, to:45, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+

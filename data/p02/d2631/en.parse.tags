@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'He', [from:0, to:2, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'lost', [from:3, to:7, pos:'VBD', lemma:'lose', sem:'EPS', wordnet:'lose.v.05', verbnet:['Theme','Agent']]),
+   fa(np,
+    t(np/(n/pp), 'his', [from:8, to:11, pos:'PRP$', lemma:'male', sem:'HAS', wordnet:'male.n.02', verbnet:['Experiencer']]),
+    rp(n/pp,
+     fa(n/pp,
+      t((n/pp)/n, 'favorite', [from:12, to:20, pos:'JJ', lemma:'favorite', sem:'TOP', wordnet:'favorite.a.02', verbnet:['Stimulus']]),
+      t(n, 'sweatshirt', [from:21, to:31, pos:'NN', lemma:'sweatshirt', sem:'CON', wordnet:'sweatshirt.n.01'])),
+     t(., '.', [from:31, to:32, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

@@ -1,0 +1,17 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:pt\np), 'has', [from:4, to:7, pos:'VBZ', lemma:'have', sem:'NOW', wordnet:'O']),
+   rp(s:pt\np,
+    fa(s:pt\np,
+     t((s:pt\np)/(s:pss\np), 'been', [from:8, to:12, pos:'VBN', lemma:'be', sem:'PFT', wordnet:'O']),
+     t(s:pss\np, 'brainwashed', [from:13, to:24, pos:'VBN', lemma:'brainwash', sem:'EXS', wordnet:'brainwash.v.02', verbnet:['Patient']])),
+    t(., '.', [from:24, to:25, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

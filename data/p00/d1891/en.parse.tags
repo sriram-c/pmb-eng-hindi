@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'She', [from:0, to:3, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'dialled', [from:4, to:11, pos:'VBD', lemma:'dial', sem:'EPS', wordnet:'dial.v.02', verbnet:['Theme','Agent']]),
+   rp(np,
+    fa(np,
+     t(np/n, 'the', [from:12, to:15, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'number', [from:16, to:22, pos:'NN', lemma:'number', sem:'CON', wordnet:'number.n.04'])),
+    t(., '.', [from:22, to:23, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

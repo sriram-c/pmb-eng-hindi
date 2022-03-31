@@ -1,0 +1,19 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  ba(s:dcl\np,
+   t(s:dcl\np, 'came', [from:2, to:6, pos:'VBD', lemma:'come', sem:'EPS', wordnet:'come.v.02', verbnet:['Theme']]),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'at', [from:7, to:9, pos:'IN', lemma:'at', sem:'REL', wordnet:'O', verbnet:['Time']]),
+    rp(np,
+     lx(np, n,
+      fa(n,
+       t(n/n, 'about', [from:10, to:15, pos:'IN', lemma:'time', sem:'APX', wordnet:'O', verbnet:['Time']]),
+       t(n, 'six', [from:16, to:19, pos:'CD', lemma:'18:00', sem:'CLO', wordnet:'O']))),
+     t(., '.', [from:19, to:20, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

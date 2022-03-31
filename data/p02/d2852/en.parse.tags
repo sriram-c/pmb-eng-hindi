@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   fa(n,
+    t(n/pp, 'tines', [from:4, to:9, pos:'NNS', lemma:'tine', sem:'CON', wordnet:'tine.n.01']),
+    fa(pp,
+     t(pp/np, 'of', [from:10, to:12, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['PartOf']]),
+     fa(np,
+      t(np/n, 'the', [from:13, to:16, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'fork', [from:17, to:21, pos:'NN', lemma:'fork', sem:'CON', wordnet:'fork.n.01']))))),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), 'are', [from:22, to:25, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+   rp(s:adj\np,
+    t(s:adj\np, 'bent', [from:26, to:30, pos:'JJ', lemma:'bent', sem:'IST', wordnet:'bent.a.03', verbnet:['Attribute']]),
+    t(., '.', [from:30, to:31, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

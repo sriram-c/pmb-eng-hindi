@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'like', [from:2, to:6, pos:'VBP', lemma:'like', sem:'ENS', wordnet:'like.v.03', verbnet:['Stimulus','Experiencer']]),
+   fa(np,
+    t(np/(n/pp), 'my', [from:7, to:9, pos:'PRP$', lemma:'speaker', sem:'HAS', wordnet:'O', verbnet:['Of']]),
+    rp(n/pp,
+     t(n/pp, 'teachers', [from:10, to:18, pos:'NNS', lemma:'teacher', sem:'ROL', wordnet:'teacher.n.01']),
+     t(., '.', [from:18, to:19, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

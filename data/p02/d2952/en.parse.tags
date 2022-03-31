@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:b\np,
+  fa((s:b\np)/pp,
+   t(((s:b\np)/pp)/np, 'Give', [from:0, to:4, pos:'VB', lemma:'give', sem:'EXS', wordnet:'give.v.03', verbnet:['Theme','Agent']]),
+   fa(np,
+    t(np/n, 'the', [from:5, to:8, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+    t(n, 'book', [from:9, to:13, pos:'NN', lemma:'book', sem:'CON', wordnet:'book.n.02']))),
+  fa(pp,
+   t(pp/np, 'to', [from:14, to:16, pos:'TO', lemma:'to', sem:'REL', wordnet:'O', verbnet:['Recipient']]),
+   rp(np,
+    fa(np,
+     t(np/(s:dcl\np), 'whomever', [from:17, to:25, pos:'WP', lemma:'person', sem:'AND', wordnet:'person.n.01']),
+     fa(s:dcl\np,
+      t((s:dcl\np)/np, 'wants', [from:26, to:31, pos:'VBZ', lemma:'want', sem:'ENS', wordnet:'want.v.01', verbnet:['Theme','Pivot']]),
+      t(np, 'it', [antecedent:'9,13', from:32, to:34, pos:'PRP', lemma:'entity', sem:'PRO', wordnet:'entity.n.01']))),
+    t(., '.', [from:34, to:35, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

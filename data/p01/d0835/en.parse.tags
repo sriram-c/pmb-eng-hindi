@@ -1,0 +1,27 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/(n/pp), 'His', [from:0, to:3, pos:'PRP$', lemma:'male', sem:'HAS', wordnet:'O', verbnet:['Of']]),
+   fc(n/pp,
+    t(n/n, 'older', [from:4, to:9, pos:'JJR', lemma:'old', sem:'MOR', wordnet:'old.a.01', verbnet:['Attribute']]),
+    t(n/pp, 'brother', [from:10, to:17, pos:'NN', lemma:'brother', sem:'ROL', wordnet:'brother.n.01']))),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), 'is', [from:18, to:20, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+   ba(s:adj\np,
+    lx(np, n,
+     fa(n,
+      t(n/n, 'two', [from:21, to:24, pos:'CD', lemma:'2', sem:'QUC', wordnet:'O', verbnet:['Quantity']]),
+      t(n, 'years', [from:25, to:30, pos:'NNS', lemma:'year', sem:'UOM', wordnet:'year.n.01']))),
+    fa((s:adj\np)\np,
+     t(((s:adj\np)\np)/pp, 'older', [from:31, to:36, pos:'JJR', lemma:'old', sem:'MOR', wordnet:'old.a.01', verbnet:['Value','Attribute']]),
+     rp(pp,
+      fa(pp,
+       t(pp/np, 'than', [from:37, to:41, pos:'IN', lemma:'than', sem:'REL', wordnet:'O', verbnet:['Co-Theme']]),
+       t(np, 'I', [from:42, to:43, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O'])),
+      t(., '.', [from:43, to:44, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

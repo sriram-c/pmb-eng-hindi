@@ -1,0 +1,27 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:q,
+  ba(s:dcl,
+   lx(np, n,
+    t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+   ba(s:dcl\np,
+    fa(s:dcl\np,
+     t((s:dcl\np)/(s:adj\np), 'is', [from:4, to:6, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+     t(s:adj\np, 'angry', [from:7, to:12, pos:'JJ', lemma:'angry', sem:'IST', wordnet:'angry.a.01', verbnet:['Experiencer']])),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/np, 'at', [from:13, to:15, pos:'IN', lemma:'at', sem:'REL', wordnet:'O', verbnet:['Stimulus']]),
+     t(np, 'you', [from:16, to:19, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O'])))),
+  fa(s:q\s:dcl,
+   t((s:q\s:dcl)/(s:q/(s:adj\np)), ',', [from:19, to:20, pos:',', lemma:',', sem:'NIL', wordnet:'O']),
+   fa(s:q/(s:adj\np),
+    gbxc((s:q/(s:adj\np))/np,
+     t((s:q/(s:adj\np))/np, 'is', [from:21, to:23, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+     t(s\s, 'n\'t', [from:23, to:26, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+    rp(np,
+     t(np, 'he', [antecedent:'0,3', from:27, to:29, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+     t(., '?', [from:29, to:30, pos:'.', lemma:'?', sem:'QUE', wordnet:'O'])))))).
+

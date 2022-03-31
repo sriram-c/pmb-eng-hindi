@@ -1,0 +1,33 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   fa(n,
+    t(n/n, 'Improved', [from:0, to:8, pos:'JJ', lemma:'improved', sem:'IST', wordnet:'improved.a.02', verbnet:['Attribute']]),
+    fa(n,
+     t(n/n, 'medical', [from:9, to:16, pos:'JJ', lemma:'medical', sem:'IST', wordnet:'medical.a.01', verbnet:['Attribute']]),
+     t(n, 'technology', [from:17, to:27, pos:'NN', lemma:'technology', sem:'CON', wordnet:'technology.n.01'])))),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:pt\np), 'has', [from:28, to:31, pos:'VBZ', lemma:'have', sem:'NOW', wordnet:'O']),
+   fa(s:pt\np,
+    t((s:pt\np)/np, 'been', [from:32, to:36, pos:'VBN', lemma:'be', sem:'EXT', wordnet:'be.v.02', verbnet:['Co-Theme','Theme']]),
+    fa(np,
+     t(np/pp, 'one', [from:37, to:40, pos:'CD', lemma:'1', sem:'QUC', wordnet:'O']),
+     fa(pp,
+      t(pp/np, 'of', [from:41, to:43, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['SubOf']]),
+      fa(np,
+       t(np/n, 'the', [from:44, to:47, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+       fa(n,
+        t(n/pp, 'spin-offs', [from:48, to:57, pos:'NNS', lemma:'spin-off', sem:'CON', wordnet:'spin-off.n.01']),
+        fa(pp,
+         t(pp/np, 'of', [from:58, to:60, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['Causer']]),
+         rp(np,
+          fa(np,
+           t(np/n, 'the', [from:61, to:64, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+           t(n, 'space~program', [from:65, to:78, pos:'NN', lemma:'space~program', sem:'CON', wordnet:'space_program.n.01'])),
+          t(., '.', [from:78, to:79, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))))))).
+

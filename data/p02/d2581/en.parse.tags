@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'It', [from:0, to:2, pos:'PRP', lemma:'it', sem:'NIL', wordnet:'O']),
+  ba(s:dcl\np,
+   ba(s:dcl\np,
+    t(s:dcl\np, 'rained', [from:3, to:9, pos:'VBD', lemma:'rain', sem:'EPS', wordnet:'rain.v.01', verbnet:['Equal']]),
+    fa((s:dcl\np)\(s:dcl\np),
+     t(((s:dcl\np)\(s:dcl\np))/n, 'three', [from:10, to:15, pos:'CD', lemma:'3', sem:'QUC', wordnet:'O', verbnet:['Frequency']]),
+     t(n, 'times', [from:16, to:21, pos:'NNS', lemma:'time', sem:'CON', wordnet:'time.n.01']))),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'during', [from:22, to:28, pos:'IN', lemma:'during', sem:'REL', wordnet:'O', verbnet:['Duration']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:29, to:32, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'trip', [from:33, to:37, pos:'NN', lemma:'trip', sem:'CON', wordnet:'trip.n.01'])),
+     t(., '.', [from:37, to:38, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'boy-scouts', [from:4, to:14, pos:'NNS', lemma:'boy~scout', sem:'ROL', wordnet:'boy_scout.n.01'])),
+  ba(s:dcl\np,
+   t(s:dcl\np, 'jeered', [from:15, to:21, pos:'VBD', lemma:'jeer', sem:'EPS', wordnet:'jeer.v.01', verbnet:['Agent']]),
+   conj((s:dcl\np)\(s:dcl\np),
+    t(conj, 'and', [from:22, to:25, pos:'CC', lemma:'and', sem:'COO', wordnet:'O']),
+    fa(s:dcl\np,
+     t((s:dcl\np)/pp, 'scuttled', [from:26, to:34, pos:'VBD', lemma:'scuttle', sem:'EPS', wordnet:'scuttle.v.01', verbnet:['Theme']]),
+     fa(pp,
+      t(pp/np, 'into', [from:35, to:39, pos:'IN', lemma:'into', sem:'REL', wordnet:'O', verbnet:['Destination']]),
+      rp(np,
+       fa(np,
+        t(np/n, 'the', [from:40, to:43, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+        t(n, 'building', [from:44, to:52, pos:'NN', lemma:'building', sem:'CON', wordnet:'building.n.01'])),
+       t(., '.', [from:52, to:53, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))))).
+

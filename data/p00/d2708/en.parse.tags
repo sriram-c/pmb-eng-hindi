@@ -1,0 +1,17 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'serpent', [from:4, to:11, pos:'JJ', lemma:'serpent', sem:'CON', wordnet:'serpent.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'tempted', [from:12, to:19, pos:'JJ', lemma:'tempt', sem:'EPS', wordnet:'tempt.v.02', verbnet:['Patient','Agent']]),
+   rp(np,
+    lx(np, n,
+     t(n, 'Eve', [from:20, to:23, pos:'NN', lemma:'eve', sem:'PER', wordnet:'female.n.02'])),
+    t(., '.', [from:23, to:24, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

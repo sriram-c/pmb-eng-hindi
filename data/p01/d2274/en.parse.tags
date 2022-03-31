@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  rp(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:pss\np), 'was', [from:4, to:7, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+    fa(s:pss\np,
+     t((s:pss\np)/pp, 'expelled', [from:8, to:16, pos:'VBN', lemma:'expel', sem:'EXT', wordnet:'expel.v.01', verbnet:['Theme']]),
+     fa(pp,
+      t(pp/np, 'from', [from:17, to:21, pos:'IN', lemma:'from', sem:'REL', wordnet:'O', verbnet:['Source']]),
+      lx(np, n,
+       t(n, 'private~school', [from:22, to:36, pos:'NN', lemma:'private~school', sem:'CON', wordnet:'private_school.n.01']))))),
+   t(., '.', [from:36, to:37, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+

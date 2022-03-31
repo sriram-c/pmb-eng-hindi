@@ -1,0 +1,23 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:q,
+  fa(s:q/(s:b\np),
+   t((s:q/(s:b\np))/np, 'Do', [from:0, to:2, pos:'NNP', lemma:'do', sem:'NOW', wordnet:'O']),
+   t(np, 'you', [from:3, to:6, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O'])),
+  fa(s:b\np,
+   t((s:b\np)/np, 'prefer', [from:7, to:13, pos:'VBP', lemma:'prefer', sem:'EXS', wordnet:'prefer.v.01', verbnet:['Stimulus','Experiencer']]),
+   rp(np,
+    lx(np, n,
+     fa(n,
+      ba(n/n,
+       t(n/n, 'Belgian', [from:14, to:21, pos:'JJ', lemma:'belgium', sem:'GPO', wordnet:'country.n.02', verbnet:['Source']]),
+       conj((n/n)\(n/n),
+        t(conj, 'or', [from:22, to:24, pos:'CC', lemma:'or', sem:'DIS', wordnet:'O']),
+        t(n/n, 'German', [from:25, to:31, pos:'JJ', lemma:'germany', sem:'GPO', wordnet:'country.n.02', verbnet:['Source']]))),
+      t(n, 'beer', [from:32, to:36, pos:'NN', lemma:'beer', sem:'CON', wordnet:'beer.n.01']))),
+    t(., '?', [from:36, to:37, pos:'.', lemma:'?', sem:'QUE', wordnet:'O']))))).
+

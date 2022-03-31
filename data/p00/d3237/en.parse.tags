@@ -1,0 +1,26 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'He', [from:0, to:2, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'saw', [from:3, to:6, pos:'VBD', lemma:'see', sem:'EPS', wordnet:'see.v.01', verbnet:['Stimulus','Experiencer']]),
+   fa(np,
+    t(np/n, 'a', [from:7, to:8, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+    ba(n,
+     fa(n,
+      t(n/n, 'small', [from:9, to:14, pos:'JJ', lemma:'small', sem:'DEG', wordnet:'small.a.02', verbnet:['Attribute']]),
+      t(n, 'Band-Aid', [from:15, to:23, pos:'NN', lemma:'band~aid', sem:'CON', wordnet:'band_aid.n.01'])),
+     fa(n\n,
+      t((n\n)/np, 'on', [from:24, to:26, pos:'IN', lemma:'on', sem:'REL', wordnet:'O', verbnet:['Location']]),
+      fa(np,
+       t(np/(n/pp), 'her', [from:27, to:30, pos:'PRP$', lemma:'female', sem:'HAS', wordnet:'female.n.02', verbnet:['PartOf']]),
+       fc(n/pp,
+        t(n/n, 'left', [from:31, to:35, pos:'NN', lemma:'left', sem:'IST', wordnet:'left.a.01', verbnet:['Attribute']]),
+        rp(n/pp,
+         t(n/pp, 'knee', [from:36, to:40, pos:'NN', lemma:'knee', sem:'CON', wordnet:'knee.n.01']),
+         t(., '.', [from:40, to:41, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))))))).
+

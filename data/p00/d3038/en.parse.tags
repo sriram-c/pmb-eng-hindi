@@ -1,0 +1,27 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np:thr, 'There', [from:0, to:5, pos:'EX', lemma:'there', sem:'NIL', wordnet:'O']),
+  ba(s:dcl\np:thr,
+   fa(s:dcl\np:thr,
+    t((s:dcl\np:thr)/np, 'are', [from:6, to:9, pos:'VBP', lemma:'be', sem:'ENS', wordnet:'be.v.03', verbnet:['Theme','Equal']]),
+    lx(np, n,
+     fa(n,
+      fa(n/n,
+       t((n/n)/(n/n), 'over', [from:10, to:14, pos:'IN', lemma:'over', sem:'MOR', wordnet:'O']),
+       t(n/n, '800,000', [from:15, to:22, pos:'CD', lemma:'800000', sem:'QUC', wordnet:'O', verbnet:['Equal']])),
+      fa(n,
+       t(n/(n/pp), 'Basque', [from:23, to:29, pos:'JJ', lemma:'basque', sem:'CON', wordnet:'basque.n.02', verbnet:['Theme']]),
+       t(n/pp, 'speakers', [from:30, to:38, pos:'NNS', lemma:'speaker', sem:'ROL', wordnet:'speaker.n.01']))))),
+   fa((s:dcl\np)\(s:dcl\np),
+    t(((s:dcl\np)\(s:dcl\np))/np, 'in', [from:39, to:41, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Location']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:42, to:45, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'world', [from:46, to:51, pos:'NN', lemma:'world', sem:'CON', wordnet:'world.n.04'])),
+     t(., '.', [from:51, to:52, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

@@ -1,0 +1,17 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'A', [from:0, to:1, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+   t(n, 'woman', [from:2, to:7, pos:'NN', lemma:'woman', sem:'CON', wordnet:'woman.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:ng\np), 'is', [from:8, to:10, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+   fa(s:ng\np,
+    t((s:ng\np)/np, 'slicing', [from:11, to:18, pos:'VBG', lemma:'slice', sem:'EXG', wordnet:'slice.v.03', verbnet:['Patient','Agent']]),
+    lx(np, n,
+     t(n, 'tofu', [from:19, to:23, pos:'NN', lemma:'tofu', sem:'CON', wordnet:'tofu.n.01'])))))).
+

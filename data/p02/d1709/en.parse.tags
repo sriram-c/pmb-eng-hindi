@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Mary', [from:0, to:4, pos:'NNP', lemma:'mary', sem:'PER', wordnet:'female.n.02', verbnet:['Agent']])),
+  ba(s:dcl\np,
+   t(s:dcl\np, 'works', [from:5, to:10, pos:'VBZ', lemma:'work', sem:'ENS', wordnet:'work.v.02', verbnet:['Agent']]),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'for', [from:11, to:14, pos:'IN', lemma:'for', sem:'REL', wordnet:'O', verbnet:['Co-Agent']]),
+    fa(np,
+     t(np/n, 'an', [from:15, to:17, pos:'DT', lemma:'an', sem:'DIS', wordnet:'O']),
+     ba(n,
+      t(n, 'NGO', [from:18, to:21, pos:'NNP', lemma:'ngo', sem:'CON', wordnet:'ngo.n.01']),
+      fa(n\n,
+       t((n\n)/np, 'in', [from:22, to:24, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Location']]),
+       rp(np,
+        lx(np, n,
+         t(n, 'Africa', [from:25, to:31, pos:'NNP', lemma:'africa', sem:'GPE', wordnet:'continent.n.01'])),
+        t(., '.', [from:31, to:32, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))))).
+

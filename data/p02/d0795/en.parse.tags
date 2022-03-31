@@ -1,0 +1,27 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'John', [from:0, to:4, pos:'NNP', lemma:'john', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'is', [from:5, to:7, pos:'VBZ', lemma:'be', sem:'ENS', wordnet:'be.v.01', verbnet:['Co-Theme','Theme']]),
+   ba(np,
+    fa(np,
+     t(np/np, 'not', [from:8, to:11, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O']),
+     rp(np,
+      fa(np,
+       t(np/(n/pp), 'my', [from:12, to:14, pos:'PRP$', lemma:'speaker', sem:'HAS', wordnet:'O', verbnet:['Of']]),
+       t(n/pp, 'brother', [from:15, to:22, pos:'NN', lemma:'brother', sem:'ROL', wordnet:'brother.n.01'])),
+      t(,, ',', [from:22, to:23, pos:',', lemma:',', sem:'NIL', wordnet:'O']))),
+    conj(np\np,
+     t(conj, 'but', [from:24, to:27, pos:'CC', lemma:'but', sem:'BUT', wordnet:'O']),
+     rp(np,
+      fa(np,
+       t(np/(n/pp), 'my', [from:28, to:30, pos:'PRP$', lemma:'speaker', sem:'HAS', wordnet:'O', verbnet:['Of']]),
+       t(n/pp, 'cousin', [from:31, to:37, pos:'NN', lemma:'cousin', sem:'ROL', wordnet:'cousin.n.01'])),
+      t(., '.', [from:37, to:38, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

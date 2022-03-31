@@ -1,0 +1,37 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/(s:b\np),
+    t((s:dcl\np)/(s:b\np), 'ca', [from:4, to:6, pos:'MD', lemma:'can', sem:'POS', wordnet:'O']),
+    t((s\np)\(s\np), 'n\'t', [from:6, to:9, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+   fa(s:b\np,
+    t((s:b\np)/np, 'speak', [from:10, to:15, pos:'VB', lemma:'speak', sem:'EXS', wordnet:'speak.v.03', verbnet:['Theme','Agent']]),
+    rp(np,
+     lx(np, n,
+      t(n, 'French', [from:16, to:22, pos:'JJ', lemma:'french', sem:'CON', wordnet:'french.n.01'])),
+     t(., '.', [from:22, to:23, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+
+ccg(2,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:24, to:27, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/(s:b\np),
+    t((s:dcl\np)/(s:b\np), 'ca', [from:28, to:30, pos:'MD', lemma:'can', sem:'POS', wordnet:'O']),
+    t((s\np)\(s\np), 'n\'t', [from:30, to:33, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+   ba(s:b\np,
+    fa(s:b\np,
+     t((s:b\np)/np, 'speak', [from:34, to:39, pos:'VB', lemma:'speak', sem:'EXS', wordnet:'speak.v.03', verbnet:['Theme','Agent']]),
+     lx(np, n,
+      t(n, 'Spanish', [from:40, to:47, pos:'JJ', lemma:'spanish', sem:'CON', wordnet:'spanish.n.01']))),
+    rp((s\np)\(s\np),
+     t((s\np)\(s\np), 'either', [from:48, to:54, pos:'RB', lemma:'either', sem:'ALT', wordnet:'O']),
+     t(., '.', [from:54, to:55, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

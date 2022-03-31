@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:dcl,
+  ba(s:dcl,
+   fa(np,
+    t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+    t(n, 'shooting', [from:4, to:12, pos:'NN', lemma:'shooting', sem:'CON', wordnet:'shooting.n.01'])),
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:pt\np), 'had', [from:13, to:16, pos:'VBD', lemma:'have', sem:'PST', wordnet:'O']),
+    t(s:pt\np, 'ceased', [from:17, to:23, pos:'VBN', lemma:'cease', sem:'EXT', wordnet:'cease.v.01', verbnet:['Theme']]))),
+  t(., '.', [from:23, to:24, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+

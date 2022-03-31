@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'You', [from:0, to:3, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'have', [from:4, to:8, pos:'VBP', lemma:'have', sem:'ENS', wordnet:'have.v.02', verbnet:['Theme','Pivot']]),
+   rp(np,
+    fa(np,
+     t(np/n, 'a', [from:9, to:10, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+     fa(n,
+      fa(n/n,
+       t((n/n)/(s:adj\np), 'very', [from:11, to:15, pos:'RB', lemma:'very', sem:'INT', wordnet:'very.r.01']),
+       t(s:adj\np, 'good', [from:16, to:20, pos:'JJ', lemma:'good', sem:'IST', wordnet:'good.a.01', verbnet:['Attribute']])),
+      t(n, 'voice', [from:21, to:26, pos:'NN', lemma:'voice', sem:'CON', wordnet:'voice.n.01']))),
+    t(., '.', [from:26, to:27, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

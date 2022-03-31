@@ -1,0 +1,17 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Russia', [from:0, to:6, pos:'NNP', lemma:'russia', sem:'GPE', wordnet:'state.n.04'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'rejected', [from:7, to:15, pos:'VBD', lemma:'reject', sem:'EPS', wordnet:'reject.v.01', verbnet:['Theme','Agent']]),
+   rp(np,
+    fa(np,
+     t(np/n, 'both', [from:16, to:20, pos:'DT', lemma:'both', sem:'AND', wordnet:'O']),
+     t(n, 'demands', [from:21, to:28, pos:'NNS', lemma:'demand', sem:'CON', wordnet:'demand.n.01'])),
+    t(., '.', [from:28, to:29, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

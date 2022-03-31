@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- I was as cool as a cucumber . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">I</tag>
+     <tag type="cat">np</tag>
+     <tag type="sym">speaker</tag>
+     <tag type="lemma">speaker</tag>
+     <tag type="from">0</tag>
+     <tag type="to">1</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="sem">PRO</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">was</tag>
+     <tag type="cat">(s:dcl\np)/(s:adj\np)</tag>
+     <tag type="sym">be</tag>
+     <tag type="lemma">be</tag>
+     <tag type="from">2</tag>
+     <tag type="to">5</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="sem">PST</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="tok">as</tag>
+     <tag type="cat">((s:adj\np)/pp)/(s:adj\np)</tag>
+     <tag type="sym">as</tag>
+     <tag type="lemma">as</tag>
+     <tag type="from">6</tag>
+     <tag type="to">8</tag>
+     <tag type="pos">RB</tag>
+     <tag type="sem">EQU</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Theme]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="tok">cool</tag>
+     <tag type="cat">s:adj\np</tag>
+     <tag type="sym">cool</tag>
+     <tag type="lemma">cool</tag>
+     <tag type="from">9</tag>
+     <tag type="to">13</tag>
+     <tag type="pos">JJ</tag>
+     <tag type="sem">IST</tag>
+     <tag type="wordnet">cool.a.02</tag>
+     <tag type="verbnet" n="1">[Attribute]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="tok">as</tag>
+     <tag type="cat">pp/np</tag>
+     <tag type="sym">as</tag>
+     <tag type="lemma">as</tag>
+     <tag type="from">14</tag>
+     <tag type="to">16</tag>
+     <tag type="pos">IN</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Co-Theme]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">a</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">a</tag>
+     <tag type="lemma">a</tag>
+     <tag type="from">17</tag>
+     <tag type="to">18</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">cucumber</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">cucumber</tag>
+     <tag type="lemma">cucumber</tag>
+     <tag type="from">19</tag>
+     <tag type="to">27</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">cucumber.n.02</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">27</tag>
+     <tag type="to">28</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b1">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="1"></dr>
+   <dr label="b1" name="s1" from="9" to="13"></dr>
+   <dr label="b1" name="s2" from="6" to="8"></dr>
+   <dr label="b1" name="x2" from="17" to="18"></dr>
+   <dr label="b1" name="t1" from="2" to="5"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="person" synset="person.n.01" from="0" to="1"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="EQU" arg1="x1" arg2="speaker" from="0" to="1"></comp>
+   </cond>
+   <cond label="b1">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="2" to="5"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="TPR" arg1="t1" arg2="now" from="2" to="5"></comp>
+   </cond>
+   <cond label="b1">
+    <pred arg="s1" symbol="cool" synset="cool.a.02" from="9" to="13"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="s1" arg2="t1" symbol="Time" framenet="Time" from="2" to="5"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="s1" arg2="s2" symbol="Degree" framenet="Degree" from="6" to="8"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="s1" arg2="x1" symbol="AttributeOf" framenet="AttributeOf" from="9" to="13"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="s2" symbol="as" synset="as.r.01" from="6" to="8"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="s2" arg2="x2" symbol="Co-Theme" framenet="Replacing@New" from="14" to="16"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="s2" arg2="x1" symbol="Theme" framenet="Theme" from="6" to="8"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="x2" symbol="cucumber" synset="cucumber.n.02" from="19" to="27"></pred>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

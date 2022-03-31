@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'is', [from:4, to:6, pos:'VBZ', lemma:'be', sem:'ENS', wordnet:'be.v.02', verbnet:['Co-Theme','Theme']]),
+   fa(np,
+    ba(np/(n/pp),
+     lx(np, n,
+      t(n, 'Mary', [from:7, to:11, pos:'NNP', lemma:'mary', sem:'PER', wordnet:'female.n.02'])),
+     t((np/(n/pp))\np, '\'s', [from:11, to:13, pos:'POS', lemma:'\'s', sem:'HAS', wordnet:'O', verbnet:['Of']])),
+    fc(n/pp,
+     t(n/(n/pp), 'former', [from:14, to:20, pos:'JJ', lemma:'former', sem:'PST', wordnet:'O']),
+     rp((n/pp)/pp,
+      t((n/pp)/pp, 'husband', [from:21, to:28, pos:'NN', lemma:'husband', sem:'ROL', wordnet:'husband.n.01', verbnet:['Role']]),
+      t(., '.', [from:28, to:29, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

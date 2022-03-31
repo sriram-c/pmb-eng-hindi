@@ -1,0 +1,19 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    bxc((s:dcl\np)/(s:b\np),
+     t((s:dcl\np)/(s:b\np), 'ca', [from:4, to:6, pos:'MD', lemma:'can', sem:'POS', wordnet:'O']),
+     t((s\np)\(s\np), 'n\'t', [from:6, to:9, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+    t(s:b\np, 'swim', [from:10, to:14, pos:'VB', lemma:'swim', sem:'EXS', wordnet:'swim.v.01', verbnet:['Theme']])),
+   rp((s\np)\(s\np),
+    t((s\np)\(s\np), 'at~all', [from:15, to:21, pos:'NN', lemma:'at~all', sem:'EMP', wordnet:'O']),
+    t(., '.', [from:21, to:22, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

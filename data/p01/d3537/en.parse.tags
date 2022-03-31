@@ -1,0 +1,17 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'We', [from:0, to:2, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  ba(s:dcl\np,
+   t(s:dcl\np, 'went', [from:3, to:7, pos:'VBD', lemma:'go', sem:'EPS', wordnet:'go.v.01', verbnet:['Theme']]),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'on', [from:8, to:10, pos:'IN', lemma:'on', sem:'REL', wordnet:'O', verbnet:['Instrument']]),
+    rp(np,
+     lx(np, n,
+      t(n, 'foot', [from:11, to:15, pos:'NN', lemma:'foot', sem:'CON', wordnet:'foot.n.01'])),
+     t(., '.', [from:15, to:16, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

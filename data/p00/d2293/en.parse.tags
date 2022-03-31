@@ -1,0 +1,25 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'She', [from:0, to:3, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:pt\np), 'has', [from:4, to:7, pos:'VBZ', lemma:'have', sem:'NOW', wordnet:'O']),
+   ba(s:pt\np,
+    fa(s:pt\np,
+     t((s:pt\np)/np, 'kept', [from:8, to:12, pos:'VBN', lemma:'keep', sem:'EXT', wordnet:'keep.v.08', verbnet:['Theme','Agent']]),
+     fa(np,
+      t(np/n, 'a', [from:13, to:14, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+      t(n, 'diary', [from:15, to:20, pos:'NN', lemma:'diary', sem:'CON', wordnet:'diary.n.01']))),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/np, 'for', [from:21, to:24, pos:'IN', lemma:'for', sem:'REL', wordnet:'O', verbnet:['Duration']]),
+     rp(np,
+      lx(np, n,
+       fa(n,
+        t(n/n, '3', [from:25, to:26, pos:'CD', lemma:'3', sem:'QUC', wordnet:'O', verbnet:['Quantity']]),
+        t(n, 'years', [from:27, to:32, pos:'NNS', lemma:'year', sem:'UOM', wordnet:'year.n.01']))),
+      t(., '.', [from:32, to:33, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

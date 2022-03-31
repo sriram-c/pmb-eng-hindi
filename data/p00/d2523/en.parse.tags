@@ -1,0 +1,19 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Keisuke', [from:0, to:7, pos:'NNP', lemma:'keisuke', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), 'is', [from:8, to:10, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+   fa(s:adj\np,
+    t((s:adj\np)/pp, 'taller', [from:11, to:17, pos:'JJR', lemma:'tall', sem:'MOR', wordnet:'tall.a.01', verbnet:['Attribute']]),
+    fa(pp,
+     t(pp/np, 'than', [from:18, to:22, pos:'IN', lemma:'than', sem:'REL', wordnet:'O', verbnet:['Co-Theme']]),
+     rp(np,
+      t(np, 'me', [from:23, to:25, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+      t(., '.', [from:25, to:26, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))).
+

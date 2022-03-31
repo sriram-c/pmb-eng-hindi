@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'elephant', [from:4, to:12, pos:'NN', lemma:'elephant', sem:'CON', wordnet:'elephant.n.01'])),
+  ba(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:pss\np), 'was', [from:13, to:16, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+    t(s:pss\np, 'killed', [from:17, to:23, pos:'VBN', lemma:'kill', sem:'EXS', wordnet:'kill.v.01', verbnet:['Patient']])),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'by', [from:24, to:26, pos:'IN', lemma:'by', sem:'REL', wordnet:'O', verbnet:['Agent']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:27, to:30, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'hunter', [from:31, to:37, pos:'NN', lemma:'hunter', sem:'ROL', wordnet:'hunter.n.01'])),
+     t(., '.', [from:37, to:38, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

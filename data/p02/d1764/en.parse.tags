@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   ba(np/(n/pp),
+    lx(np, n,
+     t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+    t((np/(n/pp))\np, '\'s', [from:3, to:5, pos:'POS', lemma:'\'s', sem:'HAS', wordnet:'O', verbnet:['Creator']])),
+   t(n/pp, 'strategy', [from:6, to:14, pos:'NN', lemma:'strategy', sem:'CON', wordnet:'strategy.n.01'])),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/(s:ng\np),
+    t((s:dcl\np)/(s:ng\np), 'is', [from:15, to:17, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+    t((s\np)\(s\np), 'n\'t', [from:17, to:20, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+   rp(s:ng\np,
+    t(s:ng\np, 'working', [from:21, to:28, pos:'VBG', lemma:'work', sem:'EXG', wordnet:'work.v.03', verbnet:['Theme']]),
+    t(., '.', [from:28, to:29, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

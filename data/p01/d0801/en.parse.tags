@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:q,
+  fa(s:q/(s:b\np),
+   t((s:q/(s:b\np))/np, 'Do', [from:0, to:2, pos:'NNP', lemma:'do', sem:'NOW', wordnet:'O']),
+   t(np, 'you', [from:3, to:6, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O'])),
+  fa(s:b\np,
+   t((s:b\np)/np, 'have', [from:7, to:11, pos:'VBP', lemma:'have', sem:'EXS', wordnet:'have.v.04', verbnet:['Theme','Pivot']]),
+   rp(np,
+    fa(np,
+     t(np/n, 'a', [from:12, to:13, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+     t(n, 'credit~card', [from:14, to:25, pos:'NN', lemma:'credit~card', sem:'CON', wordnet:'credit_card.n.01'])),
+    t(., '?', [from:25, to:26, pos:'.', lemma:'?', sem:'QUE', wordnet:'O']))))).
+

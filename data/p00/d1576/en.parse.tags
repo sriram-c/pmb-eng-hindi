@@ -1,0 +1,19 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:wq,
+  t(s:wq/(s:q/(s:adj\np)), 'How', [from:0, to:3, pos:'WRB', lemma:'how', sem:'QUE', wordnet:'O']),
+  fa(s:q/(s:adj\np),
+   t((s:q/(s:adj\np))/np, '\'s', [from:3, to:5, pos:'POS', lemma:'be', sem:'NOW', wordnet:'O']),
+   fa(np,
+    ba(np/(n/pp),
+     lx(np, n,
+      t(n, 'Tom', [from:6, to:9, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+     t((np/(n/pp))\np, '\'s', [from:9, to:11, pos:'POS', lemma:'\'s', sem:'HAS', wordnet:'O', verbnet:['Experiencer']])),
+    rp(n/pp,
+     t(n/pp, 'cold', [from:12, to:16, pos:'NN', lemma:'cold', sem:'CON', wordnet:'cold.n.01']),
+     t(., '?', [from:16, to:17, pos:'.', lemma:'?', sem:'QUE', wordnet:'O'])))))).
+

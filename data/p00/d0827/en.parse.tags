@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'I', [from:0, to:1, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:b\np), '\'ll', [from:1, to:4, pos:'MD', lemma:'will', sem:'FUT', wordnet:'O']),
+   fa(s:b\np,
+    t((s:b\np)/np, 'buy', [from:5, to:8, pos:'VB', lemma:'buy', sem:'EXS', wordnet:'buy.v.01', verbnet:['Theme','Agent']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'a', [from:9, to:10, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+      fa(n,
+       t(n/n, 'new', [from:11, to:14, pos:'JJ', lemma:'new', sem:'IST', wordnet:'new.a.05', verbnet:['Attribute']]),
+       t(n, 'one', [from:15, to:18, pos:'CD', lemma:'entity', sem:'CON', wordnet:'entity.n.01']))),
+     t(., '.', [from:18, to:19, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

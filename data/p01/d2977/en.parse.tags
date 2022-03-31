@@ -1,0 +1,16 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'terrorists', [from:4, to:14, pos:'NNS', lemma:'terrorist', sem:'ROL', wordnet:'terrorist.n.01'])),
+  rp(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/(s:pt\np), 'have', [from:15, to:19, pos:'VBP', lemma:'have', sem:'NOW', wordnet:'O']),
+    t(s:pt\np, 'failed', [from:20, to:26, pos:'VBN', lemma:'fail', sem:'EXT', wordnet:'fail.v.02', verbnet:['Agent']])),
+   t(., '.', [from:26, to:27, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+

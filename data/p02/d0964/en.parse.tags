@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tyler~Jackson', [from:0, to:13, pos:'NNP', lemma:'tyler~jackson', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:pt\np), 'has', [from:14, to:17, pos:'VBZ', lemma:'have', sem:'NOW', wordnet:'O']),
+   fa(s:pt\np,
+    t((s:pt\np)/(s:pss\np), 'been', [from:18, to:22, pos:'VBN', lemma:'be', sem:'PFT', wordnet:'O']),
+    fa(s:pss\np,
+     t((s:pss\np)/pp, 'sentenced', [from:23, to:32, pos:'VBN', lemma:'sentence', sem:'EXS', wordnet:'sentence.v.01', verbnet:['Recipient']]),
+     fa(pp,
+      t(pp/np, 'to', [from:33, to:35, pos:'TO', lemma:'to', sem:'REL', wordnet:'O', verbnet:['Value']]),
+      rp(np,
+       lx(np, n,
+        fa(n,
+         t(n/n, '18', [from:36, to:38, pos:'CD', lemma:'18', sem:'QUC', wordnet:'O', verbnet:['Quantity']]),
+         t(n, 'months', [from:39, to:45, pos:'NNS', lemma:'month', sem:'UOM', wordnet:'month.n.02']))),
+       t(., '.', [from:45, to:46, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))))).
+

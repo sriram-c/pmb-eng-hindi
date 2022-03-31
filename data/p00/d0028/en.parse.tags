@@ -1,0 +1,42 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  ba(np,
+   fa(np,
+    t(np/n, 'A', [from:0, to:1, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+    ba(n,
+     t(n, 'woman', [from:2, to:7, pos:'NN', lemma:'woman', sem:'CON', wordnet:'woman.n.01']),
+     fa(n\n,
+      t((n\n)/np, 'in', [from:8, to:10, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['User']]),
+      fa(np,
+       t(np/n, 'a', [from:11, to:12, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+       fa(n,
+        t(n/n, 'white', [from:13, to:18, pos:'JJ', lemma:'white', sem:'COL', wordnet:'white.a.01', verbnet:['Colour']]),
+        t(n, 'dress', [from:19, to:24, pos:'NN', lemma:'dress', sem:'CON', wordnet:'dress.n.01'])))))),
+   conj(np\np,
+    t(conj, 'and', [from:25, to:28, pos:'CC', lemma:'and', sem:'GRP', wordnet:'O']),
+    fa(np,
+     t(np/n, 'a', [from:29, to:30, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+     ba(n,
+      t(n, 'woman', [from:31, to:36, pos:'NN', lemma:'woman', sem:'CON', wordnet:'woman.n.01']),
+      fa(n\n,
+       t((n\n)/np, 'in', [from:37, to:39, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['User']]),
+       fa(np,
+        t(np/n, 'a', [from:40, to:41, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+        fa(n,
+         t(n/n, 'blue', [from:42, to:46, pos:'JJ', lemma:'blue', sem:'COL', wordnet:'blue.a.01', verbnet:['Colour']]),
+         t(n, 'dress', [from:47, to:52, pos:'NN', lemma:'dress', sem:'CON', wordnet:'dress.n.01'])))))))),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:ng\np), 'are', [from:53, to:56, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+   fa(s:ng\np,
+    t((s:ng\np)/pp, 'standing', [from:57, to:65, pos:'VBG', lemma:'stand', sem:'EXG', wordnet:'stand.v.03', verbnet:['Theme']]),
+    fa(pp,
+     t(pp/np, 'on', [from:66, to:68, pos:'IN', lemma:'on', sem:'REL', wordnet:'O', verbnet:['Location']]),
+     fa(np,
+      t(np/n, 'a', [from:69, to:70, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+      t(n, 'stage', [from:71, to:76, pos:'NN', lemma:'stage', sem:'CON', wordnet:'stage.n.03']))))))).
+

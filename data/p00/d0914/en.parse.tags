@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'She', [from:0, to:3, pos:'PRP', lemma:'female', sem:'PRO', wordnet:'female.n.02']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/np, 'is', [from:4, to:6, pos:'VBZ', lemma:'be', sem:'ENS', wordnet:'be.v.02', verbnet:['Co-Theme','Theme']]),
+   fa(np,
+    t(np/n, 'the', [from:7, to:10, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+    fa(n,
+     t(n/pp, 'Prime~Minister', [from:11, to:25, pos:'NN', lemma:'prime~minister', sem:'ROL', wordnet:'prime_minister.n.01']),
+     fa(pp,
+      t(pp/np, 'of', [from:26, to:28, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['Of']]),
+      rp(np,
+       lx(np, n,
+        t(n, 'Finland', [from:29, to:36, pos:'NNP', lemma:'finland', sem:'GPE', wordnet:'state.n.04'])),
+       t(., '.', [from:36, to:37, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))))).
+

@@ -1,0 +1,19 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'He', [from:0, to:2, pos:'PRP', lemma:'male', sem:'PRO', wordnet:'male.n.02']),
+  ba(s:dcl\np,
+   ba(s:dcl\np,
+    t(s:dcl\np, 'came', [from:3, to:7, pos:'VBD', lemma:'come', sem:'EPS', wordnet:'come.v.01', verbnet:['Theme']]),
+    t((s\np)\(s\np), 'back', [from:8, to:12, pos:'RB', lemma:'back', sem:'IST', wordnet:'back.r.01', verbnet:['Manner']])),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'at', [from:13, to:15, pos:'IN', lemma:'at', sem:'REL', wordnet:'O', verbnet:['Time']]),
+    rp(np,
+     lx(np, n,
+      t(n, '5~o\'clock', [from:16, to:25, pos:'CD', lemma:'17:00', sem:'CLO', wordnet:'O'])),
+     t(., '.', [from:25, to:26, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

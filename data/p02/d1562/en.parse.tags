@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'train', [from:4, to:9, pos:'NN', lemma:'train', sem:'CON', wordnet:'train.n.01'])),
+  ba(s:dcl\np,
+   t(s:dcl\np, 'roared', [from:10, to:16, pos:'VBD', lemma:'roar', sem:'EPS', wordnet:'roar.v.01', verbnet:['Theme']]),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'through', [from:17, to:24, pos:'IN', lemma:'through', sem:'REL', wordnet:'O', verbnet:['Path']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:25, to:28, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      t(n, 'tunnel', [from:29, to:35, pos:'NN', lemma:'tunnel', sem:'CON', wordnet:'tunnel.n.01'])),
+     t(., '.', [from:35, to:36, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

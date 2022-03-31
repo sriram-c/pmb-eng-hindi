@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 10 September 2021, 09:36:38)'">
+<!-- I want to pay with a check . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">I</tag>
+     <tag type="cat">np</tag>
+     <tag type="sym">speaker</tag>
+     <tag type="lemma">speaker</tag>
+     <tag type="from">0</tag>
+     <tag type="to">1</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="sem">PRO</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="tok">want</tag>
+     <tag type="cat">(s:dcl\np)/(s:to\np)</tag>
+     <tag type="sym">want</tag>
+     <tag type="lemma">want</tag>
+     <tag type="from">2</tag>
+     <tag type="to">6</tag>
+     <tag type="pos">VBP</tag>
+     <tag type="sem">ENS</tag>
+     <tag type="wordnet">want.v.01</tag>
+     <tag type="verbnet" n="2">[Theme,Pivot]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">to</tag>
+     <tag type="cat">(s:to\np)/(s:b\np)</tag>
+     <tag type="sym">to</tag>
+     <tag type="lemma">to</tag>
+     <tag type="from">7</tag>
+     <tag type="to">9</tag>
+     <tag type="pos">TO</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="tok">pay</tag>
+     <tag type="cat">(s:b\np)/pp</tag>
+     <tag type="sym">pay</tag>
+     <tag type="lemma">pay</tag>
+     <tag type="from">10</tag>
+     <tag type="to">13</tag>
+     <tag type="pos">VB</tag>
+     <tag type="sem">EXS</tag>
+     <tag type="wordnet">pay.v.01</tag>
+     <tag type="verbnet" n="1">[Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="tok">with</tag>
+     <tag type="cat">pp/np</tag>
+     <tag type="sym">with</tag>
+     <tag type="lemma">with</tag>
+     <tag type="from">14</tag>
+     <tag type="to">18</tag>
+     <tag type="pos">IN</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+     <tag type="verbnet" n="1">[Instrument]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">a</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">a</tag>
+     <tag type="lemma">a</tag>
+     <tag type="from">19</tag>
+     <tag type="to">20</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">check</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">check</tag>
+     <tag type="lemma">check</tag>
+     <tag type="from">21</tag>
+     <tag type="to">26</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">check.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">s:dcl\s:dcl</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">26</tag>
+     <tag type="to">27</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b1">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="1"></dr>
+   <dr label="b1" name="e1" from="2" to="6"></dr>
+   <dr label="b1" name="e2" from="10" to="13"></dr>
+   <dr label="b1" name="x2" from="19" to="20"></dr>
+   <dr label="b1" name="t1" from="2" to="6"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="person" synset="person.n.01" from="0" to="1"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="EQU" arg1="x1" arg2="speaker" from="0" to="1"></comp>
+   </cond>
+   <cond label="b1">
+    <pred arg="t1" symbol="time" synset="time.n.08" from="2" to="6"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="EQU" arg1="t1" arg2="now" from="2" to="6"></comp>
+   </cond>
+   <cond label="b1">
+    <pred arg="e1" symbol="want" synset="want.v.01" from="2" to="6"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="2" to="6"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="e2" symbol="Theme" framenet="Theme" from="2" to="6"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x1" symbol="Pivot" framenet="Pivot" from="2" to="6"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="e2" symbol="pay" synset="pay.v.01" from="10" to="13"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e2" arg2="x2" symbol="Instrument" framenet="Reshaping@Instrument" from="14" to="18"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e2" arg2="x1" symbol="Agent" framenet="Frugality@Resource_controller" from="10" to="13"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="x2" symbol="check" synset="check.n.01" from="21" to="26"></pred>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

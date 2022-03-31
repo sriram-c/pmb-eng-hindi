@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- The woman is not picking up a baby kangaroo --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">The</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">the</tag>
+     <tag type="lemma">the</tag>
+     <tag type="from">0</tag>
+     <tag type="to">3</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DEF</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">woman</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">woman</tag>
+     <tag type="lemma">woman</tag>
+     <tag type="from">4</tag>
+     <tag type="to">9</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">woman.n.01</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">is</tag>
+     <tag type="cat">(s:dcl\np)/(s:ng\np)</tag>
+     <tag type="sym">be</tag>
+     <tag type="lemma">be</tag>
+     <tag type="from">10</tag>
+     <tag type="to">12</tag>
+     <tag type="pos">VBZ</tag>
+     <tag type="sem">NOW</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">not</tag>
+     <tag type="cat">(s:dcl\np)\(s:dcl\np)</tag>
+     <tag type="sym">not</tag>
+     <tag type="lemma">not</tag>
+     <tag type="from">13</tag>
+     <tag type="to">16</tag>
+     <tag type="pos">RB</tag>
+     <tag type="sem">NOT</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="tok">picking</tag>
+     <tag type="cat">((s:ng\np)/np)/pr</tag>
+     <tag type="sym">pick~up</tag>
+     <tag type="lemma">pick~up</tag>
+     <tag type="from">17</tag>
+     <tag type="to">24</tag>
+     <tag type="pos">VBG</tag>
+     <tag type="sem">EXG</tag>
+     <tag type="wordnet">pick_up.v.01</tag>
+     <tag type="verbnet" n="2">[Theme,Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">up</tag>
+     <tag type="cat">pr</tag>
+     <tag type="sym">up</tag>
+     <tag type="lemma">up</tag>
+     <tag type="from">25</tag>
+     <tag type="to">27</tag>
+     <tag type="pos">RP</tag>
+     <tag type="sem">REL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">a</tag>
+     <tag type="cat">np/n</tag>
+     <tag type="sym">a</tag>
+     <tag type="lemma">a</tag>
+     <tag type="from">28</tag>
+     <tag type="to">29</tag>
+     <tag type="pos">DT</tag>
+     <tag type="sem">DIS</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="tok">baby</tag>
+     <tag type="cat">n/n</tag>
+     <tag type="sym">baby</tag>
+     <tag type="lemma">baby</tag>
+     <tag type="from">30</tag>
+     <tag type="to">34</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">baby.n.06</tag>
+     <tag type="verbnet" n="1">[Theme]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1009">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">kangaroo</tag>
+     <tag type="cat">n</tag>
+     <tag type="sym">kangaroo</tag>
+     <tag type="lemma">kangaroo</tag>
+     <tag type="from">35</tag>
+     <tag type="to">43</tag>
+     <tag type="pos">NN</tag>
+     <tag type="sem">CON</tag>
+     <tag type="wordnet">kangaroo.n.01</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b2">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="3"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="x1" symbol="woman" synset="woman.n.01" from="4" to="9"></pred>
+   </cond>
+   <cond label="b2">
+    <not from="13" to="16">
+     <drs label="b3">
+      <domain>
+       <dr label="b3" name="x2" from="28" to="29"></dr>
+       <dr label="b3" name="x3" from="30" to="34"></dr>
+       <dr label="b3" name="e1" from="17" to="24"></dr>
+       <dr label="b2" name="t1" from="10" to="12"></dr>
+      </domain>
+      <conds>
+       <cond label="b2">
+        <pred arg="t1" symbol="time" synset="time.n.08" from="10" to="12"></pred>
+       </cond>
+       <cond label="b2">
+        <comp symbol="EQU" arg1="t1" arg2="now" from="10" to="12"></comp>
+       </cond>
+       <cond label="b3">
+        <pred arg="e1" symbol="pick_up" synset="pick_up.v.01" from="17" to="24"></pred>
+       </cond>
+       <cond label="b3">
+        <rel arg1="e1" arg2="t1" symbol="Time" framenet="Time" from="10" to="12"></rel>
+       </cond>
+       <cond label="b3">
+        <rel arg1="e1" arg2="x2" symbol="Theme" framenet="Theme" from="17" to="24"></rel>
+       </cond>
+       <cond label="b3">
+        <rel arg1="e1" arg2="x1" symbol="Agent" framenet="Agent" from="17" to="24"></rel>
+       </cond>
+       <cond label="b3">
+        <pred arg="x3" symbol="baby" synset="baby.n.06" from="30" to="34"></pred>
+       </cond>
+       <cond label="b3">
+        <pred arg="x2" symbol="kangaroo" synset="kangaroo.n.01" from="35" to="43"></pred>
+       </cond>
+       <cond label="b3">
+        <rel arg1="x2" arg2="x3" symbol="Theme" framenet="Theme" from="30" to="34"></rel>
+       </cond>
+      </conds>
+     </drs>
+    </not>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

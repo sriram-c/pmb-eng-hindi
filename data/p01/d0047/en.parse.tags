@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   t(n, 'men', [from:4, to:7, pos:'NNS', lemma:'man', sem:'CON', wordnet:'man.n.01'])),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/(s:ng\np),
+    t((s:dcl\np)/(s:ng\np), 'are', [from:8, to:11, pos:'VBP', lemma:'be', sem:'NOW', wordnet:'O']),
+    t((s\np)\(s\np), 'not', [from:12, to:15, pos:'RB', lemma:'not', sem:'NOT', wordnet:'O'])),
+   fa(s:ng\np,
+    t((s:ng\np)/np, 'climbing', [from:16, to:24, pos:'VBG', lemma:'climb', sem:'EXG', wordnet:'climb.v.01', verbnet:['Location','Theme']]),
+    fa(np,
+     t(np/n, 'a', [from:25, to:26, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+     t(n, 'mountain', [from:27, to:35, pos:'NN', lemma:'mountain', sem:'CON', wordnet:'mountain.n.01'])))))).
+

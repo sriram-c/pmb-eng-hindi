@@ -1,0 +1,23 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   ba(n,
+    t(n, 'animal', [from:4, to:10, pos:'NN', lemma:'animal', sem:'CON', wordnet:'animal.n.01']),
+    fa(n\n,
+     t((n\n)/np, 'with', [from:11, to:15, pos:'IN', lemma:'with', sem:'REL', wordnet:'O', verbnet:['Part']]),
+     lx(np, n,
+      fa(n,
+       t(n/n, 'big', [from:16, to:19, pos:'JJ', lemma:'big', sem:'DEG', wordnet:'big.a.01', verbnet:['Attribute']]),
+       t(n, 'eyes', [from:20, to:24, pos:'NNS', lemma:'eye', sem:'CON', wordnet:'eye.n.01'])))))),
+  fa(s:dcl\np,
+   bxc((s:dcl\np)/(s:ng\np),
+    t((s:dcl\np)/(s:ng\np), 'is', [from:25, to:27, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+    t((s\np)\(s\np), 'voraciously', [from:28, to:39, pos:'RB', lemma:'voraciously', sem:'IST', wordnet:'voraciously.r.01', verbnet:['Manner']])),
+   t(s:ng\np, 'eating', [from:40, to:46, pos:'VBG', lemma:'eat', sem:'EXG', wordnet:'eat.v.01', verbnet:['Agent']])))).
+

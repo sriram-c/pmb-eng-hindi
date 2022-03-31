@@ -1,0 +1,27 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/(n/pp), 'My', [from:0, to:2, pos:'PRP$', lemma:'speaker', sem:'HAS', wordnet:'O', verbnet:['Of']]),
+   t(n/pp, 'father', [from:3, to:9, pos:'NN', lemma:'father', sem:'ROL', wordnet:'father.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), 'is', [from:10, to:12, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+   ba(s:adj\np,
+    lx(np, n,
+     fa(n,
+      t(n/n, 'two', [from:13, to:16, pos:'CD', lemma:'2', sem:'QUC', wordnet:'O', verbnet:['Quantity']]),
+      t(n, 'years', [from:17, to:22, pos:'NNS', lemma:'year', sem:'UOM', wordnet:'year.n.01']))),
+    fa((s:adj\np)\np,
+     t(((s:adj\np)\np)/pp, 'younger', [from:23, to:30, pos:'JJR', lemma:'young', sem:'MOR', wordnet:'young.a.01', verbnet:['Value','Attribute']]),
+     fa(pp,
+      t(pp/np, 'than', [from:31, to:35, pos:'IN', lemma:'than', sem:'REL', wordnet:'O', verbnet:['Co-Theme']]),
+      rp(np,
+       fa(np,
+        t(np/(n/pp), 'my', [from:36, to:38, pos:'PRP$', lemma:'speaker', sem:'HAS', wordnet:'O', verbnet:['Of']]),
+        t(n/pp, 'mother', [from:39, to:45, pos:'NN', lemma:'mother', sem:'ROL', wordnet:'mother.n.01'])),
+       t(., '.', [from:45, to:46, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))))).
+

@@ -1,0 +1,24 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'We', [from:0, to:2, pos:'PRP', lemma:'speaker', sem:'PRO', wordnet:'O']),
+  ba(s:dcl\np,
+   t(s:dcl\np, 'played', [from:3, to:9, pos:'VBD', lemma:'play', sem:'EPS', wordnet:'play.v.05', verbnet:['Agent']]),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'on', [from:10, to:12, pos:'IN', lemma:'on', sem:'REL', wordnet:'O', verbnet:['Location']]),
+    fa(np,
+     t(np/n, 'the', [from:13, to:16, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     ba(n,
+      t(n, 'banks', [from:17, to:22, pos:'NNS', lemma:'bank', sem:'CON', wordnet:'bank.n.01']),
+      fa(n\n,
+       t((n\n)/np, 'of', [from:23, to:25, pos:'IN', lemma:'of', sem:'REL', wordnet:'O', verbnet:['PartOf']]),
+       rp(np,
+        fa(np,
+         t(np/n, 'the', [from:26, to:29, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+         t(n, 'Thames', [from:30, to:36, pos:'NNS', lemma:'thames', sem:'GEO', wordnet:'river.n.01'])),
+        t(., '.', [from:36, to:37, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))))))).
+

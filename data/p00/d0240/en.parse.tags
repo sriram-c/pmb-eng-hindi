@@ -1,0 +1,18 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:wq,
+  fa(s:wq/(s:q/np),
+   t((s:wq/(s:q/np))/n, 'which', [from:0, to:5, pos:'WDT', lemma:'entity', sem:'QUE', wordnet:'entity.n.01', verbnet:['Name']]),
+   t(n, 'singer', [from:6, to:12, pos:'NN', lemma:'singer', sem:'ROL', wordnet:'singer.n.01'])),
+  fc(s:q/np,
+   fa(s:q/(s:b\np),
+    t((s:q/(s:b\np))/np, 'do', [from:13, to:15, pos:'VBP', lemma:'do', sem:'NOW', wordnet:'O']),
+    t(np, 'you', [from:16, to:19, pos:'PRP', lemma:'hearer', sem:'PRO', wordnet:'O'])),
+   rp((s:b\np)/np,
+    t((s:b\np)/np, 'like', [from:20, to:24, pos:'VB', lemma:'like', sem:'EXS', wordnet:'like.v.03', verbnet:['Stimulus','Experiencer']]),
+    t(., '?', [from:24, to:25, pos:'.', lemma:'?', sem:'QUE', wordnet:'O']))))).
+

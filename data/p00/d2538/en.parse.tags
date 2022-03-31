@@ -1,0 +1,23 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   t(n, 'Tom', [from:0, to:3, pos:'NNP', lemma:'tom', sem:'PER', wordnet:'male.n.02'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), 'is', [from:4, to:6, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+   fa(s:adj\np,
+    fa((s:adj\np)/pp,
+     t(((s:adj\np)/pp)/(s:adj\np), 'as', [from:7, to:9, pos:'RB', lemma:'as', sem:'EQU', wordnet:'O', verbnet:['Theme']]),
+     t(s:adj\np, 'tall', [from:10, to:14, pos:'JJ', lemma:'tall', sem:'IST', wordnet:'tall.a.01', verbnet:['Attribute']])),
+    rp(pp,
+     fa(pp,
+      t(pp/np, 'as', [from:15, to:17, pos:'IN', lemma:'as', sem:'REL', wordnet:'O', verbnet:['Co-Theme']]),
+      fa(np,
+       t(np/(n/pp), 'his', [from:18, to:21, pos:'PRP$', lemma:'male', sem:'HAS', wordnet:'male.n.02', verbnet:['Of']]),
+       t(n/pp, 'father', [from:22, to:28, pos:'NN', lemma:'father', sem:'ROL', wordnet:'father.n.01']))),
+     t(., '.', [from:28, to:29, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

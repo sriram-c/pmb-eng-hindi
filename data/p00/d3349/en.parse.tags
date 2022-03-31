@@ -1,0 +1,23 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ rp(s:dcl,
+  ba(s:dcl,
+   t(np, 'You', [from:0, to:3, pos:'PRP', lemma:'person', sem:'AND', wordnet:'person.n.01']),
+   ba(s:dcl\np,
+    fa(s:dcl\np,
+     t((s:dcl\np)/(s:b\np), 'can', [from:4, to:7, pos:'MD', lemma:'can', sem:'POS', wordnet:'O']),
+     fa(s:b\np,
+      t((s:b\np)/np, 'buy', [from:8, to:11, pos:'VB', lemma:'buy', sem:'EXS', wordnet:'buy.v.01', verbnet:['Theme','Agent']]),
+      lx(np, n,
+       t(n, 'stamps', [from:12, to:18, pos:'NNS', lemma:'stamp', sem:'CON', wordnet:'stamp.n.04'])))),
+    fa((s\np)\(s\np),
+     t(((s\np)\(s\np))/np, 'at', [from:19, to:21, pos:'IN', lemma:'at', sem:'REL', wordnet:'O', verbnet:['Location']]),
+     fa(np,
+      t(np/n, 'any', [from:22, to:25, pos:'DT', lemma:'any', sem:'AND', wordnet:'O']),
+      t(n, 'post~office', [from:26, to:37, pos:'NN', lemma:'post~office', sem:'CON', wordnet:'post_office.n.01']))))),
+  t(., '.', [from:37, to:38, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))).
+

@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'That', [from:0, to:4, pos:'DT', lemma:'entity', sem:'DST', wordnet:'entity.n.01']),
+   t(n, 'farm', [from:5, to:9, pos:'NN', lemma:'farm', sem:'CON', wordnet:'farm.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/pp, 'belongs', [from:10, to:17, pos:'VBZ', lemma:'belong', sem:'ENS', wordnet:'belong.v.01', verbnet:['Theme']]),
+   fa(pp,
+    t(pp/np, 'to', [from:18, to:20, pos:'TO', lemma:'to', sem:'REL', wordnet:'O', verbnet:['Pivot']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'the', [from:21, to:24, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+      fa(n,
+       t(n/n, 'Jackson', [from:25, to:32, pos:'NNP', lemma:'jackson', sem:'NTH', wordnet:'O', verbnet:['Equal']]),
+       t(n, 'family', [from:33, to:39, pos:'NN', lemma:'family', sem:'CON', wordnet:'family.n.04']))),
+     t(., '.', [from:39, to:40, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

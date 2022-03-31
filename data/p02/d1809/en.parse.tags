@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'A', [from:0, to:1, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+   t(n, 'cherry~tree', [from:2, to:13, pos:'NN', lemma:'cherry~tree', sem:'CON', wordnet:'cherry_tree.n.01'])),
+  ba(s:dcl\np,
+   t(s:dcl\np, 'grows', [from:14, to:19, pos:'VBZ', lemma:'grow', sem:'EXS', wordnet:'grow.v.03', verbnet:['Patient']]),
+   fa((s\np)\(s\np),
+    t(((s\np)\(s\np))/np, 'in', [from:20, to:22, pos:'IN', lemma:'in', sem:'REL', wordnet:'O', verbnet:['Location']]),
+    rp(np,
+     fa(np,
+      t(np/n, 'a', [from:23, to:24, pos:'DT', lemma:'a', sem:'DIS', wordnet:'O']),
+      t(n, 'garden', [from:25, to:31, pos:'NN', lemma:'garden', sem:'CON', wordnet:'garden.n.01'])),
+     t(., '.', [from:31, to:32, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

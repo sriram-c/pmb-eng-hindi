@@ -1,0 +1,20 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'The', [from:0, to:3, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+   fa(n,
+    t(n/n, 'old', [from:4, to:7, pos:'JJ', lemma:'old', sem:'DEG', wordnet:'old.n.01', verbnet:['Attribute']]),
+    t(n, 'woman', [from:8, to:13, pos:'NN', lemma:'woman', sem:'CON', wordnet:'woman.n.01']))),
+  rp(s:dcl\np,
+   fa(s:dcl\np,
+    t((s:dcl\np)/np, 'exited', [from:14, to:20, pos:'VBD', lemma:'exit', sem:'EPS', wordnet:'exit.v.01', verbnet:['Source','Theme']]),
+    fa(np,
+     t(np/n, 'the', [from:21, to:24, pos:'DT', lemma:'the', sem:'DEF', wordnet:'O']),
+     t(n, 'bus', [from:25, to:28, pos:'NN', lemma:'bus', sem:'CON', wordnet:'bus.n.01']))),
+   t(., '.', [from:28, to:29, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))).
+

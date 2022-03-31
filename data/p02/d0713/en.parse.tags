@@ -1,0 +1,22 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  lx(np, n,
+   fa(n,
+    t(n/n, '9', [from:0, to:1, pos:'CD', lemma:'9', sem:'QUC', wordnet:'O', verbnet:['Quantity']]),
+    t(n, 'people', [from:2, to:8, pos:'NNS', lemma:'person', sem:'CON', wordnet:'person.n.01']))),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:pss\np), 'were', [from:9, to:13, pos:'VBD', lemma:'be', sem:'PST', wordnet:'O']),
+   rp(s:pss\np,
+    ba(s:pss\np,
+     t(s:pss\np, 'assassinated', [from:14, to:26, pos:'VBN', lemma:'assassinate', sem:'EXS', wordnet:'assassinate.v.01', verbnet:['Patient']]),
+     fa((s\np)\(s\np),
+      t(((s\np)\(s\np))/np, 'by', [from:27, to:29, pos:'IN', lemma:'by', sem:'REL', wordnet:'O', verbnet:['Agent']]),
+      lx(np, n,
+       t(n, 'Raman~Raghav', [from:30, to:42, pos:'NNP', lemma:'raman~raghav', sem:'PER', wordnet:'male.n.02'])))),
+    t(., '.', [from:42, to:43, pos:'.', lemma:'.', sem:'NIL', wordnet:'O']))))).
+

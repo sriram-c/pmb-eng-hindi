@@ -1,0 +1,21 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  fa(np,
+   t(np/n, 'Her', [from:0, to:3, pos:'PRP$', lemma:'female', sem:'HAS', wordnet:'female.n.02', verbnet:['User']]),
+   t(n, 'watch', [from:4, to:9, pos:'NN', lemma:'watch', sem:'CON', wordnet:'watch.n.01'])),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:adj\np), 'is', [from:10, to:12, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+   ba(s:adj\np,
+    lx(np, n,
+     fa(n,
+      t(n/n, 'ten', [from:13, to:16, pos:'JJ', lemma:'10', sem:'QUC', wordnet:'O', verbnet:['Quantity']]),
+      t(n, 'minutes', [from:17, to:24, pos:'NNS', lemma:'minute', sem:'UOM', wordnet:'minute.n.01']))),
+    rp((s:adj\np)\np,
+     t((s:adj\np)\np, 'slow', [from:25, to:29, pos:'JJ', lemma:'slow', sem:'IST', wordnet:'slow.a.04', verbnet:['Value','Theme']]),
+     t(., '.', [from:29, to:30, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

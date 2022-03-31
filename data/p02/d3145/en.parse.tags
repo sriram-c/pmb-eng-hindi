@@ -1,0 +1,17 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(s:dcl,
+  t(np, 'Everyone', [from:0, to:8, pos:'DT', lemma:'person', sem:'AND', wordnet:'person.n.01']),
+  fa(s:dcl\np,
+   t((s:dcl\np)/(s:ng\np), 'is', [from:9, to:11, pos:'VBZ', lemma:'be', sem:'NOW', wordnet:'O']),
+   fa(s:ng\np,
+    t((s:ng\np)/np, 'wearing', [from:12, to:19, pos:'VBG', lemma:'wear', sem:'EXG', wordnet:'wear.v.02', verbnet:['Theme','Agent']]),
+    rp(np,
+     lx(np, n,
+      t(n, 'nametags', [from:20, to:28, pos:'NNS', lemma:'name~tag', sem:'CON', wordnet:'name_tag.n.01'])),
+     t(., '.', [from:28, to:29, pos:'.', lemma:'.', sem:'NIL', wordnet:'O'])))))).
+

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/dtd/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 21 May 2021, 16:29:40)'">
+<!-- Speak clear . --> 
+
+<xdrs xml:id="xdrs1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="tok">Speak</tag>
+     <tag type="cat">s:b\np</tag>
+     <tag type="sym">speak</tag>
+     <tag type="lemma">speak</tag>
+     <tag type="from">0</tag>
+     <tag type="to">5</tag>
+     <tag type="pos">NNP</tag>
+     <tag type="sem">EXS</tag>
+     <tag type="wordnet">speak.v.01</tag>
+     <tag type="verbnet" n="1">[Agent]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="tok">clear</tag>
+     <tag type="cat">(s:b\np)\(s:b\np)</tag>
+     <tag type="sym">clear</tag>
+     <tag type="lemma">clear</tag>
+     <tag type="from">6</tag>
+     <tag type="to">11</tag>
+     <tag type="pos">JJ</tag>
+     <tag type="sem">IST</tag>
+     <tag type="wordnet">clear.a.09</tag>
+     <tag type="verbnet" n="1">[Manner]</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="verbnet" n="0">[]</tag>
+     <tag type="tok">.</tag>
+     <tag type="cat">(s:b\np)\(s:b\np)</tag>
+     <tag type="sym">.</tag>
+     <tag type="lemma">.</tag>
+     <tag type="from">11</tag>
+     <tag type="to">12</tag>
+     <tag type="pos">.</tag>
+     <tag type="sem">NIL</tag>
+     <tag type="wordnet">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <drs label="b1">
+  <domain>
+   <dr label="b1" name="x1" from="0" to="0"></dr>
+   <dr label="b1" name="e1" from="0" to="5"></dr>
+   <dr label="b1" name="s1" from="6" to="11"></dr>
+  </domain>
+  <conds>
+   <cond label="b1">
+    <pred arg="e1" symbol="speak" synset="speak.v.01" from="0" to="5"></pred>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="s1" symbol="Manner" framenet="Manner" from="6" to="11"></rel>
+   </cond>
+   <cond label="b1">
+    <rel arg1="e1" arg2="x1" symbol="Agent" framenet="Speak_on_topic@Speaker" from="0" to="5"></rel>
+   </cond>
+   <cond label="b1">
+    <pred arg="s1" symbol="clear" synset="clear.a.09" from="6" to="11"></pred>
+   </cond>
+   <cond label="b1">
+    <pred arg="x1" symbol="person" synset="person.n.01" from="0" to="0"></pred>
+   </cond>
+   <cond label="b1">
+    <comp symbol="EQU" arg1="x1" arg2="hearer" from="0" to="0"></comp>
+   </cond>
+  </conds>
+ </drs>
+</xdrs>
+</xdrs-output>

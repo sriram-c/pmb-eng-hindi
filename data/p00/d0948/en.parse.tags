@@ -1,0 +1,17 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ fa(s:q,
+  fa(s:q/(s:b\np),
+   t((s:q/(s:b\np))/np, 'Do', [from:0, to:2, pos:'NNP', lemma:'do', sem:'NOW', wordnet:'O']),
+   lx(np, n,
+    fa(n,
+     t(n/n, 'seedless', [from:3, to:11, pos:'JJ', lemma:'seedless', sem:'IST', wordnet:'seedless.a.01', verbnet:['Attribute']]),
+     t(n, 'watermelons', [from:12, to:23, pos:'NNS', lemma:'watermelon', sem:'CON', wordnet:'watermelon.n.02'])))),
+  rp(s:b\np,
+   t(s:b\np, 'exist', [from:24, to:29, pos:'VBP', lemma:'exist', sem:'EXS', wordnet:'exist.v.01', verbnet:['Theme']]),
+   t(., '?', [from:29, to:30, pos:'.', lemma:'?', sem:'QUE', wordnet:'O'])))).
+
