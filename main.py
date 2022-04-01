@@ -106,12 +106,18 @@ def is_verb(word): # for matching only verb
 def get_word_info(sbn_word):
     """Get the lexical, role and surface word info from sbn info"""
 
-    m =  re.match(r'([^\s]*)\s+([^%]+)%\s+([^[]+)\s+(.*)', sbn_word)
-    if m:
-        lex = m.group(1)
-        role = m.group(2)
-        wd = m.group(3)
-        pos_count = m.group(4)
+    lex, role, wd, pos_count = '', '', '', ''
+
+    try:
+        m =  re.match(r'([^\s]*)\s+([^%]+)%\s+([^[]+)\s+(.*)', sbn_word)
+        if m:
+            lex = m.group(1)
+            role = m.group(2)
+            wd = m.group(3)
+            pos_count = m.group(4)
+    except:
+        print("ERROR: pattern {} not regular".format(sbn_word))
+
 
     return lex, role, wd, pos_count
 
@@ -149,7 +155,6 @@ def get_hindi_wd(eng_wd, lwg, eng_hnd_sen):
     root, wn_sense = re.split(r'\.', eng_wd, 1)
     eng_sen, hnd_sen = eng_hnd_sen
 
-    print('yes')
 
 
 def dic_process(E_H_dic):
