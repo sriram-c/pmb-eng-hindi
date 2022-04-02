@@ -8,3 +8,4 @@ Jackson	jEksana
 ATM	etIema
 teapot	cAyaxAnI
 tooth	xAMwa
+dress	poSAka

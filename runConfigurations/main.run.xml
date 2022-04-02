@@ -12,7 +12,7 @@
     <option name="ADD_CONTENT_ROOTS" value="true" />
     <option name="ADD_SOURCE_ROOTS" value="true" />
     <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-    <option name="PARAMETERS" value="--data data --eng_hnd_dict resources/eng_hnd_dic.txt --eng_hnd_sen translations/english_hindi_sen.csv --translation_dir translations" />
+    <option name="PARAMETERS" value="--data data --eng_hnd_dict resources/eng_hnd_dic.txt --eng_hnd_sen translations/english_hindi_sen-wx.csv --translation_dir translations --hnd_tam_dict resources/hnd_tam_all_form --hnd_morph_dict translations/hnd-morph-dict.txt --controlled_dict resources/controlled_dictionary.txt" />
     <option name="SHOW_COMMAND_LINE" value="false" />
     <option name="EMULATE_TERMINAL" value="false" />
     <option name="MODULE_MODE" value="false" />
