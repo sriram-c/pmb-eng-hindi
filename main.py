@@ -6,6 +6,12 @@
 Read pmb-4.0.0 gold sbn files and correct the grouping of words according to Paninian notation
 Take Hindi translation of the raw text of English and try to align it with English to create
 the parallel meaning bank for Hindi.
+
+
+1. show output in utf8 (integrate wx-utf8 converter)
+2. resolve unix/windows dir reading sequence mismatch
+3.
+
 '''
 
 import argparse
@@ -225,7 +231,6 @@ def read_hnd_morph_dic(file_path):
                 wd, morph = line.strip().split('\t')
                 root = list(set([l.split('<')[0]  for l in morph.split('/') if re.search(r'<', l)]))
                 hnd_morph_dict[wd] = root
-                print('yes')
             except: print('ERROR in pattern in morph dictionary {}'.format(line))
 
     return hnd_morph_dict
@@ -316,7 +321,12 @@ def sbn_sen_align(*argv):
         lex, rol, wd, pos_count = get_word_info(sbn_word)
         correct_lwg = get_lwg(lex, eng_hnd_sen) if is_verb(lex) else '' # If verb find correct LWG
         hnd_wrd = get_hindi_wd(lex, correct_lwg, eng_hnd_sen, e_h_dict, hnd_tam_dict, hnd_morph_dict, hnd_sen_root, e_h_cdict) if is_content(lex) else ''
-        sbn_eng_hnd_sen.append((lex, rol, wd, pos_count, correct_lwg, hnd_wrd))
+
+        correct_lwg = '_'.join(correct_lwg)
+        if type(hnd_wrd) == list: hnd_wrd = '_'.join(hnd_wrd)
+
+
+        sbn_eng_hnd_sen.append((lex, rol,'%%English', wd, pos_count, correct_lwg, '%%Hindi', hnd_wrd))
 
     return  sbn_eng_hnd_sen
 
@@ -372,7 +382,13 @@ if __name__ == '__main__':
 
     with open('output.txt', 'w') as f:
         for sen, sbn in zip(eng_hnd_data, sbn_aligned):
-            f.write(str(sen))
-            for s in sbn: f.write(str(s))
-            f.write('\n')
+            eng, hnd = sen
+            f.write("{}\n{}\n".format(str(eng), str(hnd)))
+            for s in sbn:
+                try:
+                    f.write("\n{}\n".format('\t'.join(s)))
+                except:
+                    print('ERROR in writing to file {}'.format(s))
+            f.write('\n#########################\n')
     f.close()
+
