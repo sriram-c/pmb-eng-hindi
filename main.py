@@ -8,9 +8,11 @@ Take Hindi translation of the raw text of English and try to align it with Engli
 the parallel meaning bank for Hindi.
 
 
+to do
 1. show output in utf8 (integrate wx-utf8 converter)
 2. resolve unix/windows dir reading sequence mismatch
-3.
+3. use English wd to search hindi dic (currently taking left side word only)
+4. use trnasliteration logic (or fuzzy match) to align NER (names)
 
 '''
 
@@ -22,8 +24,9 @@ import os
 from os import path as op
 import csv
 import nltk
+from wxconv import WXC
 
-
+con = WXC(order='wx2utf', lang='hin')
 
 
 ########################################
@@ -323,10 +326,12 @@ def sbn_sen_align(*argv):
         hnd_wrd = get_hindi_wd(lex, correct_lwg, eng_hnd_sen, e_h_dict, hnd_tam_dict, hnd_morph_dict, hnd_sen_root, e_h_cdict) if is_content(lex) else ''
 
         correct_lwg = '_'.join(correct_lwg)
-        if type(hnd_wrd) == list: hnd_wrd = '_'.join(hnd_wrd)
+        if type(hnd_wrd) == list: hnd_wrd = ' '.join(hnd_wrd)
 
+        #con = WXC(order='wx2utf', lang='hin')
+        hnd_wrd_utf8 = con.convert(hnd_wrd)
 
-        sbn_eng_hnd_sen.append((lex, rol,'%%English', wd, pos_count, correct_lwg, '%%Hindi', hnd_wrd))
+        sbn_eng_hnd_sen.append((lex, rol,'%%English', wd, pos_count, correct_lwg, '%%Hindi', hnd_wrd_utf8))
 
     return  sbn_eng_hnd_sen
 
@@ -380,10 +385,11 @@ if __name__ == '__main__':
 
     sbn_aligned = sbn_align_all(sbn, eng_hnd_data, e_h_dict, hnd_tam_dict, hnd_morph_dict, e_h_cdict) #rewrite sbn file
 
-    with open('output.txt', 'w') as f:
+    with open('output.txt', 'w', encoding='utf-8') as f:
         for sen, sbn in zip(eng_hnd_data, sbn_aligned):
             eng, hnd = sen
-            f.write("{}\n{}\n".format(str(eng), str(hnd)))
+            hnd_utf8 = con.convert(hnd)
+            f.write("{}\n{}\n".format(str(eng), str(hnd_utf8)))
             for s in sbn:
                 try:
                     f.write("\n{}\n".format('\t'.join(s)))
