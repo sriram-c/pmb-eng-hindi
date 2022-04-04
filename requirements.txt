@@ -1,0 +1,6 @@
+argparse
+nltk
+wxconv
+fuzzywuzzy
+indic_transliteration
+ai4bharat.transliteration
