@@ -9,10 +9,11 @@ the parallel meaning bank for Hindi.
 
 
 to do
-1. show output in utf8 (integrate wx-utf8 converter)
+done 1. show output in utf8 (integrate wx-utf8 converter)
 2. resolve unix/windows dir reading sequence mismatch
 3. use English wd to search hindi dic (currently taking left side word only)
 4. use trnasliteration logic (or fuzzy match) to align NER (names)
+5. in LWG (Verb) show root + tam
 
 '''
 
@@ -25,10 +26,15 @@ from os import path as op
 import csv
 import nltk
 from wxconv import WXC
+from fuzzywuzzy import fuzz
 
+from indic_transliteration import sanscript
+from indic_transliteration.sanscript import transliterate
+
+from ai4bharat.transliteration import XlitEngine
 con = WXC(order='wx2utf', lang='hin')
 
-
+tranl_e = XlitEngine("hi")
 ########################################
 
 def parse_arguments():
@@ -103,7 +109,7 @@ def read_sbn(file_path):
     with open(file_path) as f:
         for line in f:
             if line.startswith('%'): continue
-            sbn.append(line.strip())
+            sbn.append(line.rstrip('\n'))
     return sbn
 
 
@@ -130,20 +136,19 @@ def is_verb(word): # for matching only verb
 def get_word_info(sbn_word):
     """Get the lexical, role and surface word info from sbn info"""
 
-    lex, role, wd, pos_count = '', '', '', ''
+    lex, role, surf_wd, pos_count = '', '', '', ''
 
     try:
         m =  re.match(r'([^\s]*)\s+([^%]+)%\s+([^[]+)\s+(.*)', sbn_word)
         if m:
             lex = m.group(1)
             role = m.group(2)
-            wd = m.group(3)
+            surf_wd = m.group(3)
             pos_count = m.group(4)
     except:
-        print("ERROR: pattern {} not regular".format(sbn_word))
+        print("ERROR: Skipping pattern {} in the sbn file".format(sbn_word))
 
-
-    return lex, role, wd, pos_count
+    return lex, role, surf_wd, pos_count
 
 def get_vb_chunks(sen):
     """ Get chunks for the English sentences using spacy"""
@@ -185,8 +190,14 @@ def read_eng_hnd_dic(file_path):
                     else: wd = eng
                 except ValueError:
                     print("WARNING: Skipping word {} in English Hindi dictionary".format(eng))
-                #hnd_wd_list = hnd.split('/')
-                hnd_wd_list = [l.split('_')[0] for l in hnd.split('/')]
+
+                hnd_wd_list = []
+                for l in hnd.split('/'):
+                    if len(l.split('_')) <= 2:
+                        if len(l.split('_')) == 2:
+                                if re.match(r'.*kara|.*ho|.*nA', l): hnd_wd_list.append(l.split('_')[0])
+                                else: hnd_wd_list.append(re.sub('_', ' ', l))
+                        else: hnd_wd_list.append(l)
 
                 if wd in eng_hnd_dict:
                     for l in hnd_wd_list: eng_hnd_dict[wd].append(l)
@@ -201,7 +212,7 @@ def read_eng_hnd_cdic(file_path):
             try:
                 eng, hnd = line.strip().split('\t')
                 e_h_cdict[eng] = hnd
-            except: print("ERROR in reading controlled dictionary for pattern {}".format(line))
+            except: print("ERROR: Skipping in reading controlled dictionary for pattern {}".format(line))
 
     return  e_h_cdict
 
@@ -216,7 +227,7 @@ def read_hnd_tam_dic(file_path):
             try:
                 info, tam = re.split(r'\s\s*', line.strip())
             except:
-                print("ERROR: IN tam dictionary please check pattern {}".format(line))
+                print("ERROR: Skipping in tam dictionary please check pattern {}".format(line))
 
             tam_wd = tam.split('_', 1)[1] if re.match(r'^0', tam) else tam
             hnd_tam_dict[tam_wd] = 1
@@ -240,59 +251,112 @@ def read_hnd_morph_dic(file_path):
 
 
 
-
-
-
-
-
-def get_hnd_vb_lwg(eng_root, eng_vb_lwg, hnd_sen, e_h_dict, hnd_tam_dict, hnd_morph_dict, hnd_sen_root, e_h_cdict):
+def get_hnd_vb_lwg(eng_root, surf_wd, eng_vb_lwg, hnd_sen, e_h_dict, hnd_tam_dict, hnd_morph_dict, hnd_sen_root, e_h_cdict):
     """ Get the HIndi equivalent VB LWG from the Hindi Sentence
     by using Hindi TAM Dictionary"""
 
     hnd_vb_lwg = []
-    hnd_vb_wd =  search_hnd_dict(eng_root, hnd_sen, e_h_dict, hnd_sen_root, e_h_cdict)
+    hnd_vb_root =  search_hnd_dict(eng_root, surf_wd, hnd_sen, e_h_dict, hnd_sen_root, e_h_cdict)
 
-    if hnd_vb_wd != '' :
-        hnd_vb_lwg.append(hnd_vb_wd)
-        pos = hnd_sen.split().index(hnd_vb_wd) + 1
+    if hnd_vb_root != '' :
+        #match the vb lwg with a window size 4 in the right
+        pos = hnd_sen.split().index(hnd_vb_root) + 1
         for i in range(pos+4, pos, -1):
             if(len(hnd_sen.split()) > i-1):
                 tam = '_'.join(hnd_sen.split()[pos:i])
                 if tam in hnd_tam_dict:
-                    hnd_vb_lwg.extend(tam.split('_'))
+                    hnd_vb_lwg = hnd_vb_root+'+'+'0_'+' '.join(tam.split('_'))
                     return hnd_vb_lwg
 
-    return hnd_vb_lwg
+    return hnd_vb_root
 
 
 
-def search_hnd_dict(eng_wd, hnd_sen, e_h_dict, hnd_sen_root, e_h_cdict):
+def search_hnd_dict(eng_wd, surf_wd, hnd_sen, e_h_dict, hnd_sen_root, e_h_cdict):
+
+    """ Get the List of Hindi words  form HIndi dictionary ( and controlled dict ) for the English word and search
+    it in the Hindi sentence  (both surface form and root form)  to get the exact usage."""
+
+    hnd_dic_list = []
 
     hnd_wd = ''
-    hnd_dic_list = []
-    if eng_wd in e_h_dict:
-        hnd_dic_list.extend(e_h_dict[eng_wd])
-    if eng_wd in e_h_cdict:
-        hnd_dic_list.append(e_h_cdict[eng_wd])
 
+
+    if not re.match(r'entity|time|person', eng_wd) and eng_wd != '':
+        wd = eng_wd.lower()
+        if wd in e_h_dict: # for regular dict
+            hnd_dic_list.extend(e_h_dict[wd])
+        if wd in e_h_cdict: #for controlled dict
+            hnd_dic_list.append(e_h_cdict[wd])
+
+    surf_wd_new = []
+    for wd in surf_wd.strip().split():
+        wd1 = re.sub(r'\.|\?', '', wd)
+        if not re.match(r'in|on|for|to|from|up|a|an|the', wd1.lower()): surf_wd_new.append(wd1)
+
+    for wd in surf_wd_new: # for surface words
+        if wd != eng_wd and  wd.lower() in e_h_dict: hnd_dic_list.extend(e_h_dict[wd.lower()])
+
+    hnd_wd =search_dic(hnd_sen, hnd_sen_root, list(set(hnd_dic_list)))
+
+    if(hnd_wd != ''): return hnd_wd
+
+    if not re.match(r'entity|time|person|company', eng_wd): surf_wd_new.append(eng_wd)
+
+    if len(surf_wd_new) > 0: return search_transliterate_dic(list(set(surf_wd_new)), hnd_sen, hnd_sen_root)
+
+    return ''
+
+
+
+def search_transliterate_dic(eng_wds, hnd_sen, hnd_sen_root):
+    #if Hindi meaning not found match with transliteration of English word (e.g keyboard -> kIbord)
+
+    twd_dict = []
+    hnd_wd = ''
+    for wd in eng_wds:
+        if wd:
+            print('using transliteration engine')
+            out = tranl_e.translit_word(wd, topk=5, beam_width=10)
+            for twd in out['hi']:
+                twd_dict.append(transliterate(twd, sanscript.DEVANAGARI, sanscript.WX))
+
+    hnd_wd = search_dic(hnd_sen, hnd_sen_root, twd_dict)
+    return  hnd_wd
+
+def search_dic(hnd_sen, hnd_sen_root, hnd_dic_list):
+
+    #for matching sub set of words e.g 'mAnava nirmiwa'
+    for wd in hnd_dic_list:
+        if re.match(r'.*-.*', wd):
+            wd1 = re.sub(r'-|_', ' ', wd)
+            if wd1 in hnd_sen: return  wd1
     for wd in hnd_sen.split():
         if wd in hnd_dic_list:
             return wd
     for root in hnd_sen_root:
         if root in hnd_dic_list:
             return hnd_sen_root[root]
-    return  hnd_wd
+    for wd in hnd_sen.split():
+        for wd1 in hnd_dic_list:
+            if fuzz.ratio(wd, wd1) > 77: return wd
+    for wd in hnd_sen_root:
+        for wd1 in hnd_dic_list:
+            if fuzz.ratio(wd, wd1) > 77: return hnd_sen_root[wd]
 
-def get_hindi_wd(eng_wd, eng_vb_lwg, eng_hnd_sen, e_h_dict, hnd_tam_dict, hnd_morph_dict, hnd_sen_root, e_h_cdict):
+    return ''
+
+
+def get_hindi_wd(eng_wd, surf_wd, eng_vb_lwg, eng_hnd_sen, e_h_dict, hnd_tam_dict, hnd_morph_dict, hnd_sen_root, e_h_cdict):
     """ Get the HIndi equivalent word for English_wd"""
 
-    eng_root, wn_sense = re.split(r'\.', eng_wd, 1)
+    eng_root, wn_sense = re.split(r'\.', eng_wd, 1) if eng_wd else ['', '']
     eng_sen, hnd_sen = eng_hnd_sen
 
     if eng_vb_lwg != '':
-        hnd_wrd = get_hnd_vb_lwg(eng_root, eng_vb_lwg, hnd_sen, e_h_dict, hnd_tam_dict, hnd_morph_dict, hnd_sen_root, e_h_cdict)
+        hnd_wrd = get_hnd_vb_lwg(eng_root, surf_wd, eng_vb_lwg, hnd_sen, e_h_dict, hnd_tam_dict, hnd_morph_dict, hnd_sen_root, e_h_cdict)
     else:
-        hnd_wrd = search_hnd_dict(eng_root, hnd_sen, e_h_dict, hnd_sen_root, e_h_cdict)
+        hnd_wrd = search_hnd_dict(eng_root, surf_wd, hnd_sen, e_h_dict, hnd_sen_root, e_h_cdict)
 
     return  hnd_wrd
 
@@ -321,17 +385,18 @@ def sbn_sen_align(*argv):
 
     sbn_eng_hnd_sen = []
     for sbn_word in sbn_sen_info:
-        lex, rol, wd, pos_count = get_word_info(sbn_word)
+        lex, rol, surf_wd, pos_count = get_word_info(sbn_word)
+        '''
+        if(re.match(r'.*Kraft.*', sbn_word)):
+            print('yes')
+        '''
         correct_lwg = get_lwg(lex, eng_hnd_sen) if is_verb(lex) else '' # If verb find correct LWG
-        hnd_wrd = get_hindi_wd(lex, correct_lwg, eng_hnd_sen, e_h_dict, hnd_tam_dict, hnd_morph_dict, hnd_sen_root, e_h_cdict) if is_content(lex) else ''
+        hnd_wrd = get_hindi_wd(lex, surf_wd, correct_lwg, eng_hnd_sen, e_h_dict, hnd_tam_dict, hnd_morph_dict, hnd_sen_root, e_h_cdict)
 
         correct_lwg = '_'.join(correct_lwg)
-        if type(hnd_wrd) == list: hnd_wrd = ' '.join(hnd_wrd)
+        hnd_wrd_utf8 = con.convert(hnd_wrd) if hnd_wrd else ''
 
-        #con = WXC(order='wx2utf', lang='hin')
-        hnd_wrd_utf8 = con.convert(hnd_wrd)
-
-        sbn_eng_hnd_sen.append((lex, rol,'%%English', wd, pos_count, correct_lwg, '%%Hindi', hnd_wrd_utf8))
+        sbn_eng_hnd_sen.append((lex, rol,'%%English', surf_wd, pos_count, correct_lwg, '%%Hindi', hnd_wrd_utf8))
 
     return  sbn_eng_hnd_sen
 
@@ -351,9 +416,16 @@ def sbn_align_all(*argv):
     e_h_cdict = argv[5]
     sbn_align_all = []
 
+    counter = 1
     for sbn_sen_info, eng_hnd_sen in zip(sbn_file, eng_hnd_data):
-        sbn_eng_hnd = sbn_sen_align(sbn_sen_info, eng_hnd_sen, e_h_dict, hnd_tam_dict, hnd_morph_dict, e_h_cdict)
-        sbn_align_all.append(sbn_eng_hnd)
+        try:
+            sbn_eng_hnd = sbn_sen_align(sbn_sen_info, eng_hnd_sen, e_h_dict, hnd_tam_dict, hnd_morph_dict, e_h_cdict)
+            sbn_align_all.append(sbn_eng_hnd)
+            counter += 1
+            if(counter > 200): return  sbn_align_all
+        except:
+            print("ERROR in sentence {}".format(eng_hnd_sen))
+            counter += 1
 
     return  sbn_align_all
 
