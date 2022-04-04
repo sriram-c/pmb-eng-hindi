@@ -3,7 +3,7 @@
 A tool to automatically align English PMB annotations with equivalent Hindi Translated sentences.
 ## Install
 
-    pip install -r requirement.txt
+    pip install -r requirements.txt
 
 ## Run
 
