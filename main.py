@@ -292,7 +292,7 @@ def search_hnd_dict(eng_wd, surf_wd, hnd_sen, e_h_dict, hnd_sen_root, e_h_cdict)
     surf_wd_new = []
     for wd in surf_wd.strip().split():
         wd1 = re.sub(r'\.|\?', '', wd)
-        if not re.match(r'in|on|for|to|from|up|a|an|the', wd1.lower()): surf_wd_new.append(wd1)
+        if not re.match(r'^(in|on|for|to|from|up|a|an|the)$', wd1.lower()): surf_wd_new.append(wd1)
 
     for wd in surf_wd_new: # for surface words
         if wd != eng_wd and  wd.lower() in e_h_dict: hnd_dic_list.extend(e_h_dict[wd.lower()])
@@ -301,6 +301,7 @@ def search_hnd_dict(eng_wd, surf_wd, hnd_sen, e_h_dict, hnd_sen_root, e_h_cdict)
 
     if(hnd_wd != ''): return hnd_wd
 
+    #Do Transliterate and search
     if not re.match(r'entity|time|person|company', eng_wd): surf_wd_new.append(eng_wd)
 
     if len(surf_wd_new) > 0: return search_transliterate_dic(list(set(surf_wd_new)), hnd_sen, hnd_sen_root)
@@ -312,17 +313,19 @@ def search_hnd_dict(eng_wd, surf_wd, hnd_sen, e_h_dict, hnd_sen_root, e_h_cdict)
 def search_transliterate_dic(eng_wds, hnd_sen, hnd_sen_root):
     #if Hindi meaning not found match with transliteration of English word (e.g keyboard -> kIbord)
 
-    twd_dict = []
-    hnd_wd = ''
+    hnd_wd = []
     for wd in eng_wds:
         if wd:
+            twd_dict = []
             print('using transliteration engine')
             out = tranl_e.translit_word(wd, topk=5, beam_width=10)
             for twd in out['hi']:
                 twd_dict.append(transliterate(twd, sanscript.DEVANAGARI, sanscript.WX))
 
-    hnd_wd = search_dic(hnd_sen, hnd_sen_root, twd_dict)
-    return  hnd_wd
+            if search_dic(hnd_sen, hnd_sen_root, twd_dict):
+                hnd_wd.append(search_dic(hnd_sen, hnd_sen_root, twd_dict))
+
+    return  ' '.join(hnd_wd)
 
 def search_dic(hnd_sen, hnd_sen_root, hnd_dic_list):
 
@@ -363,6 +366,17 @@ def get_hindi_wd(eng_wd, surf_wd, eng_vb_lwg, eng_hnd_sen, e_h_dict, hnd_tam_dic
 
 
 
+def get_hnd_wd_with_bvkt(hnd_sen):
+    hnd_wd_with_bvkt = {}
+    hnd_wd = hnd_sen.split()
+    for i in range(0, len(hnd_sen.split())):
+        wd = hnd_sen.split()[i]
+        prev_wd = hnd_sen.split()[i-1]
+        if re.match(r'^(meM|ne|ko|ke|para|vAlA)$', wd):
+            hnd_wd_with_bvkt[prev_wd] = prev_wd+'_'+wd
+
+    return hnd_wd_with_bvkt
+
 
 
 def sbn_sen_align(*argv):
@@ -383,15 +397,18 @@ def sbn_sen_align(*argv):
         for hnd_root in hnd_morph_dict[wd]:
             hnd_sen_root[hnd_root] = wd
 
+    hnd_wd_with_bvkt = get_hnd_wd_with_bvkt(hnd_sen)
     sbn_eng_hnd_sen = []
     for sbn_word in sbn_sen_info:
         lex, rol, surf_wd, pos_count = get_word_info(sbn_word)
-        '''
-        if(re.match(r'.*Kraft.*', sbn_word)):
+
+        if(re.match(r'.*time.*', sbn_word)):
             print('yes')
-        '''
         correct_lwg = get_lwg(lex, eng_hnd_sen) if is_verb(lex) else '' # If verb find correct LWG
         hnd_wrd = get_hindi_wd(lex, surf_wd, correct_lwg, eng_hnd_sen, e_h_dict, hnd_tam_dict, hnd_morph_dict, hnd_sen_root, e_h_cdict)
+
+        if hnd_wrd in hnd_wd_with_bvkt:
+            hnd_wrd = hnd_wd_with_bvkt[hnd_wrd]
 
         correct_lwg = '_'.join(correct_lwg)
         hnd_wrd_utf8 = con.convert(hnd_wrd) if hnd_wrd else ''
@@ -422,7 +439,7 @@ def sbn_align_all(*argv):
             sbn_eng_hnd = sbn_sen_align(sbn_sen_info, eng_hnd_sen, e_h_dict, hnd_tam_dict, hnd_morph_dict, e_h_cdict)
             sbn_align_all.append(sbn_eng_hnd)
             counter += 1
-            if(counter > 200): return  sbn_align_all
+            if(counter > 50): return  sbn_align_all
         except:
             print("ERROR in sentence {}".format(eng_hnd_sen))
             counter += 1

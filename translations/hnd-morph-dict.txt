@@ -1,4 +1,3 @@
-	
 """sUrajamuKI""	"""^sUrajamuKI/sUrajamuKI<cat:n><case:d><gen:m><num:s>/sUrajamuKI<cat:n><case:d><gen:m><num:p>/sUrajamuKI<cat:n><case:o><gen:m><num:s>$""
 ""Pela	""^Pela/Pela<cat:adj><case:d><gen:m><num:s>/Pela<cat:adj><case:d><gen:m><num:p>/Pela<cat:adj><case:d><gen:f><num:s>/Pela<cat:adj><case:d><gen:f><num:p>/Pela<cat:adj><case:o><gen:m><num:s>/Pela<cat:adj><case:o><gen:m><num:p>/Pela<cat:adj><case:o><gen:f><num:s>/Pela<cat:adj><case:o><gen:f><num:p>$
 ""PilAstina""	""^PilAstina/*PilAstina$""
