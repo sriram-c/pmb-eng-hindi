@@ -123,7 +123,7 @@ company.n.01	Name "Celestial Seasonings" 	%%English	Celestial Seasonings.	[11-32
 Anna Politkovskaya was murdered.
 अन्ना पोलितकोवस्काया की हत्या कर दी गई थी
 
-female.n.02	Name "Anna Politkovskaya" 	%%English	Anna Politkovskaya	[0-18]		%%Hindi	पोलितकोवस्काया अन्ना
+female.n.02	Name "Anna Politkovskaya" 	%%English	Anna Politkovskaya	[0-18]		%%Hindi	अन्ना पोलितकोवस्काया
 
 time.n.08	TPR now                   	%%English	was               	[19-22]		%%Hindi	थी
 
@@ -133,7 +133,7 @@ murder.v.01	Patient -2 Time -1        	%%English	murdered.         	[23-32]	was_
 Alfred Nobel is the inventor of dynamite.
 डायनामाइट के आविष्कारक अल्फ्रेड नोबेल हैं
 
-male.n.02	Name "Alfred Nobel"          	%%English	Alfred Nobel   	[0-12]		%%Hindi	नोबेल अल्फ्रेड
+male.n.02	Name "Alfred Nobel"          	%%English	Alfred Nobel   	[0-12]		%%Hindi	अल्फ्रेड नोबेल
 
 be.v.02	Theme -1 Time +1 Co-Theme +2 	%%English	is             	[13-15]		%%Hindi	हैं
 
@@ -169,7 +169,7 @@ fear.v.02	Experiencer -1 Time +1 Stimulus +2 	%%English	fears      	[7-12]	fears
 
 time.n.08	EQU now                            	%%English	 			%%Hindi	
 
-system.n.02	 	%%English	the system.	[13-24]		%%Hindi	व्यवस्था
+system.n.02	 	%%English	the system.	[13-24]		%%Hindi	व्यवस्था_से
 
 #########################
 Bountiful reached San Francisco on 1 November 1945.
@@ -633,7 +633,7 @@ time.n.08	EQU now                   	%%English	 			%%Hindi
 
 pay.v.01	Agent -3 Instrument +1    	%%English	to pay with	[7-18]	pay	%%Hindi	से
 
-check.n.01	 	%%English	a check.   	[19-27]		%%Hindi	चेक
+check.n.01	 	%%English	a check.   	[19-27]		%%Hindi	चेक_से
 
 #########################
 She has three brothers.
@@ -694,5 +694,669 @@ book.n.02	 	%%English	The book	[0-8]		%%Hindi	किताब
 time.n.08	EQU now                        	%%English	is      	[9-11]		%%Hindi	है
 
 big.a.01	AttributeOf -2 Time -1 Value + 	%%English	big.    	[12-16]		%%Hindi	बडी
+
+#########################
+I have to hurry!
+मुझे जल्दी है!
+
+person.n.01	EQU speaker  	%%English	I        	[0-1]		%%Hindi	मुझे
+
+	NECESSITY -1 	%%English	have     	[2-6]		%%Hindi	है!
+
+hurry.v.01	Theme -1     	%%English	to hurry!	[7-16]	hurry	%%Hindi	जल्दी
+
+#########################
+This is the woman whose cars were stolen.
+यह वह महिला है जिसकी कार चोरी हो गई थी
+
+entity.n.01	 	%%English	This           	[0-4]		%%Hindi	यह
+
+be.v.02	Theme -1 Time +1 Co-Theme +2 	%%English	is             	[5-7]		%%Hindi	है
+
+time.n.08	EQU now                      	%%English	 			%%Hindi	
+
+woman.n.01	 	%%English	the woman whose	[8-23]		%%Hindi	महिला
+
+car.n.01	Owner -1                     	%%English	cars           	[24-28]		%%Hindi	कार
+
+time.n.08	TPR now                      	%%English	were           	[29-33]		%%Hindi	
+
+steal.v.01	Theme -2 Time -1             	%%English	stolen.        	[34-41]		%%Hindi	चोरी
+
+#########################
+Where are the parking metres?
+पार्किंग मीटर कहां हैं?
+
+location.n.01	EQU ?                        	%%English	Where              	[0-5]		%%Hindi	कहां
+
+be.v.03	Location -1 Time +1 Theme +2 	%%English	are                	[6-9]		%%Hindi	
+
+time.n.08	EQU now                      	%%English	 			%%Hindi	
+
+parking_meter.n.01	 	%%English	the parking metres?	[10-29]		%%Hindi	मीटर
+
+#########################
+He is opening the window.
+वह खिडकी खोल रहा है
+
+male.n.02	 	%%English	He         	[0-2]		%%Hindi	वह
+
+time.n.08	EQU now                     	%%English	is         	[3-5]		%%Hindi	है
+
+open.v.01	Agent -2 Time -1 Patient +1 	%%English	opening    	[6-13]	is_opening	%%Hindi	खोल+0_रहा है
+
+window.n.01	 	%%English	the window.	[14-25]		%%Hindi	खिडकी
+
+#########################
+My parents come from China.
+मेरे माता-पिता चीन से आते हैं
+
+person.n.01	Role +1                      	%%English	My parents 	[0-10]		%%Hindi	
+
+parent.n.01	Of speaker                   	%%English	 			%%Hindi	माता-पिता
+
+come.v.08	Theme -2 Time +1 Location +2 	%%English	come       	[11-15]	come	%%Hindi	आते+0_हैं
+
+time.n.08	EQU now                      	%%English	 			%%Hindi	
+
+country.n.02	Name "China"                 	%%English	from China.	[16-27]		%%Hindi	चीन_से
+
+#########################
+I won the gold medal.
+मैंने स्वर्ण पदक जीता
+
+person.n.01	EQU speaker               	%%English	I              	[0-1]		%%Hindi	मैंने
+
+win.v.01	Agent -1 Time +1 Theme +2 	%%English	won            	[2-5]		%%Hindi	जीता
+
+time.n.08	TPR now                   	%%English	 			%%Hindi	
+
+gold_medal.n.01	 	%%English	the gold medal.	[6-21]		%%Hindi	स्वर्ण
+
+#########################
+What a beautiful rainbow!
+कितना सुंदर इंद्रधनुष है!
+
+be.v.01	Theme +1 Co-Theme +3 	%%English	What       	[0-4]		%%Hindi	कितना
+
+entity.n.01	 	%%English	 			%%Hindi	
+
+beautiful.a.01	AttributeOf +1       	%%English	a beautiful	[5-16]		%%Hindi	सुंदर
+
+rainbow.n.01	 	%%English	rainbow!   	[17-25]		%%Hindi	इंद्रधनुष
+
+#########################
+The garden was full of beautiful yellow flowers.
+बगीचा सुंदर पीले फूलों से भरा हुआ था
+
+garden.n.01	 	%%English	The garden	[0-10]		%%Hindi	बगीचा
+
+time.n.08	TPR now                         	%%English	was       	[11-14]		%%Hindi	था
+
+full.a.01	AttributeOf -2 Time -1 Theme +3 	%%English	full of   	[15-22]		%%Hindi	से
+
+beautiful.a.01	AttributeOf +2                  	%%English	beautiful 	[23-32]		%%Hindi	सुंदर
+
+yellow.a.01	 	%%English	yellow    	[33-39]		%%Hindi	पीले
+
+flower.n.01	Colour -1                       	%%English	flowers.  	[40-48]		%%Hindi	फूलों_से
+
+#########################
+She is the Prime Minister of Finland.
+वह फिनलैंड की प्रधानमंत्री हैं
+
+female.n.02	 	%%English	She                  	[0-3]		%%Hindi	वह
+
+be.v.02	Theme -1 Time +1 Co-Theme +2 	%%English	is                   	[4-6]		%%Hindi	हैं
+
+time.n.08	EQU now                      	%%English	 			%%Hindi	
+
+person.n.01	Role +1                      	%%English	the Prime Minister of	[7-28]		%%Hindi	की
+
+prime_minister.n.01	Of +1                        	%%English	 			%%Hindi	
+
+state.n.04	Name "Finland"               	%%English	Finland.             	[29-37]		%%Hindi	फिनलैंड
+
+#########################
+My mother told me to mow the lawn.
+मेरी माँ ने मुझे लोन घास काटने के लिए कहा था
+
+person.n.01	Role +1                                	%%English	My mother	[0-9]		%%Hindi	माँ_ने
+
+mother.n.01	Of speaker                             	%%English	 			%%Hindi	माँ_ने
+
+tell.v.04	Agent -2 Time +1 Recipient +2 Topic +3 	%%English	told     	[10-14]		%%Hindi	कहा
+
+time.n.08	TPR now                                	%%English	 			%%Hindi	
+
+person.n.01	EQU speaker                            	%%English	me       	[15-17]		%%Hindi	मुझे
+
+mow.v.01	Agent -1 Patient +1                    	%%English	to mow   	[18-24]	mow	%%Hindi	
+
+lawn.n.01	 	%%English	the lawn.	[25-34]		%%Hindi	लोन
+
+#########################
+Tom used a toothpick.
+टोम ने टूथपिक का इस्तेमाल किया
+
+male.n.02	Name "Tom"                	%%English	Tom         	[0-3]		%%Hindi	टोम_ने
+
+use.v.01	Agent -1 Time +1 Theme +2 	%%English	used        	[4-8]	used	%%Hindi	इस्तेमाल
+
+time.n.08	TPR now                   	%%English	 			%%Hindi	
+
+toothpick.n.01	 	%%English	a toothpick.	[9-21]		%%Hindi	टूथपिक
+
+#########################
+I love Natasha.
+मुझे नताशा से प्यार है
+
+person.n.01	EQU speaker                        	%%English	I       	[0-1]		%%Hindi	मुझे
+
+love.v.01	Experiencer -1 Time +1 Stimulus +2 	%%English	love    	[2-6]	love	%%Hindi	प्यार+0_है
+
+time.n.08	EQU now                            	%%English	 			%%Hindi	
+
+female.n.02	Name "Natasha"                     	%%English	Natasha.	[7-15]		%%Hindi	नताशा_से
+
+#########################
+This is nonsense.
+यह बकवास है
+
+entity.n.01	 	%%English	This     	[0-4]		%%Hindi	यह
+
+time.n.08	EQU now                	%%English	is       	[5-7]		%%Hindi	है
+
+nonsense.a.01	AttributeOf -2 Time -1 	%%English	nonsense.	[8-17]		%%Hindi	बकवास
+
+#########################
+I don't want pizza.
+मुझे पिज्जा नहीं चाहिए
+
+person.n.01	EQU speaker               	%%English	I      	[0-1]		%%Hindi	मुझे
+
+	NEGATION -1               	%%English	n't    	[4-7]		%%Hindi	
+
+time.n.08	EQU now                   	%%English	do     	[2-4]		%%Hindi	
+
+want.v.01	Pivot -2 Time -1 Theme +1 	%%English	want   	[8-12]	want	%%Hindi	चाहिए
+
+pizza.n.01	 	%%English	pizza. 	[13-19]		%%Hindi	पिज्जा
+
+	CONTINUATION -1           	%%English	 			%%Hindi	
+
+person.n.01	EQU speaker               	%%English	I      	[20-21]		%%Hindi	मुझे
+
+	NEGATION -1               	%%English	not    	[24-27]		%%Hindi	नहीं
+
+time.n.08	EQU now                   	%%English	'm     	[21-23]		%%Hindi	
+
+hungry.a.01	Experiencer -2 Time -1    	%%English	hungry.	[28-35]		%%Hindi	
+
+#########################
+I'm not hungry.
+मुझे भूख नहीं है
+
+time.n.08	EQU now          	%%English	Do         	[0-2]		%%Hindi	है
+
+seedless.a.01	AttributeOf +1   	%%English	seedless   	[3-11]		%%Hindi	
+
+watermelon.n.02	 	%%English	watermelons	[12-23]		%%Hindi	
+
+exist.v.01	Time -3 Theme -1 	%%English	exist?     	[24-30]		%%Hindi	है
+
+#########################
+Do seedless watermelons exist?
+क्या बीज रहित तरबूज मौजूद हैं?
+
+person.n.01	EQU speaker               	%%English	I      	[0-1]		%%Hindi	
+
+lose.v.04	Agent -1 Time +1 Theme +2 	%%English	lost my	[2-9]		%%Hindi	
+
+time.n.08	TPR now                   	%%English	 			%%Hindi	
+
+key.n.01	User speaker              	%%English	key.   	[10-14]		%%Hindi	
+
+#########################
+I lost my key.
+मेरी चाबी खो गई
+
+person.n.01	EQU hearer                         	%%English	you    	[3-6]		%%Hindi	
+
+	NEGATION -1                        	%%English	n't    	[9-12]		%%Hindi	
+
+time.n.08	EQU now                            	%%English	do     	[7-9]		%%Hindi	
+
+like.v.02	Experiencer -2 Time -1 Stimulus +1 	%%English	like   	[13-17]		%%Hindi	
+
+entity.n.01	 	%%English	it then	[18-25]		%%Hindi	
+
+	CONSEQUENCE -1                     	%%English	If     	[0-2]		%%Hindi	
+
+person.n.01	EQU hearer                         	%%English	you    	[26-29]		%%Hindi	
+
+	POSSIBILITY -1                     	%%English	can    	[30-33]		%%Hindi	
+
+quit.v.01	Agent -1                           	%%English	quit.  	[34-39]		%%Hindi	
+
+#########################
+If you don't like it then you can quit.
+अगर आपको यह पसंद नहीं है तो आप छोड सकते हैं
+
+guy.n.01	 	%%English	That guy  	[0-8]		%%Hindi	यह
+
+time.n.08	EQU now                          	%%English	is        	[9-11]		%%Hindi	है
+
+completely.r.01	 	%%English	completely	[12-22]		%%Hindi	
+
+nuts.a.01	AttributeOf -3 Time -2 Degree -1 	%%English	nuts!     	[23-28]		%%Hindi	
+
+#########################
+That guy is completely nuts!
+वह आदमी बिल्कुल पागल है!
+
+person.n.01	EQU speaker            	%%English	I      	[0-1]		%%Hindi	
+
+time.n.08	EQU now                	%%English	'm     	[1-3]		%%Hindi	
+
+sleepy.a.01	AttributeOf -2 Time -1 	%%English	sleepy!	[4-11]		%%Hindi	
+
+#########################
+I'm sleepy!
+मुझे नींद आ रही है!
+
+data.n.01	 	%%English	The data 	[0-8]		%%Hindi	
+
+network.n.01	Theme -1               	%%English	network  	[9-16]		%%Hindi	
+
+time.n.08	EQU now                	%%English	is now   	[17-23]		%%Hindi	है!
+
+complete.a.01	AttributeOf -2 Time -1 	%%English	complete.	[24-33]		%%Hindi	
+
+#########################
+The data network is now complete.
+डेटा नेटवर्क अब पूरा हो गया है
+
+shooting.n.01	 	%%English	The shooting had	[0-16]		%%Hindi	
+
+cease.v.01	Theme -1 Time +1 	%%English	ceased.         	[17-24]		%%Hindi	
+
+time.n.08	TPR now          	%%English	 			%%Hindi	
+
+#########################
+The shooting had ceased.
+शूटिंग बंद हो गई थी
+
+male.n.02	Name "Kerensky"  	%%English	Kerensky has	[0-12]		%%Hindi	
+
+flee.v.01	Theme -1 Time +1 	%%English	fled.       	[13-18]		%%Hindi	
+
+time.n.08	TPR now          	%%English	 			%%Hindi	
+
+#########################
+Kerensky has fled.
+केरेन्स्की भाग गया
+
+person.n.01	Role +1                         	%%English	The boy-scouts	[0-14]		%%Hindi	
+
+boy_scout.n.01	 	%%English	 			%%Hindi	
+
+jeer.v.01	Agent -2 Time +1                	%%English	jeered        	[15-21]		%%Hindi	
+
+time.n.08	TPR now                         	%%English	 			%%Hindi	
+
+	CONTINUATION -1                 	%%English	and           	[22-25]		%%Hindi	
+
+scuttle.v.01	Theme -4 Time -1 Destination +2 	%%English	scuttled into 	[26-39]		%%Hindi	भाग
+
+time.n.08	TPR now EQU -2                  	%%English	 			%%Hindi	
+
+building.n.01	 	%%English	the building. 	[40-53]		%%Hindi	
+
+#########################
+The boy-scouts jeered and scuttled into the building.
+लडके-स्काउट्स ने इमारत में ठहाका लगाया और चिल्लाया
+
+event.v.01	Participant +1 	%%English	 			%%Hindi	
+
+ring.n.08	Quantity 5     	%%English	Five rings	[0-10]		%%Hindi	
+
+#########################
+Five rings
+पांच अंगूठियां
+
+time.n.08	YearOfCentury 1922 TPR now              	%%English	In 1922,                         	[0-8]		%%Hindi	
+
+site.n.01	 	%%English	the site was                     	[9-21]		%%Hindi	
+
+acquire.v.01	Time -2 Theme -1 Agent +1               	%%English	acquired by                      	[22-33]		%%Hindi	
+
+company.n.01	Name "Produits Chimiques Bozel Lamotte" 	%%English	Produits Chimiques Bozel Lamotte.	[34-67]		%%Hindi	
+
+#########################
+In 1922
+1922 में
+
+male.n.02	Name "Kohl"                	%%English	Kohl     	[0-4]		%%Hindi	
+
+announce.v.02	Agent -1 Time +1 Result +3 	%%English	announced	[5-14]		%%Hindi	
+
+time.n.08	TPR now                    	%%English	 			%%Hindi	
+
+economy.n.01	 	%%English	economy  	[15-22]		%%Hindi	
+
+measure.n.01	Theme -1                   	%%English	measures 	[23-31]		%%Hindi	
+
+#########################
+Kohl announced economy measures
+कोहल ने आर्थिक उपायों की घोषणा की
+
+entity.n.01	Quantity 2         	%%English	Both have        	[0-9]		%%Hindi	की
+
+	NEGATION -1        	%%English	 			%%Hindi	
+
+entity.n.01	SubOf -1           	%%English	 			%%Hindi	
+
+	NEGATION -1        	%%English	 			%%Hindi	
+
+time.n.08	TPR now            	%%English	been             	[10-14]		%%Hindi	
+
+arrest.v.01	Patient -2 Time -1 	%%English	arrested already.	[15-32]		%%Hindi	
+
+#########################
+Both have been arrested already.
+दोनों को पहले ही गिरफ्तार किया जा चुका है
+
+entity.n.01	Quantity 2             	%%English	Both   	[0-4]		%%Hindi	दोनों_को
+
+	NEGATION -1            	%%English	 			%%Hindi	
+
+entity.n.01	SubOf -1               	%%English	 			%%Hindi	
+
+	NEGATION -1            	%%English	 			%%Hindi	
+
+time.n.08	TPR now                	%%English	were   	[5-9]		%%Hindi	
+
+silent.a.02	AttributeOf -2 Time -1 	%%English	silent.	[10-17]		%%Hindi	
+
+#########################
+Both were silent.
+दोनों चुप थे
+
+entity.n.01	EQU ?                        	%%English	What         	[0-4]		%%Hindi	
+
+be.v.02	Co-Theme -1 Time +1 Theme +2 	%%English	is           	[5-7]		%%Hindi	
+
+time.n.08	EQU now                      	%%English	 			%%Hindi	
+
+height.n.01	AttributeOf +3               	%%English	the height of	[8-21]		%%Hindi	
+
+tall.a.01	Degree +1                    	%%English	the tallest  	[22-33]		%%Hindi	
+
+most.r.01	 	%%English	 			%%Hindi	
+
+redwood.n.02	Attribute -2                 	%%English	redwood?     	[34-42]		%%Hindi	
+
+#########################
+What is the height of the tallest redwood?
+सबसे ऊंचे रेडवुड की ऊंचाई कितनी है?
+
+person.n.01	Name ?                    	%%English	Who                  	[0-3]		%%Hindi	है?
+
+direct.v.03	Agent -1 Time +1 Theme +2 	%%English	directed             	[4-12]		%%Hindi	
+
+time.n.08	TPR now                   	%%English	 			%%Hindi	
+
+film.n.01	Name "Fail Safe"          	%%English	the film "Fail Safe"?	[13-34]		%%Hindi	
+
+#########################
+Who directed the film "Fail Safe"?
+फिल्म "फेल सेफ" का निर्देशन किसने किया?
+
+roller_coaster.n.02	Name ?                                   	%%English	What roller coaster	[0-19]		%%Hindi	का
+
+be.v.02	Co-Theme -1 Time +1 Theme +4 Location +5 	%%English	is                 	[20-22]		%%Hindi	
+
+time.n.08	EQU now                                  	%%English	 			%%Hindi	
+
+fast.a.01	Degree +1                                	%%English	the fastest in     	[23-37]		%%Hindi	
+
+most.r.01	 	%%English	 			%%Hindi	
+
+entity.n.01	Attribute -2                             	%%English	 			%%Hindi	
+
+world.n.04	 	%%English	the world?         	[38-48]		%%Hindi	
+
+#########################
+What roller coaster is the fastest in the world?
+दुनिया में सबसे तेज कौन सा रोलर कोस्टर है?
+
+tall.a.01	Value ? Time +1 AttributeOf +2 	%%English	How tall   	[0-8]		%%Hindi	है?
+
+time.n.08	EQU now                        	%%English	is         	[9-11]		%%Hindi	है?
+
+male.n.02	Name "Mike Tyson"              	%%English	Mike Tyson?	[12-23]		%%Hindi	
+
+#########################
+How tall is Mike Tyson?
+माइक टायसन कितना लंबा है
+
+person.n.01	Quantity ? Location +1    	%%English	How many people in	[0-18]		%%Hindi	कितना
+
+country.n.02	Name "us"                 	%%English	U.S.              	[19-23]		%%Hindi	
+
+	NEGATION -1               	%%English	not               	[27-30]		%%Hindi	
+
+time.n.08	EQU now                   	%%English	do                	[24-26]		%%Hindi	है
+
+have.v.02	Pivot -3 Time -1 Theme +1 	%%English	have              	[31-35]		%%Hindi	है
+
+health_insurance.n.01	 	%%English	health insurance? 	[36-53]		%%Hindi	
+
+#########################
+How many people in U.S. do not have health insurance?
+अमेरिका में कितने लोगों के पास स्वास्थ्य बीमा नहीं है?
+
+manner.n.01	EQU ?                        	%%English	How         	[0-3]		%%Hindi	कितने
+
+time.n.08	TPR now                      	%%English	did         	[4-7]		%%Hindi	
+
+male.n.02	Name "Jerry Garcia"          	%%English	Jerry Garcia	[8-20]		%%Hindi	
+
+die.v.01	Manner -3 Time -2 Patient -1 	%%English	die?        	[21-25]		%%Hindi	है?
+
+#########################
+How did Jerry Garcia die?
+जैरी गार्सिया की मृत्यु कैसे हुई?
+
+person.n.01	EQU speaker            	%%English	I               	[0-1]		%%Hindi	
+
+time.n.08	EQU now                	%%English	'm              	[1-3]		%%Hindi	
+
+bored.a.02	Experiencer -2 Time -1 	%%English	bored right now.	[4-20]		%%Hindi	
+
+#########################
+I'm bored right now.
+मैं अभी ऊब गया हूँ
+
+person.n.01	 	%%English	They      	[0-4]		%%Hindi	
+
+time.n.08	TPR now                	%%English	were      	[5-9]		%%Hindi	
+
+satisfied.a.01	AttributeOf -2 Time -1 	%%English	satisfied.	[10-20]		%%Hindi	
+
+#########################
+They were satisfied.
+वे संतुष्ट थे
+
+male.n.02	Name "Tom"                  	%%English	Tom         	[0-3]		%%Hindi	
+
+shrug.v.01	Agent -1 Time +1 Patient +2 	%%English	shrugged his	[4-16]		%%Hindi	
+
+time.n.08	TPR now                     	%%English	 			%%Hindi	
+
+shoulder.n.01	PartOf -3                   	%%English	shoulders.  	[17-27]		%%Hindi	
+
+#########################
+Tom shrugged his shoulders.
+टोम ने अपने कंधे उचका दिए
+
+company.n.01	Name "Corsairfly"            	%%English	Corsairfly	[0-10]		%%Hindi	
+
+be.v.01	Theme -1 Time +1 Co-Theme +2 	%%English	is        	[11-13]		%%Hindi	
+
+time.n.08	EQU now                      	%%English	 			%%Hindi	
+
+airline.n.02	 	%%English	an airline	[14-24]		%%Hindi	
+
+based.a.02	Theme -1 Location +1         	%%English	based in  	[25-33]		%%Hindi	
+
+city.n.01	Name "Paris"                 	%%English	Paris.    	[34-40]		%%Hindi	
+
+#########################
+Corsairfly is an airline based in Paris.
+छोर्सइर्ङ्ल्य् पेरिस में स्थित एक एयरलाइन है
+
+male.n.02	Name "Tom" EQU +2 	%%English	Tom     	[0-3]		%%Hindi	
+
+time.n.08	EQU now           	%%English	is      	[4-6]		%%Hindi	है
+
+person.n.01	Role +1           	%%English	a fakir.	[7-15]		%%Hindi	
+
+fakir.n.01	Time -2           	%%English	 			%%Hindi	
+
+#########################
+Tom is a fakir.
+टोम एक फकीर है
+
+male.n.02	 	%%English	He      	[0-2]		%%Hindi	है
+
+time.n.08	EQU now          	%%English	is      	[3-5]		%%Hindi	है
+
+out.r.01	Theme -2 Time -1 	%%English	out now.	[6-14]		%%Hindi	
+
+#########################
+He is out now.
+वह अब बाहर है
+
+male.n.02	Name "Tom"                	%%English	Tom      	[0-3]		%%Hindi	
+
+	NEGATION -1               	%%English	n't      	[7-10]		%%Hindi	
+
+time.n.08	TPR now                   	%%English	was      	[4-7]		%%Hindi	
+
+wear.v.01	Agent -2 Time -1 Theme +1 	%%English	wearing  	[11-18]		%%Hindi	है
+
+entity.n.01	 	%%English	anything.	[19-28]		%%Hindi	
+
+#########################
+Tom wasn't wearing anything.
+टोम ने कुछ भी नहीं पहना था
+
+male.n.02	 	%%English	He            	[0-2]		%%Hindi	
+
+time.n.08	EQU now                	%%English	's            	[2-4]		%%Hindi	
+
+absentminded.a.01	AttributeOf -2 Time -1 	%%English	absent-minded.	[5-19]		%%Hindi	
+
+#########################
+He's absent-minded.
+वह अनुपस्थित-दिमाग वाला है
+
+male.n.02	Name "Tom"                         	%%English	Tom      	[0-3]		%%Hindi	
+
+abhor.v.01	Experiencer -1 Time +1 Stimulus +2 	%%English	abhors   	[4-10]		%%Hindi	
+
+time.n.08	EQU now                            	%%English	 			%%Hindi	
+
+violence.n.01	 	%%English	violence.	[11-20]		%%Hindi	
+
+#########################
+Tom abhors violence.
+टोम हिंसा से घृणा करता है
+
+female.n.02	 	%%English	She    	[0-3]		%%Hindi	
+
+	NEGATION -1                  	%%English	not    	[7-10]		%%Hindi	
+
+be.v.08	Theme -1 Time +1 Co-Theme +3 	%%English	is     	[4-6]		%%Hindi	है
+
+time.n.08	EQU now                      	%%English	 			%%Hindi	
+
+good.a.01	AttributeOf +2               	%%English	a good 	[11-17]		%%Hindi	
+
+person.n.01	Role +1                      	%%English	sailor.	[18-25]		%%Hindi	
+
+sailor.n.01	 	%%English	 			%%Hindi	
+
+#########################
+She is not a good sailor.
+वह एक अच्छी नाविक नहीं है
+
+	NEGATION -1      	%%English	Everyone	[0-8]		%%Hindi	
+
+person.n.01	 	%%English	 			%%Hindi	
+
+	NEGATION -1      	%%English	 			%%Hindi	
+
+time.n.08	EQU now          	%%English	's      	[8-10]		%%Hindi	
+
+eat.v.02	Agent -2 Time -1 	%%English	eating. 	[11-18]		%%Hindi	
+
+#########################
+Everyone's eating.
+सब खा रहे हैं
+
+entity.n.01	 	%%English	This   	[0-4]		%%Hindi	
+
+be.v.01	Theme -1 Time +1 Co-Theme +3 	%%English	is     	[5-7]		%%Hindi	रहे
+
+time.n.08	EQU now                      	%%English	 			%%Hindi	
+
+old.a.02	Value +                      	%%English	an old 	[8-14]		%%Hindi	
+
+letter.n.01	Attribute -1                 	%%English	letter.	[15-22]		%%Hindi	
+
+#########################
+This is an old letter.
+यह एक पुराना पत्र है
+
+male.n.02	Name "Tom"                 	%%English	Tom        	[0-3]		%%Hindi	
+
+time.n.08	EQU now                    	%%English	is         	[4-6]		%%Hindi	है
+
+rinse.v.01	Agent -2 Time -1 Source +1 	%%English	rinsing    	[7-14]		%%Hindi	
+
+dish.n.01	 	%%English	the dishes.	[15-26]		%%Hindi	
+
+#########################
+Tom is rinsing the dishes.
+टोम बर्तन धो रहा है
+
+time.n.08	TSU now            	%%English	Will	[0-4]		%%Hindi	
+
+male.n.02	Name "Tom"         	%%English	Tom 	[5-8]		%%Hindi	टोम
+
+die.v.01	Time -2 Patient -1 	%%English	die?	[9-13]		%%Hindi	है
+
+#########################
+Will Tom die?
+क्या टोम मर जाएगा?
+
+house.n.01	 	%%English	The house has	[0-13]		%%Hindi	
+
+burn_down.v.01	Patient -1 Time +1 	%%English	burnt down.  	[14-25]		%%Hindi	
+
+time.n.08	TPR now            	%%English	 			%%Hindi	
+
+#########################
+The house has burnt down.
+घर जल कर राख हो गया है
+
+male.n.02	Name "Tom"             	%%English	Tom             	[0-3]		%%Hindi	
+
+time.n.08	EQU now                	%%English	is being        	[4-12]		%%Hindi	है
+
+silly.a.01	AttributeOf -2 Time -1 	%%English	silly, isn't he?	[13-29]		%%Hindi	है
 
 #########################

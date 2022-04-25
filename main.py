@@ -317,7 +317,6 @@ def search_transliterate_dic(eng_wds, hnd_sen, hnd_sen_root):
     for wd in eng_wds:
         if wd:
             twd_dict = []
-            print('using transliteration engine')
             out = tranl_e.translit_word(wd, topk=5, beam_width=10)
             for twd in out['hi']:
                 twd_dict.append(transliterate(twd, sanscript.DEVANAGARI, sanscript.WX))
@@ -372,7 +371,7 @@ def get_hnd_wd_with_bvkt(hnd_sen):
     for i in range(0, len(hnd_sen.split())):
         wd = hnd_sen.split()[i]
         prev_wd = hnd_sen.split()[i-1]
-        if re.match(r'^(meM|ne|ko|ke|para|vAlA)$', wd):
+        if re.match(r'^(meM|se|ne|ko|ke|para|vAlA)$', wd):
             hnd_wd_with_bvkt[prev_wd] = prev_wd+'_'+wd
 
     return hnd_wd_with_bvkt
@@ -402,8 +401,10 @@ def sbn_sen_align(*argv):
     for sbn_word in sbn_sen_info:
         lex, rol, surf_wd, pos_count = get_word_info(sbn_word)
 
+        '''
         if(re.match(r'.*time.*', sbn_word)):
             print('yes')
+        '''
         correct_lwg = get_lwg(lex, eng_hnd_sen) if is_verb(lex) else '' # If verb find correct LWG
         hnd_wrd = get_hindi_wd(lex, surf_wd, correct_lwg, eng_hnd_sen, e_h_dict, hnd_tam_dict, hnd_morph_dict, hnd_sen_root, e_h_cdict)
 
@@ -439,7 +440,7 @@ def sbn_align_all(*argv):
             sbn_eng_hnd = sbn_sen_align(sbn_sen_info, eng_hnd_sen, e_h_dict, hnd_tam_dict, hnd_morph_dict, e_h_cdict)
             sbn_align_all.append(sbn_eng_hnd)
             counter += 1
-            if(counter > 50): return  sbn_align_all
+            if(counter > 100): return  sbn_align_all
         except:
             print("ERROR in sentence {}".format(eng_hnd_sen))
             counter += 1
